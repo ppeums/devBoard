@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PayMent">
+
+	<typeAlias alias="moneyDestVO" type="com.devBoardpayment.vo.MoneyDestVO"/>
+
+	<resultMap id="paymentListMap" class="moneyDestVO">
+		<result property="userId" column="USER_ID"/>
+		<result property="userName" column="USER_NAME"/>
+		<result property="birthday" column="BIRTHDAY"/>
+		<result property="destMonth" column="DEST_MONTH"/>
+		<result property="regDate" column="REG_DATE"/>
+		<result property="regId" column="REG_ID"/>
+	</resultMap>
+
+	<select id="paymentDAO.selectPaymentList" parameterClass="moneyDestVO" resultMap="paymentListMap">
+		/** 최종납부월 정보를 가져온다. (paymentDAO.selectPaymentList) **/
+		SELECT	USER_ID
+		,		USER_NAME
+		,		BIRTHDAY
+		,		DEST_MONTH
+		,		REG_DATE
+		,		REG_ID
+		FROM	TB_MONEY_DEST
+	</select>
+	
+	<update id="paymentDAO.updatePayment" parameterClass="moneyDestVO">
+		<![CDATA[
+			UPDATE TB_MONEY_DEST 
+			SET    DEST_MONTH = #destMonth#
+			WHERE  USER_ID = #userId#
+		]]>
+	</update>
+
+</sqlMap>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="egovframework.dev.imp.emma.feature"
+      label="%featureName"
+      version="1.5.3.201111250803"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      %license
+   </license>
+
+   <plugin
+         id="com.mountainminds.eclemma.core"
+         download-size="0"
+         install-size="0"
+         version="1.5.3"/>
+
+   <plugin
+         id="com.mountainminds.eclemma.doc"
+         download-size="0"
+         install-size="0"
+         version="1.5.3"/>
+
+   <plugin
+         id="com.mountainminds.eclemma.ui"
+         download-size="0"
+         install-size="0"
+         version="1.5.3"/>
+
+</feature>

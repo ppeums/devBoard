@@ -1,0 +1,460 @@
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: New Cocoon object.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: ===== System Properties Start =====
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.boot.library.path=H:\egovframeworkSample\bin\jdk1.5.0\jre\bin
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.version=1.5.0_05-b05
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: vendor-url=http://xml.apache.org/xalan-j
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: shared.loader=
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.vendor=Sun Microsystems Inc.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vendor.url=http://java.sun.com/
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: path.separator=;
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.name=Java HotSpot(TM) Client VM
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: tomcat.util.buf.StringCache.byte.enabled=true
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: file.encoding.pkg=sun.io
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.util.logging.config.file=H:\egovframeworkSample\bin\apache-tomcat-6.0.14\conf\logging.properties
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.country=KR
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.os.patch.level=Service Pack 3
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.specification.name=Java Virtual Machine Specification
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.dir=H:\egovframeworkSample\bin\apache-tomcat-6.0.14\bin
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: org.xml.sax.driver=org.apache.xerces.parsers.SAXParser
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.runtime.version=1.5.0_05-b05
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.endorsed.dirs=H:\egovframeworkSample\bin\apache-tomcat-6.0.14\endorsed
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: os.arch=x86
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.io.tmpdir=H:\egovframeworkSample\bin\apache-tomcat-6.0.14\temp
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: line.separator=
+
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.specification.vendor=Sun Microsystems Inc.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.variant=
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.naming.factory.url.pkgs=org.apache.naming
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: os.name=Windows XP
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.jnu.encoding=MS949
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: vendor=Apache Software Foundation
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.library.path=H:\egovframeworkSample\bin\jdk1.5.0\bin;.;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\10.2.0\db_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Subversion\bin
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.specification.name=Java Platform API Specification
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.class.version=49.0
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.management.compiler=HotSpot Client Compiler
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: os.version=5.1
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.home=C:\Documents and Settings\1
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.timezone=Asia/Seoul
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: catalina.useNaming=true
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.awt.printerjob=sun.awt.windows.WPrinterJob
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.specification.version=1.5
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: file.encoding=MS949
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: catalina.home=H:\egovframeworkSample\bin\apache-tomcat-6.0.14
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.name=1
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.class.path=H:\egovframeworkSample\bin\jdk1.5.0\lib\tools.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\bin\bootstrap.jar
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.specification.version=1.0
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.arch.data.model=32
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.home=H:\egovframeworkSample\bin\jdk1.5.0\jre
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.specification.vendor=Sun Microsystems Inc.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: user.language=ko
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: awt.toolkit=sun.awt.windows.WToolkit
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vm.info=mixed mode
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.version=1.5.0_05
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.ext.dirs=H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\ext
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.boot.class.path=H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\rt.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\i18n.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\sunrsasign.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\jsse.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\jce.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\lib\charsets.jar;H:\egovframeworkSample\bin\jdk1.5.0\jre\classes
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vendor=Sun Microsystems Inc.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: server.loader=
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: catalina.base=H:\egovframeworkSample\bin\apache-tomcat-6.0.14
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: file.separator=\
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: common.loader=${catalina.home}/lib,${catalina.home}/lib/*.jar
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.cpu.endian=little
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.io.unicode.encoding=UnicodeLittle
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: version=2.3.1
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.,sun.beans.
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.desktop=windows
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: ===== System Properties End =====
+DEBUG   (2013-03-14) 18:51.22:140   [core] (Unknown-URI) Unknown-thread/Cocoon: Using parser: org.apache.avalon.excalibur.xml.JaxpParser
+DEBUG   (2013-03-14) 18:51.22:140   [core.startup] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.avalon.excalibur.xml.Parser
+DEBUG   (2013-03-14) 18:51.22:171   [core.startup] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:171   [core] (Unknown-URI) Unknown-thread/Cocoon: Classpath = H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\classes;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\avalon-excalibur-vm12-20020705.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\avalon-framework-20020627.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\cocoon-2.0.3.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\cocoon-scratchpad.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\commons-collections-1.0.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\commons-httpclient-20020423.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\commons-JXPath-20020320.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\commons-logging-1.0.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\deli-0.50.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\jakarta-poi-1.5.0-dev-20020408.jar.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\jakarta-regexp-1.2.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\jisp_1_0_2.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\jstyle.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\krysalis-wings-0.1.0-dev-2.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\logkit-20020529.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\mysql-connector-java-2.0.14-bin.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\pizza-1.1.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\rdffilter.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\resolver-20020130.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\xalan-2.3.1.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\xercesImpl-2.0.0.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\xml-apis.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\WEB-INF\lib\xmldb-api-20011111.jar;H:\egovframeworkSample\bin\jdk1.5.0\lib\tools.jar;H:\egovframeworkSample\bin\apache-tomcat-6.0.14\bin\bootstrap.jar;
+DEBUG   (2013-03-14) 18:51.22:171   [core] (Unknown-URI) Unknown-thread/Cocoon: Work directory = H:\egovframeworkSample\bin\apache-tomcat-6.0.14\work\Catalina\localhost\cocoon-reports\cocoon-files
+DEBUG   (2013-03-14) 18:51.22:171   [core.startup] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.xml.JaxpParser
+DEBUG   (2013-03-14) 18:51.22:187   [core.startup] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.xml.JaxpParser.
+DEBUG   (2013-03-14) 18:51.22:187   [core.startup] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:187   [core.startup] (Unknown-URI) Unknown-thread/JaxpParser: JaxpParser: validating: false, namespace-prefixes: false, reuse parser: true, stop on warning: true, stop on recoverable-error: true, saxParserFactory: javax.xml.parsers.SAXParserFactory, documentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory
+DEBUG   (2013-03-14) 18:51.22:187   [core.startup] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Created a new org.apache.avalon.excalibur.xml.JaxpParser from the object factory.
+DEBUG   (2013-03-14) 18:51.22:187   [core.startup] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Got a org.apache.avalon.excalibur.xml.JaxpParser from the pool.
+DEBUG   (2013-03-14) 18:51.22:203   [core.startup] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Put a org.apache.avalon.excalibur.xml.JaxpParser back into the pool.
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.avalon.excalibur.xml.Parser with shorthand xml-parser for org.apache.avalon.excalibur.xml.JaxpParser
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.avalon.excalibur.xml.EntityResolver with shorthand entity-resolver for org.apache.cocoon.components.resolver.ResolverImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.xslt.XSLTProcessor with shorthand xslt-processor for org.apache.cocoon.components.xslt.XSLTProcessorImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.avalon.excalibur.xml.xpath.XPathProcessor with shorthand xpath-processor for org.apache.avalon.excalibur.xml.xpath.XPathProcessorImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.browser.Browser with shorthand browser for org.apache.cocoon.components.browser.BrowserImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.deli.Deli with shorthand deli for null
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.Processor with shorthand sitemap for org.apache.cocoon.components.treeprocessor.TreeProcessor
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.store.Store/Repository with shorthand repository for org.apache.cocoon.components.store.FilesystemStore
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.store.Store/TransientCache with shorthand cache-transient for org.apache.cocoon.components.store.MRUMemoryStore
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.store.Store/PersistentCache with shorthand cache-persistent for org.apache.cocoon.components.store.FilesystemStore
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.store.StoreJanitor with shorthand store-janitor for org.apache.cocoon.components.store.StoreJanitorImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.language.generator.ServerPagesSelector with shorthand server-pages for org.apache.cocoon.components.language.generator.GeneratorSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type sitemap-language associated with role org.apache.cocoon.components.language.markup.MarkupLanguageSelector and class org.apache.cocoon.components.language.markup.sitemap.SitemapMarkupLanguage
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type xsp-language associated with role org.apache.cocoon.components.language.markup.MarkupLanguageSelector and class org.apache.cocoon.components.language.markup.xsp.XSPMarkupLanguage
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.language.markup.MarkupLanguageSelector with shorthand markup-languages for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type java-language associated with role org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector and class org.apache.cocoon.components.language.programming.java.JavaLanguage
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type js-language associated with role org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector and class org.apache.cocoon.components.language.programming.javascript.JavascriptLanguage
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector with shorthand programming-languages for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.language.generator.ProgramGenerator with shorthand program-generator for org.apache.cocoon.components.language.generator.ProgramGeneratorImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.jsp.JSPEngine with shorthand jsp-engine for org.apache.cocoon.components.jsp.JSPEngineImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.classloader.ClassLoaderManager with shorthand classloader for org.apache.cocoon.components.classloader.ClassLoaderManagerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.image.ImageEncoderSelector with shorthand image-encoder for null
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type jdbc associated with role org.apache.avalon.excalibur.datasource.DataSourceComponentSelector and class org.apache.avalon.excalibur.datasource.ResourceLimitingJdbcDataSource
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type j2ee associated with role org.apache.avalon.excalibur.datasource.DataSourceComponentSelector and class org.apache.avalon.excalibur.datasource.J2eeDataSource
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: Adding hint type informix associated with role org.apache.avalon.excalibur.datasource.DataSourceComponentSelector and class org.apache.avalon.excalibur.datasource.InformixDataSource
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.avalon.excalibur.datasource.DataSourceComponentSelector with shorthand datasources for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.url.URLFactory with shorthand url-factory for org.apache.cocoon.components.url.URLFactoryImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.source.SourceHandler with shorthand source-handler for org.apache.cocoon.components.source.SourceHandlerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.sax.XMLSerializer with shorthand xml-serializer for org.apache.cocoon.components.sax.XMLByteStreamCompiler
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.sax.XMLDeserializer with shorthand xml-deserializer for org.apache.cocoon.components.sax.XMLByteStreamInterpreter
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.hsqldb.Server with shorthand hsqldb-server for org.apache.cocoon.components.hsqldb.ServerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.profiler.Profiler with shorthand profiler for org.apache.cocoon.components.profiler.SimpleProfiler
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.xscript.XScriptManager with shorthand xscript for org.apache.cocoon.components.xscript.XScriptManagerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.search.LuceneCocoonIndexer with shorthand cocoon-indexer for org.apache.cocoon.components.search.SimpleLuceneCocoonIndexerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.search.LuceneCocoonSearcher with shorthand cocoon-searcher for org.apache.cocoon.components.search.SimpleLuceneCocoonSearcherImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.search.LuceneXMLIndexer with shorthand lucene-xml-indexer for org.apache.cocoon.components.search.SimpleLuceneXMLIndexerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.crawler.CocoonCrawler with shorthand cocoon-crawler for org.apache.cocoon.components.crawler.SimpleCocoonCrawlerImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.acting.ActionSelector with shorthand actions for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.selection.SelectorSelector with shorthand selectors for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.matching.MatcherSelector with shorthand matchers for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.generation.GeneratorSelector with shorthand generators for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.transformation.TransformerSelector with shorthand transformers for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.serialization.SerializerSelector with shorthand serializers for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.reading.ReaderSelector with shorthand readers for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.modules.input.InputModuleSelector with shorthand input-modules for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.modules.input.OutputModuleSelector with shorthand output-modules for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.modules.database.AutoIncrementModuleSelector with shorthand autoincrement-modules for org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.resolver.Resolver with shorthand resolver for org.apache.cocoon.components.resolver.ResolverImpl
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.parser.Parser with shorthand parser for org.apache.cocoon.components.parser.JaxpParser
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.pipeline.StreamPipeline with shorthand stream-pipeline for org.apache.cocoon.components.pipeline.NonCachingStreamPipeline
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.pipeline.EventPipeline with shorthand event-pipeline for org.apache.cocoon.components.pipeline.NonCachingEventPipeline
+DEBUG   (2013-03-14) 18:51.22:203   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.saxconnector.SAXConnector with shorthand sax-connector for null
+DEBUG   (2013-03-14) 18:51.22:203   [core.startup] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Got a org.apache.avalon.excalibur.xml.JaxpParser from the pool.
+DEBUG   (2013-03-14) 18:51.22:218   [core.startup] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Put a org.apache.avalon.excalibur.xml.JaxpParser back into the pool.
+DEBUG   (2013-03-14) 18:51.22:218   [core] (Unknown-URI) Unknown-thread/Cocoon: Root configuration: cocoon
+DEBUG   (2013-03-14) 18:51.22:218   [core] (Unknown-URI) Unknown-thread/Cocoon: Configuration version: 2.0
+DEBUG   (2013-03-14) 18:51.22:218   [core] (Unknown-URI) Unknown-thread/Cocoon: Setting up components...
+DEBUG   (2013-03-14) 18:51.22:218   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xml-parser, returning org.apache.avalon.excalibur.xml.Parser
+DEBUG   (2013-03-14) 18:51.22:218   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.avalon.excalibur.xml.Parser = org.apache.avalon.excalibur.xml.JaxpParser)
+DEBUG   (2013-03-14) 18:51.22:218   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.avalon.excalibur.xml.Parser
+DEBUG   (2013-03-14) 18:51.22:218   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:218   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand cache-persistent, returning org.apache.cocoon.components.store.Store/PersistentCache
+DEBUG   (2013-03-14) 18:51.22:218   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.store.Store/PersistentCache = org.apache.cocoon.components.store.FilesystemStore)
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.store.Store/PersistentCache
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:234   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand cache-transient, returning org.apache.cocoon.components.store.Store/TransientCache
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.store.Store/TransientCache = org.apache.cocoon.components.store.MRUMemoryStore)
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.store.Store/TransientCache
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:234   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand store-janitor, returning org.apache.cocoon.components.store.StoreJanitor
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.store.StoreJanitor = org.apache.cocoon.components.store.StoreJanitorImpl)
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.store.StoreJanitor
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:234   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xslt-processor, returning org.apache.cocoon.components.xslt.XSLTProcessor
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.xslt.XSLTProcessor = org.apache.cocoon.components.xslt.XSLTProcessorImpl)
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.xslt.XSLTProcessor
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.DefaultComponentHandler
+DEBUG   (2013-03-14) 18:51.22:234   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xpath-processor, returning org.apache.avalon.excalibur.xml.xpath.XPathProcessor
+DEBUG   (2013-03-14) 18:51.22:234   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.avalon.excalibur.xml.xpath.XPathProcessor = org.apache.avalon.excalibur.xml.xpath.XPathProcessorImpl)
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.avalon.excalibur.xml.xpath.XPathProcessor
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:250   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand url-factory, returning org.apache.cocoon.components.url.URLFactory
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.url.URLFactory = org.apache.cocoon.components.url.URLFactoryImpl)
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.url.URLFactory
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:250   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand source-handler, returning org.apache.cocoon.components.source.SourceHandler
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.source.SourceHandler = org.apache.cocoon.components.source.SourceHandlerImpl)
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.source.SourceHandler
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.DefaultComponentHandler
+DEBUG   (2013-03-14) 18:51.22:250   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand program-generator, returning org.apache.cocoon.components.language.generator.ProgramGenerator
+DEBUG   (2013-03-14) 18:51.22:250   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.language.generator.ProgramGenerator = org.apache.cocoon.components.language.generator.ProgramGeneratorImpl)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.language.generator.ProgramGenerator
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand jsp-engine, returning org.apache.cocoon.components.jsp.JSPEngine
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.jsp.JSPEngine = org.apache.cocoon.components.jsp.JSPEngineImpl)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.jsp.JSPEngine
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xscript, returning org.apache.cocoon.components.xscript.XScriptManager
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.xscript.XScriptManager = org.apache.cocoon.components.xscript.XScriptManagerImpl)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.xscript.XScriptManager
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand programming-languages, returning org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand classloader, returning org.apache.cocoon.components.classloader.ClassLoaderManager
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.classloader.ClassLoaderManager = org.apache.cocoon.components.classloader.ClassLoaderManagerImpl)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.classloader.ClassLoaderManager
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand markup-languages, returning org.apache.cocoon.components.language.markup.MarkupLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.language.markup.MarkupLanguageSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.language.markup.MarkupLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand datasources, returning org.apache.avalon.excalibur.datasource.DataSourceComponentSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.avalon.excalibur.datasource.DataSourceComponentSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.avalon.excalibur.datasource.DataSourceComponentSelector
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:265   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand stream-pipeline, returning org.apache.cocoon.components.pipeline.StreamPipeline
+DEBUG   (2013-03-14) 18:51.22:265   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.pipeline.StreamPipeline = org.apache.cocoon.components.pipeline.CachingStreamPipeline)
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.pipeline.StreamPipeline
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand event-pipeline, returning org.apache.cocoon.components.pipeline.EventPipeline
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.pipeline.EventPipeline = org.apache.cocoon.components.pipeline.CachingEventPipeline)
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.pipeline.EventPipeline
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xml-serializer, returning org.apache.cocoon.components.sax.XMLSerializer
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.sax.XMLSerializer = org.apache.cocoon.components.sax.XMLByteStreamCompiler)
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.sax.XMLSerializer
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand xml-deserializer, returning org.apache.cocoon.components.sax.XMLDeserializer
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.sax.XMLDeserializer = org.apache.cocoon.components.sax.XMLByteStreamInterpreter)
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.sax.XMLDeserializer
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand monitor, returning null
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand sitemap, returning org.apache.cocoon.Processor
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.Processor = org.apache.cocoon.sitemap.SitemapManager)
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.Processor
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:281   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand entity-resolver, returning org.apache.avalon.excalibur.xml.EntityResolver
+DEBUG   (2013-03-14) 18:51.22:281   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.avalon.excalibur.xml.EntityResolver = org.apache.cocoon.components.resolver.ResolverImpl)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.avalon.excalibur.xml.EntityResolver
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand cocoon-indexer, returning org.apache.cocoon.components.search.LuceneCocoonIndexer
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.search.LuceneCocoonIndexer = org.apache.cocoon.components.search.SimpleLuceneCocoonIndexerImpl)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.search.LuceneCocoonIndexer
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.DefaultComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand cocoon-searcher, returning org.apache.cocoon.components.search.LuceneCocoonSearcher
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.search.LuceneCocoonSearcher = org.apache.cocoon.components.search.SimpleLuceneCocoonSearcherImpl)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.search.LuceneCocoonSearcher
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand cocoon-crawler, returning org.apache.cocoon.components.crawler.CocoonCrawler
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.crawler.CocoonCrawler = org.apache.cocoon.components.crawler.SimpleCocoonCrawlerImpl)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.crawler.CocoonCrawler
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand lucene-xml-indexer, returning org.apache.cocoon.components.search.LuceneXMLIndexer
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.search.LuceneXMLIndexer = org.apache.cocoon.components.search.SimpleLuceneXMLIndexerImpl)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.search.LuceneXMLIndexer
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand input-modules, returning org.apache.cocoon.components.modules.input.InputModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.modules.input.InputModuleSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.modules.input.InputModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand output-modules, returning org.apache.cocoon.components.modules.input.OutputModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.modules.input.OutputModuleSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.modules.input.OutputModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand autoincrement-modules, returning org.apache.cocoon.components.modules.database.AutoIncrementModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.components.modules.database.AutoIncrementModuleSelector = org.apache.avalon.excalibur.component.ExcaliburComponentSelector)
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.components.modules.database.AutoIncrementModuleSelector
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.ThreadSafeComponentHandler
+DEBUG   (2013-03-14) 18:51.22:296   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.sunshine.SunShine = org.apache.cocoon.sunshine.SunShine)
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.sunshine.SunShine
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.sunshine.sunrise.SunRise = org.apache.cocoon.sunshine.sunrise.SunRise)
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.sunshine.sunrise.SunRise
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.sunshine.sunspot.SunSpot = org.apache.cocoon.sunshine.sunspot.SunSpot)
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.sunshine.sunspot.SunSpot
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.sunshine.connector.ResourceConnector = org.apache.cocoon.sunshine.connector.ResourceConnectorImpl)
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.sunshine.connector.ResourceConnector
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:312   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Adding component (org.apache.cocoon.transformation.pagination.Paginator = org.apache.cocoon.transformation.pagination.Paginator)
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Attempting to get Handler for: org.apache.cocoon.transformation.pagination.Paginator
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Handler type = org.apache.avalon.excalibur.component.PoolableComponentHandler
+DEBUG   (2013-03-14) 18:51.22:328   [core.startup] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory decommissioning instance of org.apache.avalon.excalibur.xml.JaxpParser.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.xml.JaxpParser
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.store.FilesystemStore.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.store.persistent
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.persistent] (Unknown-URI) Unknown-thread/FilesystemStore: Using cache directory: H:\egovframeworkSample\bin\apache-tomcat-6.0.14\work\Catalina\localhost\cocoon-reports\cocoon-files\cache-dir
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.store.FilesystemStore
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.store.MRUMemoryStore.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.store.transient
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.transient] (Unknown-URI) Unknown-thread/MRUMemoryStore: Looking up org.apache.cocoon.components.store.Store/PersistentCache
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.transient] (Unknown-URI) Unknown-thread/MRUMemoryStore: Looking up org.apache.cocoon.components.store.StoreJanitor
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.store.StoreJanitorImpl.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.store.janitor
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: Configure StoreJanitorImpl
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: Intializing checker thread
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.store.StoreJanitorImpl
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: JVM total Memory: 3952640
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: Registering store instance
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: JVM free Memory: 884760
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: Size of StoreJanitor now:1
+DEBUG   (2013-03-14) 18:51.22:328   [core.store.janitor] (Unknown-URI) Unknown-thread/StoreJanitorImpl: Memory is low = false
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.store.MRUMemoryStore
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.xslt.XSLTProcessorImpl
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.xml.xpath.XPathProcessorImpl.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.xpath-processor
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.xml.xpath.XPathProcessorImpl
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.url.URLFactoryImpl.
+DEBUG   (2013-03-14) 18:51.22:328   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.url-factory
+DEBUG   (2013-03-14) 18:51.22:328   [core.url-factory] (Unknown-URI) Unknown-thread/URLFactoryImpl: Getting the URLFactories
+DEBUG   (2013-03-14) 18:51.22:328   [core.url-factory] (Unknown-URI) Unknown-thread/URLFactoryImpl: 	for protocol: resource org.apache.cocoon.components.url.ResourceURLFactory
+DEBUG   (2013-03-14) 18:51.22:343   [core.url-factory] (Unknown-URI) Unknown-thread/URLFactoryImpl: 	for protocol: context org.apache.cocoon.components.url.ContextURLFactory
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.url.URLFactoryImpl
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.source.SourceHandlerImpl
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.language.generator.ProgramGeneratorImpl.
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.program-generator
+DEBUG   (2013-03-14) 18:51.22:343   [core.program-generator] (Unknown-URI) Unknown-thread/ProgramGeneratorImpl: Context directory is file:/H:/egovframeworkSample/bin/apache-tomcat-6.0.14/webapps/cocoon-reports/
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentManager: Could not find ComponentHandler, attempting to create one for role: org.apache.cocoon.components.language.generator.ServerPagesSelector
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.language.generator.GeneratorSelector.
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.classloader.ClassLoaderManagerImpl.
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.classloader.ClassLoaderManagerImpl
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: 
+DEBUG   (2013-03-14) 18:51.22:343   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand , returning null
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.generator.GeneratorSelector
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:343   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: markup-languages
+DEBUG   (2013-03-14) 18:51.22:343   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand markup-languages, returning org.apache.cocoon.components.language.markup.MarkupLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:343   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up hintmap for role org.apache.cocoon.components.language.markup.MarkupLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:343   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up classname for hint xsp-language
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.markup.xsp.XSPMarkupLanguage
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.language.markup.xsp.XSPMarkupLanguage for xsp
+DEBUG   (2013-03-14) 18:51.22:359   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up hintmap for role org.apache.cocoon.components.language.markup.MarkupLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:359   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up classname for hint sitemap-language
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.markup.sitemap.SitemapMarkupLanguage
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.language.markup.sitemap.SitemapMarkupLanguage for sitemap
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: programming-languages
+DEBUG   (2013-03-14) 18:51.22:359   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand programming-languages, returning org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:359   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up hintmap for role org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:359   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up classname for hint java-language
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.language.programming.java.JavaLanguage.
+DEBUG   (2013-03-14) 18:51.22:359   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.language.java
+DEBUG   (2013-03-14) 18:51.22:359   [core.language.java] (Unknown-URI) Unknown-thread/JavaLanguage: Looking up org.apache.cocoon.components.classloader.ClassLoaderManager
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.programming.java.JavaLanguage
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.language.programming.java.JavaLanguage for java
+DEBUG   (2013-03-14) 18:51.22:375   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up hintmap for role org.apache.cocoon.components.language.programming.ProgrammingLanguageSelector
+DEBUG   (2013-03-14) 18:51.22:375   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up classname for hint js-language
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.programming.javascript.JavascriptLanguage
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.language.programming.javascript.JavascriptLanguage for js
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.language.generator.ProgramGeneratorImpl
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.jsp.JSPEngineImpl.
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.jsp-engine
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.jsp.JSPEngineImpl
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.xscript.XScriptManagerImpl.
+DEBUG   (2013-03-14) 18:51.22:375   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.xscript
+DEBUG   (2013-03-14) 18:51.22:375   [core.xscript] (Unknown-URI) Unknown-thread/XScriptManagerImpl: XScriptManager component initialized.
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.xscript.XScriptManagerImpl
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: datasources
+DEBUG   (2013-03-14) 18:51.22:390   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand datasources, returning org.apache.avalon.excalibur.datasource.DataSourceComponentSelector
+DEBUG   (2013-03-14) 18:51.22:390   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up hintmap for role org.apache.avalon.excalibur.datasource.DataSourceComponentSelector
+DEBUG   (2013-03-14) 18:51.22:390   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up classname for hint jdbc
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.datasource.ResourceLimitingJdbcDataSource.
+DEBUG   (2013-03-14) 18:51.22:390   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.datasources.demodb
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.datasource.ResourceLimitingJdbcDataSource
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.avalon.excalibur.datasource.ResourceLimitingJdbcDataSource for demodb
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.pipeline.CachingStreamPipeline
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.pipeline.CachingEventPipeline
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.sax.XMLByteStreamCompiler
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.sax.XMLByteStreamInterpreter
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.sitemap.SitemapManager.
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is sitemap
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.xml.JaxpParser.
+DEBUG   (2013-03-14) 18:51.23:406   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.xml-parser
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.resolver.ResolverImpl.
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.resolver
+DEBUG   (2013-03-14) 18:51.23:437   [core.resolver] (Unknown-URI) Unknown-thread/ResolverImpl: Setting Catalog resolver verbosity level to 1
+DEBUG   (2013-03-14) 18:51.23:437   [core.resolver] (Unknown-URI) Unknown-thread/ResolverImpl: System OASIS Catalog URL is H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\resources\entities\catalog
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.resolver.ResolverImpl
+DEBUG   (2013-03-14) 18:51.23:437   [core.xml-parser] (Unknown-URI) Unknown-thread/JaxpParser: JaxpParser: Using EntityResolver: org.apache.cocoon.components.resolver.ResolverImpl@e29820
+DEBUG   (2013-03-14) 18:51.23:437   [core.xml-parser] (Unknown-URI) Unknown-thread/JaxpParser: JaxpParser: validating: false, namespace-prefixes: false, reuse parser: false, stop on warning: true, stop on recoverable-error: true, saxParserFactory: javax.xml.parsers.SAXParserFactory, documentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Created a new org.apache.avalon.excalibur.xml.JaxpParser from the object factory.
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Got a org.apache.avalon.excalibur.xml.JaxpParser from the pool.
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/ResourceLimitingPool: Put a org.apache.avalon.excalibur.xml.JaxpParser back into the pool.
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.sitemap.SitemapManager
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.search.SimpleLuceneCocoonIndexerImpl
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.search.SimpleLuceneCocoonSearcherImpl
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.crawler.SimpleCocoonCrawlerImpl
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.search.SimpleLuceneXMLIndexerImpl.
+DEBUG   (2013-03-14) 18:51.23:437   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.search.lucene
+DEBUG   (2013-03-14) 18:51.23:453   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.search.SimpleLuceneXMLIndexerImpl
+DEBUG   (2013-03-14) 18:51.23:453   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.23:453   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.input
+DEBUG   (2013-03-14) 18:51.23:453   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.input
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: input-modules
+DEBUG   (2013-03-14) 18:51.23:453   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand input-modules, returning org.apache.cocoon.components.modules.input.InputModuleSelector
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.RequestParameterModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.RequestParameterModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.RequestParameterModule for request
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.RequestAttributeModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.RequestAttributeModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.RequestAttributeModule for attribute
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.RequestURIModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.RequestURIModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.RequestURIModule for URI
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.HeaderAttributeModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.HeaderAttributeModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.HeaderAttributeModule for header
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.SessionAttributeModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.SessionAttributeModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.SessionAttributeModule for session
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.StringConstantModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.StringConstantModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.StringConstantModule for constant
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.RandomNumberModule.
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.RandomNumberModule
+DEBUG   (2013-03-14) 18:51.23:453   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.RandomNumberModule for random
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.CollectionMetaModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.CollectionMetaModule for collection
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.DigestMetaModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.DigestMetaModule for digest
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.DateInputModule.
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.DateInputModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.DateInputModule for date
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.input.NullInputModule.
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/DefaultComponentFactory: no logger attribute available, using standard logger
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.input.NullInputModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.input] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.input.NullInputModule for nullinput
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.output
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.output
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.output] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: output-modules
+DEBUG   (2013-03-14) 18:51.23:468   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand output-modules, returning org.apache.cocoon.components.modules.input.OutputModuleSelector
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.output] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.output.RequestAttributeOutputModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.output] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.output.RequestAttributeOutputModule for attribute
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.output] (Unknown-URI) Unknown-thread/DefaultComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.output.SessionAttributeOutputModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.output] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.output.SessionAttributeOutputModule for session
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.avalon.excalibur.component.ExcaliburComponentSelector.
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.auto
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/DefaultComponentFactory: logger attribute is core.modules.auto
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.auto] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: ComponentSelector setting up with root element: autoincrement-modules
+DEBUG   (2013-03-14) 18:51.23:468   [core.roles] (Unknown-URI) Unknown-thread/DefaultRoleManager: looking up shorthand autoincrement-modules, returning org.apache.cocoon.components.modules.database.AutoIncrementModuleSelector
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.auto] (Unknown-URI) Unknown-thread/DefaultComponentFactory: ComponentFactory creating new instance of org.apache.cocoon.components.modules.database.HsqlIdentityAutoIncrementModule.
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.auto] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.cocoon.components.modules.database.HsqlIdentityAutoIncrementModule
+DEBUG   (2013-03-14) 18:51.23:468   [core.modules.auto] (Unknown-URI) Unknown-thread/ExcaliburComponentSelector: Adding org.apache.cocoon.components.modules.database.HsqlIdentityAutoIncrementModule for auto
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/ThreadSafeComponentHandler: ComponentHandler initialized for: org.apache.avalon.excalibur.component.ExcaliburComponentSelector
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.sunshine.SunShine
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.sunshine.sunrise.SunRise
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.sunshine.sunspot.SunSpot
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.sunshine.connector.ResourceConnectorImpl
+DEBUG   (2013-03-14) 18:51.23:468   [core.manager] (Unknown-URI) Unknown-thread/PoolableComponentHandler: ComponentHandler initialized for: org.apache.cocoon.transformation.pagination.Paginator
+DEBUG   (2013-03-14) 18:51.23:468   [core] (Unknown-URI) Unknown-thread/Cocoon: Processor of class org.apache.cocoon.sitemap.SitemapManager is ThreadSafe

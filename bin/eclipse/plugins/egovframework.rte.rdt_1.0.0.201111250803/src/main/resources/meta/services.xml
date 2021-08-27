@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+	<service>
+		<name>SpringFramework</name>
+		<layer>Core</layer>
+		<dependencies>
+			<dependency>org.springframework.spring-aop</dependency>
+			<dependency>org.springframework.spring-beans</dependency>
+			<dependency>org.springframework.spring-context</dependency>
+			<dependency>org.springframework.spring-context-support</dependency>
+			<dependency>org.springframework.spring-core</dependency>
+			<dependency>org.springframework.spring-jdbc</dependency>
+			<dependency>org.springframework.spring-orm</dependency>
+			<dependency>org.springframework.spring-test</dependency>
+			<dependency>org.springframework.spring-tx</dependency>
+			<dependency>org.springframework.spring-web</dependency>
+			<dependency>org.springframework.spring-webmvc</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Foundation Common</name>
+		<layer>Core</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.cmmn</dependency>
+			<dependency>egovframework.rte.egovframework.rte.ptl.mvc</dependency>
+			<dependency>org.aspectj.aspectjweaver</dependency>
+			<dependency>org.aspectj.aspectjrt</dependency>
+			<dependency>aopalliance.aopalliance</dependency>
+			<dependency>org.apache.ibatis.ibatis-sqlmap</dependency>
+			<dependency>javax.annotation.jsr250-api</dependency>
+			<dependency>javax.servlet.servlet-api</dependency>
+			<dependency>javax.servlet.jstl</dependency>
+			<dependency>commons-dbcp.commons-dbcp</dependency>
+			<dependency>commons-logging.commons-logging</dependency>
+			<dependency>commons-beanutils.commons-beanutils</dependency>
+			<dependency>taglibs.standard</dependency>
+			<dependency>cglib.cglib</dependency>
+			<dependency>org.slf4j.slf4j-log4j12</dependency>
+			<dependency>org.slf4j.slf4j-api</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>Server Security</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.security</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Cache</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>net.sf.ehcache.ehcache-core</dependency>
+			<dependency>net.sf.ehcache.ehcache-terracotta</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Compress/Decompress</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>org.apache.commons.commons-compress</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>Encryption/Decryption</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.crypto</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>Excel</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.excel</dependency>
+			<dependency>egovframework.rte.egovframework.rte.fdl.string</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>File Handling</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.filehandling</dependency>
+			<dependency>commons-io.commons-io</dependency>
+			<dependency>commons-vfs.commons-vfs</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>File Upload/Download</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>commons-fileupload.commons-fileupload</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>FTP</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>commons-net.commons-net</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Mail</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>org.apache.commons.commons-email</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Marshalling/Unmarshalling</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>org.codehaus.castor.castor-core</dependency>
+			<dependency>org.codehaus.castor.castor-codegen</dependency>
+			<dependency>org.codehaus.castor.castor-xml-schema</dependency>
+			<dependency>org.codehaus.castor.castor-xml</dependency>
+			<dependency>org.apache.xmlbeans.xmlbeans</dependency>
+			<dependency>commons-lang.commons-lang</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>Object Pooling</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>commons-pool.commons-pool</dependency>
+			<dependency>commons-collections.commons-collections</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Scheduling</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>org.quartz-scheduler.quartz</dependency>
+			<dependency>org.quartz-scheduler.quartz-oracle</dependency>
+			<dependency>org.quartz-scheduler.quartz-weblogic</dependency>
+			<dependency>org.quartz-scheduler.quartz-jboss</dependency>
+		</dependencies>
+	</service>
+
+	<service>
+		<name>XML Manipulation</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.xml</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Logging</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>log4j.log4j</dependency>
+			<dependency>org.slf4j.slf4j-log4j12</dependency>
+			<dependency>org.slf4j.slf4j-api</dependency>
+			<dependency>net.sf.log4jdbc3</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>String Util</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.string</dependency>
+		</dependencies>
+	</service>
+		
+	<service>
+		<name>Id Generation</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.idgnr</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>logging Service</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.logging</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>property</name>
+		<layer>Foundation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.fdl.property</dependency>
+		</dependencies>
+	</service>
+		
+	<service>
+		<name>MVC</name>
+		<layer>Presentation</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.ptl.mvc</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Ajax Support</name>
+		<layer>Presentation</layer>
+		<dependencies>
+			<dependency>commons-lang.commons-lang</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Security</name>
+		<layer>Presentation</layer>
+		<dependencies>
+			<dependency>commons-validator.commons-validator</dependency>
+			<dependency>org.springmodules.spring-modules-validation</dependency>
+			<dependency>org.hibernate.hibernate-validator</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Integration</name>
+		<layer>Integration</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.itl.integration</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Web Service</name>
+		<layer>Integration</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.itl.webservice</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Process Control</name>
+		<layer>Business Logic</layer>
+		<dependencies>
+			<dependency>org.springframework.webflow.org.springframework.webflow</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>Data Access</name>
+		<layer>Persistence</layer>
+		<dependencies>
+			<dependency>egovframework.rte.egovframework.rte.psl.dataaccess</dependency>
+		</dependencies>
+	</service>
+	
+	<service>
+		<name>ORM</name>
+		<layer>Persistence</layer>
+		<dependencies>
+			<dependency>org.hibernate.hibernate-entitymanager</dependency>
+			<dependency>org.hibernate.hibernate-annotations</dependency>
+			<dependency>org.hibernate.hibernate-validator</dependency>
+		</dependencies>
+	</service>
+	
+</services>

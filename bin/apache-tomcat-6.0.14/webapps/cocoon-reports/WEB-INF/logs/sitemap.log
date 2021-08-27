@@ -1,0 +1,12 @@
+DEBUG   (2013-03-14) 18:51.23:406   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Sitemap location = sitemap.xmap
+DEBUG   (2013-03-14) 18:51.23:406   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Checking sitemap reload = true
+DEBUG   (2013-03-14) 18:51.23:406   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Reloading sitemap asynchron = false
+DEBUG   (2013-03-14) 18:51.23:406   [sitemap] (Unknown-URI) Unknown-thread/SitemapManager: Sitemap check delay = 1 sec
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.acting.ActionSelector with shorthand action for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.selection.SelectorSelector with shorthand selector for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.matching.MatcherSelector with shorthand matcher for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.generation.GeneratorSelector with shorthand generator for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.transformation.TransformerSelector with shorthand transformer for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.serialization.SerializerSelector with shorthand serializer for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.reading.ReaderSelector with shorthand reader for org.apache.cocoon.sitemap.DefaultSitemapComponentSelector
+DEBUG   (2013-03-14) 18:51.23:437   [sitemap] (Unknown-URI) Unknown-thread/DefaultRoleManager: added Role org.apache.cocoon.components.notification.NotifyingBuilder with shorthand notifying-builder for org.apache.cocoon.components.notification.DefaultNotifyingBuilder

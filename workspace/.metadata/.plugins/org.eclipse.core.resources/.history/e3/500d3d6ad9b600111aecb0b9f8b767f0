@@ -1,0 +1,37 @@
+package kr.or.nhic.framework.config;
+
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
+/**
+ * @ProjectName dipis_pis
+ * @FileName ExPropertyPlaceholderConfigurer.java
+ * @Substance TODO
+ * @author yotta
+ * @since 2011. 7. 27.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 7. 27.     yotta     TODO
+ *
+ * </pre>
+ */
+public class ExPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer implements BeanNameAware, BeanFactoryAware {
+	public void setLocations(Resource[] locations) {
+		FileSystemResource[] fsr = new FileSystemResource[locations.length];
+		
+		for(int i=0; i<fsr.length; i++) {
+			fsr[i] = new FileSystemResource(System.getProperty("dipis.home") + "/config/" + locations[i].getFilename());
+		}
+		
+		super.setLocations(fsr);
+	}
+}

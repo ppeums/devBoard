@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='Maven Integration for Eclipse Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+    <properties size='2'>
+        <property name='p2.compressed' value='false'/>
+        <property name='p2.timestamp' value='4'/>
+    </properties>
+    <children size='2'>
+        <child location='0.10.0.20100209-0800'/>
+	<child location='0.10.2.20100623-1649'/>
+	<child location='0.12.0.20101115-1102'/>
+	<child location='0.12.1.20110112-1712'/>
+    </children>
+</repository>
+

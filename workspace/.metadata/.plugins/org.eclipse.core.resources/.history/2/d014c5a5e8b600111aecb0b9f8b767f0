@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+    String a = "1";
+
+	String b = "2";
+	
+	int i = Integer.parseInt(b);
+%>
+<html>
+Test
+</html>

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-Activator: egovframework.dev.imp.ide.EgovIdePlugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: egovframework.dev.imp.ide,egovframework.dev.imp.ide.co
+ mmon,egovframework.dev.imp.ide.natures,egovframework.dev.imp.ide.wiza
+ rds,egovframework.dev.imp.ide.wizards.examples,egovframework.dev.imp.
+ ide.wizards.model,egovframework.dev.imp.ide.wizards.operation,egovfra
+ mework.dev.imp.ide.wizards.pages
+Bundle-Version: 2.0.1.201111250803
+Bundle-Name: eGovFrame IDE Plug-in
+Bundle-ClassPath: egovframework-dev-imp-ide.jar,lib/jaxb-xalan-1.5.jar
+ ,lib/ant-1.6.1.jar
+Bundle-ManifestVersion: 2
+Bundle-Vendor: MOPAS
+Bundle-SymbolicName: egovframework.dev.imp.ide;singleton:=true
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui.ide,org.eclipse.jdt.core,org.eclipse.jd
+ t.launching,org.eclipse.wst.common.frameworks.ui,org.eclipse.wst.web,
+ org.eclipse.wst.common.project.facet.ui,org.eclipse.jst.j2ee.web,org.
+ eclipse.debug.ui,org.eclipse.jst.j2ee,org.eclipse.jst.common.project.
+ facet.core,org.eclipse.wst.server.ui,org.eclipse.core.filesystem,org.
+ eclipse.equinox.p2.ui;bundle-version="2.0.0",org.eclipse.equinox.p2.c
+ ore;bundle-version="2.0.3",org.eclipse.equinox.p2.operations;bundle-v
+ ersion="2.0.0",org.eclipse.equinox.p2.metadata;bundle-version="2.0.1"
+ ,org.eclipse.equinox.p2.repository;bundle-version="2.0.2",egovframewo
+ rk.dev.imp.core;bundle-version="2.0.0",org.eclipse.equinox.p2.engine;
+ bundle-version="2.0.1"
+
+

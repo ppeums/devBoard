@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>egovframework:dev2:imp:codegen:model:uml_codegen</title>
+<meta name="generator" content="DokuWiki Release 2009-02-14">
+<meta name="robots" content="noindex,nofollow">
+<meta name="date" content="2011-10-12T14:12:13+0900">
+<meta name="keywords" content="egovframework,dev2,imp,codegen,model,uml_codegen">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.egovframe.org/wiki/lib/exe/opensearch.php" title="eGovFrame">
+<link rel="start" href="http://www.egovframe.org/wiki/">
+<link rel="contents" href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev2:imp:codegen:model:uml_codegen&amp;do=index" title="Index">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.egovframe.org/wiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.egovframe.org/wiki/feed.php?mode=list&amp;ns=egovframework:dev2:imp:codegen:model">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.egovframe.org/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev2:imp:codegen:model:uml_codegen">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.egovframe.org/wiki/doku.php?do=export_raw&amp;id=egovframework:dev2:imp:codegen:model:uml_codegen">
+<link rel="stylesheet" media="all" type="text/css" href="egovframeworkdevimpcodegenmodeluml_codegen_files/css_002.css">
+<link rel="stylesheet" media="screen" type="text/css" href="egovframeworkdevimpcodegenmodeluml_codegen_files/css.css">
+<link rel="stylesheet" media="print" type="text/css" href="egovframeworkdevimpcodegenmodeluml_codegen_files/css_003.css">
+<script type="text/javascript" charset="utf-8" src="egovframeworkdevimpcodegenmodeluml_codegen_files/js.php"></script>
+</head><body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#%EA%B5%AC%ED%98%84%EB%8F%84%EA%B5%AC%EC%9D%98_uml_%ED%81%B4%EB%9E%98%EC%8A%A4_%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%9C_%EC%BD%94%EB%93%9C_%EC%9E%90%EB%8F%99_%EC%83%9D%EC%84%B1" class="toc">구현도구의 UML 클래스 다이어그램을 사용한 코드 자동 생성</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#%EA%B0%9C%EC%9A%94" class="toc">개요</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%82%AC%EC%9A%A9%EB%B2%95" class="toc">사용법</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="구현도구의_uml_클래스_다이어그램을_사용한_코드_자동_생성" id="구현도구의_uml_클래스_다이어그램을_사용한_코드_자동_생성">구현도구의 UML 클래스 다이어그램을 사용한 코드 자동 생성</a></h1>
+<div class="level1">
+
+</div>
+<!-- SECTION "구현도구의 UML 클래스 다이어그램을 사용한 코드 자동 생성" [1-95] -->
+<h2><a name="개요" id="개요">개요</a></h2>
+<div class="level2">
+
+<p>
+
+클래스 다이어그램에서 정의한 모델을 통해 eGovFrame에 기반한 자바 코드를 자동 생성하는 기능이다. Model, 
+Service, ServiceImpl, Controller, Vo, Dao 등의 스테레오 타입을 지원하여   모델간 관계에 따른 
+Spring Annotation 을 자동생성한다. 
+</p>
+
+</div>
+<!-- SECTION "개요" [96-415] -->
+<h2><a name="사용법" id="사용법">사용법</a></h2>
+<div class="level2">
+
+<p>
+
+1.	개발하고자 하는 프로그램의 클래스 다이어그램을 작성한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Acodegen%3Amodel%3Auml_codegen&amp;media=egovframework:dev2:imp:codegen:model:uml_codegen:image001.png" class="media" title="egovframework:dev2:imp:codegen:model:uml_codegen:image001.png"><img src="egovframeworkdevimpcodegenmodeluml_codegen_files/fetch_004.png" class="media" title="예제 클래스 다이어그램" alt="예제 클래스 다이어그램"></a> <br>
+
+</p>
+
+<p>
+예제 파일:
+</p>
+
+<p>
+2.	마우스 오른쪽 버튼을 클릭하여 “eGovFrame &gt; Model Based CodeGen “ 을 선택한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Acodegen%3Amodel%3Auml_codegen&amp;media=egovframework:dev2:imp:codegen:model:model_based_codegen.png" class="media" title="egovframework:dev2:imp:codegen:model:model_based_codegen.png"><img src="egovframeworkdevimpcodegenmodeluml_codegen_files/fetch.png" class="media" title="Based CodeGen 수행" alt="Based CodeGen 수행"></a>
+</p>
+
+<p>
+3.	Code  Gen. 할 대상 클래스를 선택하고 소스를 저장할 프로젝트와 폴더를 선택하고 Finish 버튼을 클릭한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Acodegen%3Amodel%3Auml_codegen&amp;media=egovframework:dev2:imp:codegen:model:uml_codegen:image005.png" class="media" title="egovframework:dev2:imp:codegen:model:uml_codegen:image005.png"><img src="egovframeworkdevimpcodegenmodeluml_codegen_files/fetch_002.png" class="media" title="프로젝트와 폴더 선택" alt="프로젝트와 폴더 선택"></a>
+</p>
+
+<p>
+4.	생성된 소스파일을 확인한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Acodegen%3Amodel%3Auml_codegen&amp;media=egovframework:dev2:imp:codegen:model:uml_codegen:image007.png" class="media" title="egovframework:dev2:imp:codegen:model:uml_codegen:image007.png"><img src="egovframeworkdevimpcodegenmodeluml_codegen_files/fetch_003.png" class="media" title="생성된 소스파일 확인" alt="생성된 소스파일 확인"></a>
+</p>
+
+</div>
+<!-- SECTION "사용법" [416-] --></div>
+</body></html>

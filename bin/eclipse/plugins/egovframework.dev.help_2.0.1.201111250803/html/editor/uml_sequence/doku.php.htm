@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>egovframework:dev2:imp:editor:uml_editor:sequence_diagram_editor</title>
+<meta name="generator" content="DokuWiki Release 2009-02-14">
+<meta name="robots" content="noindex,nofollow">
+<meta name="date" content="2011-10-13T17:12:28+0900">
+<meta name="keywords" content="egovframework,dev2,imp,editor,uml_editor,sequence_diagram_editor">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.egovframe.org/wiki/lib/exe/opensearch.php" title="eGovFrame">
+<link rel="start" href="http://www.egovframe.org/wiki/">
+<link rel="contents" href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev2:imp:editor:uml_editor:sequence_diagram_editor&amp;do=index" title="Index">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.egovframe.org/wiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.egovframe.org/wiki/feed.php?mode=list&amp;ns=egovframework:dev2:imp:editor:uml_editor">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.egovframe.org/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev2:imp:editor:uml_editor:sequence_diagram_editor">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.egovframe.org/wiki/doku.php?do=export_raw&amp;id=egovframework:dev2:imp:editor:uml_editor:sequence_diagram_editor">
+<link rel="stylesheet" media="all" type="text/css" href="doku.php_files/css_002.css">
+<link rel="stylesheet" media="screen" type="text/css" href="doku.php_files/css.css">
+<link rel="stylesheet" media="print" type="text/css" href="doku.php_files/css_003.css">
+<script type="text/javascript" charset="utf-8" src="doku.php_files/js.php"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#sequence_diagram_editor" class="toc">Sequence Diagram Editor</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#%EA%B0%9C%EC%9A%94" class="toc">개요</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%84%A4%EB%AA%85" class="toc">설명</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%82%AC%EC%9A%A9%EB%B2%95" class="toc">사용법</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%83%98%ED%94%8C" class="toc">샘플</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="sequence_diagram_editor" id="sequence_diagram_editor">Sequence Diagram Editor</a></h1>
+<div class="level1">
+
+</div>
+<!-- SECTION "Sequence Diagram Editor" [1-38] -->
+<h2><a name="개요" id="개요">개요</a></h2>
+<div class="level2">
+
+<p>
+UML 중 Sequence Diagram 의 작성을 편리하게 지원하는 Editor 이다.
+</p>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:sqd_cntnt.gif" class="media" title="egovframework:dev2:imp:editor:uml_editor:sqd_cntnt.gif"><img src="doku.php_files/fetch_003.gif" class="media" alt=""></a>
+</p>
+
+</div>
+<!-- SECTION "개요" [39-200] -->
+<h2><a name="설명" id="설명">설명</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> ToolBar</div>
+<ol>
+<li class="level2"><div class="li"> Select : 편집창에서 개체를 선택하고 이동시키기 위해 사용한다.</div>
+</li>
+<li class="level2"><div class="li"> Marquee : 편집창에서 여러 개체를 한번에 선택하기 위해 사용한다.</div>
+</li>
+<li class="level2"><div class="li"> Note : 설명을 붙일 때 사용한다.</div>
+</li>
+<li class="level2"><div class="li"> Instance : 객체의 인스턴스를 표시한다.</div>
+</li>
+<li class="level2"><div class="li"> Actor : 행위자를 표시한다.</div>
+</li>
+<li class="level2"><div class="li"> Message : 처리의 흐름을 표시한다.</div>
+</li>
+</ol>
+</li>
+</ul>
+
+<p>
+　　　　　　　<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:sqd_toolbar1.gif" class="media" title="egovframework:dev2:imp:editor:uml_editor:sqd_toolbar1.gif"><img src="doku.php_files/fetch.gif" class="media" alt=""></a>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Editor</div>
+</li>
+</ul>
+
+<p>
+　　　　　ToolBar가 제공하는 개체를 이용하여 Sequence Diagram을 그리는 영역이다.
+</p>
+
+<p>
+　　　　　<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:uml_seq_result.png" class="media" title="egovframework:dev2:imp:editor:uml_editor:uml_seq_result.png"><img src="doku.php_files/fetch_004.png" class="media" alt=""></a>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Outline</div>
+</li>
+</ul>
+
+<p>
+　　　　　편집창에서 작성된 Diagram의 전체모습을 확인하기 위해 제공하는 Viewer. 푸른색 박스를 움직이면 해당 위치의 내용이 편집창에 나타난다.
+</p>
+
+<p>
+　　　　　　　<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:sqd_outline.gif" class="media" title="egovframework:dev2:imp:editor:uml_editor:sqd_outline.gif"><img src="doku.php_files/fetch_002.gif" class="media" alt=""></a>
+</p>
+
+</div>
+<!-- SECTION "설명" [201-1193] -->
+<h2><a name="사용법" id="사용법">사용법</a></h2>
+<div class="level2">
+<ol>
+<li class="level1"><div class="li"> Package Explorer 에서 컨텍스트 메뉴 &gt; New &gt; Other &gt; AmaterasUML &gt; Sequence Diagram 메뉴를 선택한 후 파일명을 입력한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:uml_seq_menu.png" class="media" title="egovframework:dev2:imp:editor:uml_editor:uml_seq_menu.png"><img src="doku.php_files/fetch_003.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 툴바에서 Actor 개체를 선택한 후 편집창에 생성한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:uml_seq_actor.png" class="media" title="egovframework:dev2:imp:editor:uml_editor:uml_seq_actor.png"><img src="doku.php_files/fetch_002.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 더블클릭으로 Actor 이름을 변경한다. [client] <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 툴바에서 Instance 를 선택한 후 편집창에 생성한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:uml_seq_instance.png" class="media" title="egovframework:dev2:imp:editor:uml_editor:uml_seq_instance.png"><img src="doku.php_files/fetch.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 더블클릭으로 Instance 이름을 변경한다. [Front] <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 툴바에서 Message 를 선택한 후 client와 Front에 생명선을 선택한다. <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:uml_seq_message.png" class="media" title="egovframework:dev2:imp:editor:uml_editor:uml_seq_message.png"><img src="doku.php_files/fetch_005.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> client와 Front의 호출관계를 표시한다.[accept(cash, selection)] <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 작성내용을 저장한다. <br>
+ <br>
+</div>
+</li>
+</ol>
+
+</div>
+<!-- SECTION "사용법" [1194-2158] -->
+<h2><a name="샘플" id="샘플">샘플</a></h2>
+<div class="level2">
+
+<p>
+　　　　　　　<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Auml_editor%3Asequence_diagram_editor&amp;media=egovframework:dev2:imp:editor:uml_editor:sqd_sample.gif" class="media" title="egovframework:dev2:imp:editor:uml_editor:sqd_sample.gif"><img src="doku.php_files/fetch_004.gif" class="media" alt=""></a>
+</p>
+
+</div>
+<!-- SECTION "샘플" [2159-] --></div>
+
+
+</body></html>

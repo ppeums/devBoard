@@ -1,0 +1,113 @@
+package kr.co.sinsul.payment.vo;
+
+import kr.co.sinsul.framework.vo.CommonVO;
+
+/**
+ * @Class Name : MoneyDestVO.java
+ * @Description : 최종납부월을 처리하는 VO Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 27.  송제승     최초생성
+ * 
+ * @author 송제승
+ * @since 2012. 12. 27.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+public class MoneyDestVO extends CommonVO {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6363147909390440070L;
+
+	/** 사용자아이디 */
+	private String userId;
+	/** 사용자이름 */
+	private String userName;
+	/** 생일 */
+	private String birthday;
+	/** 최종납부월 */
+	private String destMonth;
+	/** 등록일자 */
+	private String regDate;
+	/** 등록자아이디 */
+	private String regId;
+	/**
+	 * @return the userId
+	 */
+	public String getUserId() {
+		return userId;
+	}
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	/**
+	 * @return the birthday
+	 */
+	public String getBirthday() {
+		return birthday;
+	}
+	/**
+	 * @param birthday the birthday to set
+	 */
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+	/**
+	 * @return the destMonth
+	 */
+	public String getDestMonth() {
+		return destMonth;
+	}
+	/**
+	 * @param destMonth the destMonth to set
+	 */
+	public void setDestMonth(String destMonth) {
+		this.destMonth = destMonth;
+	}
+	/**
+	 * @return the regDate
+	 */
+	public String getRegDate() {
+		return regDate;
+	}
+	/**
+	 * @param regDate the regDate to set
+	 */
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
+	}
+	/**
+	 * @return the regId
+	 */
+	public String getRegId() {
+		return regId;
+	}
+	/**
+	 * @param regId the regId to set
+	 */
+	public void setRegId(String regId) {
+		this.regId = regId;
+	}
+	
+}

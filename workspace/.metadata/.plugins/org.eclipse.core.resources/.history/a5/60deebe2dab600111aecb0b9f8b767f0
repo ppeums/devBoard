@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='EUC-KR'?>
+<quartz xmlns="http://www.opensymphony.com/quartz/JobSchedulingData"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opensymphony.com/quartz/JobSchedulingData
+  http://www.opensymphony.com/quartz/xml/job_scheduling_data_1_5.xsd"
+  version="1.5">
+  <calendar class-name="org.quartz.impl.calendar.HolidayCalendar" replace="true">
+    <name>holidayCalendar</name>
+    <description>HolidayCalendar</description>
+    <base-calendar class-name="org.quartz.impl.calendar.WeeklyCalendar">
+      <name>weeklyCalendar</name>
+      <description>WeeklyCalendar</description>
+      <base-calendar class-name="org.quartz.impl.calendar.AnnualCalendar">
+        <name>annualCalendar</name>
+        <description>AnnualCalendar</description>
+      </base-calendar>
+    </base-calendar>
+  </calendar>
+  <job>
+    <job-detail>
+      <name>onlineBatchJob</name>
+      <group>onlineBatchJobs</group>
+      <description>Online Batch Job</description>
+      <job-class>dipis.common.job.OnlineBatchJob</job-class>
+      <volatility>false</volatility>
+      <durability>false</durability>
+      <recover>false</recover>
+      <job-data-map>
+        <entry>
+          <key>최초실행</key>
+          <value>최초실행</value>
+        </entry>
+      </job-data-map>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>onlineBatchTrigger</name>
+        <group>onlineBatchTriggers</group>
+        <description>Online Batch Trigger</description>
+        <job-name>onlineBatchJob</job-name>
+        <job-group>onlineBatchJobs</job-group>
+        <cron-expression>0 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  <job>
+    <job-detail>
+      <name>portalBondSendJob</name>
+      <group>portalBondSendJobs</group>
+      <description>채권포털전송 Job</description>
+      <job-class>dipis.amil.bndmgt.crtlawszrmgt.job.PortalBondSendJob</job-class>
+      <volatility>false</volatility>
+      <durability>false</durability>
+      <recover>false</recover>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>portalBondSendTrigger</name>
+        <group>portalBondSendTriggers</group>
+        <description>채권포털전송 Trigger</description>
+        <job-name>portalBondSendJob</job-name>
+        <job-group>portalBondSendJobs</job-group>
+        <cron-expression>0 15 22 ? * MON</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  <!--
+  <job>
+    <job-detail>
+      <name>sampleJob</name>
+      <group>sampleJobs</group>
+      <description>Sample Job</description>
+      <job-class>dipis.sample.guide.job.SampleJob</job-class>
+      <volatility>false</volatility>
+      <durability>false</durability>
+      <recover>false</recover>
+      <job-data-map>
+        <entry>
+          <key>최초실행</key>
+          <value>최초실행</value>
+        </entry>
+      </job-data-map>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>sampleTrigger</name>
+        <group>sampleTriggers</group>
+        <description>Sample Trigger</description>
+        <job-name>sampleJob</job-name>
+        <job-group>sampleJobs</job-group>
+        <cron-expression>0 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  -->
+  <!--
+  <job>
+    <job-detail>
+      <name>sampleLargeJob</name>
+      <group>sampleLargeJobs</group>
+      <description>Sample Large Job</description>
+      <job-class>dipis.sample.guide.job.SampleLargeJob</job-class>
+      <volatility>false</volatility>
+      <durability>false</durability>
+      <recover>false</recover>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>sampleLargeTrigger</name>
+        <group>sampleLargeTriggers</group>
+        <description>Sample Large Trigger</description>
+        <job-name>sampleLargeJob</job-name>
+        <job-group>sampleLargeJobs</job-group>
+        <cron-expression>0 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  -->
+  <!--
+  <job>
+    <job-detail>
+      <name>PortalUnitSendJob</name>
+      <group>PortalUnitSendJobs</group>
+      <description>Portal Unit Send</description>
+      <job-class>dipis.zapp.bim.unitmgt.job.PortalUnitSendJob</job-class>
+      <volatility>false</volatility>
+      <durability>false</durability>
+      <recover>false</recover>
+      <job-data-map>
+        <entry>
+          <key>최초실행</key>
+          <value>최초실행</value>
+        </entry>
+      </job-data-map>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>PortalUnitSendTrigger</name>
+        <group>PortalUnitSendTriggers</group>
+        <description>Portal Unit Send Trigger</description>
+        <job-name>PortalUnitSendJob</job-name>
+        <job-group>PortalUnitSendJobs</job-group>
+        <cron-expression>0 0 23 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  -->
+</quartz>

@@ -1,0 +1,47 @@
+package kr.co.sinsul.payment.dao;
+
+import java.util.List;
+
+import kr.co.sinsul.payment.vo.MoneyDestVO;
+
+import org.springframework.stereotype.Repository;
+
+import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+
+/**
+ * @Class Name : PaymentDAO.java
+ * @Description : 최종납부월을 처리하는 VO Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 27.  송제승     최초생성
+ * 
+ * @author 송제승
+ * @since 2012. 12. 27.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+@Repository("paymentDAO")
+public class PaymentDAO extends EgovAbstractDAO {
+	/**
+	 * 최종납부월 목록을 조회한다.
+	 * @param vo - 최종납부월 정보가 담긴 VO
+	 * @return 최종납부월 목록
+	 */
+	@SuppressWarnings("unchecked")
+	public List<MoneyDestVO> selectPaymentList(MoneyDestVO vo) {
+		return list("paymentDAO.selectPaymentList", vo);
+	}
+	
+	/**
+	 * 최종납부월을 수정한다.
+	 * @param vo - 최종납부월 수정 정보가 담긴 VO
+	 */
+	@SuppressWarnings("unchecked")
+	public void updatePayment(MoneyDestVO vo) {
+		update("paymentDAO.updatePayment", vo);
+	}
+}

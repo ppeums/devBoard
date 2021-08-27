@@ -1,0 +1,785 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0074)http://www.egovframe.org/wiki/doku.php -->
+<HTML dir=ltr lang=en xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>egovframework:dev:imp:inspection [eGovFrame]</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.6001.18828">
+<META name=robots content=index,follow>
+<META name=date content=2009-10-08T19:07:52+0900>
+<META name=keywords content=egovframework,dev,imp,inspection><LINK 
+title=eGovFrame rel=search type=application/opensearchdescription+xml 
+href="/wiki/lib/exe/opensearch.php"><LINK rel=start href="/wiki/"><LINK 
+title=Index rel=contents 
+href="/wiki/doku.php?id=egovframework:dev:imp:inspection&amp;do=index"><LINK 
+title="Recent Changes" rel=alternate type=application/rss+xml 
+href="/wiki/feed.php"><LINK title="Current Namespace" rel=alternate 
+type=application/rss+xml 
+href="/wiki/feed.php?mode=list&amp;ns=egovframework:dev:imp"><LINK 
+title="Plain HTML" rel=alternate type=text/html 
+href="/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev:imp:inspection"><LINK 
+title="Wiki Markup" rel=alternate type=text/plain 
+href="/wiki/doku.php?do=export_raw&amp;id=egovframework:dev:imp:inspection"><LINK 
+rel=stylesheet type=text/css href="egovframeworkdevimpinspection_files/css.css" 
+media=all><LINK rel=stylesheet type=text/css 
+href="egovframeworkdevimpinspection_files/css(1).css" media=screen><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpinspection_files/css(2).css" media=print>
+<SCRIPT type=text/javascript charset=utf-8 
+src="egovframeworkdevimpinspection_files/js.php"></SCRIPT>
+<LINK rel="shortcut icon" 
+href="/wiki/lib/tpl/default/images/favicon.ico"></HEAD>
+<BODY>
+<DIV class=dokuwiki>
+<DIV class=stylehead>
+<DIV class=header>
+<DIV class=pagename>[[<A title=Backlinks 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection&amp;do=backlink">egovframework:dev:imp:inspection</A>]] 
+</DIV>
+<DIV class=logo><A accessKey=h id=dokuwiki__top title=[H] 
+href="http://www.egovframe.org/wiki/doku.php" name=dokuwiki__top>eGovFrame</A> 
+</DIV>
+<DIV class=clearer></DIV></DIV>
+<DIV id=bar__top class=bar>
+<DIV id=bar__topleft class=bar-left>
+<FORM class="button btn_source" method=post action=/wiki/doku.php>
+<DIV class=no><INPUT value=edit type=hidden name=do><INPUT type=hidden 
+name=rev><INPUT value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=v class=button title="Show pagesource [V]" value="Show pagesource" type=submit></DIV></FORM>
+<FORM class="button btn_revs" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=revisions type=hidden name=do><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=o class=button title="Old revisions [O]" value="Old revisions" type=submit></DIV></FORM>
+<FORM class="button btn_show_print_view" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=export_html type=hidden name=do><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=v class=button title="Print view [V]" value="Print view" type=submit></DIV></FORM><!--<form class="button btn_exportpdf" method="get" action="/wiki/doku.php"><div class="no"><input type="hidden" name="do" value="export_pdf" /><input type="hidden" name="id" value="egovframework:dev:imp:inspection" /><input type="submit" value="Export to PDF" class="button" title="Export to PDF" /></div></form> --><!-- inserted line --></DIV>
+<DIV id=bar__topright class=bar-right>
+<FORM class="button btn_recent" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=recent type=hidden name=do><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=r class=button title="Recent changes [R]" value="Recent changes" type=submit></DIV></FORM>
+<FORM id=dw__search class=search accept-charset=utf-8 action=/wiki/doku.php>
+<DIV class=no><INPUT value=search type=hidden name=do><INPUT accessKey=f 
+id=qsearch__in class=edit title=[F] type=text name=id><INPUT class=button title=Search value=Search type=submit>
+<DIV id=qsearch__out class="ajax_qsearch JSpopup"></DIV></DIV></FORM>&nbsp; 
+</DIV>
+<DIV class=clearer></DIV></DIV>
+<DIV class=breadcrumbs><SPAN class=bchead>Trace:</SPAN> <SPAN 
+class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:template:crud 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:template:crud">crud</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:template:config 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:template:config">config</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:template:custom 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:template:custom">custom</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:template 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:template">template</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:model:uml_codegen 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:model:uml_codegen">uml_codegen</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:model:xmi_codegen 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:model:xmi_codegen">xmi_codegen</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:model:xmi_export 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:model:xmi_export">xmi_export</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:codegen:model 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:codegen:model">model</A> 
+<SPAN class=bcsep>»</SPAN> <A class=breadcrumbs 
+title=egovframework:dev:imp:inspection:rulecustomizing 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection:rulecustomizing">rulecustomizing</A> 
+<SPAN class=bcsep>»</SPAN> <SPAN class=curid><A class=breadcrumbs 
+title=egovframework:dev:imp:inspection 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection">inspection</A></SPAN> 
+</DIV></DIV>
+<DIV class=page><!-- wikipage start --><!-- TOC START -->
+<DIV class=toc>
+<DIV id=toc__header class="tocheader toctoggle">Table of Contents</DIV>
+<DIV id=toc__inside>
+<UL class=toc>
+  <LI class=level1>
+  <DIV class=li><SPAN class=li><A class=toc 
+  href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#code_inspection">Code 
+  Inspection</A></SPAN></DIV>
+  <UL class=toc>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#개요">개요</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#설명">설명</A></SPAN></DIV>
+    <UL class=toc>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#전자정부_표준_개발프레임워크_인스펙션_룰">전자정부 
+      표준 개발프레임워크 인스펙션 룰</A></SPAN></DIV></LI></UL></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#환경설정">환경설정</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#사용법">사용법</A></SPAN></DIV>
+    <UL class=toc>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#inspection_수행">Inspection 
+      수행</A></SPAN></DIV></LI>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#inspection_결과보기">Inspection 
+      결과보기</A></SPAN></DIV></LI>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#inspection_결과초기화">Inspection 
+      결과초기화</A></SPAN></DIV></LI>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#inspection_레포팅">Inspection 
+      레포팅</A></SPAN></DIV></LI></UL></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#rule_customizing">Rule 
+    Customizing</A></SPAN></DIV>
+    <UL class=toc>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#자바_클래스를_사용한_rule작성">자바 
+      클래스를 사용한 Rule작성</A></SPAN></DIV></LI>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#xpath를_사용한_rule작성">XPath를 
+      사용한 Rule작성</A></SPAN></DIV></LI>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#생성한_rule_등록">생성한 
+      Rule 등록</A></SPAN></DIV></LI></UL></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#업데이트">업데이트</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#참고자료">참고자료</A></SPAN></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END -->
+<H1><A id=code_inspection name=code_inspection>Code Inspection</A></H1>
+<DIV class=level1></DIV>
+<H2><A id=개요 name=개요>개요</A></H2>
+<DIV class=level2>
+<P>정의된 규칙을 기반으로 개발자가 작성한 소스 코드를 검사하여, 오류 및 위험 요인을 식별하여 알려 주는 기능을 제공한다. 
+</P></DIV>
+<H2><A id=설명 name=설명>설명</A></H2>
+<DIV class=level2>
+<P>전자정부 개발 프레임워크 적용 시 Code Inspection 구현도구를 통해 개발자가 작성한 소스 코드를 검사할 수 
+있다.<BR>검사(Inspection)을 통해 오류 및 위험 요인을 식별하여 개발자에게 편의성 및 효율성을 향상시킬 수 
+있다.<BR><BR>Inspection에서 제공하는 주요기능은 다음과 같다. </P>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 centeralign">주요기능 </TH>
+    <TH class="col1 centeralign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class="col0 leftalign">Syntax Error Inspection </TD>
+    <TD class=col1>작성한 소스 코드의 Syntax 오류를 검사하는 기능을 제공한다.</TD></TR>
+  <TR class=row2>
+    <TD class="col0 leftalign">Logical Error Inspection </TD>
+    <TD class=col1>작성한 소스 코드에서 실행 시 발생 가능한 오류를 찾아내는 기능을 제공한다.</TD></TR>
+  <TR class=row3>
+    <TD class="col0 leftalign">Reference Inspection </TD>
+    <TD class=col1>작성한 소스 코드에서 실행 시 사용되지 않는 부분을 찾아내는 기능을 제공한다.</TD></TR>
+  <TR class=row4>
+    <TD class="col0 leftalign">Reporting </TD>
+    <TD class=col1>인스펙션을 수행한 결과를 Excel, HTML등이 문서 형식으로 제공하는 기능을 제공한다.</TD></TR>
+  <TR class=row5>
+    <TD class="col0 leftalign">Rule Customizing </TD>
+    <TD class=col1>Rule을 정의하는 API를 사용하여 새로운 Rule을 정의하여 추가할 수 있는 기능을 
+  제공한다.</TD></TR></TBODY></TABLE>
+<P><BR><BR>Inspection은 전자정부 개발 프레임워크의 Eclipse에 포함되어 배포되고 있으며, 다음과 같은 Eclipse 
+Perspective를 갖는다.(&lt;그림 1&gt; 참조) </P>
+<P><A class=media title=egovframework:dev:imp:ins:screenshot.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:screenshot.jpg"><IMG 
+class=media alt="" src="egovframeworkdevimpinspection_files/screenshot.jpg"></A> 
+<BR>&lt;그림 1&gt; PMD Perspective </P>
+<P><BR><BR></P></DIV>
+<H3><A id=전자정부_표준_개발프레임워크_인스펙션_룰 name=전자정부_표준_개발프레임워크_인스펙션_룰>전자정부 표준 개발프레임워크 
+인스펙션 룰</A></H3>
+<DIV class=level3>
+<P>전자정부 표준 개발프레임워크의 인스펙션룰은 39개로 구성되어진다. </P>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class=col0>번호</TH>
+    <TH class="col1 centeralign">룰이름 </TH>
+    <TH class="col2 centeralign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class=col0>01</TD>
+    <TD class="col1 leftalign">EmptyCatchBlock </TD>
+    <TD class=col2>내용이 없는 Catch Block이 존재</TD></TR>
+  <TR class=row2>
+    <TD class=col0>02</TD>
+    <TD class="col1 leftalign">EmptyIfStmt </TD>
+    <TD class=col2>빈 if 구문의 사용을 피하도록 함</TD></TR>
+  <TR class=row3>
+    <TD class=col0>03</TD>
+    <TD class="col1 leftalign">EmptyWhileStmt </TD>
+    <TD class=col2>빈 while 구문이 사용되었음</TD></TR>
+  <TR class=row4>
+    <TD class=col0>04</TD>
+    <TD class="col1 leftalign">EmptyTryBlock </TD>
+    <TD class=col2>내용이 없는 try 블록이 존재함</TD></TR>
+  <TR class=row5>
+    <TD class=col0>05</TD>
+    <TD class="col1 leftalign">EmptyFinallyBlock </TD>
+    <TD class=col2>내용이 없는 finally 블록이 존재함</TD></TR>
+  <TR class=row6>
+    <TD class=col0>06</TD>
+    <TD class="col1 leftalign">UnnecessaryConversionTemporary </TD>
+    <TD class=col2>기본 데이터 타입을 String으로 변환할 때 불필요한 임시 변환 작업을 피하도록 함</TD></TR>
+  <TR class=row7>
+    <TD class=col0>07</TD>
+    <TD class="col1 leftalign">EmptyStatementNotInLoop </TD>
+    <TD class=col2>필요없는 문장 (;)이 있음</TD></TR>
+  <TR class=row8>
+    <TD class=col0>08</TD>
+    <TD class="col1 leftalign">WhileLoopsMustUseBraces </TD>
+    <TD class=col2>중괄호없이 사용된 while문의 사용은 바람직하지 못한 코딩 습관임</TD></TR>
+  <TR class=row9>
+    <TD class=col0>09</TD>
+    <TD class="col1 leftalign">AssignmentInOperand </TD>
+    <TD class=col2>피연산자내에 할당문이 사용됨. 해당 코드를 복잡하고 가독성이 떨어지게 만듬</TD></TR>
+  <TR class=row10>
+    <TD class=col0>10</TD>
+    <TD class="col1 leftalign">UnnecessaryParentheses </TD>
+    <TD class=col2>괄호가 없어도 되는 상황에서 불필요한 괄호를 사용할 경우 마치 메소드 호출처럼 보여서 소스 코드의 가독성을 
+      떨어뜨릴 수 있음</TD></TR>
+  <TR class=row11>
+    <TD class=col0>11</TD>
+    <TD class="col1 leftalign">SimplifyBooleanExpressions </TD>
+    <TD class=col2>boolean 사용 시 불필요한 비교 연산을 피하도록 함</TD></TR>
+  <TR class=row12>
+    <TD class=col0>12</TD>
+    <TD class="col1 leftalign">SwitchStmtsShouldHaveDefault </TD>
+    <TD class=col2>Switch구문에는 반드시 default label이 있어야 함</TD></TR>
+  <TR class=row13>
+    <TD class=col0>13</TD>
+    <TD class="col1 leftalign">AvoidReassigningParameters </TD>
+    <TD class=col2>넘겨받는 메소드 parameter 값을 직접 변경하는 코드 탐지.</TD></TR>
+  <TR class=row14>
+    <TD class=col0>14</TD>
+    <TD class="col1 leftalign">FinalFieldCouldBeStatic </TD>
+    <TD class=col2>final field를 static으로 변경하면 overhead를 줄일 수 있음</TD></TR>
+  <TR class=row15>
+    <TD class=col0>15</TD>
+    <TD class="col1 leftalign">EqualsNull </TD>
+    <TD class=col2>null 값과 비교하기 위해 equals 메소드를 사용하였음</TD></TR>
+  <TR class=row16>
+    <TD class=col0>16</TD>
+    <TD class="col1 leftalign">SimpleDateFormatNeedsLocale </TD>
+    <TD class=col2>SimpleDateFormat 인스턴스를 생성할때 Locale 을 지정하는 것이 바람직함</TD></TR>
+  <TR class=row17>
+    <TD class=col0>17</TD>
+    <TD class="col1 leftalign">ImmutableField </TD>
+    <TD class=col2>생성자를 통해 할당된 변수를 Final로 선언하지 않았음</TD></TR>
+  <TR class=row18>
+    <TD class=col0>18</TD>
+    <TD class="col1 leftalign">AssignmentToNonFinalStatic </TD>
+    <TD class=col2>static 필드의 안전하지않은 사용 가능성이 존재</TD></TR>
+  <TR class=row19>
+    <TD class=col0>19</TD>
+    <TD class="col1 leftalign">AvoidSynchronizedAtMethodLevel </TD>
+    <TD class=col2>mothod 레벨의 synchronization 보다 block 레벨 synchronization 을 
+      사용하는 것이 바람직함</TD></TR>
+  <TR class=row20>
+    <TD class=col0>20</TD>
+    <TD class="col1 leftalign">AbstractClassWithoutAbstractMethod </TD>
+    <TD class=col2>Abstract Class내에 Abstract Method가 존재하지 않음</TD></TR>
+  <TR class=row21>
+    <TD class=col0>21</TD>
+    <TD class="col1 leftalign">UncommentedEmptyMethod </TD>
+    <TD class=col2>빈 메소드에 빈메소드임을 나타내는 주석을 추가할 것</TD></TR>
+  <TR class=row22>
+    <TD class=col0>22</TD>
+    <TD class="col1 leftalign">AvoidConstantsInterface </TD>
+    <TD class=col2>Interface는 클래스의 behavior 을 구현하는 데에만 사용해야 함</TD></TR>
+  <TR class=row23>
+    <TD class=col0>23</TD>
+    <TD class="col1 leftalign">DuplicateImports </TD>
+    <TD class=col2>import문이 중복 선언 되었음</TD></TR>
+  <TR class=row24>
+    <TD class=col0>24</TD>
+    <TD class="col1 leftalign">ImportFromSamePackage </TD>
+    <TD class=col2>동일 패키지에 있을 때는 import문을 사용할 필요가 없음</TD></TR>
+  <TR class=row25>
+    <TD class=col0>25</TD>
+    <TD class="col1 leftalign">SystemPrintln </TD>
+    <TD class=col2>System.out.print 가 사용됨. 전용 로거를 사용할 것을 권장</TD></TR>
+  <TR class=row26>
+    <TD class=col0>26</TD>
+    <TD class="col1 leftalign">VariableNamingConventions </TD>
+    <TD class=col2>final이 아닌 변수는 밑줄을 포함할 수 없음</TD></TR>
+  <TR class=row27>
+    <TD class=col0>27</TD>
+    <TD class="col1 leftalign">MisleadingVariableName </TD>
+    <TD class=col2>non-field 이름이 m_ 으로 시작함'</TD></TR>
+  <TR class=row28>
+    <TD class=col0>28</TD>
+    <TD class="col1 leftalign">AvoidArrayLoops </TD>
+    <TD class=col2>배열의 값을 루프문을 이용하여 복사하는 것 보다, System.arraycopy() 메소드를 이용하여 
+      복사하는 것이 효율적이며 수행 속도가 빠름</TD></TR>
+  <TR class=row29>
+    <TD class=col0>29</TD>
+    <TD class="col1 leftalign">UnnecessaryWrapperObjectCreation </TD>
+    <TD class=col2>불필요한 Wrapper Object가 생성되었음. 탐지된 코드는 삭제하고, 별도의 parse관련 전용 
+      메소드 사용을 권장</TD></TR>
+  <TR class=row30>
+    <TD class=col0>30</TD>
+    <TD class="col1 leftalign">AvoidThrowingRawExceptionTypes </TD>
+    <TD class=col2>가공되지 않은 Exception을 throw하는 것은 비추천</TD></TR>
+  <TR class=row31>
+    <TD class=col0>31</TD>
+    <TD class="col1 leftalign">AvoidThrowingNullPointerException </TD>
+    <TD class=col2>NullPointerException을 throw하는 것은 비추천</TD></TR>
+  <TR class=row32>
+    <TD class=col0>32</TD>
+    <TD class="col1 leftalign">StringInstantiation </TD>
+    <TD class=col2>불필요한 String Instance를 생성하는 코드를 탐지. 간단한 형태의 코드로 변경 필요</TD></TR>
+  <TR class=row33>
+    <TD class=col0>33</TD>
+    <TD class="col1 leftalign">StringToString </TD>
+    <TD class=col2>String 객체에서 toString()함수를 사용하는 것은 불필요함. 해당 코드 제거 필요</TD></TR>
+  <TR class=row34>
+    <TD class=col0>34</TD>
+    <TD class="col1 leftalign">InefficientStringBuffering </TD>
+    <TD class=col2>StringBuffer 함수내에서 비문자열 연산 이용하여 직접 결합하는 코드 사용을 탐지. append 
+      메소드 사용을 권장</TD></TR>
+  <TR class=row35>
+    <TD class=col0>35</TD>
+    <TD class="col1 leftalign">InefficientEmptyStringCheck </TD>
+    <TD class=col2>빈 문자열 확인을 위해 String.trim().length() 을 사용하는 것은 피하도록 함. 
+      whitespace/Non-whitespace 확인을 위한 별도의 로직 구현을 권장</TD></TR>
+  <TR class=row36>
+    <TD class=col0>36</TD>
+    <TD class="col1 leftalign">UselessStringValueOf </TD>
+    <TD class=col2>String 을 append 할 경우, String.valueOf 함수를 사용할 필요 없음</TD></TR>
+  <TR class=row37>
+    <TD class=col0>37</TD>
+    <TD class="col1 leftalign">UnusedPrivateField </TD>
+    <TD class=col2>사용되지 않는 Private field의 탐지</TD></TR>
+  <TR class=row38>
+    <TD class=col0>38</TD>
+    <TD class="col1 leftalign">UnusedPrivateMethod </TD>
+    <TD class=col2>사용되지 않는 Private Method 선언을 탐지</TD></TR>
+  <TR class=row39>
+    <TD class=col0>39</TD>
+    <TD class="col1 leftalign">UnusedFormalParameter </TD>
+    <TD class=col2>메소드 선언 내에사용되지 않는 파라미터를 탐지</TD></TR></TBODY></TABLE></DIV>
+<H2><A id=환경설정 name=환경설정>환경설정</A></H2>
+<DIV class=level2>
+<P>Inspectioin Tool의 환경설정은 Rule을 등록, 수정, 삭제할 수 있다.<BR>Window → Preferences → PMD 
+→ Rules Configuration 선택<BR><A class=media 
+title=egovframework:dev:imp:ins:rule_configuration.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:rule_configuration.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/rule_configuration.jpg" width=900></A> 
+</P>
+<P>위 설정화면에서 Rule을 등록, 수정, 삭제할 수 있다. </P></DIV>
+<H2><A id=사용법 name=사용법>사용법</A></H2>
+<DIV class=level2></DIV>
+<H3><A id=inspection_수행 name=inspection_수행>Inspection 수행</A></H3>
+<DIV class=level3>
+<P>PMD Perpective에서 Inspection을 수행한다. </P></DIV>
+<H4><A id=pmd_perpective선택 name=pmd_perpective선택>PMD Perpective선택</A></H4>
+<DIV class=level4>
+<P>Window → Open Perspective → Other 에서 “PMD”를 선택한다.<BR><A class=media 
+title=egovframework:dev:imp:ins:perspective_select.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:perspective_select.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/perspective_select.jpg"></A> </P></DIV>
+<H4><A id=inspectoin_실행 name=inspectoin_실행>Inspectoin 실행</A></H4>
+<DIV class=level4>
+<P>Inspection을 수행하고자 하는 프로젝트를 선택하여 Inspection을 수행한다.<BR>프로젝트선택 → PMD → Check 
+Code with PMD 선택<BR><A class=media 
+title=egovframework:dev:imp:ins:pmd_checkcode.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:pmd_checkcode.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/pmd_checkcode.jpg"></A> 
+<BR><BR><BR></P></DIV>
+<H3><A id=inspection_결과보기 name=inspection_결과보기>Inspection 결과보기</A></H3>
+<DIV class=level3>
+<P>Inspection을 수행한 후에는 Inspection의 결과를 통해 룰에 위배되는 코드를 수정할 수 있다.<BR></P>
+<P>PMD Perspective의 “Problem” View에에서 Inspection의 위배결과를 다음과 같이 확인할 수 있다.<BR>위배결과 
+내용중 다음의 주요항목을 통해 결과를 확인하여 위배된 코드를 수정할 수 있다. </P>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 centeralign">항목 </TH>
+    <TH class="col1 centeralign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class="col0 leftalign">Description </TD>
+    <TD class=col1>소소코드의 위배된 룰항목에 대한 상세 설명을 표시한다.</TD></TR>
+  <TR class=row2>
+    <TD class="col0 leftalign">Path </TD>
+    <TD class=col1>위배된 소스코드의 Path를 표시한다.</TD></TR>
+  <TR class=row3>
+    <TD class="col0 leftalign">Location </TD>
+    <TD class=col1>소스코드에서 위배된 해당 Line을 표시한다.</TD></TR></TBODY></TABLE>
+<P><A class=media title=egovframework:dev:imp:ins:inspection_result.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:inspection_result.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/inspection_result.jpg" width=900></A> 
+</P>
+<P>위 위배결과에서 해당항목을 “Double Click”하면 위배된 코드를 볼 수 있어, 바로 코드를 수정할 수 있다. 
+<BR><BR><BR></P></DIV>
+<H3><A id=inspection_결과초기화 name=inspection_결과초기화>Inspection 결과초기화</A></H3>
+<DIV class=level3>
+<P>Inspection을 수행하면 위배된 결과는 계속해서 소스상에 남아있다. 소스상에 Inspection의 위배사항이 남아 있으면 코드상의 
+오류와 분류하기 힘들기 때문에 Inspection결과를 초기화할 수 있다. 또는 Inspection을 재수행하기 위해서 Inspection결과를 
+초기화할 수 있다. </P>
+<P>Inspection결과를 초기화하기 위해서는 프로젝트를 선택하고 초기화를 수행한다.<BR>프로젝트선택 → PMD → Clear PMD 
+Violoations 선택<BR><A class=media 
+title=egovframework:dev:imp:ins:result_clear.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:result_clear.jpg"><IMG 
+class=media alt="" src="egovframeworkdevimpinspection_files/result_clear.jpg" 
+width=900></A> </P>
+<P>결과를 초기화하면 소스의 위배결과가 초기화되며, Problem View에서도 사라진다. <BR><BR><BR></P></DIV>
+<H3><A id=inspection_레포팅 name=inspection_레포팅>Inspection 레포팅</A></H3>
+<DIV class=level3>
+<P>Inspection을 수행한 후 수행결과를 csv, html, txt, xml등의 형태로 레포팅할 수 있다. </P></DIV>
+<H4><A id=레포팅_수행 name=레포팅_수행>레포팅 수행</A></H4>
+<DIV class=level4>
+<P>Inspection의 결과를 레포팅하기 위해서는 프로젝트를 선택하고 레포팅을 수행한다.<BR>프로젝트선택 → PMD → Generate 
+reports 선택<BR><A class=media title=egovframework:dev:imp:ins:result_report.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:result_report.jpg"><IMG 
+class=media alt="" src="egovframeworkdevimpinspection_files/result_report.jpg" 
+width=900></A> </P></DIV>
+<H4><A id=레포팅_파일생성확인 name=레포팅_파일생성확인>레포팅 파일생성확인</A></H4>
+<DIV class=level4>
+<P>Inspection의 레포팅을 수행하게되면 다양한 형태의(csv, html, txt, xml) 레포팅 파일리 생성되는 것을 확인할 수 
+있다.<BR><A class=media title=egovframework:dev:imp:ins:result_report_filegen.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:result_report_filegen.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/result_report_filegen.jpg"></A><BR>report폴더안에 
+csv, html, txt, xml형태의 레포팅 파일이 생성된다. </P></DIV>
+<H4><A id=레포팅_결과확인 name=레포팅_결과확인>레포팅 결과확인</A></H4>
+<DIV class=level4>
+<P>Inspection을 통해 위배된 결과를 생성된 레포팅파일로 확인할 수 있다.<BR><A class=media 
+title=egovframework:dev:imp:ins:result_report_view.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:result_report_view.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/result_report_view.jpg" 
+width=900></A><BR>본 레포팅은 HTML형태로 생성된 레포팅파일을 브라우져로 확인한 결과이다. </P>
+<P><BR><BR><BR></P></DIV>
+<H2><A id=rule_customizing name=rule_customizing>Rule Customizing</A></H2>
+<DIV class=level2>
+<P>전자정부 개발 프레임워크에서 제공하는 39개의 표준 Rule 이외에 새로운 Rule을 추가하거나, 수정할 수있는 방법을 가이드한다. 
+</P>
+<P>Rule을 생성하는데는 두 가지 방법이 있다.<BR></P>
+<OL>
+  <LI class=level1>
+  <DIV class=li>자바 클래스를 사용한 Rule작성.<BR></DIV></LI>
+  <LI class=level1>
+  <DIV class=li>XPath를 사용한 Rule작성.<BR></DIV></LI></OL></DIV>
+<H3><A id=자바_클래스를_사용한_rule작성 name=자바_클래스를_사용한_rule작성>자바 클래스를 사용한 Rule작성</A></H3>
+<DIV class=level3>
+<P>PMD는 소스를 직접 Parsing하지 않고, [JavaCC generated parser]를 사용하여 EBNF(Extended 
+Backus-Naur Form) 문법을 준수하여 만들어진 AST(Abstract Syntax Tree)를 참조한다. 즉, AST를 통해 소스에 
+접근할 수 있는 것이다. </P>
+<P>클래스의 Member변수와 Method의 Local변수의 이름이 중복되는 것을 방지하는 것이 좋다.<BR>이를 검사하기위해 자바 클래스를 
+사용한 Rule을 만들어 보기로 한다. </P></DIV>
+<H4><A id=abstractrule을_상속받는다 name=abstractrule을_상속받는다>AbstractRule을 
+상속받는다.</A></H4>
+<DIV class=level4><PRE class="code :java"><SPAN class=kw1>public</SPAN> <SPAN class=kw1>class</SPAN> DuplicateMemberLocalVariableNameRule <SPAN class=kw1>extends</SPAN> AbstractRule <SPAN class=br0>{</SPAN>
+<SPAN class=br0>}</SPAN></PRE></DIV>
+<H4><A id=visit_method를_override하여_check_logic을_작성한다 
+name=visit_method를_override하여_check_logic을_작성한다>visit() Method를 Override하여 Check 
+Logic을 작성한다.</A></H4>
+<DIV class=level4><PRE class="code :java"><SPAN class=kw1>public</SPAN> <SPAN class=kw1>class</SPAN> DuplicateMemberLocalVariableNameRule <SPAN class=kw1>extends</SPAN> AbstractRule <SPAN class=br0>{</SPAN>
+    <SPAN class=kw1>private</SPAN> <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Ahashset+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>HashSet</SPAN></A> mVarName <SPAN class=sy0>=</SPAN> <SPAN class=kw1>new</SPAN> <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Ahashset+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>HashSet</SPAN></A><SPAN class=br0>(</SPAN><SPAN class=br0>)</SPAN>;
+&nbsp;
+    <SPAN class=co1>//클래스의 변수명을 가져온다.</SPAN>
+    <SPAN class=kw1>public</SPAN> <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aobject+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>Object</SPAN></A> visit<SPAN class=br0>(</SPAN>ASTFieldDeclaration node, <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aobject+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>Object</SPAN></A> data<SPAN class=br0>)</SPAN><SPAN class=br0>{</SPAN>
+        ASTVariableDeclarator childNodeName <SPAN class=sy0>=</SPAN> <SPAN class=br0>(</SPAN>ASTVariableDeclarator<SPAN class=br0>)</SPAN>node.<SPAN class=me1>jjtGetChild</SPAN><SPAN class=br0>(</SPAN><SPAN class=nu0>1</SPAN><SPAN class=br0>)</SPAN>;
+        ASTVariableDeclaratorId childNodeId <SPAN class=sy0>=</SPAN> <SPAN class=br0>(</SPAN>ASTVariableDeclaratorId<SPAN class=br0>)</SPAN>childNodeName.<SPAN class=me1>jjtGetChild</SPAN><SPAN class=br0>(</SPAN>0<SPAN class=br0>)</SPAN>;
+        <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>String</SPAN></A> varName <SPAN class=sy0>=</SPAN> childNodeId.<SPAN class=me1>getImage</SPAN><SPAN class=br0>(</SPAN><SPAN class=br0>)</SPAN>;
+        mVarName.<SPAN class=me1>add</SPAN><SPAN class=br0>(</SPAN>varName<SPAN class=br0>)</SPAN>;
+&nbsp;
+        <SPAN class=kw1>return</SPAN> data;
+    <SPAN class=br0>}</SPAN>
+&nbsp;
+    <SPAN class=co1>//메소드의 변수명과 같으면 addViolation을 호출하여 Rule에 위배되었음을 알려준다.</SPAN>
+    <SPAN class=co1>//getVarName()은 AbstractRule에서 제공하는 메소드이다.</SPAN>
+    <SPAN class=kw1>public</SPAN> <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aobject+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>Object</SPAN></A> visit<SPAN class=br0>(</SPAN>ASTLocalVariableDeclaration node, <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aobject+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>Object</SPAN></A> data<SPAN class=br0>)</SPAN><SPAN class=br0>{</SPAN>
+        <SPAN class=kw1>final</SPAN> <A href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><SPAN class=kw3>String</SPAN></A> varName <SPAN class=sy0>=</SPAN> getVarName<SPAN class=br0>(</SPAN>node<SPAN class=br0>)</SPAN>;
+        <SPAN class=kw1>if</SPAN><SPAN class=br0>(</SPAN>mVarName.<SPAN class=me1>contains</SPAN><SPAN class=br0>(</SPAN>varname<SPAN class=br0>)</SPAN><SPAN class=br0>)</SPAN><SPAN class=br0>{</SPAN>
+            addViolation<SPAN class=br0>(</SPAN>data, node<SPAN class=br0>)</SPAN>;
+        <SPAN class=br0>}</SPAN>
+&nbsp;
+        <SPAN class=kw1>return</SPAN> data;
+    <SPAN class=br0>}</SPAN>
+<SPAN class=br0>}</SPAN></PRE>
+<P>visit() 메소드는 소스에 해당하는 AST Node가 존재하면 호출된다.(Visit Pattern적용)<BR></P>
+<P><EM>public Object visit(ASTFieldDeclaration node, Object data)</EM> 메소드는 클래스의 
+Member변수를 의미하는 ASTNode인 ASTFieldDeclaration이 선언되어있으므로 소스상에서 Member변수의 갯수만큼 호출될 
+것이다.<BR></P>
+<P><EM>public Object visit(ASTLocalVariableDeclaration node, Object data)</EM> 
+메소드는 메소드의 Local변수를 의미하는 ASTNode인 ASTLocalVariableDeclaration이 선언되어있으므로 소스상에서 
+메소드의 Local변수가 파싱될 때 호출될 것이다.<BR></P>
+<P>visit()메소드내에서 해당 규칙에 위배되는 코드가 존재하면 그때 <EM>addViolation()</EM>메소드를 호출하면 된다. 
+</P>
+<P>* AST에 대한 상세한 사용법은 API를 참고하면 된다. </P></DIV>
+<H3><A id=xpath를_사용한_rule작성 name=xpath를_사용한_rule작성>XPath를 사용한 Rule작성</A></H3>
+<DIV class=level3>
+<P>PMD에는 XPath 규칙을 쓸 수 있도록 “Rule Designer”라는 툴이 있는데, PMD를 독립적으로 설치한 경우 bin/ 
+디렉토리에 있다.<BR>Eclipse에서 “Rule Designer”를 실행하기 위해서는 Window → Preferences → PMD → 
+Rule Designer를 선택하여 “Rule Designer”를 실행할 수 있다. </P>
+<P>XPath 규칙을 작성하기 위해서는 다음과 같이 한다.<BR></P>
+<OL>
+  <LI class=level1>
+  <DIV class=li>좌측 상단의 <ACRONYM title="Java Development Kit">JDK</ACRONYM> 
+  Actions에 샘플 자바 코드를 쓰고 우측 상단의 XPath Query [Go]를 클릭한다.<BR></DIV></LI>
+  <LI class=level1>
+  <DIV class=li>좌측 하단에 AST와 Data Flow Analysis가 작성된다.<BR></DIV></LI>
+  <LI class=level1>
+  <DIV class=li>찾고 있는 violation에 맞는 XPath 식을 작성한다.<BR></DIV></LI></OL>
+<P><A class=media title=egovframework:dev:imp:ins:ruledesigner.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:ruledesigner.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/ruledesigner.jpg"></A> <BR>XPath의 좀 더 
+자세한 설명은 다음을 참고하면 된다.<BR></P>
+<UL>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern 
+  title=http://www.w3schools.com/xpath/default.asp 
+  href="http://www.w3schools.com/xpath/default.asp" 
+  rel=nofollow>http://www.w3schools.com/xpath/default.asp</A></DIV></LI></UL></DIV>
+<H3><A id=생성한_rule_등록 name=생성한_rule_등록>생성한 Rule 등록</A></H3>
+<DIV class=level3>
+<P>자바 클래스 또는 XPath로 작성된 Rule은 RuleSet이라는 XML파일을 통해 등록, 수정, 삭제할 수 있다. </P>
+<P>다음은 생성한 Rule을 RuleSet에 등록하는 방법을 설명한다. </P></DIV>
+<H4><A id=자바_클래스로_작성한_rule등록 name=자바_클래스로_작성한_rule등록>자바 클래스로 작성한 Rule등록</A></H4>
+<DIV class=level4>
+<P>RuleSet XML파일에 등록하고자 하는 Rule을 &lt;ruleset&gt; 엘리먼트의 하위로 &lt;rule&gt;엘리먼트를 통해 
+등록하면 된다.<BR>다음은 표준 Rule중 AvoidReassigningParameters를 RuleSet에 등록하는 방법이다. </P><PRE class="code :xml"><SPAN class=sc3><SPAN class=re1>&lt;ruleset</SPAN> <SPAN class=re0>name</SPAN>=<SPAN class=st0>"eGovFrameworkRuleSet"</SPAN><SPAN class=re2>&gt;</SPAN></SPAN>
+    <SPAN class=sc3><SPAN class=re1>&lt;rule</SPAN> <SPAN class=re0>name</SPAN>=<SPAN class=st0>"AvoidReassigningParameters"</SPAN> <SPAN class=re0>message</SPAN>=<SPAN class=st0>"''{0}'' 처럼 파라미터 값을 직접 변경하지 말것"</SPAN> </SPAN>
+<SPAN class=sc3>          <SPAN class=re0>class</SPAN>=<SPAN class=st0>"net.sourceforge.pmd.rules.AvoidReassigningParameters"</SPAN><SPAN class=re2>&gt;</SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;description<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>Reassigning values to parameters is a questionable practice.  Use a temporary local variable instead.<SPAN class=sc3><SPAN class=re1>&lt;/description<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;example<SPAN class=re2>&gt;</SPAN></SPAN></SPAN><SPAN class=sc2>&lt;![CDATA[</SPAN>
+<SPAN class=sc2>                   public class Foo {</SPAN>
+<SPAN class=sc2>                       private void foo(String bar) {</SPAN>
+<SPAN class=sc2>                           bar = "something else";</SPAN>
+<SPAN class=sc2>                       }</SPAN>
+<SPAN class=sc2>                   }]]</SPAN>
+<SPAN class=sc2>        &lt;/example&gt;</SPAN>
+<SPAN class=sc2>        &lt;priority&gt;2&lt;/priority&gt;</SPAN>
+<SPAN class=sc2>    &lt;/rule&gt;</SPAN>
+<SPAN class=sc2>&lt;/ruleset&gt;</SPAN></PRE>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 centeralign">구분 </TH>
+    <TH class="col1 centeralign">항목 </TH>
+    <TH class="col2 centeralign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">name </TD>
+    <TD class=col2>Rule의 이름 </TD></TR>
+  <TR class=row2>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">message </TD>
+    <TD class=col2>소스가 해당 Rule에 위배되었을 경우, 표시되는 메세지 </TD></TR>
+  <TR class=row3>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">class </TD>
+    <TD class=col2>Rule 자바 클래스의 Full Name </TD></TR>
+  <TR class=row4>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class=col1>description </TD>
+    <TD class=col2>Rule에 대한 설명 </TD></TR>
+  <TR class=row5>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class="col1 leftalign">example </TD>
+    <TD class=col2>Rule에 위배되었을 경우에 함께 표시해주는 위배샘플소스 </TD></TR>
+  <TR class=row6>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class="col1 leftalign">priority </TD>
+    <TD class=col2>Rule의 우선순위</TD></TR></TBODY></TABLE></DIV>
+<H4><A id=xpath로_작성한_rule등록 name=xpath로_작성한_rule등록>XPath로 작성한 Rule등록</A></H4>
+<DIV class=level4>
+<P>RuleSet XML파일에 등록하고자 하는 Rule을 &lt;ruleset&gt; 엘리먼트의 하위로 &lt;rule&gt;엘리먼트를 통해 
+등록하면 된다.<BR>다음은 표준 Rule중 AvoidThrowingRawExceptionTypes를 RuleSet에 등록하는 방법이다. 
+</P><PRE class="code :xml"><SPAN class=sc3><SPAN class=re1>&lt;ruleset</SPAN> <SPAN class=re0>name</SPAN>=<SPAN class=st0>"eGovFrameworkRuleSet"</SPAN><SPAN class=re2>&gt;</SPAN></SPAN>
+    <SPAN class=sc3><SPAN class=re1>&lt;rule</SPAN> <SPAN class=re0>name</SPAN>=<SPAN class=st0>"AvoidThrowingRawExceptionTypes"</SPAN> <SPAN class=re0>message</SPAN>=<SPAN class=st0>"가공되지 않은 Exception을 throw하는 것은 비추천"</SPAN></SPAN>
+<SPAN class=sc3>          <SPAN class=re0>class</SPAN>=<SPAN class=st0>"net.sourceforge.pmd.rules.XPathRule"</SPAN><SPAN class=re2>&gt;</SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;description<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>Avoid throwing certain exception types.  Rather than throw a raw RuntimeException, 
+                     Throwable, Exception, or Error, use a subclassed exception or error instead.
+        <SPAN class=sc3><SPAN class=re1>&lt;/description<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;example<SPAN class=re2>&gt;</SPAN></SPAN></SPAN><SPAN class=sc2>&lt;![CDATA[</SPAN>
+<SPAN class=sc2>                    public class Foo {</SPAN>
+<SPAN class=sc2>                        public void bar() throws Exception {</SPAN>
+<SPAN class=sc2>                            throw new Exception();</SPAN>
+<SPAN class=sc2>                        }</SPAN>
+<SPAN class=sc2>                    }]]&gt;</SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;/example<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;priority<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>2<SPAN class=sc3><SPAN class=re1>&lt;/priority<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;properties<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+            <SPAN class=sc3><SPAN class=re1>&lt;property</SPAN> <SPAN class=re0>name</SPAN>=<SPAN class=st0>"xpath"</SPAN><SPAN class=re2>&gt;</SPAN></SPAN>
+                <SPAN class=sc3><SPAN class=re1>&lt;value<SPAN class=re2>&gt;</SPAN></SPAN></SPAN><SPAN class=sc2>&lt;![CDATA[</SPAN>
+<SPAN class=sc2>                         //AllocationExpression</SPAN>
+<SPAN class=sc2>                          /ClassOrInterfaceType[</SPAN>
+<SPAN class=sc2>                          @Image='Throwable' or</SPAN>
+<SPAN class=sc2>                          @Image='Exception' or</SPAN>
+<SPAN class=sc2>                          @Image='Error' or</SPAN>
+<SPAN class=sc2>                          @Image='RuntimeException']]]&gt;</SPAN>
+                <SPAN class=sc3><SPAN class=re1>&lt;/value<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+            <SPAN class=sc3><SPAN class=re1>&lt;/property<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+        <SPAN class=sc3><SPAN class=re1>&lt;/properties<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+    <SPAN class=sc3><SPAN class=re1>&lt;/rule<SPAN class=re2>&gt;</SPAN></SPAN></SPAN>
+<SPAN class=sc3><SPAN class=re1>&lt;/ruleset<SPAN class=re2>&gt;</SPAN></SPAN></SPAN></PRE>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 centeralign">구분 </TH>
+    <TH class="col1 centeralign">항목 </TH>
+    <TH class="col2 centeralign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">name </TD>
+    <TD class=col2>Rule의 이름 </TD></TR>
+  <TR class=row2>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">message </TD>
+    <TD class=col2>소스가 해당 Rule에 위배되었을 경우, 표시되는 메세지 </TD></TR>
+  <TR class=row3>
+    <TD class=col0>Attribute </TD>
+    <TD class="col1 leftalign">class </TD>
+    <TD class=col2>XPath로 Rule을 만들 때에는 net.sourceforge.pmd.rules.XPathRule로 
+      선언해야한다</TD></TR>
+  <TR class=row4>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class=col1>description </TD>
+    <TD class=col2>Rule에 대한 설명 </TD></TR>
+  <TR class=row5>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class="col1 leftalign">example </TD>
+    <TD class=col2>Rule에 위배되었을 경우에 함께 표시해주는 위배샘플소스 </TD></TR>
+  <TR class=row6>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class="col1 leftalign">priority </TD>
+    <TD class=col2>Rule의 우선순위</TD></TR>
+  <TR class=row7>
+    <TD class="col0 leftalign">Element </TD>
+    <TD class="col1 leftalign">properties </TD>
+    <TD class=col2>XPath를 등록한다. 등록하기 위해서는 하위노드로 &lt;property name=“xpath”&gt;를 
+      선언한 후 &lt;value&gt;에 XPath를 선언하면 된다</TD></TR></TBODY></TABLE></DIV>
+<H2><A id=업데이트 name=업데이트>업데이트</A></H2>
+<DIV class=level2>
+<P>사용자는 eclipse 개발환경에서 Inspection Tool인 PMD 를 업데이트할 수 있다. 업데이트하는 방법은 다음과 같다. 
+</P>
+<OL>
+  <LI class=level1>
+  <DIV class=li>사용자의 eclipse 개발환경에서 메뉴 &gt; Help &gt; Software Updates 를 클릭한다. 
+  (&lt;그림 2&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Software Updates and Add-ons” 다이얼로그 창에서 Available Software 탭을 
+  클릭한다. </DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Available Software” 목록 우측에 있는 “Add Site…” 버튼을 클릭한다. (&lt;그림 
+  3&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Add Site” 다이얼로그 창에 있는 Location 입력 항목에 “<A class=urlextern 
+  title=http://pmd.sourceforge.net/eclipse 
+  href="http://pmd.sourceforge.net/eclipse" 
+  rel=nofollow>http://pmd.sourceforge.net/eclipse</A>” 를 입력하고 “OK” 버튼을 클릭한다. 
+  (&lt;그림 4&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Available Software” 목록에 입력한 Url 이 추가된다. </DIV></LI>
+  <LI class=level1>
+  <DIV class=li>입력한 URL의 트리에서 “PMD for Eclipse 3”을 선택한다.</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>우측에 있는 “Install…” 버튼을 클릭한다. (&lt;그림 5&gt; 참조)</DIV></LI></OL>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-1.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-1.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/sqlmapconfig2-1.jpg"></A> <BR>&lt;그림 
+2&gt; Software Updates </P>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-2.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-2.jpg"><IMG 
+class=media alt="" 
+src="egovframeworkdevimpinspection_files/sqlmapconfig2-2.jpg"></A> <BR>&lt;그림 
+3&gt; “Available Software” 목록 </P>
+<P><A class=media title=egovframework:dev:imp:ins:addsite.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:addsite.jpg"><IMG 
+class=media alt="" src="egovframeworkdevimpinspection_files/addsite.jpg"></A> 
+<BR>&lt;그림 4&gt; Location 입력 </P>
+<P><A class=media title=egovframework:dev:imp:ins:install.jpg 
+href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev%3Aimp%3Ainspection&amp;media=egovframework:dev:imp:ins:install.jpg"><IMG 
+class=media alt="" src="egovframeworkdevimpinspection_files/install.jpg"></A> 
+<BR>&lt;그림 5&gt; Install </P></DIV>
+<H2><A id=참고자료 name=참고자료>참고자료</A></H2>
+<DIV class=level2>
+<UL>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern title=http://pmd.sourceforge.net 
+  href="http://pmd.sourceforge.net/" 
+  rel=nofollow>http://pmd.sourceforge.net/</A></DIV></LI>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern 
+  title=http://www.w3schools.com/xpath/default.asp 
+  href="http://www.w3schools.com/xpath/default.asp" 
+  rel=nofollow>http://www.w3schools.com/xpath/default.asp</A></DIV></LI>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern 
+  title=http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html 
+  href="http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html" 
+  rel=nofollow>http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html</A></DIV></LI></UL></DIV><!-- wikipage stop --></DIV>
+<DIV class=clearer></DIV>
+<DIV class=stylefoot>
+<DIV class=meta>
+<DIV class=user></DIV>
+<DIV class=doc>egovframework/dev/imp/inspection.txt · Last modified: 2009/10/08 
+19:07 by dev </DIV></DIV>
+<DIV id=bar__bottom class=bar>
+<DIV id=bar__bottomleft class=bar-left>
+<FORM class="button btn_source" method=post action=/wiki/doku.php>
+<DIV class=no><INPUT value=edit type=hidden name=do><INPUT type=hidden 
+name=rev><INPUT value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=v class=button title="Show pagesource [V]" value="Show pagesource" type=submit></DIV></FORM>
+<FORM class="button btn_revs" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=revisions type=hidden name=do><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=o class=button title="Old revisions [O]" value="Old revisions" type=submit></DIV></FORM></DIV>
+<DIV id=bar__bottomright class=bar-right>
+<FORM class="button btn_login" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=login type=hidden name=do><INPUT 
+value=f28f187bf05828a7c94b478aedab728a type=hidden name=sectok><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT class=button title=Login value=Login type=submit></DIV></FORM>
+<FORM class="button btn_index" method=get action=/wiki/doku.php>
+<DIV class=no><INPUT value=index type=hidden name=do><INPUT 
+value=egovframework:dev:imp:inspection type=hidden name=id><INPUT accessKey=x class=button title="Index [X]" value=Index type=submit></DIV></FORM><A 
+class=nolink 
+href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev:imp:inspection#dokuwiki__top"><INPUT class=button title="Back to top" onclick="window.scrollTo(0, 0)" value="Back to top" type=button></A>&nbsp; 
+</DIV>
+<DIV class=clearer></DIV></DIV></DIV>
+<DIV class=license>Except where otherwise noted, content on this wiki is 
+licensed under the following license:<A class=urlextern 
+href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel=license>CC 
+Attribution-Noncommercial-Share Alike 3.0 Unported</A></DIV></DIV>
+<DIV class=footerinc><A title="Recent changes RSS feed" 
+href="http://www.egovframe.org/wiki/feed.php"><IMG alt="Recent changes RSS feed" 
+src="egovframeworkdevimpinspection_files/button-rss.png" width=80 height=15></A> 
+<A title="CC Attribution-Noncommercial-Share Alike 3.0 Unported" 
+href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel=license><IMG alt="" 
+src="egovframeworkdevimpinspection_files/cc-by-nc-sa.png" width=80 
+height=15></A> <A title=Donate href="http://www.dokuwiki.org/donate"><IMG 
+alt=Donate src="egovframeworkdevimpinspection_files/button-donate.gif" width=80 
+height=15></A> <A title="Powered by PHP" href="http://www.php.net/"><IMG 
+alt="Powered by PHP" src="egovframeworkdevimpinspection_files/button-php.gif" 
+width=80 height=15></A> <A title="Valid XHTML 1.0" 
+href="http://validator.w3.org/check/referer"><IMG alt="Valid XHTML 1.0" 
+src="egovframeworkdevimpinspection_files/button-xhtml.png" width=80 
+height=15></A> <A title="Valid CSS" 
+href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"><IMG 
+alt="Valid CSS" src="egovframeworkdevimpinspection_files/button-css.png" 
+width=80 height=15></A> <A title="Driven by DokuWiki" 
+href="http://dokuwiki.org/"><IMG alt="Driven by DokuWiki" 
+src="egovframeworkdevimpinspection_files/button-dw.png" width=80 height=15></A> 
+</DIV>
+<DIV class=no><IMG alt="" src="egovframeworkdevimpinspection_files/indexer.gif" 
+width=1 height=1></DIV></BODY></HTML>

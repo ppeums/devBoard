@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Generated-from: 1206010774000;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: Abator for iBATIS
+Bundle-SymbolicName: org.apache.ibatis.abator.core
+Bundle-Version: 1.1.0
+Bundle-ClassPath: abator.jar
+Bundle-Vendor: ibatis.apache.org
+Bundle-Localization: plugin
+Export-Package: org.apache.ibatis.abator.ant,
+ org.apache.ibatis.abator.api,
+ org.apache.ibatis.abator.api.dom,
+ org.apache.ibatis.abator.api.dom.java,
+ org.apache.ibatis.abator.api.dom.xml,
+ org.apache.ibatis.abator.config,
+ org.apache.ibatis.abator.config.xml,
+ org.apache.ibatis.abator.exception,
+ org.apache.ibatis.abator.internal,
+ org.apache.ibatis.abator.internal.db,
+ org.apache.ibatis.abator.internal.java.dao,
+ org.apache.ibatis.abator.internal.java.model,
+ org.apache.ibatis.abator.internal.rules,
+ org.apache.ibatis.abator.internal.sqlmap,
+ org.apache.ibatis.abator.internal.types,
+ org.apache.ibatis.abator.internal.util,
+ org.apache.ibatis.abator.internal.util.messages

@@ -1,0 +1,51 @@
+package kr.or.nhic.framework.context;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.joran.JoranConfigurator;
+import org.apache.log4j.spi.Configurator;
+
+/**
+ * @ProjectName nhic
+ * @FileName InitListener.java
+ * @Substance TODO
+ * @author yotta
+ * @since 2011. 8. 1.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 8. 1.     yotta     TODO
+ *
+ * </pre>
+ */
+public class InitListener implements ServletContextListener {
+
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet.ServletContextEvent)
+	 */
+	public void contextInitialized(ServletContextEvent event) {
+		String configFile = null;
+		
+		configFile = System.getProperty("nhic.home") + "/config/log4j.xml";
+		
+		JoranConfigurator configurator = new JoranConfigurator();
+		
+		configurator.doConfigure(configFile, LogManager.getLoggerRepository());
+	}
+
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.ServletContextEvent)
+	 */
+	public void contextDestroyed(ServletContextEvent event) {
+		// Do nothing
+	}
+	
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   - Copyright (c) 2002.  All Rights Reserved.
+   - Candlelight Software
+   - Steven P. Punte
+   - steve@candlelightsoftware.com
+   - http://www.candlelightsoftware.com
+   -
+   - Use for development and experimentation freely without warranty.
+   - For use in production environment contact author.
+   -
+   -
+   - This software is provided 'As Is' and any expressed or implied warranties,
+   - including, but not limited to, the implied warranties of merchantability and
+   - fitness for a particular  purpose are  disclaimed.  In no event shall
+   - CandlelightSoftware be liable for any direct, indirect, incidental, special,
+   - exemplary, or consequential damages (including, but not limited to, procurement
+   - of substitute goods or services; loss of use, data, or profits; or business
+   - interruption) however caused and on any  theory of liability, whether in contract,
+   - strict liability, or tort (including  negligence or  otherwise) arising in
+   - any way out of the  use of this software, even if advised of the possibility of such
+   - damage.
+   -->
+
+<!-- DESCRIPTION
+   - This is the Cocoon web application "site map" file.  It controls which
+   - components are assembled in various Cocoon "pipelines" to be responsible
+   - from processing specifice relative URI's request.
+   -
+   - In particluar:
+   -         URI                    Purpose
+   -  http://localhost							List available reports
+   -  http://localhost/*.rpt        Request parameters from the user
+   -  http://localhost/*.xls				Render MS Excel Report 
+   -->
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+
+	<!-- Components are items used in pipelines -->
+	<map:components>
+
+		<!-- GENERATORS -->
+  	<map:generators default="file">
+
+    	<map:generator
+    			name="file"
+    			label="content,data"
+    			logger="sitemap.generator.file"
+    			src="org.apache.cocoon.generation.FileGenerator"/>
+
+    	<map:generator
+    			name="directory"
+    			label="gen-dir-lbl"
+    			src="org.apache.cocoon.generation.DirectoryGenerator"/>
+
+			<map:generator
+					name="request"
+					label="data"
+					logger="sitemap.generator.request"
+					pool-grow="2"
+					pool-max="16"
+					pool-min="2"
+					src="org.apache.cocoon.generation.RequestGenerator"/>
+
+		</map:generators>
+
+
+		<!-- TRANSFORMERS -->
+  	<map:transformers default="xslt">
+
+    	<map:transformer
+   		 		name="xslt"
+   		 		label="tran-xslt-lbl"
+  	  		logger="sitemap.transformer.xslt"
+    			src="org.apache.cocoon.transformation.TraxTransformer">
+      	<use-request-parameters>false</use-request-parameters>
+      	<use-browser-capabilities-db>false</use-browser-capabilities-db>
+      	<use-deli>false</use-deli>
+    	</map:transformer>
+
+			<map:transformer
+					name="sql"
+					label="tran-sql-lbl"
+					logger="sitemap.transformer.sql"
+					src="org.apache.cocoon.transformation.SQLTransformer"/>
+					
+    	<map:transformer
+    			name="xinclude"
+    			label="tran-xinclude-lbl"
+    			logger="sitemap.transformer.xinclude"
+    			pool-grow="2"
+    			pool-max="16"
+    			pool-min="2"
+    			src="org.apache.cocoon.transformation.XIncludeTransformer"/>
+
+			<map:transformer
+					name="sql"
+					label="tran-sql-lbl"
+					logger="sitemap.transformer.sql"
+					src="org.apache.cocoon.transformation.SQLTransformer"/>
+
+			<map:transformer
+					label="tran-log-lbl"
+					logger="sitemap.transformer.log"
+					name="log"
+					src="org.apache.cocoon.transformation.LogTransformer"/>
+
+		</map:transformers>
+
+
+		<!-- SERIALIZERS -->
+		<map:serializers default="html">
+
+    	<map:serializer
+    			name="xml"
+    			logger="sitemap.serializer.xml"
+    			mime-type="text/xml"
+    			src="org.apache.cocoon.serialization.XMLSerializer"/>
+
+			<map:serializer
+					name="html"
+					logger="sitemap.serializer.html"
+					mime-type="text/html"
+					pool-grow="4"
+					pool-max="32"
+					pool-min="4"
+					src="org.apache.cocoon.serialization.HTMLSerializer">
+				<buffer-size>1024</buffer-size>
+			</map:serializer>
+
+			<map:serializer
+					name="excel-serializer"
+					logger="sitemap.serializer.excel"
+					src="com.clsw.cocoon.ReportSerializer"/>
+
+		</map:serializers>
+
+
+		<!-- MATCHERS -->
+		<map:matchers default="wildcard">
+
+    	<map:matcher
+    			logger="sitemap.matcher.wildcard"
+    			name="wildcard"
+    			src="org.apache.cocoon.matching.WildcardURIMatcher"/>
+
+		</map:matchers>
+
+	</map:components>
+
+
+	<map:views>
+
+		<map:view from-label="gen-request-lbl" name="gen-request-view">
+			<map:serialize type="xml"/>
+		</map:view>
+
+		<map:view from-label="tran-xslt-lbl" name="tran-xslt-view">
+			<map:serialize type="xml"/>
+		</map:view>
+
+		<map:view from-label="tran-xmlhttp-lbl" name="tran-xmlhttp-view">
+			<map:serialize type="xml"/>
+		</map:view>
+
+	</map:views>
+
+
+	<map:pipelines>
+
+		<map:pipeline>
+
+			<!-- Show Existing Reports -->
+    	<map:match pattern="">
+
+    		<!-- Obtain list of reports (i.e. convention is directories) -->
+    		<map:generate type="directory" src="reports"/>
+
+				<!-- Create CInclude syntax for list of individual report titles -->
+    		<map:transform type="xslt" src="list-logic.xsl"/>
+
+				<!-- Pass through most stuff, but execute statements inserted above -->
+				<map:transform type="xinclude"/>
+
+				<!-- Format into HTML -->
+    		<map:transform type="xslt" src="list-logic.xsl"/>
+
+ 				<!-- Convert into character stream -->
+    		<map:serialize type="html"/>
+
+    	</map:match>
+
+
+    	<!-- Produce HTML form type entry to obtain parameter values -->
+    	<map:match pattern="report/*.rpt">
+
+    		<!-- Retrive Report Format File -->
+    		<map:generate src="reports/{1}/scheme.xml"/>
+
+				<!-- Create HTML for parameter inputs -->
+				<map:transform type="xslt" src="param-logic.xsl">
+					<map:parameter name="label" value="{1}"/>
+				</map:transform>
+
+ 				<!-- Convert into character stream -->
+    		<map:serialize type="html"/>
+
+    	</map:match>
+
+
+    	<!-- Render Report -->
+    	<map:match pattern="report/*.xls">
+
+				<!-- Obtain HTTP Request Parameters -->
+				<!-- These are parameters needed for the report -->
+				<map:generate type="request"/>
+
+				<!-- Create XInclude statements to obtain parameter definition and logic from scheme file -->
+				<map:transform type="xslt" src="render-logic.xsl">
+					<map:parameter name="label" value="{1}"/>
+				</map:transform>
+
+				<!-- Pass through most stuff, but execute XInclude statements inserted above  --> 
+				<map:transform type="xinclude"/>
+
+				<!-- Combine HTTP request paramters into Query statements as specified by scheme file -->
+				<map:transform type="xslt" src="render-logic.xsl"/>
+
+				<!-- Execute Primary SQL Query(s) -->
+				<map:transform type="sql">
+					<map:parameter name="dburl" value="jdbc:mysql://localhost/test" />
+				</map:transform>
+
+				<!-- Create Report Serializer Primitives base on data  -->
+				<!-- After this step, concept of seperate data-blocks no longer exists -->
+				<map:transform type="xslt" src="render-logic2.xsl">
+					<map:parameter name="label" value="{1}"/>
+					<map:parameter name="absolute-path" value="C:/opt/jakarta-tomcat-4.1.12/webapps/cocoon-reports"/> 
+				</map:transform>
+				
+ 				<!-- Seriallize into format suitable for Excel -->
+				<map:serialize type="excel-serializer"/>
+
+ 				<!-- DEBUG: Convert into character stream
+    		<map:serialize type="xml"/> -->
+
+    	</map:match>
+
+		</map:pipeline>
+
+	</map:pipelines>
+
+</map:sitemap>

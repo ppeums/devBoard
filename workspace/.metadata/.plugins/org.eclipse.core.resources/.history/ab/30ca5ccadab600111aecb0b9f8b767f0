@@ -1,0 +1,17 @@
+jdbc.default.url=jdbc:oracle:thin:@16.118.3.158:1621:DIPISPIS
+jdbc.default.username=dipisapp
+jdbc.default.password=roqkfpisapp02
+jdbc.default.initialSize=2
+jdbc.default.maxActive=-1
+jdbc.default.maxIdle=-1
+jdbc.default.minIdle=2
+jdbc.default.timeBetweenEvictionRunsMillis=1800000
+
+jdbc.pip.url=jdbc:oracle:thin:@16.118.3.158:1623:DIPISPIP
+jdbc.pip.username=portlapp
+jdbc.pip.password=roqkfpipapp06
+jdbc.pip.initialSize=2
+jdbc.pip.maxActive=-1
+jdbc.pip.maxIdle=-1
+jdbc.pip.minIdle=2
+jdbc.pip.timeBetweenEvictionRunsMillis=1800000

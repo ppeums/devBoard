@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>egovframework:dev2:imp:editor:dbio_editor</title>
+<meta name="generator" content="DokuWiki Release 2009-02-14">
+<meta name="robots" content="noindex,nofollow">
+<meta name="date" content="2011-10-14T16:45:42+0900">
+<meta name="keywords" content="egovframework,dev2,imp,editor,dbio_editor">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.egovframe.org/wiki/lib/exe/opensearch.php" title="eGovFrame">
+<link rel="start" href="http://www.egovframe.org/wiki/">
+<link rel="contents" href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev2:imp:editor:dbio_editor&amp;do=index" title="Index">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.egovframe.org/wiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.egovframe.org/wiki/feed.php?mode=list&amp;ns=egovframework:dev2:imp:editor">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.egovframe.org/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev2:imp:editor:dbio_editor">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.egovframe.org/wiki/doku.php?do=export_raw&amp;id=egovframework:dev2:imp:editor:dbio_editor">
+<link rel="stylesheet" media="all" type="text/css" href="doku.php_files/css_002.css">
+<link rel="stylesheet" media="screen" type="text/css" href="doku.php_files/css.css">
+<link rel="stylesheet" media="print" type="text/css" href="doku.php_files/css_003.css">
+<script type="text/javascript" charset="utf-8" src="doku.php_files/js.php"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#dbio_editor" class="toc">DBIO Editor</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#%EA%B0%9C%EC%9A%94" class="toc">개요</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" class="toc">환경설정</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="dbio_editor" id="dbio_editor">DBIO Editor</a></h1>
+<div class="level1">
+
+</div>
+<!-- SECTION "DBIO Editor" [1-27] -->
+<h2><a name="개요" id="개요">개요</a></h2>
+<div class="level2">
+
+<p>
+ 
+DBIO는 DataBase Input/Output의 약자로 개발환경에서 제공하는 데이터베이스 접근에 관한 표준적인 방법이다. 
+데이터베이스를 쉽고 일관된 API로 접근할수 있도록 해주며 업무컴포넌트 개발시에 데이터베이스 벤더에 관계없이 코딩할수 있도록 해준다.
+eGovFrame 의 DBIO Editor 는 DBIO 를 쉽게 가공할 수 있도록 유용한 기능을 제공한다. 
+</p>
+
+<p>
+주요기능은 다음과 같다. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><acronym title="Structured Query Language">SQL</acronym> MAP Config File 편집기</strong> : DB 접속정보와 <acronym title="Structured Query Language">SQL</acronym> MAP File 목록 정보를 편집하는 기능이다.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Structured Query Language">SQL</acronym> MAP File 편집기</strong> : Query정보, Parameter 와 Result 의 처리방법을 편집하는 기능이다.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Data Source Explorer</strong> : Database Source 를 설정하고, Data Source 내의 하위 객체를 조회할 수 있는 기능이다.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DBIO Search View</strong> : <acronym title="Structured Query Language">SQL</acronym> Map 파일 내에 있는 Query Id를 검색하는 기능이다.</div>
+</li>
+</ul>
+
+</div>
+<!-- SECTION "개요" [28-977] -->
+<h2><a name="환경설정" id="환경설정">환경설정</a></h2>
+<div class="level2">
+
+<p>
+
+사용자가 DBIO Editor를 사용하기 위해서는 사용자의 eclipse 개발환경에 eGovFrame DBIO 를 업데이트해야 한다. 업데이트하는 방법은 다음과 같다. 
+
+</p>
+<ol>
+<li class="level1"><div class="li"> 사용자의 eclipse 개발환경에서 메뉴 &gt; Help &gt; Software Updates 를 클릭한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor&amp;media=egovframework:dev2:imp:editor:sqlmapconfig2-1.png" class="media" title="egovframework:dev2:imp:editor:sqlmapconfig2-1.png"><img src="doku.php_files/fetch.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> “Available Software” 목록 우측에 있는 “Add…” 버튼을 클릭한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor&amp;media=egovframework:dev2:imp:editor:sqlmapconfig2-2.png" class="media" title="egovframework:dev2:imp:editor:sqlmapconfig2-2.png"><img src="doku.php_files/fetch_004.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> “Add Repository” 다이얼로그 창에 있는 Location 입력 항목에 “<a href="http://www.egovframe.go.kr/update" class="urlextern" title="http://www.egovframe.go.kr/update" rel="nofollow">http://www.egovframe.go.kr/update</a>” 를 입력하고 “OK” 버튼을 클릭한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor&amp;media=egovframework:dev2:imp:editor:addrepository.png" class="media" title="egovframework:dev2:imp:editor:addrepository.png"><img src="doku.php_files/fetch_002.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> “Available Software” 목록에 입력한 Url 이 추가된다.  <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> 입력된 항목 또는 하위 트리의 모든 항목을 선택한다.  <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> “Available Software” 목록 우측에 있는 “Finish” 버튼을 클릭한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor&amp;media=egovframework:dev2:imp:editor:update_site.png" class="media" title="egovframework:dev2:imp:editor:update_site.png"><img src="doku.php_files/fetch_003.png" class="media" alt=""></a> <br>
+ <br>
+</div>
+</li>
+</ol>
+
+</div>
+<!-- SECTION "환경설정" [978-] --></div>
+
+
+</body></html>

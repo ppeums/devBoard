@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eGovFramework TestCase Templates
+Bundle-SymbolicName: egovframework.dev.tst.tctemplates;singleton:=true
+Bundle-Version: 1.0.0.v20090417003
+Bundle-ClassPath: egovframework.dev.tst.tctemplates.jar
+Bundle-Activator: egovframework.dev.tst.tctemplates.Activator
+Bundle-Vendor: MOPAS
+Export-Package: egovframework.dev.tst.tctemplates
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

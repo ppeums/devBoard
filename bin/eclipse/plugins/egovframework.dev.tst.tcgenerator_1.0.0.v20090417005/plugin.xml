@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.eclipse.ui.views">
+		<category name="eGovFramework" id="egovframework.dev.imp.ui.views">
+		</category>
+		<view name="TestCase Generator" icon="icons/tcgenerator.gif"
+			category="egovframework.dev.imp.ui.views"
+			class="egovframework.dev.tst.tcgenerator.views.TestCaseTemplateListView"
+			id="egovframework.dev.tst.tcgenerator.views.TestCaseTemplateListView">
+		</view>
+	</extension>
+	<extension point="org.eclipse.help.toc">
+		<toc file="toc.xml" primary="false" />
+	</extension>
+	<extension point="org.eclipse.help.contexts">
+		<contexts file="contexts.xml" />
+	</extension>
+</plugin>

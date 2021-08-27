@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://www.egovframe.go.kr/update' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1339669930812'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='4284157654'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='37'>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.commngt' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.commngt_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.amateras.db' version='1.0.8'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/net.java.amateras.db_1.0.8.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.rte.rdt' version='1.0.0.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.rte.rdt_1.0.0.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.tst.tctemplates' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.tst.tctemplates_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.codegen.templates' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.codegen.templates_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.emma.feature' version='1.5.3.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.emma.feature_1.5.3.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.mountainminds.eclemma.ui' version='1.5.3'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/com.mountainminds.eclemma.ui_1.5.3.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.dbio.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.dbio.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.core.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.core.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.mountainminds.eclemma.doc' version='1.5.3'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/com.mountainminds.eclemma.doc_1.5.3.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.mountainminds.eclemma.core' version='1.5.3'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/com.mountainminds.eclemma.core_1.5.3.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.help.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.help.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.mdev.imp.commngt' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.mdev.imp.commngt_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.mdev.imp.confmngt' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.mdev.imp.confmngt_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.ide' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.ide_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.verification.kw3c' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.verification.kw3c_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.verification.kw3c.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.verification.kw3c.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.tst.tcgenerator' version='1.0.0.v20090417005'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.tst.tcgenerator_1.0.0.v20090417005.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.core' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.core_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.mdev.imp.ide.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.mdev.imp.ide.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.help' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.help_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.codegen.template' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.codegen.template_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.amateras.umleditor' version='1.3.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/net.java.amateras.umleditor_1.3.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.amateras.xstream' version='1.3.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/net.java.amateras.xstream_1.3.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.dbio' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.dbio_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.codegen.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.codegen.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.tst.tcgenerator' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.tst.tcgenerator_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.tst.tctemplates' version='1.0.0.v20090417003'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.tst.tctemplates_1.0.0.v20090417003.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.codegen.template.templates' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.codegen.template.templates_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.mdev.imp.ide' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.mdev.imp.ide_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.ide.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.ide.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.amateras.umleditor.java' version='1.3.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/net.java.amateras.umleditor.java_1.3.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.confmngt' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.confmngt_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.amateras.uml.feature' version='1.3.2.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.amateras.uml.feature_1.3.2.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.dev.imp.amateras.erd.feature' version='1.0.8.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.dev.imp.amateras.erd.feature_1.0.8.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='egovframework.rte.rdt.feature' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/features/egovframework.rte.rdt.feature_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='egovframework.dev.imp.codegen.model' version='2.0.1.201111250803'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.egovframe.go.kr/update/plugins/egovframework.dev.imp.codegen.model_2.0.1.201111250803.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

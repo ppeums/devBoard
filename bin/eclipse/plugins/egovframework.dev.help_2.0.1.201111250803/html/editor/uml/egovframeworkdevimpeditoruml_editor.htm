@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0101)http://192.168.100.16/wiki/doku.php -->
+<HTML dir=ltr lang=en xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>egovframework:dev:imp:editor:uml_editor</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+<META name=robots content=noindex,nofollow>
+<META name=date content=2009-05-13T16:14:50+0900>
+<META name=keywords content=egovframework,dev,imp,editor,uml_editor><LINK 
+title=eGovFrame rel=search type=application/opensearchdescription+xml 
+href="/wiki/lib/exe/opensearch.php"><LINK rel=start href="/wiki/"><LINK 
+title=Index rel=contents 
+href="/wiki/doku.php?id=egovframework:dev:imp:editor:uml_editor&amp;do=index"><LINK 
+title="Recent Changes" rel=alternate type=application/rss+xml 
+href="/wiki/feed.php"><LINK title="Current Namespace" rel=alternate 
+type=application/rss+xml 
+href="/wiki/feed.php?mode=list&amp;ns=egovframework:dev:imp:editor"><LINK 
+title="Plain HTML" rel=alternate type=text/html 
+href="/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev:imp:editor:uml_editor"><LINK 
+title="Wiki Markup" rel=alternate type=text/plain 
+href="/wiki/doku.php?do=export_raw&amp;id=egovframework:dev:imp:editor:uml_editor"><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpeditoruml_editor_files/css.php" media=all><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpeditoruml_editor_files/css(1).php" media=screen><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpeditoruml_editor_files/css(2).php" media=print>
+<SCRIPT type=text/javascript charset=utf-8 
+src="egovframeworkdevimpeditoruml_editor_files/js.php"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="dokuwiki export"><!-- TOC START -->
+<DIV class=toc>
+<DIV id=toc__header class="tocheader toctoggle">Table of Contents</DIV>
+<DIV id=toc__inside>
+<UL class=toc>
+  <LI class=level1>
+  <DIV class=li><SPAN class=li><A class=toc 
+  href="#uml_editor">UML 
+  Editor</A></SPAN></DIV>
+  <UL class=toc>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#개요">개요</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#환경설정">환경설정</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#참고자료_optional">참고자료(Optional)</A></SPAN></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END -->
+<H1><A id=uml_editor name=uml_editor>UML Editor</A></H1>
+<DIV class=level1></DIV><!-- SECTION "UML Editor" [1-24] -->
+<H2><A id=개요 name=개요>개요</A></H2>
+<DIV class=level2>
+<P>UML 작성도구로써 Activity Diagram, Class Diagram, Sequence Diagram, UseCase Diagram 
+작성이 가능하고 Class Diagram으로부터 정의된 클래스의 Java Code를 생성할 수 있는 기능을 제공한다. </P>
+<P>타 UML 도구간의 호환은 Java Source Code를 통한 Class Diagram 소통이 전부 이지만(Source Code 
+Import), 확장팩을 이용하여 더 많은 호환성을 가질 수 있다. </P></DIV><!-- SECTION "개요" [25-455] -->
+<H2><A id=환경설정 name=환경설정>환경설정</A></H2>
+<DIV class=level2>
+<UL>
+  <LI class=level1>
+  <DIV class=li>기본설치</DIV>
+  <UL>
+    <LI class=level2>
+    <DIV class=li>AmaterasUML_xxx.zip 파일을 다운로드 한다. [ <A class=urlextern 
+    title=http://amateras.sourceforge.jp/cgi-bin/fswiki_en/wiki.cgi?page=AmaterasUML 
+    href="http://amateras.sourceforge.jp/cgi-bin/fswiki_en/wiki.cgi?page=AmaterasUML" 
+    rel=nofollow>다운로드</A> ]</DIV></LI>
+    <LI class=level2>
+    <DIV class=li>압축을 풀어 ECLIPSE_HOME/plugins 폴더에 복사한다.</DIV></LI></UL></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>확장 : <ACRONYM title="Extensible Markup Language">XML</ACRONYM> 
+  import/export 기능을 제공하는 콤포넌트 이다. 이것은 EMF(Eclipse Modeling Framework) 와 UML2 설치가 
+  선행되어야 한다.</DIV>
+  <UL>
+    <LI class=level2>
+    <DIV class=li>먼저 EMF2.2.0 [ <A class=urlextern 
+    title=http://www.eclipse.org/modeling/emf/downloads/?project=emf 
+    href="http://www.eclipse.org/modeling/emf/downloads/?project=emf" 
+    rel=nofollow>다운로드</A> ]와 UML2 2.0.0 [ <A class=urlextern 
+    title=http://www.eclipse.org/modeling/mdt/downloads/?project=uml2-uml 
+    href="http://www.eclipse.org/modeling/mdt/downloads/?project=uml2-uml" 
+    rel=nofollow>다운로드</A> ]를 설치한다.</DIV></LI>
+    <LI class=level2>
+    <DIV class=li>AmaterasUMLExtensionxxx.zip 파일을 다운로드 한다.</DIV></LI>
+    <LI class=level2>
+    <DIV class=li>압축을 풀고 ECLIPSE_HOME/plugins 폴더에 
+복사한다.</DIV></LI></UL></LI></UL></DIV><!-- SECTION "환경설정" [456-1232] -->
+<H2><A id=참고자료_optional name=참고자료_optional>참고자료(Optional)</A></H2>
+<DIV class=level2>
+<P><A class=urlextern 
+title=http://amateras.sourceforge.jp/cgi-bin/fswiki_en/wiki.cgi?page=AmaterasUML 
+href="http://amateras.sourceforge.jp/cgi-bin/fswiki_en/wiki.cgi?page=AmaterasUML" 
+rel=nofollow>AmaterasUML</A> 
+</P></DIV><!-- SECTION "참고자료(Optional)" [1233-] --></DIV></BODY></HTML>

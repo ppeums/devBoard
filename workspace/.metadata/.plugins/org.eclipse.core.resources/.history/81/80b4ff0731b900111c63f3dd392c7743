@@ -1,0 +1,48 @@
+package kr.or.nhic.framework.config;
+
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.XMLConfiguration;
+import org.apache.log4j.Logger;
+
+public class ExXMLConfiguration extends XMLConfiguration {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3523381408933521341L;
+	
+	private static final Logger logger = Logger.getLogger(ExXMLConfiguration.class);
+	
+	private static ExXMLConfiguration xmlConfiguration = null;
+	
+	private ExXMLConfiguration() {
+		
+	}
+	
+	public static ExXMLConfiguration getInstance() {
+    	if(xmlConfiguration==null) {
+    		xmlConfiguration = new ExXMLConfiguration();
+    		
+			String ps = getPathSeparator(System.getProperty("nhic.home"));
+	        String configFilePath = System.getProperty("nhic.home") + ps + "config" + ps + "nhic.xml";
+	        
+	        try {
+	        	logger.debug("Load XML Configuration");
+	        	logger.debug(configFilePath);
+	        	
+	        	xmlConfiguration.load(configFilePath);
+	        } catch(ConfigurationException ce) {
+	        	ce.printStackTrace();
+	        }
+    	}
+    	
+    	return xmlConfiguration;
+    }
+    
+    private static String getPathSeparator(String path) {
+		if(path.indexOf("/")!=-1) {
+			return "/";
+		} else {
+			return "\\";
+		}
+	}
+}

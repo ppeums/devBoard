@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-Name: eGoveFrame RTE Distribution Tool
+Bundle-ClassPath: lib/jdom.jar,lib/junit-4.7.jar,.
+Bundle-Activator: egovframework.rte.rdt.plugin.Activator
+Import-Package: org.eclipse.debug.core,org.eclipse.debug.ui,org.eclips
+ e.jdt.internal.core,org.eclipse.ui.externaltools.internal.model,org.e
+ clipse.ui.forms,org.eclipse.ui.forms.widgets,org.eclipse.ui.part,org.
+ eclipse.wst.sse.core.internal.provisional,org.eclipse.wst.xml.core.in
+ ternal.provisional.document
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: egovframework.rte.rdt;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.ui.editors
+Bundle-Version: 1.0.0.201111250803
+
+

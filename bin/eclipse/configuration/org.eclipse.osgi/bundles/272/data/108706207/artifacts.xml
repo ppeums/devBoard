@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\devBoard\bin\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1369440655440'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='6'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.edit' version='3.1.0.v201005031530'>
+      <properties size='2'>
+        <property name='artifact.size' value='878603'/>
+        <property name='download.size' value='878603'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/org.eclipse.uml2.uml.edit_3.1.0.v201005031530.jar'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\org.eclipse.uml2.uml.edit_3.1.0.v201005031530.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.common' version='1.5.0.v201005031530'>
+      <properties size='2'>
+        <property name='artifact.size' value='120935'/>
+        <property name='download.size' value='120935'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/org.eclipse.uml2.common_1.5.0.v201005031530.jar'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\org.eclipse.uml2.common_1.5.0.v201005031530.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.resources' version='3.1.1.v201008191505'>
+      <properties size='2'>
+        <property name='artifact.size' value='222881'/>
+        <property name='download.size' value='222881'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.essiembre.eclipse.i18n.resourcebundle' version='0.7.7'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/com.essiembre.eclipse.i18n.resourcebundle_0.7.7/'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\com.essiembre.eclipse.i18n.resourcebundle_0.7.7'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.common.edit' version='1.5.0.v201005031530'>
+      <properties size='2'>
+        <property name='artifact.size' value='28529'/>
+        <property name='download.size' value='28529'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/org.eclipse.uml2.common.edit_1.5.0.v201005031530.jar'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\org.eclipse.uml2.common.edit_1.5.0.v201005031530.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml' version='3.1.2.v201010261927'>
+      <properties size='2'>
+        <property name='artifact.size' value='3059860'/>
+        <property name='download.size' value='3059860'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/devBoard/bin/eclipse/plugins/org.eclipse.uml2.uml_3.1.2.v201010261927.jar'/>
+        <property name='file.name' value='C:\devBoard\bin\eclipse\plugins\org.eclipse.uml2.uml_3.1.2.v201010261927.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

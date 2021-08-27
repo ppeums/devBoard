@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="egovframework.verification.kw3c.feature"
+      label="eGovFrame Mobile KW3C"
+      version="2.0.1.201111250803">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="egovframework.verification.kw3c"
+         download-size="0"
+         install-size="0"
+         version="2.0.1.201111250803"/>
+
+</feature>

@@ -1,0 +1,207 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
+<%@ taglib prefix="nhic" uri="/WEB-INF/tld/nhic.tld" %>
+<% 
+/**
+ * @Class Name : Samples.jsp
+ * @Description : 샘플 화면
+ * @Modification Information
+ * @
+ * @  수정일      수정자            수정내용
+ * @ -------        --------    ---------------------------
+ * @ 2011.02.20   구본규          최초 생성
+ *
+ *  @author 구본규
+ *  @since 2011.02.20
+ *  @version 1.0 
+ */
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>기타 샘플</title>
+<jsp:include page="/WEB-INF/jsp/common/header.jsp" flush="true" />
+<link type="text/css" rel="stylesheet" href="<c:url value='/static/css/egovframework/sample.css'/>" />
+<script type="text/javascript" src="<c:url value="/common/validator.do" />"></script>
+<validator:javascript formName="etcSampleVO2" staticJavascript="false" xhtml="true" cdata="false"/>
+<style type="text/css">
+/* <![CDATA[ */
+.sampleDiv {
+    margin-bottom:20px;
+}
+/* ]]> */
+</style>
+<script type="text/javascript">
+    function fn_onLoad() {
+    }
+
+    function fn_level1Onchange() {
+        // 하위 셀렉트 박스 데이터 삭제
+        $("#level2").empty();
+        $("#level3").empty();
+
+        // URL, Parameter, Callback
+        gfn_ajaxSubmit(
+            "/sample/retrieveEtcSampleAjaxData1.do",
+            {"level1":$("#level1").val()},
+            fn_level1OnchangeCallback
+        );
+    }
+
+    function fn_level1OnchangeCallback(xml) {
+        gfn_setSelectBox("level2", xml, "name,value");
+    }
+
+    function fn_level2Onchange() {
+        // URL, Parameter, Callback
+        gfn_ajaxSubmit(
+            "/sample/retrieveEtcSampleAjaxData2.do",
+            {"level2":$("#level2").val()},
+            fn_level2OnchangeCallback
+        );
+    }
+
+    function fn_level2OnchangeCallback(xml) {
+        gfn_setSelectBox("level3", xml, "name,value");
+    }
+
+    function fn_insertMask() {
+        var frm = $("#etcSampleVO2");
+
+        // TODO 주석처리하여 Server Validation 확인해야 함
+        if (!validateEtcSampleVO2(frm[0])) {
+            return;
+        }
+        
+        frm.attr("action", "<c:url value='/sample/insertMask.do'/>");
+        frm.submit();
+    }
+    
+    function fn_insertFiles() {
+        var frm = $("#etcSampleVO3");
+
+        frm.attr("action", "<c:url value='/sample/insertFiles.do'/>");
+        frm.submit();
+    }
+</script>
+</head>
+<body id="LblockBody" onload="fn_onLoad()" style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
+<div id="content_pop">
+	<div class="sampleDiv">
+	    <p>■ AJAX</p>
+	    <form:form commandName="etcSampleVO1" method="post">
+	        <form:select path="level1" items="${list}" onchange="fn_level1Onchange();"/>
+	        <form:select path="level2" onchange="fn_level2Onchange();"/>
+	        <form:select path="level3"/>
+	    </form:form>
+	</div>
+	<div class="sampleDiv">
+	    <p>■ Format Tag</p>
+	    &lt;nhic:format pattern="####-##-##" value="..." /&gt;를 적용하면 "<c:out value="${etcSampleVO2.dateParam}" />"가
+	    "<nhic:format pattern="####-##-##" value="${etcSampleVO2.dateParam}" />"와 같이 출력됨<br/>
+	</div>
+	<div class="sampleDiv">
+	    <p>■ Mask & Validation</p>
+	    <form:form commandName="etcSampleVO2">
+	    <div id="table">
+        <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#D3E2EC" bordercolordark="#FFFFFF" style="BORDER-TOP:#C2D0DB 2px solid; BORDER-LEFT:#ffffff 1px solid; BORDER-RIGHT:#ffffff 1px solid; BORDER-BOTTOM:#C2D0DB 1px solid; border-collapse: collapse;">
+            <colgroup>
+                <col width="250">
+                <col width="">
+            </colgroup>
+            <tr>
+                <td class="tbtd_caption">숫자 [{number:true}]</td>
+                <td class="tbtd_content"><form:input path="numberParam" cssClass="txt [{number:true}]" /><form:errors path="numberParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">날짜 [{date:true}]</td>
+                <td class="tbtd_content"><form:input path="dateParam" cssClass="txt [{date:true}]" /><form:errors path="dateParam" /><nhic:button type="calendar" targetId="dateParam"/></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">연월 [{yearMonth:true}]</td>
+                <td class="tbtd_content"><form:input path="yearMonthParam" cssClass="txt [{yearMonth:true}]" /><form:errors path="yearMonthParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">시간 [{time:true}]</td>
+                <td class="tbtd_content"><form:input path="timeParam" cssClass="txt [{time:true}]" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">주민등록번호 [{ssn:true}]</td>
+                <td class="tbtd_content"><form:input path="ssnParam" cssClass="txt [{ssn:true}]" /><form:errors path="ssnParam" /></td>
+            </tr>
+	        <tr>
+                <td class="tbtd_caption">사업자등록번호 [{brn:true}]</td>
+                <td class="tbtd_content"><form:input path="brnParam" cssClass="txt [{brn:true}]" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">우편번호 [{zip:true}]</td>
+                <td class="tbtd_content"><form:input path="zipParam" cssClass="txt [{zip:true}]" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">사용자마스크 [{mask:'###-##'}]</td>
+                <td class="tbtd_content"><form:input path="maskParam" cssClass="txt [{mask:'###-##'}]" /><form:errors path="maskParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">최소길이</td>
+                <td class="tbtd_content"><form:input path="minlengthParam" cssClass="txt" /><form:errors path="minlengthParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">최대길이</td>
+                <td class="tbtd_content"><form:input path="maxlengthParam" cssClass="txt" /><form:errors path="maxlengthParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">최소byte</td>
+                <td class="tbtd_content"><form:input path="minbyteParam" cssClass="txt" /><form:errors path="minbyteParam" /></td>
+            </tr>
+            <tr>
+                <td class="tbtd_caption">최대byte</td>
+                <td class="tbtd_content"><form:input path="maxbyteParam" cssClass="txt" /><form:errors path="maxbyteParam" /></td>
+            </tr>
+	    </table>
+	    </div>
+        <div id="sysbtn">
+            <ul>
+                <li><nhic:button type="save" onclick="fn_insertMask()" /></li>
+            </ul>
+        </div>
+	    </form:form>
+	</div>
+	<div class="sampleDiv">
+	    <p>■ 파일 다운로드</p>
+	    <div>
+            <p><a href="#" onclick="gfn_downloadFile('오픈캡쳐.exe', 'sample/오픈캡쳐[20110430113041100].exe');">오픈 캡쳐</a></p>
+        </div>
+        <div id="sysbtn">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+	</div>
+	<div class="sampleDiv">
+	    <p>■ 파일 업로드</p>
+	    <form:form commandName="etcSampleVO3" method="post" enctype="multipart/form-data">
+            <div>
+		        <input type="file" name="file[0]" /><br/>
+		        <input type="file" name="file[1]" />
+	        </div>
+	        <div id="sysbtn">
+	            <ul>
+	                <li><nhic:button type="save" onclick="fn_insertFiles()" /></li>
+	            </ul>
+	        </div>
+	    </form:form>
+	</div>
+	<div>
+	    <p>■ 공통코드</p>
+	</div>
+	<div>
+        <a href="/">Home</a>
+	</div>
+</div>
+</body>
+</html>

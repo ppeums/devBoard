@@ -1,0 +1,1655 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='update site: http://pmd.sourceforge.net/eclipse' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1317905832156'/>
+    <property name='site.checksum' value='2421418192'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://pmd.sourceforge.net/eclipse' url='http://pmd.sourceforge.net/eclipse' type='0' options='0'/>
+    <repository uri='http://pmd.sourceforge.net/eclipse' url='http://pmd.sourceforge.net/eclipse' type='1' options='0'/>
+  </references>
+  <units size='54'>
+    <unit id='net.sourceforge.pmd.core' version='4.1.0.v200712021445' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,4.1.0.v200712021445)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='4.1.0.v200712021445'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='4.1.0.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.1.0.v200712021445'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 4.1.0.v200712021445&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='3.9.0' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,3.9.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='3.9.0'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='3.9.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.9.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 3.9.0&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='2.3.1.v2' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,2.3.1.v2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='2.3.1.v2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='2.3.1.v2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='2.3.1.v2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 2.3.1.v2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.5.v200810131150'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2008 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD Plug-in'/>
+        <property name='df_LT.feature.provider_name' value='PMD Project'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2008, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.5.v200810131150'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.5.v200810131150'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.5.v200810131150'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='%25license.url' url='%25license.url'>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.2.4.v200804111600)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.2.4.v200804111600&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='http://pmd.sourceforge.net/eclipse/site.xml.pmdForEclipse2' version='1.0.0.451cN9mLh8s7'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='PMD for Eclipse 2'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='http://pmd.sourceforge.net/eclipse/site.xml.pmdForEclipse2' version='1.0.0.451cN9mLh8s7'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[2.3.1.v2,2.3.1.v2]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='2.3.1.v2'>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description.text'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.description.text' value='This feature brings PMD into the Eclipse v2 environment.'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2003 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse 2'/>
+        <property name='df_LT.feature.provider_name' value='PMD Team'/>
+        <property name='df_LT.license.text' value='This program is free software; you can redistribute it and/or modify it under the terms of the Cougaar Open Source License as published by DARPA on the Cougaar Open Source Website (www.cougaar.org).&#xA;THE COUGAAR SOFTWARE AND ANY DERIVATIVE SUPPLIED BY LICENSOR IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING (BUT NOT LIMITED TO) ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND WITHOUT ANY WARRANTIES AS TO NON-INFRINGEMENT. IN NO EVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE OF DATA OR PROFITS, TORTIOUS CONDUCT, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE COUGAAR SOFTWARE.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='2.3.1.v2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='2.3.1.v2'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='2.3.1.v2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='3.2.1' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,3.2.1)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='3.2.1'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='3.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 3.2.1&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.1.7'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.1.7'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.1.7'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.1.7'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.3.v200712021445'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.3.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='3.2.2' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,3.2.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='3.2.2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='3.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 3.2.2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.6.v200903300643' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.6.v200903300643)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2009 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD Plug-in'/>
+        <property name='df_LT.feature.provider_name' value='PMD Project'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2009, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.6.v200903300643'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.help' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.plugin' range='[3.2.6.v200903300643,3.2.6.v200903300643]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.6.v200903300643,3.2.6.v200903300643]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='%25license.url' url='%25license.url'>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.1.6'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.1.6'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.1.6'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.1.6'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='3.2.3.v200712041040' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,3.2.3.v200712041040)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='3.2.3.v200712041040'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='3.2.3.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.3.v200712041040'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 3.2.3.v200712041040&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.1.6' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.1.6)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.1.6'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.1.6,3.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[1.0.0,1.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[1.0.1,1.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[3.7.0,3.7.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.1.6,3.1.6]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.1.6' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.1.6)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.1.6'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.1.6'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.1.6'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.1.6&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.plugin' version='3.2.5.v200810131150' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.plugin' range='[0.0.0,3.2.5.v200810131150)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.plugin' version='3.2.5.v200810131150'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse.plugin' version='3.2.5.v200810131150'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse.plugin' version='3.2.5.v200810131150'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse.plugin&#xA;Bundle-Version: 3.2.5.v200810131150&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='4.0.1' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,4.0.1)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='4.0.1'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='4.0.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.0.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 4.0.1&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='2.3.1.v2' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,2.3.1.v2)' severity='0'/>
+      <properties size='10'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description.text'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.description.text' value='This feature brings PMD into the Eclipse v2 environment.'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2003 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse 2'/>
+        <property name='df_LT.feature.provider_name' value='PMD Team'/>
+        <property name='df_LT.license.text' value='This program is free software; you can redistribute it and/or modify it under the terms of the Cougaar Open Source License as published by DARPA on the Cougaar Open Source Website (www.cougaar.org).&#xA;THE COUGAAR SOFTWARE AND ANY DERIVATIVE SUPPLIED BY LICENSOR IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING (BUT NOT LIMITED TO) ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND WITHOUT ANY WARRANTIES AS TO NON-INFRINGEMENT. IN NO EVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE OF DATA OR PROFITS, TORTIOUS CONDUCT, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE COUGAAR SOFTWARE.'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='2.3.1.v2'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='8'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.xerces' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.swt' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[2.3.1.v2,2.3.1.v2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[3.6.2.v2,3.6.2.v2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[2.3.1.v2,2.3.1.v2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.1.7' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.1.7)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.1.7'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.1.7'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.1.7'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.1.7&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.3.v200712041040' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.3.v200712041040)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.3.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.2.3.v200712041040,3.2.3.v200712041040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[3.2.3.v200712041040,3.2.3.v200712041040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[3.2.3.v200712041040,3.2.3.v200712041040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[4.1.0.v200712041040,4.1.0.v200712041040]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.3.v200712041040,3.2.3.v200712041040]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.2.3.v200712041040)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.2.3.v200712041040&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.2' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.2)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.2.2,3.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[3.2.2,3.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[3.2.2,3.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[4.0.1,4.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.2,3.2.2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.1.7' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.1.7)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.1.7'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.1.7,3.1.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[1.0.2,1.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[1.0.3,1.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[3.8.0,3.8.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.1.7,3.1.7]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='3.2.3.v200712021445' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,3.2.3.v200712021445)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='3.2.3.v200712021445'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='3.2.3.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.3.v200712021445'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 3.2.3.v200712021445&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='4.1.0.v200712041040' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,4.1.0.v200712041040)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='4.1.0.v200712041040'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='4.1.0.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.1.0.v200712041040'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 4.1.0.v200712041040&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='1.0.1' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,1.0.1)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='1.0.1'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='1.0.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='1.0.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 1.0.1&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.4.v200804111600'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.4.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='3.7.0' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,3.7.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='3.7.0'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='3.7.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.7.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 3.7.0&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='1.0.3' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,1.0.3)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='1.0.3'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='1.0.3'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='1.0.3'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 1.0.3&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.3.v200712021445' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.3.v200712021445)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.3.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.2.3.v200712021445,3.2.3.v200712021445]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[3.2.3.v200712021445,3.2.3.v200712021445]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[3.2.3.v200712021445,3.2.3.v200712021445]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[4.1.0.v200712021445,4.1.0.v200712021445]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.3.v200712021445,3.2.3.v200712021445]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.2.2' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.2.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.2.2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.2.2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='3.6.2.v2' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,3.6.2.v2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='3.6.2.v2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='3.6.2.v2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.6.2.v2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 3.6.2.v2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='3.2.2' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,3.2.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='3.2.2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='3.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 3.2.2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.5.v200810131150' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.5.v200810131150)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2008 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD Plug-in'/>
+        <property name='df_LT.feature.provider_name' value='PMD Project'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2008, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.5.v200810131150'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='8'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.plugin' range='[3.2.5.v200810131150,3.2.5.v200810131150]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.5.v200810131150,3.2.5.v200810131150]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='%25license.url' url='%25license.url'>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='3.2.1' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,3.2.1)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='3.2.1'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='3.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 3.2.1&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.1' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.1)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.2.1,3.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[3.2.1,3.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[3.2.1,3.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[3.9.0,3.9.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.1,3.2.1]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='4.2.1.v200804111600' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,4.2.1.v200804111600)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='4.2.1.v200804111600'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='4.2.1.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.2.1.v200804111600'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 4.2.1.v200804111600&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.core' version='3.8.0' singleton='false'>
+      <update id='net.sourceforge.pmd.core' range='[0.0.0,3.8.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' version='3.8.0'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.core' version='3.8.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.8.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.core&#xA;Bundle-Version: 3.8.0&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.2'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.2'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.2.1' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.2.1)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.2.1'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.2.1&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='1.0.2' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,1.0.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='1.0.2'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='1.0.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='1.0.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 1.0.2&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.3.v200712041040'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.3.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.plugin' version='3.2.6.v200903300643' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.plugin' range='[0.0.0,3.2.6.v200903300643)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.plugin' version='3.2.6.v200903300643'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse.plugin' version='3.2.6.v200903300643'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse.plugin' version='3.2.6.v200903300643'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse.plugin&#xA;Bundle-Version: 3.2.6.v200903300643&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.1'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.1'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.6.v200903300643'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2009 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD Plug-in'/>
+        <property name='df_LT.feature.provider_name' value='PMD Project'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2009, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' version='3.2.6.v200903300643'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.sourceforge.pmd.eclipse' version='3.2.6.v200903300643'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.6.v200903300643'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='%25license.url' url='%25license.url'>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='3.2.3.v200712021445' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,3.2.3.v200712021445)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='3.2.3.v200712021445'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='3.2.3.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.3.v200712021445'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 3.2.3.v200712021445&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='3.2.4.v200804111600' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,3.2.4.v200804111600)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='3.2.4.v200804111600'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='3.2.4.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.4.v200804111600'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 3.2.4.v200804111600&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='http://pmd.sourceforge.net/eclipse/site.xml.pmdForEclipse3' version='1.0.0.7r7U89cN9mLhE8McIJVOeScQqqY'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='PMD for Eclipse 3'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='http://pmd.sourceforge.net/eclipse/site.xml.pmdForEclipse3' version='1.0.0.7r7U89cN9mLhE8McIJVOeScQqqY'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.6.v200903300643,3.2.6.v200903300643]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.1,3.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.2,3.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.1.7,3.1.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.4.v200804111600,3.2.4.v200804111600]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.1.6,3.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.3.v200712021445,3.2.3.v200712021445]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.5.v200810131150,3.2.5.v200810131150]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' range='[3.2.3.v200712041040,3.2.3.v200712041040]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse' range='[0.0.0,3.2.3.v200712021445)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.eclipse&#xA;Bundle-Version: 3.2.3.v200712021445&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='3.2.3.v200712041040' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,3.2.3.v200712041040)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='3.2.3.v200712041040'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='3.2.3.v200712041040'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.3.v200712041040'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 3.2.3.v200712041040&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.eclipse.feature.group' version='3.2.4.v200804111600' singleton='false'>
+      <update id='net.sourceforge.pmd.eclipse.feature.group' range='[0.0.0,3.2.4.v200804111600)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%feature.label'/>
+        <property name='org.eclipse.equinox.p2.description' value='PMD For Eclipse'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='%description.url'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%feature.provider_name'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.copyright.text' value='Copyright 1997-2006 PMD for Eclipse Development Team &#xA;under sponsorship of the Defense Advanced Research Projects Agency (DARPA).'/>
+        <property name='df_LT.feature.label' value='PMD for Eclipse'/>
+        <property name='df_LT.feature.provider_name' value='PMD Development Team'/>
+        <property name='df_LT.license.text' value='Copyright (c) 1997-2006, PMD for Eclipse Development Team &#xA;All rights reserved. &#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are &#xA;met: &#xA;&#xA;* Redistributions of source code must retain the above copyright &#xA;notice, this list of conditions and the following disclaimer. &#xA;* Redistributions in binary form must reproduce the above copyright &#xA;notice, this list of conditions and the following disclaimer in the &#xA;documentation and/or other materials provided with the distribution. &#xA;* The end-user documentation included with the redistribution, if &#xA;any, must include the following acknowledgement: &#xA;&quot;This product includes software developed in part by support from &#xA;the Defense Advanced Research Project Agency (DARPA)&quot; &#xA;* Neither the name of &quot;PMD for Eclipse Development Team&quot; nor the names of its &#xA;contributors may be used to endorse or promote products derived from &#xA;this software without specific prior written permission. &#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS &#xA;IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED &#xA;TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER &#xA;OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, &#xA;EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, &#xA;PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING &#xA;NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS &#xA;SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.group' version='3.2.4.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse' range='[3.2.4.v200804111600,3.2.4.v200804111600]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' range='[3.2.4.v200804111600,3.2.4.v200804111600]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' range='[3.2.4.v200804111600,3.2.4.v200804111600]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.core' range='[4.2.1.v200804111600,4.2.1.v200804111600]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.eclipse.feature.jar' range='[3.2.4.v200804111600,3.2.4.v200804111600]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          %license.text
+        </license>
+      </licenses>
+      <copyright>
+        %copyright.text
+      </copyright>
+    </unit>
+    <unit id='net.sourceforge.pmd.ui' version='1.0.0' singleton='false'>
+      <update id='net.sourceforge.pmd.ui' range='[0.0.0,1.0.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.ui' version='1.0.0'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.ui' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='1.0.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.ui&#xA;Bundle-Version: 1.0.0&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.sourceforge.pmd.runtime' version='3.2.4.v200804111600' singleton='false'>
+      <update id='net.sourceforge.pmd.runtime' range='[0.0.0,3.2.4.v200804111600)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.sourceforge.pmd.runtime' version='3.2.4.v200804111600'/>
+        <provided namespace='osgi.bundle' name='net.sourceforge.pmd.runtime' version='3.2.4.v200804111600'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.4.v200804111600'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.sourceforge.pmd.runtime&#xA;Bundle-Version: 3.2.4.v200804111600&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

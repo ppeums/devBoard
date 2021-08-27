@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:nhic_www_temp" serverId="Oracle WebLogic Server 11gR1 (10.3.5) at [nhic_www_domain]"/>
+  <module moduleId="org.eclipse.jst.jee.server:nhic_www" serverId="Oracle WebLogic Server 11gR1 (10.3.5) at [nhic_www_domain]"/>
+</modules>

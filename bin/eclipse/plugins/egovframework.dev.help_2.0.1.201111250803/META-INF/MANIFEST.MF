@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Name: eGovFramework Help Plug-in
+Bundle-Vendor: MOPAS
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: egovframework.dev.help; singleton:=true
+Bundle-Version: 2.0.1.201111250803
+
+

@@ -1,0 +1,191 @@
+package kr.or.nhic.framework.vo;
+
+import java.io.Serializable;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.math.BigDecimal;
+
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+public class CommonVO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9108091398702124769L;
+
+	// 현재페이지
+	private int pageIndex = 1;
+
+	// 페이지갯수
+	private int pageUnit = 10;
+
+	// 페이지사이즈
+	private int pageSize = 10;
+
+	// firstIndex
+	private int firstIndex = 1;
+
+	// lastIndex
+	private int lastIndex = 1;
+
+	// recordCountPerPage
+	private int recordCountPerPage = 10;
+
+	// rowNo
+	private int rowNo = 0;
+	
+	// 메세지
+	private String message = "";
+	
+	// Row Status
+	private String status = "";
+	
+	/**
+     * toString 메소드를 대치한다.
+     */
+    public String toString() {
+       	return ToStringBuilder.reflectionToString(this);
+    }
+    
+    public String toXml() {
+    	StringBuffer xmlBuffer = new StringBuffer();
+    	
+    	Method[] methodArray = this.getClass().getMethods();
+    	
+    	String fieldName;
+    	Object dataObj;
+    	String data = null;
+    	Method method;
+    	@SuppressWarnings("rawtypes")
+		Class type;
+    	
+		for (int i = 0; i < methodArray.length; i++) {
+			try {
+				method = methodArray[i];
+				type = method.getReturnType();
+				
+				if( method.getModifiers()==Modifier.PUBLIC && method.getName().startsWith("get") ) {
+					fieldName = this.getFieldName(method.getName());
+					xmlBuffer.append("<").append(fieldName).append(">");
+					
+					// Number
+					if( type.isPrimitive() || type==Short.class || type==Integer.class || type==Long.class ||
+						type==Float.class || type==Double.class || type == BigDecimal.class) {
+						dataObj = method.invoke(this, new Object[]{});
+						
+						if(dataObj!=null) {
+							data = dataObj.toString();
+						}
+						
+						if(data==null) {
+							xmlBuffer.append("");
+						} else if("0.0".equals(data)) {
+							xmlBuffer.append("0");
+						} else {
+							// *.0
+							if(data.endsWith(".0")) {
+								xmlBuffer.append(data.substring(0, data.indexOf("."))); // .0 제거
+							} else {
+								xmlBuffer.append(data);
+							}
+						}
+					}
+					// String
+					else if( type == String.class ) {
+						data = (String)method.invoke(this, new Object[]{});
+						
+						if(data==null) data = "";
+						
+						xmlBuffer.append("<![CDATA[").append(data).append("]]>");
+					}
+					
+					xmlBuffer.append("</").append(fieldName).append(">");
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+    	return xmlBuffer.toString();
+    }
+    
+    private String getFieldName(String methodName) {
+    	// get 제거, 첫문자 소문자 처리
+    	String fieldName = methodName.substring(3,4).toLowerCase() + methodName.substring(4);
+    	
+    	return fieldName;
+    }
+
+	public int getPageIndex() {
+		return pageIndex;
+	}
+
+	public void setPageIndex(int pageIndex) {
+		this.pageIndex = pageIndex;
+	}
+
+	public int getPageUnit() {
+		return pageUnit;
+	}
+
+	public void setPageUnit(int pageUnit) {
+		this.pageUnit = pageUnit;
+	}
+
+	public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public int getFirstIndex() {
+		return firstIndex;
+	}
+
+	public void setFirstIndex(int firstIndex) {
+		this.firstIndex = firstIndex;
+	}
+
+	public int getLastIndex() {
+		return lastIndex;
+	}
+
+	public void setLastIndex(int lastIndex) {
+		this.lastIndex = lastIndex;
+	}
+
+	public int getRecordCountPerPage() {
+		return recordCountPerPage;
+	}
+
+	public void setRecordCountPerPage(int recordCountPerPage) {
+		this.recordCountPerPage = recordCountPerPage;
+	}
+
+	public int getRowNo() {
+		return rowNo;
+	}
+
+	public void setRowNo(int rowNo) {
+		this.rowNo = rowNo;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+}

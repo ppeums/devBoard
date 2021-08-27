@@ -1,0 +1,144 @@
+package kr.or.nhic.common.tag;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.TagSupport;
+
+public class TitleTag extends TagSupport {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4654284178377154823L;
+
+	private String type = "";
+	private String text = "";
+	private String path = "";
+	private String subTitleId = "";
+
+	public int doStartTag() throws JspException {
+		JspWriter out = pageContext.getOut();
+		StringBuffer html = new StringBuffer();
+		String menuTitle = pageContext.getRequest().getParameter("menuTitle");
+		String menuPath = pageContext.getRequest().getParameter("menuPath");
+		try {
+			String title = "";
+			
+			if(this.getText()!=null && !"".equals(this.getText())) title = this.getText();
+			
+			// Main Title
+			if("main".equals(this.getType())) {
+				
+				String[] pathArr = ",,".split(",");
+				
+				if(this.getPath()!=null && !"".equals(this.getPath())) {
+					pathArr = this.getPath().split(",");
+				}
+				
+				html.append("<div id='LblockPageHeader'>")
+                    .append("  <div id='LblockPageTitle'>");
+                if(title != null && title.equals("") == false) {
+                    html.append("    <h1>" + title + "</h1>");
+                }
+                else {
+                    html.append("    <h1>" + menuTitle + "</h1>");
+                }
+                html.append("  </div>")
+					.append("  <div id='LblockPageLocation'>")
+					.append("    <ul>");
+                if(pathArr != null && pathArr.length > 0) {
+                    String cssClass = "";
+                    for(int i=0; i<pathArr.length; i++) {
+                        if(i==pathArr.length-1) cssClass="Llast";
+                        
+                        html.append("      <li class='" + cssClass + "'><span>" + pathArr[i] + "</span></li>");
+                    }
+                }
+                else {
+                    html.append("      <li class='Lfirst'><span>" + menuPath + "</span></li>");
+                }
+				
+				html.append("    </ul>")
+					.append("  </div>")
+					.append("</div>");
+			}
+			// Sub Title
+			else {
+				html.append("<div id='" + this.getSubTitleId() + "' class='LblockPageSubtitle'>")
+				    .append("  <h2>" + title + "</h2>")
+				    .append("</div>");
+			}
+			
+			out.print(html.toString());
+		} catch (Exception e) {
+			throw new JspException(e.getMessage());
+		}
+
+		return SKIP_BODY; // no body processing
+	}
+
+	// Releases any resources we may have (or inherit)
+    public void release() {
+    	super.release();
+    	
+    	type = "";
+    	text = "";
+    	path = "";
+    }
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return the text
+	 */
+	public String getText() {
+		return text;
+	}
+
+	/**
+	 * @param text the text to set
+	 */
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	/**
+	 * @return the path
+	 */
+	public String getPath() {
+		return path;
+	}
+
+	/**
+	 * @param path the path to set
+	 */
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	/**
+	 * @return the subTitleId
+	 */
+	public String getSubTitleId() {
+		return subTitleId;
+	}
+
+	/**
+	 * @param subTitleId the subTitleId to set
+	 */
+	public void setSubTitleId(String subTitleId) {
+		this.subTitleId = subTitleId;
+	}
+	
+}

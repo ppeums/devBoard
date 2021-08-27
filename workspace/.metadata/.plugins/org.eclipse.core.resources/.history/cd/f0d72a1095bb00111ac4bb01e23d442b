@@ -1,0 +1,101 @@
+package dipis.common.controller;
+
+import java.io.File;
+import java.io.FileWriter;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import dipis.common.config.ExXMLConfiguration;
+import dipis.common.util.DateUtil;
+import dipis.common.util.FileUtil;
+import dipis.common.util.StringUtil;
+import dipis.common.vo.BankPasswordVO;
+
+@Controller
+public class CommonController {
+	@Resource(name="xmlConfiguration")
+	private ExXMLConfiguration xmlConfiguration;
+	
+	private final Logger logger = Logger.getLogger(this.getClass());
+	
+    /**
+     * validato rule dynamic Javascript
+     */
+    @RequestMapping("/validator.do")
+    public String validate() {
+    	return "common/validator"; // JSP or Tiles definition 처리
+    }
+
+    @RequestMapping(value = "/common/openCalendar.do")
+    public String callNormalCalPopup(ModelMap model) throws Exception {
+    	return "common/CalendarPop"; // JSP or Tiles definition 처리
+    }
+    
+    @RequestMapping(value = "/common/retrieveBankPassword.do")
+    public ModelAndView retrieveBankPassword() throws Exception {
+    	String filePath = xmlConfiguration.getString("cipher.bank-password");
+    	
+    	String bankPassword = FileUtil.getFileContent(filePath);
+    	
+    	BankPasswordVO vo = new BankPasswordVO();
+    	vo.setBankPassword(bankPassword);
+    	
+    	// MyBuilderView 설정
+    	ModelAndView mav = new ModelAndView("myBuilderView");
+    	
+    	// List일 때는 "list", VO일 때는 "vo"
+    	mav.addObject("vo", vo);
+		
+    	return mav;
+    }
+    
+    @RequestMapping(value = "/common/modifyBankPassword.do")
+    public ModelAndView modifyBankPassword(HttpServletRequest request) throws Exception {
+    	String filePath = xmlConfiguration.getString("cipher.bank-password");
+    	
+    	// 기존 파일 백업
+    	File f = new File(filePath);
+    	f.renameTo(new File(filePath + "." + DateUtil.getToday("yyyyMMddHHmmss")));
+    	
+    	FileWriter fw = null;
+    	
+    	try {
+	    	// VO 추출
+	    	BankPasswordVO paramVO = (BankPasswordVO)MyBuilderSupport.getValueObject(request, new BankPasswordVO());
+	    	
+	    	String[] lines = paramVO.getBankPassword().replaceAll("\r", "").split("\n");
+	    	String[] lineParts = null;
+	    	String newLine = "";
+	    	
+	    	fw = new FileWriter(filePath);
+	    	
+	    	for(int i=0; i<lines.length; i++) {
+	    		logger.debug(lines[i]);
+	    		
+	    		if(i!=0) fw.write("\n");
+	    		
+	    		lineParts = lines[i].split("\\^");
+	    		
+	    		newLine = lineParts[0] + "^" + lineParts[1] + "^" + StringUtil.getRandomString(8);
+	    		
+	    		logger.debug(newLine);
+	    		
+	    		fw.write(newLine);
+	    	}
+    	} finally {
+    		if(fw!=null) fw.close();
+    	}
+    	
+    	// MyBuilderView 설정
+    	ModelAndView mav = new ModelAndView("myBuilderView");
+    	
+    	return mav;
+    }
+}

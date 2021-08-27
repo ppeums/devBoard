@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Generated-from: 1317789722000;type=10
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.springframework.ide.eclipse.doc; singleton:=true
+Bundle-Version: 2.3.0.200912170948-RELEASE
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Eclipse-LazyStart: true
+Created-By: 14.1-b02 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.7.0

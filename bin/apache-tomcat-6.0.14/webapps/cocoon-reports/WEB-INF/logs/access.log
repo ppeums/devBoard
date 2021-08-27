@@ -1,0 +1,12 @@
+DEBUG   (2013-03-14) 18:51.22:015   [access] (Unknown-URI) Unknown-thread/CocoonServlet: getRealPath for /: H:\egovframeworkSample\bin\apache-tomcat-6.0.14\webapps\cocoon-reports\
+DEBUG   (2013-03-14) 18:51.22:015   [access] (Unknown-URI) Unknown-thread/CocoonServlet: URL for Root: file:/H:/egovframeworkSample/bin/apache-tomcat-6.0.14/webapps/cocoon-reports/
+DEBUG   (2013-03-14) 18:51.22:015   [access] (Unknown-URI) Unknown-thread/CocoonServlet: work-directory was not set - defaulting to H:\egovframeworkSample\bin\apache-tomcat-6.0.14\work\Catalina\localhost\cocoon-reports\cocoon-files
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: upload-directory was not set - defaulting to H:\egovframeworkSample\bin\apache-tomcat-6.0.14\work\Catalina\localhost\cocoon-reports\cocoon-files\upload-dir
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: cache-directory was not set - defaulting to H:\egovframeworkSample\bin\apache-tomcat-6.0.14\work\Catalina\localhost\cocoon-reports\cocoon-files\cache-dir
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Using configuration file: /WEB-INF/cocoon.xconf
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: show-time was not set - defaulting to false
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: parent-component-manager was not set - defaulting to null.
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: container-encoding was not set - defaulting to ISO-8859-1.
+DEBUG   (2013-03-14) 18:51.22:078   [access] (Unknown-URI) Unknown-thread/CocoonServlet: form-encoding was not set - defaulting to null.
+DEBUG   (2013-03-14) 18:51.22:093   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Trying to load class: org.gjt.mm.mysql.Driver
+INFO    (2013-03-14) 18:51.22:093   [access] (Unknown-URI) Unknown-thread/CocoonServlet: Reloading from: jndi:/localhost/cocoon-reports/WEB-INF/cocoon.xconf

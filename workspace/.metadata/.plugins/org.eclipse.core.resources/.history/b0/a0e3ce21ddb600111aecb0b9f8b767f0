@@ -1,0 +1,42 @@
+package kr.or.nhic.framework.exception;
+
+/**
+ * @ProjectName nhic
+ * @FileName ExRuntimeException.java
+ * @Substance TODO
+ * @author yotta
+ * @since 2011. 6. 28.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 6. 28.     yotta     TODO
+ *
+ * </pre>
+ */
+public class ExRuntimeException extends RuntimeException {
+
+	/**
+	 * @param string
+	 */
+	public ExRuntimeException(String string) {
+		super(string);
+	}
+
+	/**
+	 * @param e
+	 */
+	public ExRuntimeException(Exception e) {
+		super(e);
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4506123808402853131L;
+
+}

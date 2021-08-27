@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>lw</short-name>
+  <description>
+    custom tag
+  </description>
+  <tag>
+    <name>button</name>
+    <tag-class>com.devBoard.common.tag.ButtonTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Button custom tag</description>
+    <attribute>
+      <name>type</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>text</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>path</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>onclick</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>targetId</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>button2</name>
+    <tag-class>com.devBoard.common.tag.ButtonTag2</tag-class>
+    <body-content>empty</body-content>
+    <description>Button custom tag</description>
+    <attribute>
+      <name>type</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>title</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>onclick</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>params</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>delim</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>calendar</name>
+    <tag-class>com.devBoard.common.tag.CalendarTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Button custom tag</description>
+    <attribute>
+      <name>path</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>onclick</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>targetId</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>format</name>
+    <tag-class>com.devBoard.common.tag.FormatTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Format custom tag</description>
+    <attribute>
+      <name>pattern</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>value</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>title</name>
+    <tag-class>com.devBoard.common.tag.TitleTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Title custom tag</description>
+    <attribute>
+      <name>type</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>text</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>path</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>subTitleId</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>title2</name>
+    <tag-class>com.devBoard.common.tag.TitleTag2</tag-class>
+    <body-content>empty</body-content>
+    <description>Title custom tag</description>
+    <attribute>
+      <name>type</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>params</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>delim</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>errors</name>
+    <tag-class>com.devBoard.common.tag.ValidationErrorsTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Validation errors custom tag</description>
+    <attribute>
+      <name>formName</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+ 
+  <tag>
+    <name>cacheable</name>
+    <tag-class>com.devBoard.common.tag.CacheableTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Cache Response tag</description>
+  </tag>
+  
+  <tag>
+    <name>menuList</name>
+    <tag-class>com.devBoard.common.tag.MenuListTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Menu List custom tag</description>
+  </tag>
+  
+  <tag>
+    <name>header</name>
+    <tag-class>com.devBoard.common.tag.HeaderTag</tag-class>
+    <body-content>empty</body-content>
+    <description>Button custom tag</description>
+  </tag>
+  
+  <tag>
+    <name>calendarTag2</name>
+    <tag-class>com.devBoard.common.tag.CalendarTag2</tag-class>
+    <body-content>empty</body-content>
+    <description>Button custom tag</description>
+  </tag>
+</taglib>

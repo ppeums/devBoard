@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<home>${logpath}</home>
+    <file>
+	    <!--
+			. 파일 다운로드
+			. com.devBoardframework.util.FileUtil에서 사용
+		-->
+	    <download>
+	    	<rootpath>${home}/upload</rootpath>
+	    </download>
+	    <!--
+			. 파일 업로드
+			. com.devBoardframework.util.MultipartFileUtil에서 사용
+		-->
+        <upload>
+            <!-- 정책 : allow/deny -->
+            <policy>allow</policy>
+            <!-- 업로드를 허용하는 확장자 -->
+            <allow-ext>doc,ppt,xls,docx,pptx,xlsx,hwp,pdf,txt,gif,png,jpg,bmp</allow-ext>
+            <!-- 업로드를 제한하는 확장자 -->
+            <deny-ext>class,java,jsp,js,asp,cgi,inc,php,php3,pl</deny-ext>
+            <rootpath>${home}/upload</rootpath>
+        </upload>
+    </file>
+    <filter>
+        <!--
+			. 권한 체크 필터
+			. com.devBoardcommon.filter.AuthorityFilter에서 사용
+		-->
+    	<authority>
+    		<!-- 세션 체크 -->
+    		<session>
+				<!-- 예외 URL -->
+    			<exclude-url>
+    				/common/openCalendar.do
+    				/sinsul/sinsulMain.do
+    				/sinsul/moneyView.do
+    			</exclude-url>
+    		</session>
+    	</authority>
+    </filter>
+    <!--
+		. 페이징
+		. com.devBoardframework.util.PaginationUtil에서 사용
+    -->
+    <paging>
+        <unit>10</unit>
+        <size>10</size>
+    </paging>
+    <!-- 보안 -->
+    <security>
+    	<!--
+    		. 웹보안
+    		. com.devBoardframework.util.StringUtil
+    	-->
+    	<web-security>
+    		<xss>
+    			<disbled-tag>applet,bgsound,embed,frame,iframe,layer,object,script</disbled-tag>
+    			<disbled-event>onblur,onchange,onclick,ondblclick,onerror,onfocus,onkey,onload,onmouse,onscroll,onsubmit,onunload</disbled-event>
+    		</xss>
+    	</web-security>
+    </security>
+    <!-- 업무 관련 -->                                                            
+    <biz>
+    	<!-- 메일 전송관련 메일 내용에 대한 html template 저장경로 -->
+    	<mail-tempate>
+    		<rootpath>${waspath}/WEB-INF/config/mail_template</rootpath>
+    	</mail-tempate>
+    </biz> 
+    
+    <!-- 메일서버 -->
+    <mail>
+    	<smtp-host>10.1.56.31</smtp-host>
+    	<smtp-port>25</smtp-port>
+    	<connection-timeout>30000</connection-timeout>
+    	<send-timeout>30000</send-timeout>
+    </mail>
+    
+    <!-- 사용자 메뉴 -->
+    <user>
+    	<menu>USE_LW</menu>
+    </user>
+                                                                           
+</configuration>

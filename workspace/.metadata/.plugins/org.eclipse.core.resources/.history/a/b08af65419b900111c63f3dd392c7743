@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <error>
+        <log-dir>D:/NHIC_WB_DEV/workspace/nhic_www/system/log/error</log-dir>
+    </error>
+    <file>
+	    <!-- 파일 다운로드 -->
+	    <download>
+	        <rootpath>C:/DEV_DIPIS/workspace/dipis_pis/system/upload</rootpath>
+	    </download>
+	    <!-- 파일 업로드 -->
+        <upload>
+            <!-- 업로드를 제한하는 확장자 -->
+            <deny-ext>class,java,jsp,js,asp,cgi,inc,php,php3,pl,exe</deny-ext>
+            <mybuilder>
+                <buffer-size>4096</buffer-size>
+            </mybuilder>
+            <rootpath>C:/DEV_DIPIS/workspace/dipis_pis/system/upload</rootpath>
+        </upload>
+        <!-- PDF -->
+        <pdf>
+            <font-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/font</font-dir>
+            <!-- font 파일을 더블 클릭하여 보면 font별 index를 알수 있음 -->
+            <font-mapping>굴림:gulim.ttc 0</font-mapping>
+            <font-mapping>굴림체:gulim.ttc 1</font-mapping>
+            <font-mapping>돋움:gulim.ttc 2</font-mapping>
+            <font-mapping>돋움체:gulim.ttc 3</font-mapping>
+        </pdf>
+    </file>
+    <filter>
+        <access-load-check>
+            <enabled>false</enabled>
+            <max-active-request>3</max-active-request>
+        </access-load-check>
+    </filter>
+    <!-- 페이징 -->
+    <paging>
+        <unit>10</unit>
+        <size>10</size>
+    </paging>
+    <!-- 서버 구분 : local(로컬), dev(개발), test(시험), product(운영) -->
+    <server>
+        <name>local</name>
+        <desc>로컬</desc>
+    </server>
+    <!-- 업무 관련 -->                                                            
+    <biz>
+    </biz>                                                                        
+</configuration>

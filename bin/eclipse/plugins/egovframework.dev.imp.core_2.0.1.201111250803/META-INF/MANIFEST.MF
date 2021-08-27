@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-Name: Ui
+Bundle-ClassPath: .,lib/jdom.jar,lib/xalan.jar,lib/serializer.jar
+Bundle-Activator: egovframework.dev.imp.ui.EgovCorePlugin
+Import-Package: org.eclipse.datatools.connectivity,org.eclipse.datatoo
+ ls.sqltools.core.profile
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: egovframework.dev.imp.core;singleton:=true
+Bundle-ActivationPolicy: lazy
+Export-Package: egovframework.dev.imp.core.common,egovframework.dev.im
+ p.core.perspectives,egovframework.dev.imp.core.utils
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.se
+ arch;bundle-version="3.6.0",org.eclipse.jdt.ui;bundle-version="3.6.2"
+ ,org.eclipse.debug.ui;bundle-version="3.6.3",org.eclipse.ui.console;b
+ undle-version="3.5.0",org.eclipse.jdt.core;bundle-version="3.6.2",org
+ .eclipse.datatools.sqltools.sqlscrapbook;bundle-version="1.0.1",org.e
+ clipse.datatools.sqltools.sqlbuilder;bundle-version="1.0.3"
+Bundle-Version: 2.0.1.201111250803
+
+

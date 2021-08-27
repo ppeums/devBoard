@@ -1,0 +1,1043 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='Maven Integration for Eclipse' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1294870868452'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <units size='21'>
+    <unit id='org.maven.ide.eclipse.tests.common' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.tests.common' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='M2E Testing Helpers'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.tests.common' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.tests.common' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.tests.common' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.junit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.jdt' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.tests.common' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Eclipse-LazyStart: true&#xA;Export-Package: org.maven.ide.eclipse.tests.common&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: .,jars/servlet-api-2.5-20081211.jar,jars/jetty-util-6.1.22.jar,jars/jetty-6.1.22.jar&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.junit,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.jdt;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jdt.core,org.eclipse.debug.core,org.eclipse.ui.workbench&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.tests.common;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.tests.common&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-Name: M2E Testing Helpers&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.site.feature.jar' version='0.12.1.20110112-1712'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse Update Site'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.site.feature.jar' version='0.12.1.20110112-1712'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.maven.ide.eclipse.site' version='0.12.1.20110112-1712'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.maven.ide.eclipse.site' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.integration.tests.common' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.integration.tests.common' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration Tests Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.integration.tests.common' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.integration.tests.common' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.integration.tests.common' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.integration.tests.common.matchers' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='21'>
+        <required namespace='osgi.bundle' name='org.junit4' range='4.4.0'/>
+        <required namespace='osgi.bundle' name='org.hamcrest' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.hamcrest.library' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.swtbot.eclipse.finder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.swtbot.swt.finder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.swtbot.junit4_x' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.swt' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.editor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.editor.xml' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.tests.common' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.integration.tests.common' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Eclipse-LazyStart: true&#xA;Export-Package: org.maven.ide.eclipse.integration.tests.common,org.maven.ide.eclipse.integration.tests.common.matchers&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: .&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.junit4;bundle-version=&quot;4.4.0&quot;,org.hamcrest,org.hamcrest.library,org.eclipse.swtbot.eclipse.finder,org.eclipse.swtbot.swt.finder,org.eclipse.swtbot.junit4_x,org.apache.log4j,org.eclipse.ui,org.eclipse.ui.ide,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.swt,org.eclipse.ui.forms,org.eclipse.search,org.eclipse.ui.editors,org.maven.ide.eclipse.editor,org.maven.ide.eclipse.editor.xml,org.maven.ide.eclipse.maven_model_edit,org.maven.ide.eclipse,org.maven.ide.eclipse.maven_embedder,org.maven.ide.eclipse.tests.common&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.integration.tests.common;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.integration.test.common&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-Name: Maven Integration Tests Plug-in&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.feature.feature.group' version='0.12.1.20110112-1712' singleton='false'>
+      <update id='org.maven.ide.eclipse.feature.feature.group' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse (Required)'/>
+        <property name='org.eclipse.equinox.p2.description' value='Maven integration. Launching Maven from Eclipse, dependency management and search.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://m2eclipse.sonatype.org/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.feature.feature.group' version='0.12.1.20110112-1712'/>
+      </provides>
+      <requires size='24'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.edit' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.common.emf' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.sse.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.xml.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jem.util' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.rcp.feature.group' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.feature.group' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.archetype_common' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.nexus_indexer' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.maven_model_edit' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.pr' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.launching' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.jdt' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.dependency_tree' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.editor' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.editor.xml' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.refactoring' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.feature.feature.jar' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License&#xA;v1.0 which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html
+        </license>
+      </licenses>
+      <copyright uri='http://www.sonatype.com/' url='http://www.sonatype.com/'>
+        Copyright (c) 2008 Sonatype, Inc.
+      </copyright>
+    </unit>
+    <unit id='org.maven.ide.eclipse.editor.xml' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.editor.xml' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven POM XML Editor'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.editor.xml' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.editor.xml' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor.xml.search' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='17'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xml.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.sse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.sse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xml.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.common.uriresolver' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.nexus_indexer' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.editor.xml' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: Apache Maven&#xA;Archiver-Version: Plexus Archiver&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: Maven POM XML Editor&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-ClassPath: .&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Export-Package: org.maven.ide.eclipse.editor.xml,org.maven.ide.eclipse.editor.xml.search&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.ui,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text,org.eclipse.wst.xml.ui,org.eclipse.wst.sse.ui,org.eclipse.wst.sse.core,org.eclipse.wst.xml.core,org.eclipse.wst.common.uriresolver,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.nexus_indexer;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.eclipse.ui.console,org.eclipse.core.resources,org.eclipse.ui.ide,org.eclipse.core.filesystem,org.eclipse.ui.forms&#xA;Bundle-Activator: org.maven.ide.eclipse.editor.xml.MvnIndexPlugin&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.editor.xml;singleton:=true&#xA;Eclipse-LazyStart: true&#xA;Built-By: m2e&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.feature.feature.jar' version='0.12.1.20110112-1712'>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse (Required)'/>
+        <property name='org.eclipse.equinox.p2.description' value='Maven integration. Launching Maven from Eclipse, dependency management and search.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://m2eclipse.sonatype.org/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.update.feature.plugin' value='org.maven.ide.eclipse'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.feature.feature.jar' version='0.12.1.20110112-1712'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.maven.ide.eclipse.feature' version='0.12.1.20110112-1712'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.maven.ide.eclipse.feature' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License&#xA;v1.0 which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html
+        </license>
+      </licenses>
+      <copyright uri='http://www.sonatype.com/' url='http://www.sonatype.com/'>
+        Copyright (c) 2008 Sonatype, Inc.
+      </copyright>
+    </unit>
+    <unit id='org.maven.ide.eclipse.sdk.feature.feature.jar' version='0.12.1.20110112-1712'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='M2Eclipse Extensions Development Support (Optional)'/>
+        <property name='org.eclipse.equinox.p2.description' value='m2e extensions development support.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://m2eclipse.sonatype.org/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.sdk.feature.feature.jar' version='0.12.1.20110112-1712'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.maven.ide.eclipse.sdk.feature' version='0.12.1.20110112-1712'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.maven.ide.eclipse.sdk.feature' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License&#xA;v1.0 which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html
+        </license>
+      </licenses>
+      <copyright uri='http://sonatype.com/' url='http://sonatype.com/'>
+        Copyright (c) 2008 Sonatype, Inc.
+      </copyright>
+    </unit>
+    <unit id='org.maven.ide.eclipse.archetype_common' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.archetype_common' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Archetype Common Bundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='26'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.archetype_common' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.archetype_common' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='META-INF.plexus' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.catalog' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.catalog.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.common' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.common.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.common.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.creator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.creator.olddescriptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.downloader' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.exception' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.metadata.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.model.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.old' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.old.descriptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.registry.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.repositorycrawler' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.archetype.source' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.velocity' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.archetype_common' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Export-Package: META-INF.plexus,org.apache.maven.archetype,org.apache.maven.archetype.catalog,org.apache.maven.archetype.catalog.io.xpp3,org.apache.maven.archetype.common,org.apache.maven.archetype.common.io.xpp3,org.apache.maven.archetype.common.util,org.apache.maven.archetype.creator,org.apache.maven.archetype.creator.olddescriptor,org.apache.maven.archetype.downloader,org.apache.maven.archetype.exception,org.apache.maven.archetype.generator,org.apache.maven.archetype.metadata,org.apache.maven.archetype.metadata.io.xpp3,org.apache.maven.archetype.model,org.apache.maven.archetype.model.io.xpp3,org.apache.maven.archetype.old,org.apache.maven.archetype.old.descriptor,org.apache.maven.archetype.registry,org.apache.maven.archetype.registry.io.xpp3,org.apache.maven.archetype.repositorycrawler,org.apache.maven.archetype.source,org.codehaus.plexus.velocity&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: jars/jchardet-1.0.jar,jars/dom4j-1.6.1.jar,jars/jdom-1.0.jar,jars/commons-io-1.3.1.jar,jars/plexus-velocity-1.1.3.jar,jars/commons-collections-3.2.jar,jars/archetype-common-2.0-alpha-4.jar,jars/commons-lang-2.1.jar,jars/oro-2.0.8.jar,jars/velocity-1.5.jar&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.archetype_common;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-BaseVersion: 2.0.1.20090526-1230&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.archetype_common&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-Name: Maven Archetype Common Bundle&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.maven_model_edit' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.maven_model_edit' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Project Model Edit Bundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.maven_model_edit' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.components.pom' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.components.pom.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.components.pom.provider' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.components.pom.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.common.emf' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.sse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xml.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xsd.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jem.util' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.maven_model_edit' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5, JavaSE-1.6&#xA;Bundle-Name: Maven Project Model Edit Bundle&#xA;Bundle-ClassPath: .&#xA;Archiver-Version: Plexus Archiver&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.emf.ecore;visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.edit;visibility:=reexport,org.eclipse.emf.ecore.edit;visibility:=reexport,org.eclipse.wst.common.emf;visibility:=reexport,org.eclipse.wst.sse.core;visibility:=reexport,org.eclipse.wst.xml.core;visibility:=reexport,org.eclipse.wst.xsd.core;visibility:=reexport,org.eclipse.jem.util;visibility:=reexport&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Created-By: Apache Maven&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Built-By: m2e&#xA;Export-Package: org.maven.ide.components.pom,org.maven.ide.components.pom.impl,org.maven.ide.components.pom.provider,org.maven.ide.components.pom.util&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.maven_model_edit;singleton:=true&#xA;Eclipse-LazyStart: true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.launching' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.launching' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse Launching'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.launching' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.launching' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.actions' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='20'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.variables' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.externaltools' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.debug.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.junit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.nexus_indexer' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.launching' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: Apache Maven&#xA;Archiver-Version: Plexus Archiver&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: Maven Integration for Eclipse Launching&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Export-Package: org.maven.ide.eclipse.actions; x-internal:=true&#xA;Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.core.variables,org.eclipse.jface,org.eclipse.jface.text,org.eclipse.ui.externaltools,org.eclipse.ui.console,org.eclipse.ui.editors,org.eclipse.ui.workbench,org.eclipse.ui.ide,org.eclipse.debug.core,org.eclipse.debug.ui,org.eclipse.jdt.core,org.eclipse.jdt.launching,org.eclipse.jdt.ui,org.eclipse.jdt.debug.ui,org.eclipse.jdt.junit,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.nexus_indexer;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Bundle-Activator: org.maven.ide.eclipse.internal.launch.MavenLaunchPlugin&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.launching;singleton:=true&#xA;Eclipse-LazyStart: true&#xA;Built-By: m2e&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.refactoring' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.refactoring' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse Refactoring'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.refactoring' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.refactoring' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.refactoring.exclude' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='16'>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.dependency_tree' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filebuffers' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ltk.core.refactoring' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ltk.ui.refactoring' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.refactoring' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Bundle-Name: Maven Integration for Eclipse Refactoring&#xA;Archiver-Version: Plexus Archiver&#xA;Require-Bundle: org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_model_edit;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.dependency_tree;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.core.filebuffers,org.eclipse.ui.workbench,org.eclipse.jface,org.eclipse.jface.text,org.eclipse.jdt.ui,org.eclipse.compare,org.eclipse.jdt.core,org.eclipse.ui.ide,org.eclipse.ltk.core.refactoring,org.eclipse.ltk.ui.refactoring;visibility:=reexport&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Activator: org.maven.ide.eclipse.refactoring.internal.Activator&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Created-By: Apache Maven&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Built-By: m2e&#xA;Export-Package: org.maven.ide.eclipse.refactoring.exclude&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.refactoring;singleton:=true&#xA;Eclipse-LazyStart: true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='25'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.archetype' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.embedder' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.index' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.embedder' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.index' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.preferences' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.project' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.project.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.internal.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.jobs' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.project' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.project.configurator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.scm' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.ui.dialogs' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.wizards' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='21'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.variables' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.externaltools' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.common.emf' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.archetype_common' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.nexus_indexer' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.dependency_tree' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            MavenArtifact-ArtifactId: org.maven.ide.eclipse&#xA;Bundle-Name: Maven Integration for Eclipse&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Build-Jdk: 1.6.0_12&#xA;Export-Package: org.maven.ide.eclipse,org.maven.ide.eclipse.actions,org.maven.ide.eclipse.archetype,org.maven.ide.eclipse.builder;x-internal:=true,org.maven.ide.eclipse.core,org.maven.ide.eclipse.embedder,org.maven.ide.eclipse.index,org.maven.ide.eclipse.internal;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.embedder;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.index;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.preferences;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.project;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.project.registry;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.internal.repository;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.jobs,org.maven.ide.eclipse.project,org.maven.ide.eclipse.project.configurator,org.maven.ide.eclipse.repository,org.maven.ide.eclipse.scm,org.maven.ide.eclipse.ui.dialogs,org.maven.ide.eclipse.util,org.maven.ide.eclipse.wizards&#xA;Created-By: Apache Maven&#xA;Bundle-ClassPath: .&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Archiver-Version: Plexus Archiver&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.core.variables,org.eclipse.core.expressions,org.eclipse.core.filesystem,org.eclipse.jface.text,org.eclipse.search,org.eclipse.ui,org.eclipse.ui.ide,org.eclipse.ui.console,org.eclipse.ui.forms,org.eclipse.ui.editors,org.eclipse.ui.externaltools,org.eclipse.ui.workbench.texteditor,org.eclipse.emf.common,org.eclipse.wst.common.emf,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.archetype_common;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.nexus_indexer;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_model_edit;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.dependency_tree;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Built-By: m2e&#xA;Bundle-Localization: plugin&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Bundle-Activator: org.maven.ide.eclipse.MavenPlugin&#xA;Bundle-SymbolicName: org.maven.ide.eclipse;singleton:=true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.sdk.feature.feature.group' version='0.12.1.20110112-1712' singleton='false'>
+      <update id='org.maven.ide.eclipse.sdk.feature.feature.group' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='M2Eclipse Extensions Development Support (Optional)'/>
+        <property name='org.eclipse.equinox.p2.description' value='m2e extensions development support.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://m2eclipse.sonatype.org/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.sdk.feature.feature.group' version='0.12.1.20110112-1712'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.tests.common' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.integration.tests.common' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.sdk.feature.feature.jar' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License&#xA;v1.0 which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html
+        </license>
+      </licenses>
+      <copyright uri='http://sonatype.com/' url='http://sonatype.com/'>
+        Copyright (c) 2008 Sonatype, Inc.
+      </copyright>
+    </unit>
+    <unit id='org.maven.ide.eclipse.site.feature.group' version='0.12.1.20110112-1712' singleton='false'>
+      <update id='org.maven.ide.eclipse.site.feature.group' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse Update Site'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.site.feature.group' version='0.12.1.20110112-1712'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.feature.feature.group' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.sdk.feature.feature.group' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.site.feature.jar' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='org.maven.ide.eclipse.editor' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.editor' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse (Editors)'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.editor' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.editor' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor.composites' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor.plugins' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.editor.pom' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='24'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.draw2d' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.zest.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.zest.layouts' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.sse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.common.emf' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.sse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xml.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0' optional='true'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.dependency_tree' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.editor.xml' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.editor' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: Apache Maven&#xA;Archiver-Version: Plexus Archiver&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: Maven Integration for Eclipse (Editors)&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-ClassPath: .&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Export-Package: org.maven.ide.eclipse.editor,org.maven.ide.eclipse.editor.composites,org.maven.ide.eclipse.editor.plugins,org.maven.ide.eclipse.editor.pom&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.search,org.eclipse.ui,org.eclipse.ui.ide,org.eclipse.ui.editors,org.eclipse.ui.forms,org.eclipse.ui.workbench,org.eclipse.jface.text,org.eclipse.jdt.core,org.eclipse.draw2d,org.eclipse.zest.core,org.eclipse.zest.layouts,org.eclipse.wst.sse.ui,org.eclipse.wst.common.emf,org.eclipse.wst.sse.core,org.eclipse.wst.xml.core,org.eclipse.emf.ecore.edit,org.eclipse.emf.edit.ui;resolution:=optional,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.dependency_tree;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_model_edit;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.editor.xml;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Bundle-Activator: org.maven.ide.eclipse.editor.MavenEditorPlugin&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.editor;singleton:=true&#xA;Eclipse-LazyStart: true&#xA;Built-By: m2e&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.pr' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.pr' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Problem Reporting'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.pr' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.pr' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.pr' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.pr.internal.data' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.pr.sources' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.pr' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Export-Package: org.maven.ide.eclipse.pr,org.maven.ide.eclipse.pr.internal.data;x-friends:=&quot;org.maven.ide.eclipse.pr.tests&quot;,org.maven.ide.eclipse.pr.sources&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: jars/apache-mime4j-0.6.jar,jars/commons-codec-1.4.jar,jars/commons-logging-1.1.jar,jars/httpclient-4.0.1.jar,jars/httpcore-4.0.1.jar,jars/httpmime-4.0.1.jar,jars/log4j-1.2.8.jar,jars/plexus-utils-1.5.4.jar,jars/swizzle-jira-1.3.3.jar,jars/swizzle-stream-1.0.2.jar,jars/ws-commons-util-1.0.1.jar,jars/xmlrpc-client-3.0.jar,jars/xmlrpc-common-3.0.jar,.,jars/plexus-swizzle-1.3.jar,jars/plexus-encryptor-1.0.jar&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.ui,org.eclipse.ui.console,org.eclipse.jface.text,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.eclipse.jdt.core,org.eclipse.ui.ide&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.pr;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-BaseVersion: 0.10.0-SNAPSHOT&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.pr&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-Name: Maven Problem Reporting&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.jdt' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.jdt' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse JDT'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.jdt' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.jdt' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.jdt' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.jdt.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.maven.ide.eclipse.jdt.internal.launch' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='18'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ltk.core.refactoring' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.dependency_tree' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.nexus_indexer' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_model_edit' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.jdt' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: Apache Maven&#xA;Archiver-Version: Plexus Archiver&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: Maven Integration for Eclipse JDT&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Build-Jdk: 1.6.0_12&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Export-Package: org.maven.ide.eclipse.jdt,org.maven.ide.eclipse.jdt.internal;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;,org.maven.ide.eclipse.jdt.internal.launch;x-friends:=&quot;org.maven.ide.eclipse.tests&quot;&#xA;Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jface,org.eclipse.jface.text,org.eclipse.debug.core,org.eclipse.jdt.core,org.eclipse.jdt.launching,org.eclipse.jdt.ui,org.eclipse.ui.workbench,org.eclipse.ui.ide,org.eclipse.ltk.core.refactoring,org.eclipse.search,org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.dependency_tree;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.nexus_indexer;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.maven_model_edit;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.eclipse.ui.console&#xA;Bundle-Activator: org.maven.ide.eclipse.jdt.MavenJdtPlugin&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.jdt;singleton:=true&#xA;Eclipse-LazyStart: true&#xA;Built-By: m2e&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.maven_embedder' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.maven_embedder' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Embedded Maven Runtime Bundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Eclipse.org'/>
+      </properties>
+      <provides size='193'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.maven_embedder' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.factory' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.filter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.version' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.toolchain.model.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.repository.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.collection' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.configuration.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.installer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.connector.wagon' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.dag' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.providers.file' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.inheritance' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.spi.connector' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.repository.metadata.io' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.profile' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy.resolver.transform' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.management' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.graph.selector' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.resource' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation.object' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.repository.metadata.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.monitor.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.classrealm' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy.resolver' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ning.http.client' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.graph' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.reporting' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.classworlds.strategy' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.logging.console' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.usability.plugin.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.resolution' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.spi.locator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.plexus.components.sec.dispatcher.model.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.repository.layout' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.reflection' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.lifecycle' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.internal.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.graph.transformer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.spi.localrepo' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.plexus.build.incremental' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.resolver' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation.reflection' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.toolchain' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.spi.io' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.profile.activation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.properties.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.building' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.xml.pull' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.introspection' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.handler.manager' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.cli' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.lifecycle.mapping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.version.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.profiles.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.installation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.repository.exception' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.connector.async' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.authorization' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.lifecycle' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.converters.special' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.lifecycle.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.configuration' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.cli.shell' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.messages' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.factory' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.crypto' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.proxy' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.events' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.toolchain.java' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.cli' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.transfer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.plugin' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.exception' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.converters' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.prefix.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.descriptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.version' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.usability.plugin' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.configuration.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.versioning' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.profiles' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.eventspy' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.locator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.normalization' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.layout' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.resolver.filter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.superpom' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation.multi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.execution' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.artifact' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.repository' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.personality.plexus.lifecycle.phase' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.converters.lookup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.version' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.deployer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.spi.log' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.io' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.profiles.activation' version='0.0.0'/>
+        <provided namespace='java.package' name='META-INF.plexus' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.handler' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.interpolation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.graph.manager' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.authentication' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.merge' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.converters.composite' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.util.io' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.artifact' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.classworlds' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.graph' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.composition' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.composition' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.expression' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.classworlds.launcher' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project.interpolation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.configurator.converters.basic' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project.path' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.impl.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.classworlds.realm' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact.manager' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.plexus.components.cipher' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.deployment' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.toolchain.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.wagon.observers' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.name' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.interpolation.os' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin.prefix' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.configuration' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.listener' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.legacy.resolver.conflict' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.io.xpp3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.plexus.components.sec.dispatcher' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.path' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.util.graph.traverser' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.context' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.merge' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.lifecycle.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.monitor.event' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.rtinfo.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.model.io' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.matcher' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project.artifact' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.repository.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.rtinfo' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.project.inheritance' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.plexus.components.sec.dispatcher.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.codehaus.plexus.component.annotations' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.artifact' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.eventspy.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.aether.resolution' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.binder' version='0.0.0'/>
+        <provided namespace='java.package' name='com.google.inject.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.plugin' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.settings.building' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.maven_embedder' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5, JavaSE-1.6&#xA;Bundle-Name: Embedded Maven Runtime Bundle&#xA;Created-By: Apache Maven&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: Eclipse.org&#xA;Bundle-ClassPath: jars/maven-embedder-3.0.2.jar,jars/maven-settings-3.0.2.jar,jars/maven-plugin-api-3.0.2.jar,jars/maven-model-builder-3.0.2.jar,jars/plexus-sec-dispatcher-1.3.jar,jars/plexus-cipher-1.4.jar,jars/maven-core-3.0.2.jar,jars/maven-model-3.0.2.jar,jars/maven-settings-builder-3.0.2.jar,jars/maven-repository-metadata-3.0.2.jar,jars/maven-artifact-3.0.2.jar,jars/maven-aether-provider-3.0.2.jar,jars/aether-impl-1.9.jar,jars/plexus-interpolation-1.14.jar,jars/maven-compat-3.0.2.jar,jars/commons-cli-1.2.jar,jars/wagon-file-1.0-beta-7.jar,jars/aether-connector-wagon-1.9.jar,jars/guice-bean-binders-1.4.3.1.jar,jars/javax.inject-1.jar,jars/guice-bean-reflect-1.4.3.1.jar,jars/guice-bean-scanners-1.4.3.1.jar,jars/asm-3.3.jar,jars/guice-bean-converters-1.4.3.1.jar,jars/guice-bean-locators-1.4.3.1.jar,jars/guice-bean-inject-1.4.3.1.jar,jars/guice-plexus-binders-1.4.3.1.jar,jars/plexus-component-annotations-1.5.5.jar,jars/guice-plexus-metadata-1.4.3.1.jar,jars/guice-plexus-scanners-1.4.3.1.jar,jars/guice-plexus-converters-1.4.3.1.jar,jars/plexus-utils-2.0.5.jar,jars/guice-plexus-locators-1.4.3.1.jar,jars/plexus-classworlds-2.4.jar,jars/guice-plexus-shim-1.4.3.1.jar,jars/sisu-guice-2.9.1-noaop.jar,jars/plexus-build-api-0.0.6.jar,jars/aether-connector-asynchttpclient-1.9.jar,jars/aether-api-1.9.jar,jars/aether-spi-1.9.jar,jars/aether-util-1.9.jar,jars/async-http-client-1.4.1.jar,jars/netty-3.2.3.Final.jar,jars/wagon-ahc-1.0.0.jar,jars/wagon-provider-api-1.0-beta-6.jar,jars/slf4j-simple-1.6.1.jar,jars/slf4j-api-1.6.1.jar&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.maven_embedder;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Build-Jdk: 1.6.0_12&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-Version: 0.12.1.20110112-1712&#xA;Built-By: m2e&#xA;Export-Package: org.codehaus.plexus.component.factory,org.sonatype.aether.util.filter,org.sonatype.aether.util.version,org.sonatype.aether,org.sonatype.aether.metadata,org.apache.maven.toolchain.model.io.xpp3,org.apache.maven.artifact.repository.metadata,org.sonatype.aether.collection,org.codehaus.plexus.configuration.xml,org.apache.maven.artifact.installer,org.sonatype.aether.connector.wagon,com.google.inject.internal,org.codehaus.plexus.util,org.codehaus.plexus,org.codehaus.plexus.util.dag,org.apache.maven.wagon.providers.file,org.apache.maven.artifact.metadata,org.apache.maven.model.inheritance,org.sonatype.aether.spi.connector,org.apache.maven.artifact.repository.metadata.io,org.apache.maven.model.profile,org.apache.maven.wagon.repository,org.apache.maven.repository.legacy.resolver.transform,org.apache.maven.model.management,org.sonatype.aether.util.graph.selector,org.apache.maven.repository,org.apache.maven.wagon.resource,org.codehaus.plexus.interpolation.object,org.sonatype.aether.repository,org.apache.maven.artifact.repository.metadata.io.xpp3,org.apache.maven.monitor.logging,org.apache.maven.classrealm,org.apache.maven.repository.legacy.resolver,com.ning.http.client,org.apache.maven.wagon,org.sonatype.aether.util.graph,org.apache.maven.reporting,org.codehaus.plexus.classworlds.strategy,org.sonatype.aether.util,org.codehaus.plexus.logging.console,org.codehaus.plexus.component,org.apache.maven.usability.plugin.io.xpp3,org.apache.maven.settings.validation,org.codehaus.plexus.component.configurator,org.apache.maven.model.resolution,org.sonatype.aether.spi.locator,org.sonatype.plexus.components.sec.dispatcher.model.io.xpp3,org.apache.maven.repository.legacy.metadata,org.apache.maven.artifact.repository.layout,org.codehaus.plexus.util.reflection,org.apache.maven.lifecycle,com.google.inject.internal.util,org.sonatype.aether.util.graph.transformer,org.codehaus.plexus.util.xml,org.sonatype.aether.spi.localrepo,org.sonatype.plexus.build.incremental,org.apache.maven.artifact.resolver,org.codehaus.plexus.interpolation.reflection,org.apache.maven.plugin.internal,org.apache.maven.settings,org.sonatype.aether.impl,org.apache.maven.toolchain,org.sonatype.aether.spi.io,org.apache.maven.model.profile.activation,org.apache.maven.properties.internal,org.apache.maven.model.building,org.apache.maven.repository.legacy.repository,org.codehaus.plexus.util.xml.pull,org.codehaus.plexus.util.introspection,org.apache.maven.artifact.handler.manager,org.apache.maven.cli,org.apache.maven.lifecycle.mapping,org.apache.maven.plugin.version.internal,org.apache.maven.profiles.io.xpp3,org.sonatype.aether.installation,org.codehaus.plexus.component.repository.exception,org.sonatype.aether.connector.async,org.apache.maven.wagon.authorization,org.apache.maven.plugin.lifecycle,org.codehaus.plexus.component.configurator.converters.special,org.apache.maven.plugin.lifecycle.io.xpp3,org.codehaus.plexus.configuration,org.codehaus.plexus.util.cli.shell,org.apache.maven.messages,org.apache.maven.model,org.apache.maven.artifact.factory,org.apache.maven.repository.legacy,org.apache.maven.settings.crypto,org.codehaus.plexus.component.repository,org.apache.maven.wagon.proxy,com.google.inject,org.apache.maven.wagon.events,org.apache.maven.toolchain.java,org.codehaus.plexus.util.cli,org.sonatype.aether.transfer,org.apache.maven.model.plugin,org.apache.maven.exception,org.codehaus.plexus.component.configurator.converters,org.apache.maven.plugin.logging,org.apache.maven.plugin.prefix.internal,org.apache.maven.plugin.descriptor,org.sonatype.aether.version,org.apache.maven.usability.plugin,org.apache.maven.configuration.internal,org.apache.maven.artifact.versioning,org.codehaus.plexus.interpolation,org.codehaus.plexus.logging,org.apache.maven.profiles,org.apache.maven.repository.internal,org.apache.maven.eventspy,org.apache.maven.model.locator,org.apache.maven.model.validation,org.sonatype.aether.util.repository,org.apache.maven.model.normalization,org.sonatype.aether.util.layout,org.apache.maven.artifact.resolver.filter,org.apache.maven.model.superpom,org.codehaus.plexus.interpolation.multi,org.apache.maven.execution,org.sonatype.aether.artifact,org.apache.maven.artifact.repository,org.sonatype.aether.util.metadata,org.codehaus.plexus.personality.plexus.lifecycle.phase,org.codehaus.plexus.component.configurator.converters.lookup,org.apache.maven.plugin.version,org.apache.maven.artifact.deployer,org.sonatype.aether.spi.log,org.apache.maven.settings.io,org.apache.maven.profiles.activation,META-INF.plexus,org.apache.maven.settings.io.xpp3,org.codehaus.plexus.interpolation.util,org.apache.maven.project.validation,org.apache.maven.artifact.handler,org.apache.maven.model.interpolation,org.sonatype.aether.util.graph.manager,org.apache.maven.wagon.authentication,org.apache.maven.settings.merge,org.codehaus.plexus.component.configurator.converters.composite,org.codehaus.plexus.util.io,org.sonatype.aether.util.artifact,org.codehaus.plexus.classworlds,org.sonatype.aether.graph,org.codehaus.plexus.component.composition,org.apache.maven.model.composition,org.codehaus.plexus.component.configurator.expression,org.codehaus.plexus.classworlds.launcher,org.apache.maven.project.interpolation,org.codehaus.plexus.component.configurator.converters.basic,org.apache.maven.project.path,org.sonatype.aether.impl.internal,org.apache.maven,org.codehaus.plexus.classworlds.realm,org.apache.maven.artifact.manager,org.sonatype.plexus.components.cipher,org.sonatype.aether.deployment,org.apache.maven.toolchain.model,org.apache.maven.wagon.observers,com.google.inject.name,org.codehaus.plexus.interpolation.os,com.google.inject.spi,org.apache.maven.plugin.prefix,org.apache.maven.configuration,org.sonatype.aether.util.listener,org.apache.maven.repository.legacy.resolver.conflict,org.apache.maven.model.io.xpp3,org.sonatype.plexus.components.sec.dispatcher,org.apache.maven.model.path,org.sonatype.aether.util.graph.traverser,org.codehaus.plexus.context,org.apache.maven.model.merge,org.apache.maven.lifecycle.internal,org.apache.maven.monitor.event,org.apache.maven.rtinfo.internal,org.apache.maven.model.io,org.apache.maven.project,com.google.inject.matcher,org.apache.maven.project.artifact,org.apache.maven.repository.metadata,org.apache.maven.rtinfo,org.apache.maven.project.inheritance,org.sonatype.plexus.components.sec.dispatcher.model,org.codehaus.plexus.component.annotations,org.apache.maven.artifact,org.apache.maven.eventspy.internal,org.sonatype.aether.resolution,com.google.inject.binder,com.google.inject.util,org.apache.maven.plugin,org.apache.maven.settings.building
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='file:/home/m2e/m2eclipse-core/org.maven.ide.eclipse.site/category.xml.m2e' version='1.0.0.07M1cKfHY677355355715G57'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Integration for Eclipse'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/home/m2e/m2eclipse-core/org.maven.ide.eclipse.site/category.xml.m2e' version='1.0.0.07M1cKfHY677355355715G57'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.feature.feature.group' range='[0.12.1.20110112-1712,0.12.1.20110112-1712]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='org.maven.ide.eclipse.nexus_indexer' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.nexus_indexer' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Nexus Indexer Bundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype'/>
+      </properties>
+      <provides size='30'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.nexus_indexer' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.nexus_indexer' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.updater' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.context' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.search.function' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.index' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.store' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.incremental' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.artifact' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.search.payloads' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.queryParser' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.document' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.creator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.locator' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.fs' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.treeview' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.archetype' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.packer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.analysis.standard' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.search.spans' version='0.0.0'/>
+        <provided namespace='java.package' name='META-INF.plexus' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.updater.jetty' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.search' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.search.grouping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.sonatype.nexus.index.cli' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.lucene.analysis' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.archetype_common' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.nexus_indexer' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Export-Package: org.sonatype.nexus.index.updater,org.sonatype.nexus.index.context,org.apache.lucene.util,org.apache.lucene.search.function,org.apache.lucene,org.apache.lucene.index,org.apache.lucene.store,org.sonatype.nexus.index.incremental,org.sonatype.nexus.artifact,org.apache.lucene.search.payloads,org.apache.lucene.queryParser,org.apache.lucene.document,org.sonatype.nexus.index,org.sonatype.nexus.index.creator,org.sonatype.nexus.index.locator,org.sonatype.nexus.index.fs,org.sonatype.nexus.index.treeview,org.sonatype.nexus.index.archetype,org.sonatype.nexus.index.packer,org.apache.lucene.analysis.standard,org.apache.lucene.search.spans,META-INF.plexus,org.sonatype.nexus.index.updater.jetty,org.apache.lucene.search,org.sonatype.nexus.index.search.grouping,org.sonatype.nexus.index.cli,org.apache.lucene.analysis&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: jars/nexus-indexer-2.0.5-SNAPSHOT.jar,jars/lucene-core-2.3.2.jar&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;,org.maven.ide.eclipse.archetype_common;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.nexus_indexer;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-BaseVersion: 2.0.4-SNAPSHOT&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.nexus_indexer&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype&#xA;Bundle-Name: Nexus Indexer Bundle&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.maven.ide.eclipse.dependency_tree' version='0.12.1.20110112-1712'>
+      <update id='org.maven.ide.eclipse.dependency_tree' range='[0.0.0,0.12.1.20110112-1712)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Maven Dependency Tree Bundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Sonatype, Inc.'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.maven.ide.eclipse.dependency_tree' version='0.12.1.20110112-1712'/>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse.dependency_tree' version='0.12.1.20110112-1712'/>
+        <provided namespace='java.package' name='org.apache.maven.shared.dependency.tree' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.shared.dependency.tree.filter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.maven.shared.dependency.tree.traversal' version='0.0.0'/>
+        <provided namespace='java.package' name='META-INF.plexus' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.maven.ide.eclipse.maven_embedder' range='[0.12.0,0.13.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.maven.ide.eclipse.dependency_tree' version='0.12.1.20110112-1712'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-Version: 0.12.1.20110112-1712&#xA;Build-Jdk: 1.6.0_12&#xA;MavenArtifact-GroupId: org.maven.ide.eclipse&#xA;Export-Package: org.apache.maven.shared.dependency.tree,org.apache.maven.shared.dependency.tree.filter,org.apache.maven.shared.dependency.tree.traversal,META-INF.plexus&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: jars/maven-dependency-tree-1.2-SNAPSHOT.jar&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6&#xA;Require-Bundle: org.maven.ide.eclipse.maven_embedder;bundle-version=&quot;[0.12.0,0.13.0)&quot;&#xA;Bundle-SymbolicName: org.maven.ide.eclipse.dependency_tree;singleton:=true&#xA;Created-By: Apache Maven&#xA;MavenArtifact-BaseVersion: 1.2.1.20090519-1900&#xA;MavenArtifact-ArtifactId: org.maven.ide.eclipse.dependency_tree&#xA;Built-By: m2e&#xA;Bundle-Vendor: Sonatype, Inc.&#xA;Bundle-Name: Maven Dependency Tree Bundle&#xA;Archiver-Version: Plexus Archiver&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

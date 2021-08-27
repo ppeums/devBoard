@@ -1,0 +1,15 @@
+package kr.or.nhic.common.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CommonController {
+	// private final Logger logger = Logger.getLogger(this.getClass());
+	
+    @RequestMapping(value = "/common/openCalendar.do")
+    public String openCalendar(ModelMap model) throws Exception {
+    	return "common/calendarPop";
+    }
+}

@@ -1,0 +1,147 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
+<%@ taglib prefix="dipis" uri="/WEB-INF/tld/dipis.tld" %>
+<% 
+/**
+ * @Class Name : Samples.jsp
+ * @Description : 샘플 화면
+ * @Modification Information
+ * @
+ * @  수정일      수정자            수정내용
+ * @ -------        --------    ---------------------------
+ * @ 2011.02.20   구본규          최초 생성
+ *
+ *  @author 구본규
+ *  @since 2011.02.20
+ *  @version 1.0 
+ */
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<title>Samples</title>
+<jsp:include page="/WEB-INF/jsp/common/header.jsp" flush="true" />
+<script type="text/javascript" src="<c:url value="/validator.do" />"></script>
+<validator:javascript formName="sampleVO2" staticJavascript="false" xhtml="true" cdata="false"/>
+<style type="text/css">
+/* <![CDATA[ */
+.sampleDiv {
+    margin-bottom:20px;
+}
+/* ]]> */
+</style>
+<script type="text/javascript">
+    function f_onLoad() {
+    }
+
+    function f_level1Onchange() {
+        // 하위 셀렉트 박스 데이터 삭제
+        jQuery("#level2").empty();
+        jQuery("#level3").empty();
+
+        // URL, Parameter, Callback
+        cf_ajaxSubmit(
+            "/sample/guide/retrieveSampleAjaxData1.do",
+            {"param":jQuery("#level1").val()},
+            f_level1OnchangeCallback
+        );
+    }
+
+    function f_level1OnchangeCallback(xml) {
+        cf_setSelectBox("level2", xml, "name,value");
+    }
+
+    function f_level2Onchange() {
+        // URL, Parameter, Callback
+        cf_ajaxSubmit(
+            "/sample/guide/retrieveSampleAjaxData2.do",
+            {"param":jQuery("#level2").val()},
+            f_level2OnchangeCallback
+        );
+    }
+
+    function f_level2OnchangeCallback(xml) {
+        cf_setSelectBox("level3", xml, "name,value");
+    }
+
+    function f_saveMask() {
+        var frm = jQuery("#sampleVO2");
+
+        // TODO 주석처리하여 Server Validation 확인해야 함
+        if (!validateSampleVO2(frm[0])) {
+            return;
+        }
+        
+        frm.attr("action", "<c:url value='/sample/guide/registerMask.do'/>");
+        frm.submit();
+    }
+    
+    function f_saveFiles() {
+        var frm = jQuery("#sampleVO3");
+
+        frm.attr("action", "<c:url value='/sample/guide/registerFiles.do'/>");
+        frm.submit();
+    }
+</script>
+</head>
+<body id="LblockBody" onload="f_onLoad()" style="padding:20px">
+<div class="sampleDiv">
+    <p>■ AJAX</p>
+    <form:form commandName="sampleVO1" method="post">
+        <form:select path="level1" items="${list}" onchange="f_level1Onchange();"/>
+        <select id="level2" name="level2" onchange="f_level2Onchange();"></select>
+        <select id="level3" name="level3"></select>
+    </form:form>
+</div>
+<div class="sampleDiv">
+    <p>■ 파일 다운로드</p>
+    <a href="#" onclick="cf_downloadFile('오픈캡쳐.exe', 'sample/오픈캡쳐[20110430113041100].exe');">오픈 캡쳐</a>
+</div>
+<div class="sampleDiv">
+    <p>■ Format Tag</p>
+    &lt;dipis:format pattern="####-##-##" value="..." /&gt;를 적용하면 "<c:out value="${sampleVO2.dateParam}" />"가
+    "<dipis:format pattern="####-##-##" value="${sampleVO2.dateParam}" />"와 같이 출력됨<br/>
+</div>
+<div class="sampleDiv">
+    <p>■ Mask & Validation</p>
+    <form:form commandName="sampleVO2">
+        - 숫자 [{number:true}] : <form:input path="numberParam" cssClass="[{number:true}]" /><form:errors path="numberParam" /><br/>
+        - 날짜 [{date:true}] : <form:input path="dateParam" cssClass="[{date:true}]" /><form:errors path="dateParam" /><br/>
+        - 연월 [{yearMonth:true}] : <form:input path="yearMonthParam" cssClass="[{yearMonth:true}]" /><form:errors path="yearMonthParam" /><br/>
+        - 시간 [{time:true}] : <form:input path="timeParam" cssClass="[{time:true}]" /><br/>
+        - 주민등록번호 [{ssn:true}] : <form:input path="ssnParam" cssClass="[{ssn:true}]" /><form:errors path="ssnParam" /><br/>
+        - 사업자등록번호 [{brn:true}] : <form:input path="brnParam" cssClass="[{brn:true}]" /><br/>
+        - 우편번호 [{zip:true}] : <form:input path="zipParam" cssClass="[{zip:true}]" /><br/>
+        - 사용자마스크 [{mask:'###-##'}] : <form:input path="maskParam" cssClass="[{mask:'###-##'}]" /><form:errors path="maskParam" /><br/>
+        - 최소길이 : <form:input path="minlengthParam" cssClass="" /><form:errors path="minlengthParam" /><br/>
+        - 최대길이 : <form:input path="maxlengthParam" cssClass="" /><form:errors path="maxlengthParam" /><br/>
+        - 최소byte : <form:input path="minbyteParam" cssClass="" /><form:errors path="minbyteParam" /><br/>
+        - 최대byte : <form:input path="maxbyteParam" cssClass="" /><form:errors path="maxbyteParam" /><br/>
+        <div id="LblockButton">
+            <dipis:button type="save" onclick="f_saveMask(); return false;" />
+        </div>
+    </form:form>
+</div>
+<div class="sampleDiv">
+    <p>■ 파일 업로드</p>
+    <form:form commandName="sampleVO3" method="post" enctype="multipart/form-data">
+        <input type="file" name="file[0]" /><br/>
+        <input type="file" name="file[1]" />
+        <div id="LblockButton">
+            <dipis:button type="save" onclick="f_saveFiles(); return false;" />
+        </div>
+    </form:form>
+</div>
+<div>
+    <p>■ 공통코드</p>
+    <dipis:cmncd path="cmncd" grpno="AP090" hgrnkGrpno="AP080" hgrnkCodeno="60" codeno="0000000009" addtnOptCd="all" addtnOptNm="전체" onchange="javascript:alert('^^;;')"/>
+</div>
+
+<a href="/">Home</a>
+</body>
+</html>

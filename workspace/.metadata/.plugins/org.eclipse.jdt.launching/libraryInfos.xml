@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\devBoard\bin\jdk1.6.0_33" version="1.6.0_33">
+<bootpath>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\resources.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\rt.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\sunrsasign.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\jsse.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\jce.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\charsets.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\NHIC_INT_DEV\bin\jdk1.6.0_33" version="1.6.0_33">
+<bootpath>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\resources.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\rt.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\sunrsasign.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\jsse.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\jce.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\charsets.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\modules\jdk.boot.jar"/>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\NHIC_INT_DEV\bin\jdk1.6.0_33\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\NHIC_WB_DEV\bin\jdk1.6.0_33" version="1.6.0_33">
+<bootpath>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\resources.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\rt.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\sunrsasign.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\jsse.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\jce.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\charsets.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\modules\jdk.boot.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\devBoard\bin\jdk1.6.0_33\jre" version="1.6.0_33">
+<bootpath>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\resources.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\rt.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\sunrsasign.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\jsse.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\jce.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\charsets.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\devBoard\bin\jdk1.6.0_33\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre" version="1.6.0_33">
+<bootpath>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\resources.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\rt.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\sunrsasign.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\jsse.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\jce.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\charsets.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\modules\jdk.boot.jar"/>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\NHIC_WB_DEV\bin\jdk1.6.0_33\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\NHIC_DEV\bin\bea\jdk160_05" version="1.6.0_05">
+<bootpath>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\resources.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\rt.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\sunrsasign.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\jsse.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\jce.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\charsets.jar"/>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\NHIC_DEV\bin\bea\jdk160_05\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

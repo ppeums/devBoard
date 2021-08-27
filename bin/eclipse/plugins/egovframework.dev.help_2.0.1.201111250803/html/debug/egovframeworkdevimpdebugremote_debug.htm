@@ -1,0 +1,172 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0102)http://192.168.100.16/wiki/doku.php -->
+<HTML dir=ltr lang=en xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>egovframework:dev:imp:debug:remote_debug</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+<META name=robots content=index,follow>
+<META name=date content=2009-05-04T10:58:34+0900>
+<META name=keywords content=egovframework,dev,imp,debug,remote_debug><LINK 
+title=eGovFrame rel=search type=application/opensearchdescription+xml 
+href="/wiki/lib/exe/opensearch.php"><LINK rel=start href="/wiki/"><LINK 
+title=Index rel=contents 
+href="/wiki/doku.php?id=egovframework:dev:imp:debug:remote_debug&amp;do=index"><LINK 
+title="Recent Changes" rel=alternate type=application/rss+xml 
+href="/wiki/feed.php"><LINK title="Current Namespace" rel=alternate 
+type=application/rss+xml 
+href="/wiki/feed.php?mode=list&amp;ns=egovframework:dev:imp:debug"><LINK 
+title="Plain HTML" rel=alternate type=text/html 
+href="/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev:imp:debug:remote_debug"><LINK 
+title="Wiki Markup" rel=alternate type=text/plain 
+href="/wiki/doku.php?do=export_raw&amp;id=egovframework:dev:imp:debug:remote_debug"><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpdebugremote_debug_files/css.php" media=all><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpdebugremote_debug_files/css(1).php" media=screen><LINK 
+rel=stylesheet type=text/css 
+href="egovframeworkdevimpdebugremote_debug_files/css(2).php" media=print>
+<SCRIPT type=text/javascript charset=utf-8 
+src="egovframeworkdevimpdebugremote_debug_files/js.php"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="dokuwiki export"><!-- TOC START -->
+<DIV class=toc>
+<DIV id=toc__header class="tocheader toctoggle">Table of Contents</DIV>
+<DIV id=toc__inside>
+<UL class=toc>
+  <LI class=level1>
+  <DIV class=li><SPAN class=li><A class=toc 
+  href="#remote_debug">Remote 
+  Debug</A></SPAN></DIV>
+  <UL class=toc>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#개요">개요</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#설명">설명</A></SPAN></DIV>
+    <UL class=toc>
+      <LI class=level3>
+      <DIV class=li><SPAN class=li><A class=toc 
+      href="#디버깅_절차">디버깅 
+      절차</A></SPAN></DIV></LI></UL></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#환경설정">환경설정</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#사용법">사용법</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#참고자료">참고자료</A></SPAN></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END -->
+<H1><A id=remote_debug name=remote_debug>Remote Debug</A></H1>
+<DIV class=level1></DIV><!-- SECTION "Remote Debug" [1-28] -->
+<H2><A id=개요 name=개요>개요</A></H2>
+<DIV class=level2>
+<P>원격 컴퓨터의 WAS(Jboss, JEUS, WebLogic)에서 실행되는 어플리케이션을 디버깅 </P></DIV><!-- SECTION "개요" [29-148] -->
+<H2><A id=설명 name=설명>설명</A></H2>
+<DIV class=level2>
+<P>Java 디버거의 클라이언트/서버 디자인을 사용하면 네트워크에 있는 컴퓨터에서 Java 프로그램을 실행하고 플랫폼을 실행하는 
+워크스테이션에서 이 프로그램을 디버그 할 수 있습니다. </P>
+<P>참고 : 원격 디버깅을 사용하려면 이 기능을 지원하는 JVM을 사용하고 있어야 합니다. </P></DIV><!-- SECTION "설명" [149-526] -->
+<H3><A id=디버깅_절차 name=디버깅_절차>디버깅 절차</A></H3>
+<DIV class=level3>
+<OL>
+  <LI class=level1>
+  <DIV class=li>Java 프로그램 빌드</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>Java 프로그램 원격 컴퓨터에 Deploy</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>원격 컴퓨터에 JVM 옵션 설정 후 서버 구동</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>워크스테이션에서 원격 컴퓨터의 주소 및 포트를 지정하여 디버깅</DIV></LI></OL></DIV><!-- SECTION "디버깅 절차" [527-787] -->
+<H2><A id=환경설정 name=환경설정>환경설정</A></H2>
+<DIV class=level2>
+<P>원격 디버깅을 위해 우선 원격 컴퓨터의 WAS 서버 시작시 JVM 옵션에 다음과 같은 내용을 추가한다. </P><PRE class=code>  -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n</PRE></DIV>
+<H4><A id=jboss name=jboss>Jboss</A></H4>
+<DIV class=level4>
+<P>run 배치 스크립트 파일의 <STRONG>JAVA_OPTS</STRONG>변수에 위 옵션을 추가한다. </P><PRE class=code>  set JAVA_OPTS=-Xdebug 
+  -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n 
+  %JAVA_OPTS%
+</PRE></DIV>
+<H4><A id=jeus name=jeus>JEUS</A></H4>
+<DIV class=level4>
+<P>JEUSMain.xml의 컨테이너 설정의 <STRONG>command-option</STRONG>에 아래 부분을 추가한다. </P><PRE class=code>  -Xdebug -Xnoagent 
+  -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n 
+  -server
+</PRE></DIV>
+<H4><A id=weblogic name=weblogic>Weblogic</A></H4>
+<DIV class=level4>
+<P>startWebLogic 배치 스크립트 파일의 <STRONG>JAVA_OPTS</STRONG>변수에 위 옵션을 다음과 같이 추가한다. 
+</P><PRE class=code>  set JAVA_OPTS= -Xdebug -Xnoagent 
+  -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n 
+  %JAVA_OPTS%
+</PRE>
+<P>위와 같이 지정하면 8000 포트를 이용하여 원격 디버깅이 가능하도록 지원하겠다는 의미이다. </P></DIV><!-- SECTION "환경설정" [788-1844] -->
+<H2><A id=사용법 name=사용법>사용법</A></H2>
+<DIV class=level2>
+<P>원격 Java 응용프로그램 실행 구성을 작성하려면 다음을 수행한다. </P>
+<UL>
+  <LI class=level1>
+  <DIV class=li>Workbench 메뉴 표시줄에서 <STRONG><EM class=u>R</EM>un</STRONG> &gt; 
+  <STRONG>De<EM class=u>b</EM>ug Configurations…</STRONG>을 선택하여 실행 구성 대화 상자를 
+  표시한다. <BR><A class=media 
+  title=egovframework:dev:imp:debug:remote_debug:r_debug_01.png 
+  ><IMG 
+  class=media alt="" 
+  src="egovframeworkdevimpdebugremote_debug_files/r_debug_01.png"></A></DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>왼쪽 구성 유형 목록에서 <STRONG>Remote Java Application</STRONG>을 
+  선택한다.</DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li><STRONG>New launch Configuration</STRONG> 도구 모음 단추를 클릭한다. 새 원격 
+  실행 구성이 작성되고 <STRONG>Connect</STRONG>, <STRONG>Source</STRONG>, <STRONG><EM 
+  class=u>C</EM>ommon</STRONG>의 세가지 탭이 표시된다. <BR><A class=media 
+  title=egovframework:dev:imp:debug:remote_debug:r_debug_02.png 
+  ><IMG 
+  class=media alt="" 
+  src="egovframeworkdevimpdebugremote_debug_files/r_debug_02.png"></A> <BR><A 
+  class=media title=egovframework:dev:imp:debug:remote_debug:r_debug_03.png 
+  ><IMG 
+  class=media alt="" 
+  src="egovframeworkdevimpdebugremote_debug_files/r_debug_03.png"></A></DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>연결 탭의 프로젝트 필드에서 실행의 참조(소스 찾아보기용)로 사용할 프로젝트를 입력하거나 찾아서 선택한다. 
+  </DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>연결 탭의 호스트 필드에서 Java 프로그램이 실행될 호스트의 IP 주소 또는 도메인 이름을 입력한다. 프로그램이 
+  Workbench와 동일한 시스템에서 실행되고 있으면 localhost를 입력한다.</DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>연결 탭의 포트 필드에서 원격 VM이 연결을 허용할 포트를 입력한다. </DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>원격 VM 종료 허용 플래그는 디버거에서 종료 명령을 사용 할 수 있는지 여부를 토글하여 판별합니다. 연결 중인 
+  VM을 종료할 수 있도록 하려면 이 옵션을 선택한다. </DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>디버그를 클릭한다. </DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>디버그 퍼스펙트브로 변환하면 원격 컴퓨터의 Thread정보가 표시 된다.</DIV></LI></UL>
+<UL>
+  <LI class=level1>
+  <DIV class=li>디버깅 할 프로그램의 특정 위치에 중단점을 설정 한 후 해당 프로그램이 실행되도록 웹브라우저를 이용하여 서비스를 
+  호출한다.</DIV></LI></UL></DIV><!-- SECTION "사용법" [1845-3596] -->
+<H2><A id=참고자료 name=참고자료>참고자료</A></H2>
+<DIV class=level2>
+<UL>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern 
+  title=http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/concepts/cremdbug.htm 
+  href="http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/concepts/cremdbug.htm" 
+  rel=nofollow>http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/concepts/cremdbug.htm</A></DIV></LI>
+  <LI class=level1>
+  <DIV class=li><A class=urlextern 
+  title=http://java.sun.com/javase/technologies/core/toolsapis/jpda/ 
+  href="http://java.sun.com/javase/technologies/core/toolsapis/jpda/" 
+  rel=nofollow>http://java.sun.com/javase/technologies/core/toolsapis/jpda/</A></DIV></LI></UL></DIV><!-- SECTION "참고자료" [3597-] --></DIV></BODY></HTML>

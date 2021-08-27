@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Name: eGovFrame Mobile Kw3c
+Bundle-Activator: egovframework.dev.kw3c.Kw3cPlugin
+Bundle-Vendor: MOPAS
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: egovframework.verification.kw3c;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,egovframework.
+ dev.imp.core;bundle-version="2.0.0",egovframework.dev.imp.ide;bundle-
+ version="2.0.0"
+Bundle-Version: 2.0.1.201111250803
+
+

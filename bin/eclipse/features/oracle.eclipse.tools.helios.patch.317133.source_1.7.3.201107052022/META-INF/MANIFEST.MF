@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_21 (Sun Microsystems Inc.)
+
+Name: license.html
+SHA1-Digest: itV04b6RpZ95gIVbuHWFMnGeXJ4=
+
+Name: oepe-40.png
+SHA1-Digest: ehnNoPK+NLZqAYnt37m6reFy9Is=
+
+Name: feature.xml
+SHA1-Digest: VxTVyHjywjiye1HEmhOM7y5yKws=
+
+Name: feature.properties
+SHA1-Digest: nl4o8gEpDUuBhYRdhPCI1NzrWbU=
+

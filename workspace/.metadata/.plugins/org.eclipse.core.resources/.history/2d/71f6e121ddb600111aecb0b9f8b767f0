@@ -1,0 +1,75 @@
+package kr.or.nhic.framework.view;
+
+import java.io.PrintWriter;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kr.or.nhic.framework.vo.CommonVO;
+
+import org.springframework.web.servlet.view.AbstractView;
+
+/**
+ * @ProjectName dipis_ext
+ * @FileName XmlView.java
+ * @Substance TODO
+ * @author zeroyotta
+ * @since 2011. 4. 29.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 4. 29.     zeroyotta     TODO
+ *
+ * </pre>
+ */
+public class XmlView extends AbstractView {
+	@SuppressWarnings("unchecked")
+	@Override
+	protected void renderMergedOutputModel(Map model, HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		response.setContentType("text/xml");
+		response.setHeader("Cache-Control", "no-cache");
+		response.setCharacterEncoding("UTF-8");
+		
+		PrintWriter writer = null;
+		
+		try {
+			writer = response.getWriter();
+			
+			StringBuffer xml = new StringBuffer();
+		    
+			List<CommonVO> list = (List<CommonVO>)model.get("list");
+			CommonVO vo = (CommonVO)model.get("vo");
+			
+			xml.append("<xmlView>");
+			
+			// List
+			if(list!=null) {
+				for(CommonVO item:list) {
+					xml.append("<item>");
+					xml.append(item.toXml());
+					xml.append("</item>");
+				}
+			}
+			// VO
+			else {
+				xml.append("<item>");
+				xml.append(vo.toXml());
+				xml.append("</item>");
+			}
+		    
+			xml.append("</xmlView>");
+			
+			writer.write(xml.toString());
+		} finally {
+			if(writer!=null) writer.close();
+		}
+	}
+}

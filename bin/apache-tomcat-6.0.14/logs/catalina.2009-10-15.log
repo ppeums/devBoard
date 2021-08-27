@@ -1,0 +1,1054 @@
+2009. 10. 15 오후 4:14:11 org.apache.catalina.core.AprLifecycleListener init
+심각: An incompatible version 1.1.6 of the Apache Tomcat Native library is installed, while Tomcat requires version 1.1.8 
+2009. 10. 15 오후 4:14:11 org.apache.coyote.http11.Http11AprProtocol init
+정보: Initializing Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:14:11 org.apache.coyote.ajp.AjpAprProtocol init
+정보: Initializing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:14:11 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 499 ms
+2009. 10. 15 오후 4:14:11 org.apache.catalina.core.StandardService start
+정보: Starting service Catalina
+2009. 10. 15 오후 4:14:11 org.apache.catalina.core.StandardEngine start
+정보: Starting Servlet Engine: Apache Tomcat/6.0.14
+2009. 10. 15 오후 4:14:20 org.apache.coyote.http11.Http11AprProtocol start
+정보: Starting Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:14:20 org.apache.coyote.ajp.AjpAprProtocol start
+정보: Starting Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:14:20 org.apache.catalina.startup.Catalina start
+정보: Server startup in 9020 ms
+2009. 10. 15 오후 4:14:21 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\maven-plugin.hpi
+2009. 10. 15 오후 4:14:21 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\ssh-slaves.hpi
+2009. 10. 15 오후 4:14:21 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\subversion.hpi
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field version
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.Hudson.version
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.JDK.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at hudson.util.RobustCollectionConverter.populateCollection(RobustCollectionConverter.java:79)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.unmarshal(CollectionConverter.java:61)
+	at hudson.util.RobustCollectionConverter.unmarshal(RobustCollectionConverter.java:71)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Cannot convert type hudson.util.DescribableList to type hudson.model.Hudson$CloudList
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field scmCheckoutRetryCount
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.Hudson.scmCheckoutRetryCount
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedUsers
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedUsers
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedRevprop
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedRevprop
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:22 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModuleSet.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:23 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModule.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.ItemGroupMixIn.loadChildren(ItemGroupMixIn.java:58)
+	at hudson.maven.MavenModuleSet.onLoad(MavenModuleSet.java:356)
+	at hudson.model.Items.load(Items.java:110)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:23 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedUsers
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedUsers
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:23 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedRevprop
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedRevprop
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:23 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModuleSet.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:24 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModule.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.ItemGroupMixIn.loadChildren(ItemGroupMixIn.java:58)
+	at hudson.maven.MavenModuleSet.onLoad(MavenModuleSet.java:356)
+	at hudson.model.Items.load(Items.java:110)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:14:24 hudson.model.Hudson load
+정보: Took 2063 ms to load
+2009. 10. 15 오후 4:14:24 hudson.TcpSlaveAgentListener <init>
+정보: JNLP slave agent listener started on TCP port 1427
+2009. 10. 15 오후 4:14:34 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.tasks.Maven$MavenInstallation.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at com.thoughtworks.xstream.converters.collections.ArrayConverter.unmarshal(ArrayConverter.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.tasks.Maven$DescriptorImpl.<init>(Maven.java:283)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:14:35 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field revPropSupport
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM$DescriptorImpl.revPropSupport
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.scm.SubversionSCM$DescriptorImpl.<init>(SubversionSCM.java:1237)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:14:35 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.tasks.Ant$AntInstallation.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at com.thoughtworks.xstream.converters.collections.ArrayConverter.unmarshal(ArrayConverter.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.tasks.Ant$DescriptorImpl.<init>(Ant.java:260)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:14:35 org.apache.coyote.ajp.AjpAprProtocol pause
+정보: Pausing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:14:36 org.apache.catalina.core.StandardService stop
+정보: Stopping service Catalina
+2009. 10. 15 오후 4:14:36 hudson.PluginWrapper stop
+정보: Stopping maven-plugin
+2009. 10. 15 오후 4:14:36 hudson.PluginWrapper stop
+정보: Stopping ssh-slaves
+2009. 10. 15 오후 4:14:36 hudson.PluginWrapper stop
+정보: Stopping subversion
+2009. 10. 15 오후 4:15:22 org.apache.catalina.core.AprLifecycleListener init
+심각: An incompatible version 1.1.6 of the Apache Tomcat Native library is installed, while Tomcat requires version 1.1.8 
+2009. 10. 15 오후 4:15:22 org.apache.coyote.http11.Http11AprProtocol init
+정보: Initializing Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:15:22 org.apache.coyote.ajp.AjpAprProtocol init
+정보: Initializing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:15:22 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 344 ms
+2009. 10. 15 오후 4:15:22 org.apache.catalina.core.StandardService start
+정보: Starting service Catalina
+2009. 10. 15 오후 4:15:22 org.apache.catalina.core.StandardEngine start
+정보: Starting Servlet Engine: Apache Tomcat/6.0.14
+2009. 10. 15 오후 4:15:25 org.apache.coyote.http11.Http11AprProtocol start
+정보: Starting Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:15:25 org.apache.coyote.ajp.AjpAprProtocol start
+정보: Starting Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:15:25 org.apache.catalina.startup.Catalina start
+정보: Server startup in 3115 ms
+2009. 10. 15 오후 4:15:25 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\maven-plugin.hpi
+2009. 10. 15 오후 4:15:25 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\ssh-slaves.hpi
+2009. 10. 15 오후 4:15:25 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\subversion.hpi
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field version
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.Hudson.version
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.JDK.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at hudson.util.RobustCollectionConverter.populateCollection(RobustCollectionConverter.java:79)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.unmarshal(CollectionConverter.java:61)
+	at hudson.util.RobustCollectionConverter.unmarshal(RobustCollectionConverter.java:71)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Cannot convert type hudson.util.DescribableList to type hudson.model.Hudson$CloudList
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field scmCheckoutRetryCount
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.model.Hudson.scmCheckoutRetryCount
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Hudson.load(Hudson.java:1808)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedUsers
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedUsers
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedRevprop
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedRevprop
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModuleSet.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:25 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModule.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.ItemGroupMixIn.loadChildren(ItemGroupMixIn.java:58)
+	at hudson.maven.MavenModuleSet.onLoad(MavenModuleSet.java:356)
+	at hudson.model.Items.load(Items.java:110)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:26 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedUsers
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedUsers
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:26 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field excludedRevprop
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM.excludedRevprop
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:26 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModuleSet.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:26 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field blockBuildWhenUpstreamBuilding
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.maven.MavenModule.blockBuildWhenUpstreamBuilding
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:861)
+	at hudson.XmlFile.read(XmlFile.java:126)
+	at hudson.model.Items.load(Items.java:109)
+	at hudson.model.ItemGroupMixIn.loadChildren(ItemGroupMixIn.java:58)
+	at hudson.maven.MavenModuleSet.onLoad(MavenModuleSet.java:356)
+	at hudson.model.Items.load(Items.java:110)
+	at hudson.model.Hudson.load(Hudson.java:1853)
+	at hudson.model.Hudson.<init>(Hudson.java:516)
+	at hudson.WebAppMain$2.run(WebAppMain.java:190)
+2009. 10. 15 오후 4:15:26 hudson.model.Hudson load
+정보: Took 485 ms to load
+2009. 10. 15 오후 4:15:26 hudson.TcpSlaveAgentListener <init>
+정보: JNLP slave agent listener started on TCP port 1434
+2009. 10. 15 오후 4:15:36 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.tasks.Maven$MavenInstallation.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at com.thoughtworks.xstream.converters.collections.ArrayConverter.unmarshal(ArrayConverter.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.tasks.Maven$DescriptorImpl.<init>(Maven.java:283)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:15:41 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field revPropSupport
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.scm.SubversionSCM$DescriptorImpl.revPropSupport
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.scm.SubversionSCM$DescriptorImpl.<init>(SubversionSCM.java:1237)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:15:41 hudson.util.RobustReflectionConverter doUnmarshal
+경고: Skipping a non-existent field properties
+com.thoughtworks.xstream.converters.reflection.NonExistentFieldException: No such field hudson.tasks.Ant$AntInstallation.properties
+	at com.thoughtworks.xstream.converters.reflection.FieldDictionary.field(FieldDictionary.java:106)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.getFieldType(PureJavaReflectionProvider.java:151)
+	at hudson.util.RobustReflectionConverter.determineType(RobustReflectionConverter.java:327)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:218)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:77)
+	at com.thoughtworks.xstream.converters.collections.ArrayConverter.unmarshal(ArrayConverter.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at hudson.util.RobustReflectionConverter.unmarshallField(RobustReflectionConverter.java:262)
+	at hudson.util.RobustReflectionConverter.doUnmarshal(RobustReflectionConverter.java:222)
+	at hudson.util.RobustReflectionConverter.unmarshal(RobustReflectionConverter.java:173)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:81)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:55)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:75)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:59)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:142)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:33)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:931)
+	at hudson.util.XStream2.unmarshal(XStream2.java:65)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:917)
+	at hudson.XmlFile.unmarshal(XmlFile.java:146)
+	at hudson.model.Descriptor.load(Descriptor.java:473)
+	at hudson.tasks.Ant$DescriptorImpl.<init>(Ant.java:260)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:143)
+	at hudson.ExtensionFinder$Sezpoz.findExtensions(ExtensionFinder.java:101)
+	at hudson.ExtensionList.load(ExtensionList.java:190)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.DescriptorExtensionList.load(DescriptorExtensionList.java:131)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:176)
+	at hudson.ExtensionList.iterator(ExtensionList.java:107)
+	at hudson.model.ComputerSet.<clinit>(ComputerSet.java:279)
+	at hudson.model.Hudson.getComputer(Hudson.java:1103)
+	at hudson.model.LoadStatistics$1.doRun(LoadStatistics.java:227)
+	at hudson.triggers.SafeTimerTask.run(SafeTimerTask.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009. 10. 15 오후 4:15:42 org.apache.coyote.ajp.AjpAprProtocol pause
+정보: Pausing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:15:43 org.apache.catalina.core.StandardService stop
+정보: Stopping service Catalina
+2009. 10. 15 오후 4:15:43 hudson.PluginWrapper stop
+정보: Stopping maven-plugin
+2009. 10. 15 오후 4:15:43 hudson.PluginWrapper stop
+정보: Stopping ssh-slaves
+2009. 10. 15 오후 4:15:43 hudson.PluginWrapper stop
+정보: Stopping subversion
+2009. 10. 15 오후 4:18:34 org.apache.catalina.core.AprLifecycleListener init
+심각: An incompatible version 1.1.6 of the Apache Tomcat Native library is installed, while Tomcat requires version 1.1.8 
+2009. 10. 15 오후 4:18:34 org.apache.coyote.http11.Http11AprProtocol init
+정보: Initializing Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:18:34 org.apache.coyote.ajp.AjpAprProtocol init
+정보: Initializing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:18:34 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 341 ms
+2009. 10. 15 오후 4:18:34 org.apache.catalina.core.StandardService start
+정보: Starting service Catalina
+2009. 10. 15 오후 4:18:34 org.apache.catalina.core.StandardEngine start
+정보: Starting Servlet Engine: Apache Tomcat/6.0.14
+2009. 10. 15 오후 4:18:34 org.apache.catalina.startup.HostConfig deployWAR
+정보: Deploying web application archive hudson.war
+2009. 10. 15 오후 4:18:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\maven-plugin.hpi
+2009. 10. 15 오후 4:18:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\ssh-slaves.hpi
+2009. 10. 15 오후 4:18:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\subversion.hpi
+2009. 10. 15 오후 4:18:50 hudson.model.Hudson load
+정보: Loading in 4 parallel threads
+2009. 10. 15 오후 4:18:52 org.apache.coyote.http11.Http11AprProtocol start
+정보: Starting Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:18:52 org.apache.coyote.ajp.AjpAprProtocol start
+정보: Starting Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:18:52 org.apache.catalina.startup.Catalina start
+정보: Server startup in 17919 ms
+2009. 10. 15 오후 4:18:52 hudson.model.Hudson load
+정보: Took 1985 ms to load
+2009. 10. 15 오후 4:18:52 hudson.TcpSlaveAgentListener <init>
+정보: JNLP slave agent listener started on TCP port 1463
+2009. 10. 15 오후 4:27:44 org.apache.coyote.ajp.AjpAprProtocol pause
+정보: Pausing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:27:45 org.apache.catalina.core.StandardService stop
+정보: Stopping service Catalina
+2009. 10. 15 오후 4:27:45 hudson.PluginWrapper stop
+정보: Stopping maven-plugin
+2009. 10. 15 오후 4:27:45 hudson.PluginWrapper stop
+정보: Stopping ssh-slaves
+2009. 10. 15 오후 4:27:45 hudson.PluginWrapper stop
+정보: Stopping subversion
+2009. 10. 15 오후 4:57:49 org.apache.catalina.core.AprLifecycleListener init
+심각: An incompatible version 1.1.6 of the Apache Tomcat Native library is installed, while Tomcat requires version 1.1.8 
+2009. 10. 15 오후 4:57:49 org.apache.coyote.http11.Http11AprProtocol init
+정보: Initializing Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:57:49 org.apache.coyote.ajp.AjpAprProtocol init
+정보: Initializing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:57:49 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 352 ms
+2009. 10. 15 오후 4:57:49 org.apache.catalina.core.StandardService start
+정보: Starting service Catalina
+2009. 10. 15 오후 4:57:49 org.apache.catalina.core.StandardEngine start
+정보: Starting Servlet Engine: Apache Tomcat/6.0.14
+2009. 10. 15 오후 4:57:49 org.apache.catalina.startup.HostConfig deployWAR
+정보: Deploying web application archive hudson.war
+2009. 10. 15 오후 4:57:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\maven-plugin.hpi
+2009. 10. 15 오후 4:57:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\ssh-slaves.hpi
+2009. 10. 15 오후 4:57:50 hudson.ClassicPluginStrategy createPluginWrapper
+정보: Loading plugin: C:\Documents and Settings\Judd\.hudson\plugins\subversion.hpi
+2009. 10. 15 오후 4:57:50 hudson.model.Hudson load
+정보: Loading in 4 parallel threads
+2009. 10. 15 오후 4:57:51 hudson.model.Hudson load
+정보: Took 922 ms to load
+2009. 10. 15 오후 4:57:51 hudson.TcpSlaveAgentListener <init>
+정보: JNLP slave agent listener started on TCP port 1587
+2009. 10. 15 오후 4:57:52 org.apache.coyote.http11.Http11AprProtocol start
+정보: Starting Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 4:57:52 org.apache.coyote.ajp.AjpAprProtocol start
+정보: Starting Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 4:57:52 org.apache.catalina.startup.Catalina start
+정보: Server startup in 3352 ms
+2009. 10. 15 오후 5:07:17 org.apache.coyote.http11.Http11AprProtocol pause
+정보: Pausing Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 5:07:17 org.apache.coyote.ajp.AjpAprProtocol pause
+정보: Pausing Coyote AJP/1.3 on ajp-8009
+2009. 10. 15 오후 5:07:18 org.apache.catalina.core.StandardService stop
+정보: Stopping service Catalina
+2009. 10. 15 오후 5:07:18 hudson.PluginWrapper stop
+정보: Stopping maven-plugin
+2009. 10. 15 오후 5:07:18 hudson.PluginWrapper stop
+정보: Stopping ssh-slaves
+2009. 10. 15 오후 5:07:18 hudson.PluginWrapper stop
+정보: Stopping subversion
+2009. 10. 15 오후 5:07:19 org.apache.coyote.http11.Http11AprProtocol destroy
+정보: Stopping Coyote HTTP/1.1 on http-8080
+2009. 10. 15 오후 5:07:19 org.apache.coyote.ajp.AjpAprProtocol destroy
+정보: Stopping Coyote AJP/1.3 on ajp-8009

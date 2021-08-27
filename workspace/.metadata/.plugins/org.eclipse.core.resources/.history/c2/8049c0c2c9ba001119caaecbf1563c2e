@@ -1,0 +1,77 @@
+package kr.or.nhic.framework.view;
+
+import java.io.PrintWriter;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.view.AbstractView;
+
+import egovframework.rte.psl.dataaccess.util.EgovMap;
+
+/**
+ * @ProjectName dipis_pip
+ * @FileName EgovMapXmlView.java
+ * @Substance TODO
+ * @author Administrator
+ * @since 2011. 5. 4.
+ * @version 1.0
+ * @Copyright (c) 2012 국민건강보험공단, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 5. 4.     Administrator     TODO
+ *
+ * </pre>
+ */
+public class EgovMapXmlView extends AbstractView {
+	@SuppressWarnings("unchecked")
+	@Override
+	protected void renderMergedOutputModel(@SuppressWarnings("rawtypes") Map model
+			,HttpServletRequest request ,HttpServletResponse response) throws Exception {
+		response.setContentType("text/xml");
+		response.setHeader("Cache-Control", "no-cache");
+		response.setCharacterEncoding("UTF-8");
+		
+		PrintWriter writer = null;
+		
+		try {
+			writer = response.getWriter();
+			
+			StringBuffer xml = new StringBuffer();
+		    
+			List<EgovMap> list = (List<EgovMap>)model.get("list");
+			
+			xml.append("<xmlView>");
+			
+			// List
+			if(list!=null) {
+				for(EgovMap item:list) {
+					xml.append("<item>");
+					xml.append(getEgovMapToXml(item));
+					xml.append("</item>");
+				}
+			}
+		    
+			xml.append("</xmlView>");
+			
+			writer.write(xml.toString());
+		} finally {
+			if(writer!=null) writer.close();
+		}
+	}
+	
+	protected String getEgovMapToXml(EgovMap map) {
+		StringBuffer xmlBuffer = new StringBuffer();
+		for (Object obj : map.keyList()) {
+			String key = (String) obj;
+			xmlBuffer.append("<" + key + "><![CDATA[" + map.get(key) + "]]></" + key + ">");
+		}
+		return xmlBuffer.toString();
+	}
+}

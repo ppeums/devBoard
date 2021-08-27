@@ -1,0 +1,617 @@
+package kr.or.nhic.framework.util;
+
+import java.io.UnsupportedEncodingException;
+import java.util.StringTokenizer;
+
+/**
+ * @ProjectName dipis_sample
+ * @FileName FormatUtil.java
+ * @Substance 프로젝트 포멧관련 Util
+ * @author admin
+ * @since 2011. 3. 15.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 3. 15.     admin     최초작성
+ *
+ * </pre>
+ */
+
+public class FormatUtil {
+    
+	/**
+	 * The empty String <code>""</code>.
+	 * @since 2.0
+	 */
+	public static final String EMPTY = "";
+	public static final String SCRIPT = "(S|s)(C|c)(R|r)(I|i)(P|p)(T|t)";
+	public static final String OBJECT = "(O|o)(B|b)(J|j)(E|e)(C|c)(T|t)";
+	public static final String APPLET = "(A|a)(P|p)(P|p)(L|l)(E|e)(T|t)";
+	public static final String EMBED = "(E|e)(M|m)(B|b)(E|e)(D|d)";
+	public static final String FORM = "(F|f)(O|o)(R|r)(M|m)";
+	public static final String NOT_PERMITTED = "Not Permitted";
+	
+	/**
+	 * number 3자리씩 comma 붙이기
+	 */
+	 
+	public static String formatComma(int num)
+	{
+		String str = String.valueOf(num);
+		str = formatComma(str);
+		
+		return str;
+	}
+	
+	public static String formatComma(String numTo)
+	{
+		String num = numTo;
+		
+		String spotFront = "";
+		String spotAfter = "";
+		String ret = "";
+		String tmp = "";
+		int len;
+
+		if ( (num==null) || num.equals("") ) 
+		{
+			ret = "0";
+			return ret;
+		}
+		else 
+			num = num.trim();
+
+		StringTokenizer tok = new StringTokenizer(num,".");
+		if ( tok.countTokens() > 1 )
+		{
+			spotAfter = num.substring( num.indexOf(".") );
+		}
+
+		spotFront = tok.nextToken();
+
+		if ( spotFront.length() > 0 && spotFront.charAt(0)=='-' )
+		{
+			ret = "-";
+			spotFront = spotFront.substring(1);
+		}
+
+		len = spotFront.length();
+
+		for (int i=1 ; i <= len ; i++ )
+		{
+			tmp = spotFront.charAt(len-i) + tmp;
+			if ( i%3 == 0 && i < len)
+			{
+				tmp = "," + tmp;
+			}
+		}
+
+		ret = ret + tmp + spotAfter;
+		return ret;
+	}
+	
+	
+	public static String removeZero(String zeroStrTo)
+	{
+	
+		String zeroStr = zeroStrTo;
+		
+		if(zeroStr==null || zeroStr.trim().equals("")) return "-";
+
+		//if(zeroStr.trim().equals("")) return "-";
+		java.util.StringTokenizer st = new java.util.StringTokenizer(zeroStr, ".");
+		
+		String others = "";
+		if(st.countTokens() > 1) others = zeroStr.substring(zeroStr.indexOf("."));
+		zeroStr = st.nextToken();
+
+		int index = 0;
+		String signStr = "";
+		
+		if(zeroStr.charAt(0) == '-') 
+		{
+			signStr = "-";
+			zeroStr = zeroStr.substring(1);
+		}
+		else if(zeroStr.charAt(0) == '+') 
+		{
+			signStr = "";
+			zeroStr = zeroStr.substring(1);
+		}
+
+		if(zeroStr.equals("")) return "-";
+		while(zeroStr.charAt(index) == '0') 
+		{
+			index++;
+			if(index >= zeroStr.length()) return signStr + "0" + others;
+		}
+		if(zeroStr.length()==0) return signStr + "0" + others;
+		
+		return signStr + zeroStr.substring(index) + others;
+	}
+
+	/**
+	 * 스트링의 마지막에서 두번째자리에 소수점찍기 formatting
+	 */
+	//-------------------------------------------------------------------------------------------
+	public static String format2Point(String pointStrTo)
+	{
+		String pointStr = pointStrTo;
+		
+		if ( pointStr == null || pointStr.equals("") )
+		{
+			return "";
+		}
+
+		int flag = 0;
+
+		if ( pointStr.charAt(0) == '-' )
+		{
+			pointStr = pointStr.substring(1);
+			flag = 1;
+		}
+
+		int pointInt = pointStr.length();
+		String retStr = null;
+
+		if ( pointInt > 2 )
+		{
+			int temp = pointInt - 2;
+					
+			String first = pointStr.substring(0,temp);
+			String last = pointStr.substring(temp,pointInt);
+
+			retStr = first + "." + last;
+		}
+		else if ( pointInt == 2 )
+		{
+			retStr = "0." + pointStr;
+		}
+		else if ( pointInt == 1 )
+		{
+			retStr = "0.0" + pointStr;
+		}
+		else
+			retStr = "-";
+
+		if ( flag == 1 )
+			return "-"+retStr;
+		else
+			return retStr;
+
+	}
+	
+	/**
+	 * 날짜 포맷1 - '20110315' 인경우(8자리)
+	 */
+	public static String formatDate(String str)
+	{
+		return formatDate(str, "/");
+	}
+	
+	public static String formatDate2(String str)
+	{
+		return formatDate(str, "-");
+	}
+	
+	public static String formatDate(String str, String seperatorType)
+	{
+		String retStr = "";
+		if(str != null && str.length() == 8)
+		{
+			retStr = str.substring(0, 4) + seperatorType + str.substring(4, 6) + seperatorType + str.substring(6);			
+		}
+		else if (str != null && str.length() == 6){
+		    retStr = str.substring(0, 4) + seperatorType + str.substring(4, 6);
+		}
+		
+		return retStr;
+	}
+	
+	/**
+	 * 지정된 소수점 이하자리까지 반환
+	 * 
+	 * 
+	 * @param double, int
+	 * @return  double
+	 */
+	public static double cutNumPosition(double num, int position)
+	{
+		int base = 1;
+		for(int i=0; i < position; i++)
+		{
+			base = base * 10;
+		}
+		
+		return Math.floor(num * base)/base;
+	}
+	/**
+	 * 지정된 소수점 이하자리까지 반환
+	 * 
+	 * 
+	 * @param String, int
+	 * @return  String
+	 */
+	public static String cutNumPosition(String num, int position)
+	{
+		double d = Double.parseDouble(num);
+		
+		return String.valueOf(cutNumPosition(d, position));
+	}
+	
+	/**
+	 * 지정된 소수점 자리에서 반올림
+	 * 
+	 * 
+	 * @param double, int
+	 * @return  double
+	 */
+	public static double roundNumber(double num, int position)
+	{
+		int base = 1;
+		for(int i=0; i < position; i++)
+		{
+			base = base * 10;
+		}
+		
+		return Math.floor(num * base + 0.5)/base;
+	}
+	/**
+	 * 지정된 소수점 자리에서 반올림
+	 * 
+	 * 
+	 * @param String, int
+	 * @return  String
+	 */
+	public static String roundNumber(String num, int position)
+	{
+		double d = Double.parseDouble(num);
+		
+		return String.valueOf(roundNumber(d, position));
+	}
+	
+	public static String numSpaceToZero(int size, String num) 
+	{
+		StringBuffer result = new StringBuffer();
+
+		int numInt = num.length();
+		int temp = size - numInt;
+
+		if (temp >= 0) {
+			for (int i = 0; i < temp; i++) {
+	    			result.append("0");
+			}
+    			result.append(num);
+		} else {
+			for (int i = 0; i < size; i++) {
+	    			result.append("0");
+			}
+		}
+		return result.toString();
+	}
+    
+	/**
+	 * 문자열의 Null값 검사를 한다.
+	 * <BR>문자열이 null 또는 white space인 경우에는 "true"을 반환한다.
+	 * 
+	 * @param str
+	 * @return  boolean
+	 */
+	public static boolean isNull( String str ) {
+	    return ( str == null || "null".equals( str ) || "".equals( str ) ); 
+	}
+	
+	/**
+	 * 문자열의 null값 검사를 한다.
+	 * <BR>문자열이 null 또는 white space인 경우에는 "거짓"을 반환한다.
+	 * 
+	 * @param str
+	 * @return  boolean
+	 */
+	public static boolean isNotNull( String str ) {
+	    return !( str == null || "".equals( str ) );
+	}
+	
+	/**
+	 * 문자열이 null인 경우에는 whiteSpace를 반환한다.
+	 * 
+	 * @param string
+	 * @return
+	 */
+	public static String nullToEmptyString( String string ) { 
+		return isNull( string ) ? "" : string;
+	}
+	
+	
+	public static String switchingNull(String str1, String str2) {
+		if(isNull(str1)) {
+			return str2;
+		}else{
+			return str1;
+		}
+	}
+
+	public static String[] switchingNull(String []str1, String []str2) {
+		if( str1 == null ) {
+			return str2;
+		}else{
+			return str1;
+		}
+	}
+	
+	/**
+	 * 문자열 해당코드로 변환한다..
+	 * 
+	 * @param str - String
+	 * @param encode - String
+	 * @param charsetName - String
+	 * @return
+	 * @throws UnsupportedEncodingException
+	 */
+	private static String encodeText( String str, String encode, String charsetName )  {
+		String result = null;
+		
+		try {
+			result = isNull( str ) ? null : new String( str.getBytes( encode ), charsetName );
+		} catch ( UnsupportedEncodingException e ) {
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+	
+	
+	/**
+	 * 문자열을 euc-kr에서 8859_1로 디코딩 한다.
+	 * 
+	 * @param str
+	 * @return
+	 * @throws UnsupportedEncodingException
+	 */
+	public static String decode( String str ) 
+	{
+	    return encodeText( str, "euc-kr", "8859_1" ); 
+	}
+	
+	 /**
+	 * 문자열을 8859_1에서 euc-kr로 인코딩 한다.
+	 * @param str
+	 * @return
+	 * @throws UnsupportedEncodingException
+	 */        
+	public static String encode( String str ) 
+	{
+	    return encodeText( str, "8859_1", "euc-kr" );
+	}
+
+	 /**
+	 * 문자열을 8859_1에서 utf-8로 인코딩 한다.
+	 * @param str
+	 * @return
+	 * @throws UnsupportedEncodingException
+	 */        
+	public static String encodeUtf( String str ) 
+	{
+	    return encodeText( str, "8859_1", "utf-8" );
+	}
+
+	public static String cutStringToNum( boolean bType, String str, int nCut ) {
+		return cutStringToNum( bType, str, nCut, ".." );
+	}
+
+	public static String cutStringToNum( String str, int nCut ) {
+		return cutStringToNum( true, str, nCut, ".." );
+	}
+
+	public static String cutStringToNum( String str, int nCut, String def ) {
+		return cutStringToNum( true, str, nCut, def );
+	}
+
+	public static String cutStringToNum( boolean bType, String str, int nCut, String def ) {
+		String tmpStr = switchingNull( str, "" );
+		String tmpDef = switchingNull( def, ".." );
+
+		char[] chrs = tmpStr.toCharArray();
+		int nDefLen = tmpDef.toCharArray().length;
+
+		int nRemain = 0;
+		int nInc = 0;
+		for ( ; nInc + nRemain < nCut - nDefLen && nInc < chrs.length; nInc++ ) {
+			if ( String.valueOf(chrs[nInc]).getBytes()[0] < 0 )
+				nRemain++;
+		}
+		tmpStr = new String( chrs, 0, nInc ) + 
+				(nInc + nRemain < nCut - nDefLen ? "" : tmpDef);
+
+		return tmpStr;
+	}
+	
+	//원본
+	public static String replaceHtml( String str ) {
+		return replaceHtml( str, "<br>" );
+	}
+
+	public static String replaceHtml( String str, String repBR ) {
+		String tmp = str.replaceAll( String.valueOf((char)39), "&#39;" );
+		tmp = tmp.replaceAll( String.valueOf((char)34), "&quot;" );
+		tmp = tmp.replaceAll( "&", "&amp;" );
+		tmp = tmp.replaceAll( ">", "&gt;" );
+		tmp = tmp.replaceAll( "<", "&lt;" );
+		tmp = tmp.replaceAll( "\r\n|\n", repBR );
+
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+		
+		return tmp;
+	}
+
+	public static String replaceHtmlRe( String str ) {
+		return replaceHtmlRe( str, "<br>" );
+	}
+
+	public static String replaceHtmlRe( String str, String repBR ) {
+		String tmp = str.replaceAll( "&#39;", String.valueOf((char)39) );
+		tmp = tmp.replaceAll( "&quot;",String.valueOf((char)34) );
+		tmp = tmp.replaceAll( "&amp;", "&" );
+		tmp = tmp.replaceAll( "&gt;" , ">"  );
+		tmp = tmp.replaceAll( "&lt;" ,"<"  );
+		tmp = tmp.replaceAll( repBR , "\r\n|\n"  );
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+	
+		return tmp;
+	}
+
+	public static String replaceHtml1( String str ) {
+		return replaceHtml1( str, "<br>" );
+	}
+	
+	public static String replaceHtml1( String str, String repBR ) {
+		
+		
+		String tmp = str.replaceAll( "&", "&amp;" );
+		tmp = tmp.replaceAll( String.valueOf((char)39), "&apos;" );
+		tmp = tmp.replaceAll( String.valueOf((char)34), "&quot;" );
+		tmp = tmp.replaceAll( ">", "&gt;" );
+		tmp = tmp.replaceAll( "<", "&lt;" );
+		tmp = tmp.replaceAll( repBR, "\n");
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+	
+		return tmp;
+	}
+	
+	public static String replaceHtmlRe1( String str ) {
+		return replaceHtmlRe1( str, "<br>" );
+	}
+
+	public static String replaceHtmlRe1( String str, String repBR ) {
+		
+		
+		String tmp = str.replaceAll( "&amp;", "&" );
+		tmp = tmp.replaceAll("&amp;", "&");
+		tmp = tmp.replaceAll( "&quot;",String.valueOf((char)34) );
+		tmp = tmp.replaceAll( "&apos;", String.valueOf((char)39) );
+		tmp = tmp.replaceAll( "&gt;" , ">"  );
+		tmp = tmp.replaceAll( "&lt;" ,"<"  );
+		tmp = tmp.replaceAll( "\n" , repBR  );
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+		
+		return tmp;
+	}
+	
+	
+	public static String replaceHtml2( String str ) {
+		return replaceHtml2( str, "<br>" );
+	}
+	
+	public static String replaceHtml2( String str, String repBR ) {
+		
+		
+		String tmp = str.replaceAll( "&", "&amp;" );
+		tmp = tmp.replaceAll( String.valueOf((char)39), "&apos;" );
+		tmp = tmp.replaceAll( String.valueOf((char)34), "&quot;" );
+		tmp = tmp.replaceAll( ">", "&gt;" );
+		tmp = tmp.replaceAll( "<", "&lt;" );
+		tmp = tmp.replaceAll("\n" , repBR);
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+		
+		return tmp;
+	}
+	
+	public static String replaceHtmlRe2( String str ) {
+		return replaceHtmlRe2( str, "<br>" );
+	}
+
+	public static String replaceHtmlRe2( String str, String repBR ) {
+		
+		
+		String tmp = str.replaceAll( "&amp;", "&" );
+		tmp = tmp.replaceAll("&amp;", "&");
+		tmp = tmp.replaceAll( "&quot;",String.valueOf((char)34) );
+		tmp = tmp.replaceAll( "&apos;", String.valueOf((char)39) );
+		tmp = tmp.replaceAll( "&gt;" , ">"  );
+		tmp = tmp.replaceAll( "&lt;" ,"<"  );
+		tmp = tmp.replaceAll( repBR ,  "\n" );
+		tmp = tmp.replaceAll(SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + SCRIPT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + OBJECT, NOT_PERMITTED);
+		tmp = tmp.replaceAll(APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + APPLET, NOT_PERMITTED);
+		tmp = tmp.replaceAll(EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + EMBED, NOT_PERMITTED);
+		tmp = tmp.replaceAll(FORM, NOT_PERMITTED);
+		tmp = tmp.replaceAll("/" + FORM, NOT_PERMITTED);
+		
+		return tmp;
+	}
+
+
+	
+	/**
+	 * TEXTAREA 태그 Value에 특수 문자(</textarea>) 처리<br>
+	 * textarea 태그안에 </textarea> 태그가 들어올경우 닫히는 문제처리<br>
+	 * 2009년 10월 12일
+	 * 작성자: 소광훈
+	 * <br>
+	 * 예제:<br>
+	 * <textarea><%=FormatUtil.textareaTag(x2map.getString("content"))%>"></textarea>
+	 * 
+	 * @param str - String 원본문자열
+	 * @return String
+	*/
+	public static String textareaTag(String str){
+		return str.replaceAll( "(?i:<(/textarea))", "&lt;$1" );
+	}
+
+}
+
+

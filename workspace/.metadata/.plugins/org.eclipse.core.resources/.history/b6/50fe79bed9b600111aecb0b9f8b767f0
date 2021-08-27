@@ -1,0 +1,88 @@
+package kr.or.nhic.framework.config;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Properties;
+
+import kr.or.nhic.framework.vo.KeyAndValueVO;
+
+import org.apache.log4j.Logger;
+
+/**
+ * @ProjectName dipis_pis
+ * @FileName ExProperties.java
+ * @Substance TODO
+ * @author yotta
+ * @since 2011. 6. 20.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 6. 20.     yotta     TODO
+ *
+ * </pre>
+ */
+public class ExProperties extends Properties {
+	private static final long serialVersionUID = 178367680130203841L;
+	private static Logger logger = Logger.getLogger(ExProperties.class);
+	private static ExProperties props = null;
+	
+	/**
+	 * Properties 인스턴스를 생성한다.
+	 * 
+	 * @return Properties 인스턴스
+	 */
+	public static ExProperties getInstance() {
+		if(props==null) {
+			InputStream is = null;
+	    	
+	    	try {
+	    		is = ExProperties.class.getResourceAsStream("/messages/message-common_ko_KR.properties");
+	    		
+	    		ExProperties p = new ExProperties();
+	    		p.load(is);
+	    		
+	    		props = p;
+	    	} catch(IOException e) {
+	    		logger.error(e.getMessage(), e);
+	    	} finally {
+	    		if(is!=null) try { is.close(); } catch(Exception e) { logger.error(e.getMessage(), e); }
+	    	}
+		}
+		
+		return props;
+	}
+	
+	/**
+	 * Property 목록을 KeyAndValueVO 목록 형태로 반환한다.
+	 * 
+	 * @return KeyAndValueVO 목록
+	 */
+	@SuppressWarnings("unchecked")
+	public List<KeyAndValueVO> getProperties() {
+		ArrayList<KeyAndValueVO> list = new ArrayList<KeyAndValueVO>();
+		Enumeration e = this.propertyNames();
+		String key = "";
+		String value = "";
+		
+		while(e.hasMoreElements()) {
+			key = (String)e.nextElement();
+			value = this.getProperty(key);
+			
+			KeyAndValueVO vo = new KeyAndValueVO();
+			vo.setKey(key);
+			vo.setValue(value);
+			
+			list.add(vo);
+		}
+		
+		return list;
+	}
+}

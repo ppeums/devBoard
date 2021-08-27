@@ -1,0 +1,49 @@
+package kr.or.nhic.framework.vo;
+
+/**
+ * @ProjectName nhic
+ * @FileName KeyAndValueVO.java
+ * @Substance TODO
+ * @author yotta
+ * @since 2011. 6. 20.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 6. 20.     yotta     TODO
+ *
+ * </pre>
+ */
+public class KeyAndValueVO {
+	private String key = "";
+	private String value = "";
+	
+	/**
+	 * @return the key
+	 */
+	public String getKey() {
+		return key;
+	}
+	/**
+	 * @param key the key to set
+	 */
+	public void setKey(String key) {
+		this.key = key;
+	}
+	/**
+	 * @return the value
+	 */
+	public String getValue() {
+		return value;
+	}
+	/**
+	 * @param value the value to set
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
+}

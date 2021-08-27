@@ -1,0 +1,8 @@
+#Thu Jun 21 22:43:08 KST 2012
+org.eclipse.wst.jsdt.core.compiler.taskCaseSensitive=enabled
+org.eclipse.wst.jsdt.core.compiler.taskTags=TODO,FIXME,XXX
+eclipse.preferences.version=1
+semanticValidation=disabled
+org.eclipse.wst.jsdt.core.compiler.doc.comment.support=enabled
+org.eclipse.wst.jsdt.core.compiler.taskPriorities=NORMAL,HIGH,NORMAL
+org.eclipse.wst.jsdt.core.codeComplete.visibilityCheck=enabled

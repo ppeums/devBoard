@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Login">
+
+	<typeAlias alias="loginVO" type="com.devBoardlogin.vo.LoginVO"/>
+
+	<resultMap id="userMap" class="loginVO">
+		<result property="userId" column="USER_ID"/>
+		<result property="userPwd" column="USER_PWD"/>
+		<result property="userType" column="USER_TYPE"/>
+		<result property="licenseNo" column="LICENSE_NO"/>
+		<result property="siteUrl" column="LICENSE_NO"/>
+		<result property="chiefName" column="CHIEF_NAME"/>
+		<result property="chargeName" column="CHARGE_NAME"/>
+		<result property="telNo" column="TEL_NO"/>
+		<result property="email" column="EMAIL"/>
+		<result property="bankCode" column="BANK_CODE"/>
+		<result property="depositor" column="DEPOSITOR"/>
+		<result property="accountNo" column="ACCOUNT_NO"/>
+		<result property="ftpPath" column="FTP_PATH"/>
+		<result property="ftpIp" column="FTP_IP"/>
+		<result property="ftpPort" column="FTP_PORT"/>
+		<result property="ftpId" column="FTP_ID"/>
+		<result property="ftpPwd" column="FTP_PWD"/>
+		<result property="ftpMode" column="FTP_MODE"/>
+		<result property="regDate" column="REG_DATE"/>
+		<result property="regId" column="REG_ID"/>
+		<result property="updDate" column="UPD_DATE"/>
+		<result property="updId" column="UPD_ID"/>
+		<result property="delDate" column="DEL_DATE"/>
+		<result property="delId" column="DEL_ID"/>
+		<result property="delYn" column="DEL_YN"/>
+	</resultMap>
+
+	<select id="loginDAO.selectLoginUser" parameterClass="loginVO" resultMap="userMap">
+		/** 로그인하는 사용자 정보를 가져온다. (loginDAO.selectUser) **/
+		SELECT	USER_ID
+		,		USER_PWD
+		,		USER_TYPE
+		,		LICENSE_NO
+		,		SITE_URL
+		,		CHIEF_NAME
+		,		CHARGE_NAME
+		,		TEL_NO
+		,		EMAIL
+		,		BANK_CODE
+		,		DEPOSITOR
+		,		ACCOUNT_NO
+		,		FTP_PATH
+		,		FTP_IP
+		,		FTP_PORT
+		,		FTP_ID
+		,		FTP_PWD
+		,		FTP_MODE
+		,		REG_DATE
+		,		REG_ID
+		,		UPD_DATE
+		,		UPD_ID
+		,		DEL_DATE
+		,		DEL_ID
+		,		DEL_YN 
+		FROM	LW_USER
+		WHERE	USER_ID = #userId#
+	</select>
+
+</sqlMap>

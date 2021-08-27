@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>egovframework:dev2:imp:editor:dbio_editor:sql_map_config_editor</title>
+<meta name="generator" content="DokuWiki Release 2009-02-14">
+<meta name="robots" content="noindex,nofollow">
+<meta name="date" content="2011-10-14T16:46:19+0900">
+<meta name="keywords" content="egovframework,dev2,imp,editor,dbio_editor,sql_map_config_editor">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.egovframe.org/wiki/lib/exe/opensearch.php" title="eGovFrame">
+<link rel="start" href="http://www.egovframe.org/wiki/">
+<link rel="contents" href="http://www.egovframe.org/wiki/doku.php?id=egovframework:dev2:imp:editor:dbio_editor:sql_map_config_editor&amp;do=index" title="Index">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.egovframe.org/wiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.egovframe.org/wiki/feed.php?mode=list&amp;ns=egovframework:dev2:imp:editor:dbio_editor">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.egovframe.org/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev2:imp:editor:dbio_editor:sql_map_config_editor">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.egovframe.org/wiki/doku.php?do=export_raw&amp;id=egovframework:dev2:imp:editor:dbio_editor:sql_map_config_editor">
+<link rel="stylesheet" media="all" type="text/css" href="doku.php_files/css_003.css">
+<link rel="stylesheet" media="screen" type="text/css" href="doku.php_files/css.css">
+<link rel="stylesheet" media="print" type="text/css" href="doku.php_files/css_002.css">
+<script type="text/javascript" charset="utf-8" src="doku.php_files/js.php"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#sqlmap_config_editor" class="toc">SqlMap Config Editor</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#%EA%B0%9C%EC%9A%94" class="toc">개요</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%84%A4%EB%AA%85" class="toc">설명</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#transaction_manager" class="toc">Transaction Manager</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#sqlmap_%EB%AA%A9%EB%A1%9D" class="toc">SqlMap 목록</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#%EC%82%AC%EC%9A%A9%EB%B2%95" class="toc">사용법</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#sql_map_config_file_%EC%83%88%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0" class="toc">SQL Map Config File 새로 만들기</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#sql_map_config_editor_%EC%97%B4%EA%B8%B0" class="toc">SQL Map Config Editor 열기</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#transaction_manager_%EC%82%AC%EC%9A%A9%EB%B2%95" class="toc">Transaction Manager 사용법</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#sql_map_%EB%AA%A9%EB%A1%9D_%EC%82%AC%EC%9A%A9%EB%B2%95" class="toc">SQL Map 목록 사용법</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#sql_map_config_file%EC%9D%98_%EC%86%8C%EC%8A%A4_%EC%A7%81%EC%A0%91_%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0" class="toc">SQL Map Config File의 소스 직접 수정하기</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="sqlmap_config_editor" id="sqlmap_config_editor">SqlMap Config Editor</a></h1>
+<div class="level1">
+
+</div>
+<!-- SECTION "SqlMap Config Editor" [1-35] -->
+<h2><a name="개요" id="개요">개요</a></h2>
+<div class="level2">
+
+<p>
+SqlMap Config Editor 는 <acronym title="Structured Query Language">SQL</acronym> Maps 설정 파일을 편리하게 작성할 수 있도록 도와주는 개발도구이다. 
+SqlMap Config Editor 는 Transaction Manager 와 SqlMap 목록으로 구성되어 있으며, 
+주요 기능은 다음과 같다. 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Transacation Manager 편집 기능이다.</div>
+</li>
+<li class="level1"><div class="li"> SqlMap 목록 편집 기능이다.</div>
+</li>
+</ul>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:sqlmapconfig1-1.jpg" class="media" title="egovframework:sqlmapconfig1-1.jpg"><img src="doku.php_files/fetch_006.jpg" class="media" title="&lt;그림 1&gt; SqlMap Config Editor 기본화면" alt="&lt;그림 1&gt; SqlMap Config Editor 기본화면"></a>
+<br>
+ <sup> &lt;그림 1&gt; SqlMap Config Editor </sup>
+</p>
+
+</div>
+<!-- SECTION "개요" [36-483] -->
+<h2><a name="설명" id="설명">설명</a></h2>
+<div class="level2">
+
+</div>
+<!-- SECTION "설명" [484-504] -->
+<h3><a name="transaction_manager" id="transaction_manager">Transaction Manager</a></h3>
+<div class="level3">
+
+<p>
+
+SqlMap Config Editor 는 주요 트랜잭션 Type과 DataSource Type 에 필요한 Properties 
+항목을 사전 정의해 놓았기 때문에 개발자가 간단한 선택작업과 입력작업만으로도 Transaction Manager 를 설정할 수 
+있다. 기존 정의된  Properties 항목 외에도 사용자 정의 항목 추가 기능을 통해 Property 항목을 추가할 수 있다.
+ 
+</p>
+
+<p>
+Transaction Manager 의 설정항목은 Type, DataSource Type, Properties 이며, 세부사항은 다음과 같다. 
+</p>
+
+</div>
+
+<h4><a name="type" id="type">Type</a></h4>
+<div class="level4">
+
+<p>
+
+Transaction Manager 의 type 속성은 어떤 트랜잭션 관리자를 사용할지를 결정하는 것이다. 
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> 이름        </th><th class="col1 leftalign"> 설명        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> JDBC    </td><td class="col1"> 간단한 JDBC 기반 트랜잭션 관리 기능을 제공한다. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> JTA    </td><td class="col1"> 컨테이너에 기반한 트랜잭션 관리 기능을 애플리케이션에 제공한다. </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h4><a name="datasource_type" id="datasource_type">DataSource Type</a></h4>
+<div class="level4">
+
+<p>
+
+Transaction Manager 의 DataSource Type 속성은 프레임워크가 어떤 클래스의 객체를 생성해서 데이터 소스 팩토리를 얻어올지 정하는 type 속성을 가지고 있다. 
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> 이름        </th><th class="col1 leftalign"> 설명        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> SIMPLE    </td><td class="col1"> Simple 
+데이타 소스 팩토리는 간단한 커넥션 풀을 내장한 데이터 소스를 설정하고자 할 때 이를 사용하며, eGovFrame 이 사용하고 
+있는 iBatis 프레임워크는 실제 JDBC 드라이버를 제외하고 데이터 소스에 필요한 모든 것을 자체 내장하고 있다. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> JNDI    </td><td class="col1"> JNDI 데이터 소스 팩토리는 JNDI 를 통해 할당된 컨테이너 기반의 데이터 소스를 공유하도록 사용된다. </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h4><a name="properties" id="properties">Properties</a></h4>
+<div class="level4">
+
+<p>
+
+Transaction Manager 의 Properties 속성은 설정을 좀 더 일반화하기 위해서 이름/값 쌍의 리스트를 제공한다. 
+DataSource Type 속성에 따른 기본 Properties 항목은 다음과 같다. 
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> DataSource Type        </th><th class="col1 leftalign"> 기본 Properties 항목        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> JDBC - SIMPLE </td><td class="col1"> JDBC.Driver </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> </td><td class="col1"> JDBC.ConnectionURL </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> </td><td class="col1"> JDBC.Username </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> </td><td class="col1"> JDBC.Password </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> JDBC/JTA - JNDI </td><td class="col1"> DataSource </td>
+	</tr>
+</tbody></table>
+
+<p>
+
+기본 Properties 항목 외에 필요한 Property 를 추가, 수정, 삭제할 수 있다. 
+</p>
+
+</div>
+
+<h5><a name="add" id="add">Add</a></h5>
+<div class="level5">
+
+<p>
+사용자가 필요한 Property 를 추가한다. 
+</p>
+
+</div>
+
+<h5><a name="remove" id="remove">Remove</a></h5>
+<div class="level5">
+
+<p>
+Properties 항목 중에 불필요한 항목을 선택하여 Property 를 제거한다. 
+</p>
+
+</div>
+
+<h5><a name="init" id="init">Init</a></h5>
+<div class="level5">
+
+<p>
+Properties 항목을 DataSource Type 속성에 정의한 기본Properties 항목으로 모두 초기화한다. 
+</p>
+
+</div>
+<!-- SECTION "Transaction Manager" [505-2945] -->
+<h3><a name="sqlmap_목록" id="sqlmap_목록">SqlMap 목록</a></h3>
+<div class="level3">
+
+<p>
+
+SqlMap 목록에서는 사용할 SQLMaps 맵핑 파일을 지정한다. 
+</p>
+
+</div>
+
+<h5><a name="add1" id="add1">Add</a></h5>
+<div class="level5">
+
+<p>
+SQLMaps 맵핑 파일을 추가한다. 
+</p>
+
+</div>
+
+<h5><a name="remove1" id="remove1">Remove</a></h5>
+<div class="level5">
+
+<p>
+SqlMap 목록 중에서 불필요한 SQLMaps 맵핑 파일을 선택하여 제거한다. 
+단, SqlMap 목록에서 제거될 뿐, 실제 파일이 삭제되는 것은 아니다. 
+</p>
+
+</div>
+
+<h5><a name="new" id="new">New</a></h5>
+<div class="level5">
+
+<p>
+SQLMaps 맵핑 파일을 새로 생성하는 동시에 SqlMap 목록 중에 새로 생성된 SQLMaps 맵핑 파일을 추가한다.
+</p>
+
+</div>
+<!-- SECTION "SqlMap 목록" [2946-3431] -->
+<h2><a name="사용법" id="사용법">사용법</a></h2>
+<div class="level2">
+
+</div>
+<!-- SECTION "사용법" [3432-3455] -->
+<h3><a name="sql_map_config_file_새로_만들기" id="sql_map_config_file_새로_만들기">SQL Map Config File 새로 만들기</a></h3>
+<div class="level3">
+<ol>
+<li class="level1"><div class="li"> 상단 메뉴의 <sup><a href="#fn__1" name="fnt__1" id="fnt__1" class="fn_top">1)</a></sup> eGovFrame → Implementation → New <acronym title="Structured Query Language">SQL</acronym> Map Config 또는 Context Menu의 New → sqlMapConfig 를 통해 파일을 생성한다.<br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig-new.png" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig-new.png"><img src="doku.php_files/fetch.png" class="media" alt=""></a><br>
+ <sup> &lt;그림 2&gt; sqlMapConfig 생성방법 1 </sup><br>
+ <br>
+ <a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig-new2.png" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig-new2.png"><img src="doku.php_files/fetch_003.png" class="media" alt=""></a><br>
+ <sup> &lt;그림 3&gt; sqlMapConfig 생성방법 2 </sup> <br>
+ <br>
+</div>
+</li>
+<li class="level1"><div class="li"> SqlMapConfig 파일이 위치할 폴더를 선택하고 파일명을 입력한다.(&lt;그림 4&gt; 참조) <br>
+ <br>
+</div>
+</li>
+</ol>
+
+</div>
+<!-- SECTION "SQL Map Config File 새로 만들기" [3456-4102] -->
+<h3><a name="sql_map_config_editor_열기" id="sql_map_config_editor_열기">SQL Map Config Editor 열기</a></h3>
+<div class="level3">
+
+<p>
+
+Pakage Explorer 에서 해당 <acronym title="Structured Query Language">SQL</acronym> Map Config File을 선택하고 더블클릭하거나 열기를 누르면 자동으로 <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 로 열리게 된다.
+</p>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-2.png" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-2.png"><img src="doku.php_files/fetch_002.png" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 4&gt; <acronym title="Structured Query Language">SQL</acronym> Map Config File의 선택 </sup> 
+</p>
+
+<p>
+
+단, <acronym title="Structured Query Language">SQL</acronym> Map Config file에 이상이 있거나, 다른 이유로 <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 로 열리지 않을 때에는 context menu 의 open with 기능을 사용하여 editor 를  <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 로 선택해야 한다. (&lt;그림 5&gt; 참조)
+</p>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-3.png" class="media wikilink2" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-3.png"><img src="doku.php_files/fetch.htm" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 5&gt; <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 로 자동으로 열리지 않을 경우  </sup> 
+ 
+</p>
+
+</div>
+<!-- SECTION "SQL Map Config Editor 열기" [4103-4849] -->
+<h3><a name="transaction_manager_사용법" id="transaction_manager_사용법">Transaction Manager 사용법</a></h3>
+<div class="level3">
+<ol>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map Config Editor에서 “Transaction Manager” 타이틀을 클릭하면 “Transaction Manager” Tab 이 확장되면서 편집가능한 상태가 된다. </div>
+</li>
+<li class="level1"><div class="li"> 사용자 프로젝트에 적합한 Type 을 선택한다. </div>
+</li>
+<li class="level1"><div class="li"> 사용자 프로젝트에 적합한 DataSource Type 을 선택한다. 사용자가 DataSource Type 을 선택하면 적절한 기본 Properties 항목이 자동으로 보여진다. (&lt;그림6&gt; 참조)</div>
+</li>
+<li class="level1"><div class="li"> Properties 항목에 적절한 값을 입력한다. </div>
+</li>
+<li class="level1"><div class="li"> 필요한 경우, Properties 항목을 추가 또는 삭제하려면 
+Properties 목록 우측에 있는 “Add”, “Remove” 버튼을 활용한다. DataSource Type 을 다시 선택한 
+경우에는 “Init” 버튼을 눌러 Properties 항목을 재입력한다. </div>
+</li>
+</ol>
+
+<p>
+
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-4.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-4.jpg"><img src="doku.php_files/fetch_004.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 6&gt; Transaction Manager  </sup> 
+</p>
+
+</div>
+<!-- SECTION "Transaction Manager 사용법" [4850-5757] -->
+<h3><a name="sql_map_목록_사용법" id="sql_map_목록_사용법">SQL Map 목록 사용법</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-5.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-5.jpg"><img src="doku.php_files/fetch_005.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 7&gt; <acronym title="Structured Query Language">SQL</acronym> Map 목록 </sup> 
+</p>
+<ol>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map 목록 우측에 있는 “add” 버튼을 클릭하여 <acronym title="Structured Query Language">SQL</acronym> Map 파일을 검색하고 하나 이상의 <acronym title="Structured Query Language">SQL</acronym> Map 파일을 선택하여 추가할 수 있다. (&lt;그림 8&gt; 참조)</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map 목록에 불필요한 <acronym title="Structured Query Language">SQL</acronym> Map 파일이 있는 경우 해당항목을 선택하고 “Remove” 버튼을 클릭하여 선택된 항목을 제거한다. 단, 실제 파일이 삭제되는 것은 아니다. </div>
+</li>
+<li class="level1"><div class="li"> 사용할 <acronym title="Structured Query Language">SQL</acronym> Map 파일이 존재하지 않는 경우 “New” 버튼을 클릭하여 새 <acronym title="Structured Query Language">SQL</acronym> Map 파일을 생성함과 동시에 새로 생성된 <acronym title="Structured Query Language">SQL</acronym> Map 파일을 목록에 추가할 수 있다. (&lt;그림 9&gt; 참조)</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map 목록의 항목이 하나이상인 경우  <acronym title="Structured Query Language">SQL</acronym> Map 목록 바로 위에 있는 filter 를 사용하여 <acronym title="Structured Query Language">SQL</acronym> Map 파일 항목을 선택적으로 조회할 수 있다. (&lt;그림 10&gt; 참조)</div>
+</li>
+</ol>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-6.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-6.jpg"><img src="doku.php_files/fetch_002.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 8&gt; <acronym title="Structured Query Language">SQL</acronym> Map 파일 검색   </sup> 
+</p>
+
+<p>
+
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-7.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-7.jpg"><img src="doku.php_files/fetch_007.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 9&gt; <acronym title="Structured Query Language">SQL</acronym> Map 파일 신규 생성 화면  </sup> 
+</p>
+
+<p>
+
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-8.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-8.jpg"><img src="doku.php_files/fetch_003.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 10&gt; <acronym title="Structured Query Language">SQL</acronym> Map 목록의 filter 적용  </sup> 
+</p>
+
+</div>
+<!-- SECTION "SQL Map 목록 사용법" [5758-7121] -->
+<h3><a name="sql_map_config_file의_소스_직접_수정하기" id="sql_map_config_file의_소스_직접_수정하기">SQL Map Config File의 소스 직접 수정하기</a></h3>
+<div class="level3">
+<ol>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 에는 Form UI 를 사용하지 않고 <acronym title="Extensible Markup Language">XML</acronym> 을 직접 수정할 수 있는 기능을 제공하고 있다. </div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> Map Config Editor 에서 편집화면 하단에 보이는 “파일명.<acronym title="Extensible Markup Language">XML</acronym>” 이라는 제목의 Tab 을 클릭하면 Form UI를 사용하지 않고 <acronym title="Extensible Markup Language">XML</acronym> Source 를 직접 수정할 수 있다. (&lt;그림 11&gt; 참조)</div>
+</li>
+</ol>
+
+<p>
+<a href="http://www.egovframe.org/wiki/lib/exe/detail.php?id=egovframework%3Adev2%3Aimp%3Aeditor%3Adbio_editor%3Asql_map_config_editor&amp;media=egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-9.jpg" class="media" title="egovframework:dev2:imp:editor:dbio_editor:sqlmapconfig1-9.jpg"><img src="doku.php_files/fetch.jpg" class="media" alt=""></a>
+<br>
+ <sup> &lt;그림 11&gt; <acronym title="Structured Query Language">SQL</acronym> Map Config 파일 직접 수정  </sup> 
+</p>
+
+</div>
+<!-- SECTION "SQL Map Config File의 소스 직접 수정하기" [7122-] --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" name="fn__1" class="fn_bot">1)</a></sup> 
+“eGovFrame” 메뉴는 eGovFrame Perspective 환경에서만 나타난다.</div>
+</div>
+</div>
+
+
+</body></html>

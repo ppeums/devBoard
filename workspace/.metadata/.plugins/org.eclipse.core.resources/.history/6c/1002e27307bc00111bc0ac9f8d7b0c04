@@ -1,0 +1,146 @@
+package kr.or.nhic.common.tag;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.TagSupport;
+
+public class CalendarTag extends TagSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6718485188695284653L;
+	private String objectId = "";
+	private String maskedObjectId = "";
+	private String startYear = "";
+	private String endYear = "";
+	private String function = "";
+	private String id = "";
+	private String fixed = "";
+	
+	public String getFixed() {
+    	return fixed;
+    }
+
+	public void setFixed(String fixed) {
+    	this.fixed = fixed;
+    }
+
+	public String getId() {
+    	return id;
+    }
+
+	public void setId(String id) {
+    	this.id = id;
+    }
+
+	public String getFunction() {
+    	return function;
+    }
+
+	public void setFunction(String function) {
+    	this.function = function;
+    }
+
+	public int doStartTag() throws JspException {
+		JspWriter out = pageContext.getOut();
+		StringBuffer html = new StringBuffer();
+		
+		try {
+			String extendStr = "";
+			
+			if( this.getStartYear()!=null && this.getEndYear()!=null ) {				
+				extendStr = ", '" + this.getStartYear() + "', '" + this.getEndYear() + "'";				
+			} else {
+				extendStr += ", '', ''";
+			}
+			if( this.getFunction()!=null && !this.getFunction().equals("") ) {
+				extendStr += ", '" + this.getFunction() + "'";
+			} else {
+				extendStr += ", ''";
+			}
+			if( this.getFixed()!=null && !this.getFixed().equals("") ) {
+				extendStr += ", '" + this.getFixed() + "'";
+			} else {
+				extendStr += ", ''";
+			}
+			
+			/*
+			html.append("<img src='" + "/calendar/ic_calendar.gif' alt='달력'")
+			    .append("     onclick=\"cfOpenCalendarPopup('" + this.getObjectId() + "', event" + extendStr + ");\"")
+			    .append("     class='imageButton' id='" + this.getId() + "' />");			    
+			*/
+			
+			html.append("<a href=\"#\" onClick=\"javascript:cf_NormalCalendar( document.getElementById('" + objectId + "')");
+			
+			if(maskedObjectId!=null && !"".equals(maskedObjectId)) {
+				html.append(", document.getElementById('" + maskedObjectId + "')");
+			}
+			
+			html.append(" );\">")
+			    .append("<img src=\"/images/btn_icon_calendar.gif\" align=\"absmiddle\" style=\"border:0px\" alt=\"달력(팝업으로 열림)\" title=\"달력(팝업으로 열림)\">")
+                .append("</a>");
+			
+			out.print(html.toString());
+		} catch (Exception e) {
+			throw new JspException(e.getMessage());
+		}
+
+		return SKIP_BODY; // no body processing
+	}
+
+	// Releases any resources we may have (or inherit)
+    public void release() {
+    	super.release();
+    	
+    	objectId = "";
+    	maskedObjectId = "";
+    	startYear = "";
+    	endYear = "";
+    }
+
+    /**
+	 * @return the objectId
+	 */
+	public String getObjectId() {
+		return objectId;
+	}
+
+	/**
+	 * @param objectId the objectId to set
+	 */
+	public void setObjectId(String objectId) {
+		this.objectId = objectId;
+	}
+
+	/**
+	 * @return the maskedObjectId
+	 */
+	public String getMaskedObjectId() {
+		return maskedObjectId;
+	}
+
+	/**
+	 * @param maskedObjectId the maskedObjectId to set
+	 */
+	public void setMaskedObjectId(String maskedObjectId) {
+		this.maskedObjectId = maskedObjectId;
+	}
+
+	public String getStartYear() {
+    	return startYear;
+    }
+
+	public void setStartYear(String startYear) {
+    	this.startYear = startYear;
+    }
+
+	public String getEndYear() {
+    	return endYear;
+    }
+
+	public void setEndYear(String endYear) {
+    	this.endYear = endYear;
+    }
+	
+}

@@ -1,0 +1,142 @@
+package kr.co.sinsul.payment.controller;
+
+import java.io.FileOutputStream;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kr.co.sinsul.common.security.UserSession;
+import kr.co.sinsul.common.vo.MoneyVO;
+import kr.co.sinsul.framework.exception.ExRuntimeException;
+import kr.co.sinsul.framework.util.DateUtil;
+import kr.co.sinsul.framework.util.ExcelUtil;
+import kr.co.sinsul.framework.util.FileUtil;
+import kr.co.sinsul.framework.util.PaginationUtil;
+import kr.co.sinsul.payment.service.PaymentHistoryService;
+import kr.co.sinsul.sample.vo.SampleVO;
+
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+
+/**
+ * @Class Name : PaymentHistoryController.java
+ * @Description : 납부내역을 처리하는 Controller Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 31.  송제승     최초생성
+ * 
+ * @author 송제승
+ * @since 2012. 12. 31.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+@Controller
+public class PaymentHistoryController {
+	/** PaymentHistoryService */
+	@Resource(name = "paymentHistoryService")
+	private PaymentHistoryService paymentHistoryService;
+	
+	/**
+	 * 최종납부일조회 페이지를 조회한다. 
+	 * @param moneyDestVO - 최종납부일 조건이 담긴 VO
+	 * @param model
+	 * @return View
+	 * @exception Exception
+	 */
+	@RequestMapping(value="/payment/retrievePaymentHistoryList.do")
+	public String retrievePaymentHistoryList(@ModelAttribute("moneyVO") MoneyVO moneyVO, ModelMap model, HttpServletRequest request) throws Exception {
+
+		// 페이지 정보 설정
+		PaginationInfo paginationInfo = PaginationUtil.getPaginationInfo(moneyVO);
+		
+		// 글 목록
+		List<MoneyVO> resultList = paymentHistoryService.retrievePaymentHistoryList(moneyVO);
+		model.addAttribute("resultList", resultList);
+		
+		// 건수
+		paginationInfo.setTotalRecordCount(paymentHistoryService.retrievePaymentHistoryListCount(moneyVO));
+		model.addAttribute("paginationInfo", paginationInfo);
+
+		model.addAttribute("userId", UserSession.getUserId(request));
+		
+		return "/payment/paymentHistoryList";
+	}
+	
+	/**
+	 * 목록을 엑셀 다운로드 한다.
+	 * @param sampleVO - 조회 조건이 담긴 VO
+	 * @param model
+	 * @return View
+	 * @exception Exception
+	 */
+	@RequestMapping(value="/payment/paymentHistoryExcelDown.do")
+	public void sampleExcelDown(@ModelAttribute("moneyVO") MoneyVO moneyVO, ModelMap model, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		moneyVO.setFirstIndex(0);
+		moneyVO.setRecordCountPerPage(999999999);
+		// 글 목록
+		List<MoneyVO> resultList = paymentHistoryService.retrievePaymentHistoryList(moneyVO);
+		
+		// 중복이 발생하지 않도록 주의
+		String excelFileName = "memDesc[" + DateUtil.getToday("yyyyMMddHHmmssSSS") + "].xls";
+		
+		// Excel 생성 begin
+		String excelPath = System.getProperty("uploadpath") + "/temp/" + excelFileName;
+		
+		HSSFWorkbook workbook = new HSSFWorkbook(); // Workbook
+		HSSFSheet sheet = workbook.createSheet("회비납부이력"); // Sheet
+		ExcelUtil eu = new ExcelUtil(excelPath); // Excel Util
+		
+		// Cell Style 생성
+		HSSFCellStyle headCellStyle = eu.createDefaultHeadCellStyle(workbook);
+		HSSFCellStyle defaultDataCellStyle = eu.createDefaultDataCellStyle(workbook);
+		HSSFCellStyle numberDataCellStyle = eu.createNumericDataCellStyle(workbook);
+		
+		// Head Row 생성
+		String[] headCellValues = {"NO", "거래일시", "출금액"
+				, "입금액", "잔액", "거래내용"};
+		eu.createRow(sheet, 0, headCellValues, headCellStyle);
+		
+		HSSFCellStyle[] cellStyles = {defaultDataCellStyle,defaultDataCellStyle,defaultDataCellStyle
+				,defaultDataCellStyle,defaultDataCellStyle,defaultDataCellStyle };
+		
+		int i = 0;
+		
+		for(MoneyVO result : resultList){
+			++i;
+			String[] cellValues = { String.valueOf(result.getRn()), result.getMoneyTradedt(), result.getMoneyWithdraw()
+					, result.getMoneyDeposit(), result.getMoneyBalance(), result.getMoneyDesc() };
+			
+			eu.createRow(workbook, sheet, i, cellValues, cellStyles);
+		}
+		
+		FileOutputStream fos = null;
+		
+		try {
+			// 파일 생성
+			fos = new FileOutputStream(excelPath);
+			workbook.write(fos);
+		} finally {
+			// Resource 해제
+			if(fos!=null) {
+				try { fos.close(); } catch(Exception e) { throw new ExRuntimeException(e); }
+			}
+		}
+		// Excel 생성 end
+		
+		// Download (보관이 필요없는 파일인 경우 반드시 삭제 플래그를 true로 설정)
+		FileUtil.downloadFile("paymentHistory.xls", "/temp/" + excelFileName, request, response, true);
+	} 
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Login">
+
+	<typeAlias alias="loginVO" type="com.devBoard.login.vo.LoginVO"/>
+
+	<resultMap id="userMap" class="loginVO">
+		<result property="userId" column="USER_ID"/>
+		<result property="userPwd" column="USER_PWD"/>
+		<result property="userType" column="USER_TYPE"/>
+	</resultMap>
+
+	<select id="loginDAO.selectLoginUser" parameterClass="loginVO" resultMap="userMap">
+		/** 로그인하는 사용자 정보를 가져온다. (loginDAO.selectUser) **/
+		SELECT	USER_ID
+		,		USER_PWD
+		,		USER_TYPE
+		FROM	LW_USER
+		WHERE	USER_ID = #userId#
+	</select>
+
+</sqlMap>

@@ -1,0 +1,57 @@
+package kr.co.sinsul.payment.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import kr.co.sinsul.common.vo.MoneyVO;
+import kr.co.sinsul.payment.dao.PaymentHistoryDAO;
+import kr.co.sinsul.payment.service.PaymentHistoryService;
+
+import org.springframework.stereotype.Service;
+
+import egovframework.rte.fdl.cmmn.AbstractServiceImpl;
+
+/**
+ * @Class Name : PaymentServiceImpl.java
+ * @Description : 납부내역을 처리하는 Impl Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 27.  Administrator     최초생성
+ * 
+ * @author Administrator
+ * @since 2012. 12. 27.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+@Service("paymentHistoryService")
+public class PaymentHistoryServiceImpl extends AbstractServiceImpl implements PaymentHistoryService {
+	
+	/** PaymentDAO */
+	@Resource(name="paymentHistoryDAO")
+	private PaymentHistoryDAO paymentHistoryDAO;
+	
+	/**
+	 * 납부내역 목록 정보를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역목록
+	 * @exception Exception
+	 */
+	public List<MoneyVO> retrievePaymentHistoryList(MoneyVO vo) throws Exception {
+		return paymentHistoryDAO.selectPaymentHistoryList(vo);
+	}
+	
+	/**
+	 * 납부내역 목록 갯수를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역목록
+	 * @exception Exception
+	 */
+	public int retrievePaymentHistoryListCount(MoneyVO vo) throws Exception {
+		return paymentHistoryDAO.selectPaymentHistoryListCount(vo);
+	}
+}

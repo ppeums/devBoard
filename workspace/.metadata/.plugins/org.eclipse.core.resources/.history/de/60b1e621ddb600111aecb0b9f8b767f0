@@ -1,0 +1,47 @@
+package kr.or.nhic.framework.util;
+
+import kr.or.nhic.framework.config.ExXMLConfiguration;
+import kr.or.nhic.framework.vo.CommonVO;
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+
+/**
+ * @ProjectName dipis_ext
+ * @FileName PaginationUtil.java
+ * @Substance TODO
+ * @author zeroyotta
+ * @since 2011. 4. 29.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 4. 29.     zeroyotta     TODO
+ *
+ * </pre>
+ */
+public class PaginationUtil {
+	public static PaginationInfo getPaginationInfo(ExXMLConfiguration conf, CommonVO vo) {
+		vo.setPageUnit(conf.getInt("paging.unit"));
+    	vo.setPageSize(conf.getInt("paging.size"));
+		
+		PaginationInfo paginationInfo = new PaginationInfo();
+		
+		paginationInfo.setCurrentPageNo(vo.getPageIndex());
+		paginationInfo.setPageSize(vo.getPageSize());
+		
+		if(vo.getRecordCountPerPage()!=conf.getInt("paging.unit")) {
+			paginationInfo.setRecordCountPerPage(vo.getRecordCountPerPage());
+		} else {
+			paginationInfo.setRecordCountPerPage(vo.getPageUnit());
+		}
+		
+		vo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		vo.setLastIndex(paginationInfo.getLastRecordIndex());
+		// vo.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
+		
+		return paginationInfo;
+	}
+}

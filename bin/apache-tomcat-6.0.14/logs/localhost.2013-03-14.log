@@ -1,0 +1,118 @@
+2013. 3. 14 오후 6:51:21 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.21:984   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetFactoryManager: added new LogTargetFactory of type priority-filter
+
+2013. 3. 14 오후 6:51:21 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.21:984   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetFactoryManager: added new LogTargetFactory of type servlet
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetFactoryManager: added new LogTargetFactory of type cocoon
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetManager: added new LogTarget of id core
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetManager: added new LogTarget of id sitemap
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetManager: added new LogTarget of id access
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/PriorityFilterTargetFactory: loglevel is ERROR
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/PriorityFilterTargetFactory: creating target cocoon: org.apache.avalon.framework.configuration.DefaultConfiguration@1947496
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogTargetManager: added new LogTarget of id error
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category core
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category core.startup
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category core.roles
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category core.manager
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category core.store
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category sitemap
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:000   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: added logger for category access
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:015   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category access returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:109   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:328   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.store.persistent not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:328   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.store.transient not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:328   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.store.janitor not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:328   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.xpath-processor not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:328   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.url-factory not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:343   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.program-generator not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:359   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.language.java not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:375   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.jsp-engine not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:375   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.xscript not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:22 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.22:390   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.datasources.demodb not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:406   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category sitemap returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:406   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.xml-parser not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:437   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.resolver not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:437   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.search.lucene not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:453   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.input not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:453   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.input not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:468   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.output not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:468   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.output not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:468   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.auto not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: DEBUG   (2013-03-14) 18:51.23:468   [        ] (Unknown-URI) Unknown-thread/DefaultLogKitManager: Logger for category core.modules.auto not defined in configuration. New Logger created and returned
+
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: ContextListener: contextInitialized()
+2013. 3. 14 오후 6:51:23 org.apache.catalina.core.ApplicationContext log
+정보: SessionListener: contextInitialized()

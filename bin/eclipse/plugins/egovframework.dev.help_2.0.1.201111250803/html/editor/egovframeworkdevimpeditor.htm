@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0088)http://192.168.100.16/wiki/doku.php -->
+<HTML dir=ltr lang=en xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>egovframework:dev:imp:editor</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+<META name=robots content=noindex,nofollow>
+<META name=date content=2009-05-11T16:43:01+0900>
+<META name=keywords content=egovframework,dev,imp,editor><LINK title=eGovFrame 
+rel=search type=application/opensearchdescription+xml 
+href="/wiki/lib/exe/opensearch.php"><LINK rel=start href="/wiki/"><LINK 
+title=Index rel=contents 
+href="/wiki/doku.php?id=egovframework:dev:imp:editor&amp;do=index"><LINK 
+title="Recent Changes" rel=alternate type=application/rss+xml 
+href="/wiki/feed.php"><LINK title="Current Namespace" rel=alternate 
+type=application/rss+xml 
+href="/wiki/feed.php?mode=list&amp;ns=egovframework:dev:imp"><LINK 
+title="Plain HTML" rel=alternate type=text/html 
+href="/wiki/doku.php?do=export_xhtml&amp;id=egovframework:dev:imp:editor"><LINK 
+title="Wiki Markup" rel=alternate type=text/plain 
+href="/wiki/doku.php?do=export_raw&amp;id=egovframework:dev:imp:editor"><LINK 
+rel=stylesheet type=text/css href="egovframeworkdevimpeditor_files/css.php" 
+media=all><LINK rel=stylesheet type=text/css 
+href="egovframeworkdevimpeditor_files/css(1).php" media=screen><LINK 
+rel=stylesheet type=text/css href="egovframeworkdevimpeditor_files/css(2).php" 
+media=print>
+<SCRIPT type=text/javascript charset=utf-8 
+src="egovframeworkdevimpeditor_files/js.php"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="dokuwiki export"><!-- TOC START -->
+<DIV class=toc>
+<DIV id=toc__header class="tocheader toctoggle">Table of Contents</DIV>
+<DIV id=toc__inside>
+<UL class=toc>
+  <LI class=level1>
+  <DIV class=li><SPAN class=li><A class=toc 
+  href="#editor">Editor</A></SPAN></DIV>
+  <UL class=toc>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#개요">개요</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#설명">설명</A></SPAN></DIV></LI>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="#환경설정">환경설정</A></SPAN></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END -->
+<H1><A id=editor name=editor>Editor</A></H1>
+<DIV class=level1></DIV><!-- SECTION "Editor" [1-22] -->
+<H2><A id=개요 name=개요>개요</A></H2>
+<DIV class=level2>
+<P>eGov Framework Editor는 전자정부 개발 도구 통합을 위한 개방형 플랫폼으로, IDE(Integrated 
+Development Environment) 기반으로 Edit 기능을 제공한다. </P></DIV><!-- SECTION "개요" [23-222] -->
+<H2><A id=설명 name=설명>설명</A></H2>
+<DIV class=level2>
+<P><A class=media title=egovframework:dev:imp:editor:workbench.png 
+><IMG 
+class=media alt="" src="egovframeworkdevimpeditor_files/workbench.png" width=800 
+height=600></A> </P>
+<P>이클립스 워크벤치 사용자 인터페이스는 다양한 원도우의 모임으로 각 창의 메뉴 모음, 도구 모음, 바로 가기 모음과 하나 이상의 
+Perspective가 포함되어 있고 주요 구성 영역은 다음과 같다. </P>
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 leftalign">영역 </TH>
+    <TH class="col1 leftalign">설명 </TH></TR>
+  <TR class=row1>
+    <TD class="col0 leftalign">Workbench </TD>
+    <TD class=col1>WindowEditor, Menu Bar, toolbar, shortcut bar 등의 다양한 
+      Window와 하나 이상의 Perspective 로 구성 </TD></TR>
+  <TR class=row2>
+    <TD class="col0 leftalign">Perspective </TD>
+    <TD class=col1>View와 Content editor로 구성된 집합 </TD></TR>
+  <TR class=row3>
+    <TD class="col0 leftalign">Views </TD>
+    <TD class=col1>workbench 페이지 내에서 시각적 구성 요소로서 기본 작업을 위한 지원 역할에 사용 </TD></TR>
+  <TR class=row4>
+    <TD class="col0 leftalign">Editor </TD>
+    <TD class=col1>한 workbench 페이지 내에서 시각적 구성 요소로서 문서 또는 데이터 변경 등의 역할에 사용 
+  </TD></TR>
+  <TR class=row5>
+    <TD class="col0 leftalign">Menu bar </TD>
+    <TD class=col1>일반적으로 파일, 편집, 이동, 프로젝트, 창, 도움말 수준의 메뉴가 포함 </TD></TR>
+  <TR class=row6>
+    <TD class="col0 leftalign">Tool bar </TD>
+    <TD class=col1>툴 실행의 편의성 제공을 위해 제공된 아이콘 </TD></TR>
+  <TR class=row7>
+    <TD class=col0>Short cut bar</TD>
+    <TD class=col1>Perspective 또는 View의 바로가기 아이콘 </TD></TR>
+  <TR class=row8>
+    <TD class="col0 leftalign">Status line </TD>
+    <TD class=col1>개발자 지원을 위한 콘텐츠 정보로서 현재의 라인과 컬럼 번호 등의 글로벌 상태 표시 
+  </TD></TR></TBODY></TABLE></DIV><!-- SECTION "설명" [223-1447] -->
+<H2><A id=환경설정 name=환경설정>환경설정</A></H2>
+<DIV class=level2>
+<P>사용자가 DBIO Editor를 사용하기 위해서는 사용자의 eclipse 개발환경에 eGovFrameWork DBIO 를 업데이트해야 
+한다. 업데이트하는 방법은 다음과 같다. </P>
+<OL>
+  <LI class=level1>
+  <DIV class=li>사용자의 eclipse 개발환경에서 메뉴 &gt; Help &gt; Software Updates 를 클릭한다. 
+  (&lt;그림 2&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Software Updates and Add-ons” 다이얼로그 창에서 Available Software 탭을 
+  클릭한다. </DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Available Software” 목록 우측에 있는 “Add Site…” 버튼을 클릭한다. (&lt;그림 
+  3&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Add Site” 다이얼로그 창에 있는 Location 입력 항목에 “<A class=urlextern 
+  title=http://192.168.100.16:8080/egovframework/update 
+  href="http://192.168.100.16:8080/egovframework/update" 
+  rel=nofollow>http://192.168.100.16:8080/egovframework/update</A>” 를 입력하고 “OK” 
+  버튼을 클릭한다. (&lt;그림 4&gt; 참조)</DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Available Software” 목록에 입력한 Url 이 추가된다. </DIV></LI>
+  <LI class=level1>
+  <DIV class=li>입력한 Url 의 하위 트리 항목을 확장하여 eGovFramework Development Environment 의 
+  eGovFramework DBIO Feature 를 선택한다. </DIV></LI>
+  <LI class=level1>
+  <DIV class=li>“Available Software” 목록 우측에 있는 “Install…” 버튼을 클릭한다. (&lt;그림 
+  5&gt; 참조)</DIV></LI></OL>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-1.jpg 
+><IMG 
+class=media alt="" 
+src="egovframeworkdevimpeditor_files/sqlmapconfig2-1.jpg"></A> <BR><SUP>&lt;그림 
+2&gt; Software Updates </SUP></P>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-2.jpg 
+><IMG 
+class=media alt="" 
+src="egovframeworkdevimpeditor_files/sqlmapconfig2-2.jpg"></A> <BR><SUP>&lt;그림 
+3&gt; “Available Software” 목록 </SUP></P>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-3.jpg 
+><IMG 
+class=media alt="" 
+src="egovframeworkdevimpeditor_files/sqlmapconfig2-3.jpg"></A> <BR><SUP>&lt;그림 
+4&gt; Location 입력 </SUP></P>
+<P><A class=media 
+title=egovframework:dev:imp:editor:dbio_editor:sqlmapconfig2-4.jpg 
+><IMG 
+class=media alt="" 
+src="egovframeworkdevimpeditor_files/sqlmapconfig2-4.jpg"></A> <BR><SUP>&lt;그림 
+5&gt; Install 
+</SUP></P></DIV><!-- SECTION "환경설정" [1448-] --></DIV></BODY></HTML>

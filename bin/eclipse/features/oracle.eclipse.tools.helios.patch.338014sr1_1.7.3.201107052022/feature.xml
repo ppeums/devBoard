@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<feature
+  id="oracle.eclipse.tools.helios.patch.338014sr1"
+  label="%featureName"
+  version="1.7.3.201107052022"
+  provider-name="%providerName"
+  image="oepe-40.png">
+
+  <description>
+    %featureDescription
+  </description>
+
+  <copyright>
+    %copyright
+  </copyright>
+
+  <license url="license.html">
+    %license
+  </license>
+
+  <requires>
+    <import feature="org.eclipse.wst.server_core.feature" version="3.2.2.v20100908-30F8V8s734C3I3K" patch="true"/>
+  </requires>
+
+  <plugin id="org.eclipse.wst.server.core" download-size="0" install-size="0" version="1.1.204.v20100908_p001" unpack="false"/>
+
+</feature>

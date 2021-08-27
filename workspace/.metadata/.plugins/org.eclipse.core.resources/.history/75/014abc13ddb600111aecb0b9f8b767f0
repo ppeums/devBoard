@@ -1,0 +1,75 @@
+package kr.or.nhic.framework.dao;
+
+import java.sql.SQLException;
+
+import kr.or.nhic.framework.exception.ExRuntimeException;
+
+import com.ibatis.sqlmap.client.extensions.ParameterSetter;
+import com.ibatis.sqlmap.client.extensions.ResultGetter;
+import com.ibatis.sqlmap.client.extensions.TypeHandlerCallback;
+
+/**
+ * @ProjectName dipis_pis
+ * @FileName YesNoBooleanTypeHandlerCallback.java
+ * @Substance TODO
+ * @author zeroyotta
+ * @since 2011. 5. 13.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 5. 13.     zeroyotta     TODO
+ *
+ * </pre>
+ */
+public class YesNoBooleanTypeHandlerCallback implements TypeHandlerCallback {
+
+	private static final String YES = "Y";
+	private static final String NO = "N";
+	
+	/* (non-Javadoc)
+	 * @see com.ibatis.sqlmap.client.extensions.TypeHandlerCallback#getResult(com.ibatis.sqlmap.client.extensions.ResultGetter)
+	 */
+	public Object getResult(ResultGetter getter) throws SQLException {
+		String s = getter.getString();
+		
+		if(YES.equals(s)) {
+			return true;
+		} else if(NO.equals(s)) {
+			return false;
+		} else {
+			throw new SQLException("Unexpected value " + s + " found where " + YES + " or " + NO + " was expected.");
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see com.ibatis.sqlmap.client.extensions.TypeHandlerCallback#setParameter(com.ibatis.sqlmap.client.extensions.ParameterSetter, java.lang.Object)
+	 */
+	public void setParameter(ParameterSetter setter, Object param) throws SQLException {
+		boolean b = ((Boolean)param).booleanValue();
+		
+		if(b) {
+			setter.setString(YES);
+		} else {
+			setter.setString(NO);
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see com.ibatis.sqlmap.client.extensions.TypeHandlerCallback#valueOf(java.lang.String)
+	 */
+	public Object valueOf(String s) {
+		if(YES.equals(s)) {
+			return new Boolean(true);
+		} else if(NO.equals(s)) {
+			return new Boolean(false);
+		} else {
+			throw new ExRuntimeException("Unexpected value " + s + " found where " + YES + " or " + NO + " was expected.");
+		}
+	}
+
+}

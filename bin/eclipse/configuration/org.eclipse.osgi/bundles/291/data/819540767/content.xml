@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='update site: http://download.oracle.com/otn_software/oepe/helios/wtp' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1339669062515'/>
+    <property name='site.checksum' value='2485934277'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://download.oracle.com/otn_software/oepe/helios' url='http://download.oracle.com/otn_software/oepe/helios' type='1' options='0'/>
+    <repository uri='http://download.oracle.com/otn_software/oepe/helios' url='http://download.oracle.com/otn_software/oepe/helios' type='0' options='0'/>
+  </references>
+  <units size='17'>
+    <unit id='oracle.eclipse.tools.helios.weblogic.feature.group' version='1.7.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.helios.weblogic.feature.group' range='[0.0.0,1.7.3.201107052022)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%featureDescription'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.featureName' value='Oracle WebLogic Server Tools'/>
+        <property name='df_LT.providerName' value='Oracle'/>
+        <property name='df_LT.featureDescription' value='Tools for developing applications for Oracle WebLogic Server (versions 11gR1, 10gR3, 10.0, 9.x and 8.1).'/>
+        <property name='df_LT.copyright' value='Copyright (c) 2011 Oracle and/or its affiliates. All rights reserved. Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.'/>
+        <property name='df_LT.license' value='ORACLE ENTERPRISE PACK FOR ECLIPSE LICENSE AGREEMENT&#xA;&#xA;&quot;We,&quot; &quot;us,&quot; and &quot;our&quot; refers to Oracle USA, Inc., for and on behalf of itself and its subsidiaries and affiliates under common control.  &quot;You&quot; and &quot;your&quot; refers to the individual or entity that wishes to use the programs from Oracle.  &quot;Programs&quot; refers to the Oracle Enterprise Pack for Eclipse software product you wish to download and use and program documentation.  &quot;License&quot; refers to your right to use the programs under the terms of this agreement.  This agreement is governed by the substantive and procedural laws of California.  You and Oracle agree to submit to the exclusive jurisdiction of, and venue in, the courts of San Francisco, San Mateo, or Santa Clara counties in California in any dispute arising out of or relating to this agreement.&#xA;&#xA;We are willing to license the programs to you only upon the condition that you accept all of the terms contained in this agreement.  Read the terms carefully and select the &quot;Accept&quot; button at the bottom of the page to confirm your acceptance.  If you are not willing to be bound by these terms, select the &quot;Do Not Accept&quot; button and the registration process will not continue.&#xA;&#xA;License Rights&#xA;&#xA;We grant you a nonexclusive, nontransferable limited license to use the programs for purposes of developing your applications.  If you want to use the programs for any purpose other than as expressly permitted under this agreement you must contact us, or an Oracle reseller, to obtain the appropriate license.  We may audit your use of the programs.  Program documentation is  provided with the programs.&#xA;&#xA;Ownership and Restrictions&#xA;&#xA;We retain all ownership and intellectual property rights in the programs.  You may make a sufficient number of copies of the programs for the licensed use and one copy of the programs for backup purposes.&#xA;&#xA;You may not:&#xA;- use the programs for any purpose other than as provided above;&#xA;- distribute the programs;&#xA;- charge your end users for use of the programs;&#xA;- remove or modify any program markings or any notice of our proprietary rights;&#xA;- use the programs to provide third party training on the content and/or functionality of the programs;&#xA;- assign this agreement or give the programs, program access or an interest in the programs to any individual or entity;&#xA;- cause or permit reverse engineering (unless required by law for interoperability), disassembly or decompilation of the programs;&#xA;- disclose results of any program benchmark tests without our prior consent; or,&#xA;- use any Oracle name, trademark or logo.&#xA;&#xA;Export&#xA;&#xA;You agree that U.S. export control laws and other applicable export and import laws govern your use of the programs, including technical data; additional information can be found on Oracle&apos;s Global Trade Compliance web site located at http://www.oracle.com/products/export/index.html.  You agree that neither the programs nor any direct product thereof will be exported, directly, or indirectly, in violation of these laws, or will be used for any purpose prohibited by these laws including, without limitation, nuclear, chemical, or biological weapons proliferation.&#xA;&#xA;Disclaimer of Warranty and Exclusive Remedies&#xA;&#xA;THE PROGRAMS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND.  WE FURTHER DISCLAIM ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.&#xA;&#xA;IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR DATA USE, INCURRED BY YOU OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  OUR ENTIRE LIABILITY FOR DAMAGES HEREUNDER SHALL IN NO EVENT EXCEED ONE THOUSAND DOLLARS (U.S. $1,000).&#xA;&#xA;No Technical Support&#xA;&#xA;Our technical support organization will not provide technical support, phone support, or updates to you for the programs licensed under this agreement.&#xA;&#xA;Restricted Rights&#xA;&#xA;If you distribute a license to the United States government, the programs, including documentation, shall be considered commercial computer software and you will place a legend, in addition to applicable copyright notices, on the documentation, and on the media label, substantially similar to the following:&#xA;&#xA;NOTICE OF RESTRICTED RIGHTS&#xA;&#xA;&quot;Programs delivered subject to the DOD FAR Supplement are &apos;commercial computer software&apos; and use, duplication, and disclosure of the programs, including documentation, shall be subject to the licensing restrictions set forth in the applicable Oracle license agreement.  Otherwise, programs delivered subject to the Federal Acquisition Regulations are &apos;restricted computer software&apos; and use, duplication, and disclosure of the programs, including documentation, shall be subject to the restrictions in FAR 52.227-19, Commercial Computer Software-Restricted Rights (June 1987).  Oracle USA, Inc., 500 Oracle Parkway, Redwood City, CA  94065.&quot;&#xA;&#xA;End of Agreement&#xA;&#xA;You may terminate this agreement by destroying all copies of the programs.  We have the right to terminate your right to use the programs if you fail to comply with any of the terms of this agreement, in which case you shall destroy all copies of the programs.&#xA;&#xA;Relationship Between the Parties&#xA;&#xA;The relationship between you and us is that of licensee/licensor.  Neither party will represent that it has any authority to assume or create any obligation, express or implied, on behalf of the other party, nor to represent the other party as agent, employee, franchisee, or in any other capacity.  Nothing in this agreement shall be construed to limit either party&apos;s right to independently develop or distribute software that is functionally similar to the other party&apos;s products, so long as proprietary information of the other party is not included in such software.&#xA;&#xA;Open Source&#xA;&#xA;&quot;Open Source&quot; software - software available without charge for use, modification and distribution - is often licensed under terms that require the user to make the user&apos;s modifications to the Open Source software or any software that the user &apos;combines&apos; with the Open Source software freely available in source code form.  If you use Open Source software in conjunction with the programs, you must ensure that your use does not:  (i) create, or purport to create, obligations of us with respect to the Oracle programs; or (ii) grant, or purport to grant, to any third party any rights to or immunities under our intellectual property or proprietary rights in the Oracle.  For example, you may not develop a software program using an Oracle program and an Open Source program where such use results in a program file(s) that contains code from both the Oracle program and the Open Source program (including without limitation libraries) if the Open Source program is licensed under a license that requires any &quot;modifications&quot; be made freely available.  You also may not combine the Oracle program with programs licensed under the GNU General Public License (&quot;GPL&quot;) in any manner that could cause, or could be interpreted or asserted to cause, the Oracle program, or any modifications thereto, to become subject to the terms of the GPL.&#xA;&#xA;Entire Agreement&#xA;&#xA;You agree that this agreement is the complete agreement for the programs and licenses, and this agreement supersedes all prior or contemporaneous agreements or representations.  If any term of this agreement is found to be invalid or unenforceable, the remaining provisions will remain effective.&#xA;&#xA;Last updated: 07/10/2008&#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.weblogic.feature.group' version='1.7.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='14'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='[3.6.0,3.7.0)'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.sapphire.feature.group' range='[0.2.0,0.3.0)'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.patches.feature.group' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.common.feature.group' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.doc' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.legacy' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.legacy.source' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.ui' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.xmlbeans' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.xmlbeans.ui' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.webservices' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.webservices.ui' range='[3.2.3.201107052022,3.2.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.weblogic.feature.jar' range='[1.7.3.201107052022,1.7.3.201107052022]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        %copyright
+      </copyright>
+    </unit>
+    <unit id='oracle.eclipse.tools.weblogic.legacy' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.weblogic.legacy' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.legacy' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.weblogic.legacy' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.weblogic.legacy' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.weblogic.legacy&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.helios.weblogic.feature.jar' version='1.7.3.201107052022'>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%featureDescription'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.update.feature.plugin' value='oracle.eclipse.tools.weblogic'/>
+        <property name='df_LT.featureName' value='Oracle WebLogic Server Tools'/>
+        <property name='df_LT.providerName' value='Oracle'/>
+        <property name='df_LT.featureDescription' value='Tools for developing applications for Oracle WebLogic Server (versions 11gR1, 10gR3, 10.0, 9.x and 8.1).'/>
+        <property name='df_LT.copyright' value='Copyright (c) 2011 Oracle and/or its affiliates. All rights reserved. Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.'/>
+        <property name='df_LT.license' value='ORACLE ENTERPRISE PACK FOR ECLIPSE LICENSE AGREEMENT&#xA;&#xA;&quot;We,&quot; &quot;us,&quot; and &quot;our&quot; refers to Oracle USA, Inc., for and on behalf of itself and its subsidiaries and affiliates under common control.  &quot;You&quot; and &quot;your&quot; refers to the individual or entity that wishes to use the programs from Oracle.  &quot;Programs&quot; refers to the Oracle Enterprise Pack for Eclipse software product you wish to download and use and program documentation.  &quot;License&quot; refers to your right to use the programs under the terms of this agreement.  This agreement is governed by the substantive and procedural laws of California.  You and Oracle agree to submit to the exclusive jurisdiction of, and venue in, the courts of San Francisco, San Mateo, or Santa Clara counties in California in any dispute arising out of or relating to this agreement.&#xA;&#xA;We are willing to license the programs to you only upon the condition that you accept all of the terms contained in this agreement.  Read the terms carefully and select the &quot;Accept&quot; button at the bottom of the page to confirm your acceptance.  If you are not willing to be bound by these terms, select the &quot;Do Not Accept&quot; button and the registration process will not continue.&#xA;&#xA;License Rights&#xA;&#xA;We grant you a nonexclusive, nontransferable limited license to use the programs for purposes of developing your applications.  If you want to use the programs for any purpose other than as expressly permitted under this agreement you must contact us, or an Oracle reseller, to obtain the appropriate license.  We may audit your use of the programs.  Program documentation is  provided with the programs.&#xA;&#xA;Ownership and Restrictions&#xA;&#xA;We retain all ownership and intellectual property rights in the programs.  You may make a sufficient number of copies of the programs for the licensed use and one copy of the programs for backup purposes.&#xA;&#xA;You may not:&#xA;- use the programs for any purpose other than as provided above;&#xA;- distribute the programs;&#xA;- charge your end users for use of the programs;&#xA;- remove or modify any program markings or any notice of our proprietary rights;&#xA;- use the programs to provide third party training on the content and/or functionality of the programs;&#xA;- assign this agreement or give the programs, program access or an interest in the programs to any individual or entity;&#xA;- cause or permit reverse engineering (unless required by law for interoperability), disassembly or decompilation of the programs;&#xA;- disclose results of any program benchmark tests without our prior consent; or,&#xA;- use any Oracle name, trademark or logo.&#xA;&#xA;Export&#xA;&#xA;You agree that U.S. export control laws and other applicable export and import laws govern your use of the programs, including technical data; additional information can be found on Oracle&apos;s Global Trade Compliance web site located at http://www.oracle.com/products/export/index.html.  You agree that neither the programs nor any direct product thereof will be exported, directly, or indirectly, in violation of these laws, or will be used for any purpose prohibited by these laws including, without limitation, nuclear, chemical, or biological weapons proliferation.&#xA;&#xA;Disclaimer of Warranty and Exclusive Remedies&#xA;&#xA;THE PROGRAMS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND.  WE FURTHER DISCLAIM ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.&#xA;&#xA;IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR DATA USE, INCURRED BY YOU OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  OUR ENTIRE LIABILITY FOR DAMAGES HEREUNDER SHALL IN NO EVENT EXCEED ONE THOUSAND DOLLARS (U.S. $1,000).&#xA;&#xA;No Technical Support&#xA;&#xA;Our technical support organization will not provide technical support, phone support, or updates to you for the programs licensed under this agreement.&#xA;&#xA;Restricted Rights&#xA;&#xA;If you distribute a license to the United States government, the programs, including documentation, shall be considered commercial computer software and you will place a legend, in addition to applicable copyright notices, on the documentation, and on the media label, substantially similar to the following:&#xA;&#xA;NOTICE OF RESTRICTED RIGHTS&#xA;&#xA;&quot;Programs delivered subject to the DOD FAR Supplement are &apos;commercial computer software&apos; and use, duplication, and disclosure of the programs, including documentation, shall be subject to the licensing restrictions set forth in the applicable Oracle license agreement.  Otherwise, programs delivered subject to the Federal Acquisition Regulations are &apos;restricted computer software&apos; and use, duplication, and disclosure of the programs, including documentation, shall be subject to the restrictions in FAR 52.227-19, Commercial Computer Software-Restricted Rights (June 1987).  Oracle USA, Inc., 500 Oracle Parkway, Redwood City, CA  94065.&quot;&#xA;&#xA;End of Agreement&#xA;&#xA;You may terminate this agreement by destroying all copies of the programs.  We have the right to terminate your right to use the programs if you fail to comply with any of the terms of this agreement, in which case you shall destroy all copies of the programs.&#xA;&#xA;Relationship Between the Parties&#xA;&#xA;The relationship between you and us is that of licensee/licensor.  Neither party will represent that it has any authority to assume or create any obligation, express or implied, on behalf of the other party, nor to represent the other party as agent, employee, franchisee, or in any other capacity.  Nothing in this agreement shall be construed to limit either party&apos;s right to independently develop or distribute software that is functionally similar to the other party&apos;s products, so long as proprietary information of the other party is not included in such software.&#xA;&#xA;Open Source&#xA;&#xA;&quot;Open Source&quot; software - software available without charge for use, modification and distribution - is often licensed under terms that require the user to make the user&apos;s modifications to the Open Source software or any software that the user &apos;combines&apos; with the Open Source software freely available in source code form.  If you use Open Source software in conjunction with the programs, you must ensure that your use does not:  (i) create, or purport to create, obligations of us with respect to the Oracle programs; or (ii) grant, or purport to grant, to any third party any rights to or immunities under our intellectual property or proprietary rights in the Oracle.  For example, you may not develop a software program using an Oracle program and an Open Source program where such use results in a program file(s) that contains code from both the Oracle program and the Open Source program (including without limitation libraries) if the Open Source program is licensed under a license that requires any &quot;modifications&quot; be made freely available.  You also may not combine the Oracle program with programs licensed under the GNU General Public License (&quot;GPL&quot;) in any manner that could cause, or could be interpreted or asserted to cause, the Oracle program, or any modifications thereto, to become subject to the terms of the GPL.&#xA;&#xA;Entire Agreement&#xA;&#xA;You agree that this agreement is the complete agreement for the programs and licenses, and this agreement supersedes all prior or contemporaneous agreements or representations.  If any term of this agreement is found to be invalid or unenforceable, the remaining provisions will remain effective.&#xA;&#xA;Last updated: 07/10/2008&#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.weblogic.feature.jar' version='1.7.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='oracle.eclipse.tools.helios.weblogic' version='1.7.3.201107052022'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='oracle.eclipse.tools.helios.weblogic' version='1.7.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        %copyright
+      </copyright>
+    </unit>
+    <unit id='oracle.eclipse.tools.helios.glassfish.feature.group' version='1.7.3.201106201340' singleton='false'>
+      <update id='oracle.eclipse.tools.helios.glassfish.feature.group' range='[0.0.0,1.7.3.201106201340)' severity='0'/>
+      <properties size='10'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%featureDescription'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://glassfishplugins.java.net'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.featureName' value='Oracle GlassFish Server Tools'/>
+        <property name='df_LT.providerName' value='Oracle'/>
+        <property name='df_LT.featureDescription' value='Provides tools for developing Java EE Applications for GlassFish Server Open Source Edition 3 and 3.1 and Oracle GlassFish Server 3 and 3.1 (Java EE 6) and GlassFish 2 (Java EE 5).'/>
+        <property name='df_LT.copyright' value='Copyright (c) 2011 Oracle and/or its affiliates. All rights reserved. Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.'/>
+        <property name='df_LT.license' value='Eclipse Public License - v 1.0&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC &#xA;LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM &#xA;CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&#xA;&quot;Contribution&quot; means:&#xA;&#xA;a) in the case of the initial Contributor, the initial code and documentation &#xA;distributed under this Agreement, and&#xA;b) in the case of each subsequent Contributor:&#xA;i) changes to the Program, and&#xA;ii) additions to the Program;&#xA;where such changes and/or additions to the Program originate from and are &#xA;distributed by that particular Contributor. A Contribution &apos;originates&apos; from &#xA;a Contributor if it was added to the Program by such Contributor itself or &#xA;anyone acting on such Contributor&apos;s behalf. Contributions do not include &#xA;additions to the Program which: (i) are separate modules of software &#xA;distributed in conjunction with the Program under their own license &#xA;agreement, and (ii) are not derivative works of the Program.&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are &#xA;necessarily infringed by the use or sale of its Contribution alone or when &#xA;combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this &#xA;Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, &#xA;including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA;&#xA;a) Subject to the terms of this Agreement, each Contributor hereby grants &#xA;Recipient a non-exclusive, worldwide, royalty-free copyright license to &#xA;reproduce, prepare derivative works of, publicly display, publicly perform, &#xA;distribute and sublicense the Contribution of such Contributor, if any, and &#xA;such derivative works, in source code and object code form.&#xA;b) Subject to the terms of this Agreement, each Contributor hereby grants &#xA;Recipient a non-exclusive, worldwide, royalty-free patent license under &#xA;Licensed Patents to make, use, sell, offer to sell, import and otherwise &#xA;transfer the Contribution of such Contributor, if any, in source code and &#xA;object code form. This patent license shall apply to the combination of the &#xA;Contribution and the Program if, at the time the Contribution is added by the &#xA;Contributor, such addition of the Contribution causes such combination to be &#xA;covered by the Licensed Patents. The patent license shall not apply to any &#xA;other combinations which include the Contribution. No hardware per se is &#xA;licensed hereunder.&#xA;c) Recipient understands that although each Contributor grants the licenses &#xA;to its Contributions set forth herein, no assurances are provided by any &#xA;Contributor that the Program does not infringe the patent or other &#xA;intellectual property rights of any other entity. Each Contributor disclaims &#xA;any liability to Recipient for claims brought by any other entity based on &#xA;infringement of intellectual property rights or otherwise. As a condition to &#xA;exercising the rights and licenses granted hereunder, each Recipient hereby &#xA;assumes sole responsibility to secure any other intellectual property rights &#xA;needed, if any. For example, if a third party patent license is required to &#xA;allow Recipient to distribute the Program, it is Recipient&apos;s responsibility &#xA;to acquire that license before distributing the Program.&#xA;d) Each Contributor represents that to its knowledge it has sufficient &#xA;copyright rights in its Contribution, if any, to grant the copyright license &#xA;set forth in this Agreement.&#xA;3. REQUIREMENTS&#xA;&#xA;A Contributor may choose to distribute the Program in object code form under &#xA;its own license agreement, provided that:&#xA;&#xA;a) it complies with the terms and conditions of this Agreement; and&#xA;b) its license agreement:&#xA;i) effectively disclaims on behalf of all Contributors all warranties and &#xA;conditions, express and implied, including warranties or conditions of title &#xA;and non-infringement, and implied warranties or conditions of merchantability &#xA;and fitness for a particular purpose;&#xA;ii) effectively excludes on behalf of all Contributors all liability for &#xA;damages, including direct, indirect, special, incidental and consequential &#xA;damages, such as lost profits;&#xA;iii) states that any provisions which differ from this Agreement are offered &#xA;by that Contributor alone and not by any other party; and&#xA;iv) states that source code for the Program is available from such &#xA;Contributor, and informs licensees how to obtain it in a reasonable manner on &#xA;or through a medium customarily used for software exchange.&#xA;When the Program is made available in source code form:&#xA;&#xA;a) it must be made available under this Agreement; and&#xA;b) a copy of this Agreement must be included with each copy of the Program.&#xA;Contributors may not remove or alter any copyright notices contained within &#xA;the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, &#xA;if any, in a manner that reasonably allows subsequent Recipients to identify &#xA;the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;&#xA;Commercial distributors of software may accept certain responsibilities with &#xA;respect to end users, business partners and the like. While this license is &#xA;intended to facilitate the commercial use of the Program, the Contributor who &#xA;includes the Program in a commercial product offering should do so in a &#xA;manner which does not create potential liability for other Contributors. &#xA;Therefore, if a Contributor includes the Program in a commercial product &#xA;offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend &#xA;and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any &#xA;losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, &#xA;lawsuits and other legal actions brought by a third party against the &#xA;Indemnified Contributor to the extent caused by the acts or omissions of such &#xA;Commercial Contributor in connection with its distribution of the Program in &#xA;a commercial product offering. The obligations in this section do not apply &#xA;to any claims or Losses relating to any actual or alleged intellectual &#xA;property infringement. In order to qualify, an Indemnified Contributor must: &#xA;a) promptly notify the Commercial Contributor in writing of such claim, and &#xA;b) allow the Commercial Contributor to control, and cooperate with the &#xA;Commercial Contributor in, the defense and any related settlement &#xA;negotiations. The Indemnified Contributor may participate in any such claim &#xA;at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product &#xA;offering, Product X. That Contributor is then a Commercial Contributor. If &#xA;that Commercial Contributor then makes performance claims, or offers &#xA;warranties related to Product X, those performance claims and warranties are &#xA;such Commercial Contributor&apos;s responsibility alone. Under this section, the &#xA;Commercial Contributor would have to defend claims against the other &#xA;Contributors related to those performance claims and warranties, and if a &#xA;court requires any other Contributor to pay any damages as a result, the &#xA;Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON &#xA;AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER &#xA;EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR &#xA;CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A &#xA;PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the &#xA;appropriateness of using and distributing the Program and assumes all risks &#xA;associated with its exercise of rights under this Agreement , including but &#xA;not limited to the risks and costs of program errors, compliance with &#xA;applicable laws, damage to or loss of data, programs or equipment, and &#xA;unavailability or interruption of operations.&#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY &#xA;CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, &#xA;SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION &#xA;LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN &#xA;CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) &#xA;ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE &#xA;EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY &#xA;OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;&#xA;If any provision of this Agreement is invalid or unenforceable under &#xA;applicable law, it shall not affect the validity or enforceability of the &#xA;remainder of the terms of this Agreement, and without further action by the &#xA;parties hereto, such provision shall be reformed to the minimum extent &#xA;necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against any entity (including a &#xA;cross-claim or counterclaim in a lawsuit) alleging that the Program itself &#xA;(excluding combinations of the Program with other software or hardware) &#xA;infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted &#xA;under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to &#xA;comply with any of the material terms or conditions of this Agreement and &#xA;does not cure such failure in a reasonable period of time after becoming &#xA;aware of such noncompliance. If all Recipient&apos;s rights under this Agreement &#xA;terminate, Recipient agrees to cease use and distribution of the Program as &#xA;soon as reasonably practicable. However, Recipient&apos;s obligations under this &#xA;Agreement and any licenses granted by Recipient relating to the Program shall &#xA;continue and survive.&#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in &#xA;order to avoid inconsistency the Agreement is copyrighted and may only be &#xA;modified in the following manner. The Agreement Steward reserves the right to &#xA;publish new versions (including revisions) of this Agreement from time to &#xA;time. No one other than the Agreement Steward has the right to modify this &#xA;Agreement. The Eclipse Foundation is the initial Agreement Steward. The &#xA;Eclipse Foundation may assign the responsibility to serve as the Agreement &#xA;Steward to a suitable separate entity. Each new version of the Agreement will &#xA;be given a distinguishing version number. The Program (including &#xA;Contributions) may always be distributed subject to the version of the &#xA;Agreement under which it was received. In addition, after a new version of &#xA;the Agreement is published, Contributor may elect to distribute the Program &#xA;(including its Contributions) under the new version. Except as expressly &#xA;stated in Sections 2(a) and 2(b) above, Recipient receives no rights or &#xA;licenses to the intellectual property of any Contributor under this &#xA;Agreement, whether expressly, by implication, estoppel or otherwise. All &#xA;rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the &#xA;intellectual property laws of the United States of America. No party to this &#xA;Agreement will bring a legal action under this Agreement more than one year &#xA;after the cause of action arose. Each party waives its rights to a jury trial &#xA;in any resulting litigation.&#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.glassfish.feature.group' version='1.7.3.201106201340'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='50'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.xerces' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ant' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.j2ee' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.generic.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.generic.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.common.frameworks' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jem.util' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.common.frameworks' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.server.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.server.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.common.project.facet.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.datatools.connectivity' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.datatools.connectivity.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.debug' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.jee.web' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.common.frameworks.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.servlet.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.j2ee.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.codegen' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.ejb.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.j2ee.ejb' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.html.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.j2ee.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.common.project.facet.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.ws.jaxrs.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ant.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.j2ee.web' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.jee' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.jee.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.ws.jaxrs.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.glassfish' range='[3.2.3.201106201340,3.2.3.201106201340]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.doc.javaee5' range='[1.0.0.201106201340,1.0.0.201106201340]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.doc.javaee6' range='[1.0.0.201106201340,1.0.0.201106201340]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.glassfish.feature.jar' range='[1.7.3.201106201340,1.7.3.201106201340]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='%25licenseUrl' url='%25licenseUrl'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        %copyright
+      </copyright>
+    </unit>
+    <unit id='oracle.eclipse.tools.weblogic' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.weblogic' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.weblogic' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.weblogic' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.weblogic&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.webservices' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.webservices' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.webservices' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.webservices' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.webservices' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.webservices&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='http://download.oracle.com/otn_software/oepe/helios/wtp/site.xml.org.eclipse.wst.server.core.serverAdapter' version='1.0.0.47Q7AceOhK67E7AA7WAGCCIA'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Oracle Application Server Adapters'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='http://download.oracle.com/otn_software/oepe/helios/wtp/site.xml.org.eclipse.wst.server.core.serverAdapter' version='1.0.0.47Q7AceOhK67E7AA7WAGCCIA'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.weblogic.feature.group' range='[1.7.3.201107052022,1.7.3.201107052022]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.glassfish.feature.group' range='[1.7.3.201106201340,1.7.3.201106201340]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='oracle.eclipse.tools.webservices.ui' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.webservices.ui' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.webservices.ui' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.webservices.ui' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.webservices.ui' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.webservices.ui&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.weblogic.ui' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.weblogic.ui' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.ui' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.weblogic.ui' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.weblogic.ui' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.weblogic.ui&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.xmlbeans' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.xmlbeans' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.xmlbeans' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.xmlbeans' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.xmlbeans' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.xmlbeans&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.weblogic.doc' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.weblogic.doc' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.doc' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.weblogic.doc' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.weblogic.doc' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.weblogic.doc&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.xmlbeans.ui' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.xmlbeans.ui' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.xmlbeans.ui' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.xmlbeans.ui' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.xmlbeans.ui' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.xmlbeans.ui&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.doc.javaee5' version='1.0.0.201106201340' singleton='false'>
+      <update id='oracle.eclipse.tools.doc.javaee5' range='[0.0.0,1.0.0.201106201340)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.doc.javaee5' version='1.0.0.201106201340'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.doc.javaee5' version='1.0.0.201106201340'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.doc.javaee5' version='1.0.0.201106201340'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.doc.javaee5&#xA;Bundle-Version: 1.0.0.201106201340&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.doc.javaee6' version='1.0.0.201106201340' singleton='false'>
+      <update id='oracle.eclipse.tools.doc.javaee6' range='[0.0.0,1.0.0.201106201340)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.doc.javaee6' version='1.0.0.201106201340'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.doc.javaee6' version='1.0.0.201106201340'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.doc.javaee6' version='1.0.0.201106201340'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.doc.javaee6&#xA;Bundle-Version: 1.0.0.201106201340&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.weblogic.legacy.source' version='3.2.3.201107052022' singleton='false'>
+      <update id='oracle.eclipse.tools.weblogic.legacy.source' range='[0.0.0,3.2.3.201107052022)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.weblogic.legacy.source' version='3.2.3.201107052022'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.weblogic.legacy.source' version='3.2.3.201107052022'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.weblogic.legacy.source' version='3.2.3.201107052022'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.weblogic.legacy.source&#xA;Bundle-Version: 3.2.3.201107052022&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.glassfish' version='3.2.3.201106201340' singleton='false'>
+      <update id='oracle.eclipse.tools.glassfish' range='[0.0.0,3.2.3.201106201340)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.glassfish' version='3.2.3.201106201340'/>
+        <provided namespace='osgi.bundle' name='oracle.eclipse.tools.glassfish' version='3.2.3.201106201340'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='oracle.eclipse.tools.glassfish' version='3.2.3.201106201340'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: oracle.eclipse.tools.glassfish&#xA;Bundle-Version: 3.2.3.201106201340&#xA;Bundle-ManifestVersion: 2&#xA;Manifest-Version: 1.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='oracle.eclipse.tools.helios.glassfish.feature.jar' version='1.7.3.201106201340'>
+      <properties size='10'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%featureDescription'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://glassfishplugins.java.net'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.update.feature.plugin' value='oracle.eclipse.tools.glassfish'/>
+        <property name='df_LT.featureName' value='Oracle GlassFish Server Tools'/>
+        <property name='df_LT.providerName' value='Oracle'/>
+        <property name='df_LT.featureDescription' value='Provides tools for developing Java EE Applications for GlassFish Server Open Source Edition 3 and 3.1 and Oracle GlassFish Server 3 and 3.1 (Java EE 6) and GlassFish 2 (Java EE 5).'/>
+        <property name='df_LT.copyright' value='Copyright (c) 2011 Oracle and/or its affiliates. All rights reserved. Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.'/>
+        <property name='df_LT.license' value='Eclipse Public License - v 1.0&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC &#xA;LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM &#xA;CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&#xA;&quot;Contribution&quot; means:&#xA;&#xA;a) in the case of the initial Contributor, the initial code and documentation &#xA;distributed under this Agreement, and&#xA;b) in the case of each subsequent Contributor:&#xA;i) changes to the Program, and&#xA;ii) additions to the Program;&#xA;where such changes and/or additions to the Program originate from and are &#xA;distributed by that particular Contributor. A Contribution &apos;originates&apos; from &#xA;a Contributor if it was added to the Program by such Contributor itself or &#xA;anyone acting on such Contributor&apos;s behalf. Contributions do not include &#xA;additions to the Program which: (i) are separate modules of software &#xA;distributed in conjunction with the Program under their own license &#xA;agreement, and (ii) are not derivative works of the Program.&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are &#xA;necessarily infringed by the use or sale of its Contribution alone or when &#xA;combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this &#xA;Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, &#xA;including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA;&#xA;a) Subject to the terms of this Agreement, each Contributor hereby grants &#xA;Recipient a non-exclusive, worldwide, royalty-free copyright license to &#xA;reproduce, prepare derivative works of, publicly display, publicly perform, &#xA;distribute and sublicense the Contribution of such Contributor, if any, and &#xA;such derivative works, in source code and object code form.&#xA;b) Subject to the terms of this Agreement, each Contributor hereby grants &#xA;Recipient a non-exclusive, worldwide, royalty-free patent license under &#xA;Licensed Patents to make, use, sell, offer to sell, import and otherwise &#xA;transfer the Contribution of such Contributor, if any, in source code and &#xA;object code form. This patent license shall apply to the combination of the &#xA;Contribution and the Program if, at the time the Contribution is added by the &#xA;Contributor, such addition of the Contribution causes such combination to be &#xA;covered by the Licensed Patents. The patent license shall not apply to any &#xA;other combinations which include the Contribution. No hardware per se is &#xA;licensed hereunder.&#xA;c) Recipient understands that although each Contributor grants the licenses &#xA;to its Contributions set forth herein, no assurances are provided by any &#xA;Contributor that the Program does not infringe the patent or other &#xA;intellectual property rights of any other entity. Each Contributor disclaims &#xA;any liability to Recipient for claims brought by any other entity based on &#xA;infringement of intellectual property rights or otherwise. As a condition to &#xA;exercising the rights and licenses granted hereunder, each Recipient hereby &#xA;assumes sole responsibility to secure any other intellectual property rights &#xA;needed, if any. For example, if a third party patent license is required to &#xA;allow Recipient to distribute the Program, it is Recipient&apos;s responsibility &#xA;to acquire that license before distributing the Program.&#xA;d) Each Contributor represents that to its knowledge it has sufficient &#xA;copyright rights in its Contribution, if any, to grant the copyright license &#xA;set forth in this Agreement.&#xA;3. REQUIREMENTS&#xA;&#xA;A Contributor may choose to distribute the Program in object code form under &#xA;its own license agreement, provided that:&#xA;&#xA;a) it complies with the terms and conditions of this Agreement; and&#xA;b) its license agreement:&#xA;i) effectively disclaims on behalf of all Contributors all warranties and &#xA;conditions, express and implied, including warranties or conditions of title &#xA;and non-infringement, and implied warranties or conditions of merchantability &#xA;and fitness for a particular purpose;&#xA;ii) effectively excludes on behalf of all Contributors all liability for &#xA;damages, including direct, indirect, special, incidental and consequential &#xA;damages, such as lost profits;&#xA;iii) states that any provisions which differ from this Agreement are offered &#xA;by that Contributor alone and not by any other party; and&#xA;iv) states that source code for the Program is available from such &#xA;Contributor, and informs licensees how to obtain it in a reasonable manner on &#xA;or through a medium customarily used for software exchange.&#xA;When the Program is made available in source code form:&#xA;&#xA;a) it must be made available under this Agreement; and&#xA;b) a copy of this Agreement must be included with each copy of the Program.&#xA;Contributors may not remove or alter any copyright notices contained within &#xA;the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, &#xA;if any, in a manner that reasonably allows subsequent Recipients to identify &#xA;the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;&#xA;Commercial distributors of software may accept certain responsibilities with &#xA;respect to end users, business partners and the like. While this license is &#xA;intended to facilitate the commercial use of the Program, the Contributor who &#xA;includes the Program in a commercial product offering should do so in a &#xA;manner which does not create potential liability for other Contributors. &#xA;Therefore, if a Contributor includes the Program in a commercial product &#xA;offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend &#xA;and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any &#xA;losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, &#xA;lawsuits and other legal actions brought by a third party against the &#xA;Indemnified Contributor to the extent caused by the acts or omissions of such &#xA;Commercial Contributor in connection with its distribution of the Program in &#xA;a commercial product offering. The obligations in this section do not apply &#xA;to any claims or Losses relating to any actual or alleged intellectual &#xA;property infringement. In order to qualify, an Indemnified Contributor must: &#xA;a) promptly notify the Commercial Contributor in writing of such claim, and &#xA;b) allow the Commercial Contributor to control, and cooperate with the &#xA;Commercial Contributor in, the defense and any related settlement &#xA;negotiations. The Indemnified Contributor may participate in any such claim &#xA;at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product &#xA;offering, Product X. That Contributor is then a Commercial Contributor. If &#xA;that Commercial Contributor then makes performance claims, or offers &#xA;warranties related to Product X, those performance claims and warranties are &#xA;such Commercial Contributor&apos;s responsibility alone. Under this section, the &#xA;Commercial Contributor would have to defend claims against the other &#xA;Contributors related to those performance claims and warranties, and if a &#xA;court requires any other Contributor to pay any damages as a result, the &#xA;Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON &#xA;AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER &#xA;EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR &#xA;CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A &#xA;PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the &#xA;appropriateness of using and distributing the Program and assumes all risks &#xA;associated with its exercise of rights under this Agreement , including but &#xA;not limited to the risks and costs of program errors, compliance with &#xA;applicable laws, damage to or loss of data, programs or equipment, and &#xA;unavailability or interruption of operations.&#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY &#xA;CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, &#xA;SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION &#xA;LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN &#xA;CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) &#xA;ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE &#xA;EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY &#xA;OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;&#xA;If any provision of this Agreement is invalid or unenforceable under &#xA;applicable law, it shall not affect the validity or enforceability of the &#xA;remainder of the terms of this Agreement, and without further action by the &#xA;parties hereto, such provision shall be reformed to the minimum extent &#xA;necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against any entity (including a &#xA;cross-claim or counterclaim in a lawsuit) alleging that the Program itself &#xA;(excluding combinations of the Program with other software or hardware) &#xA;infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted &#xA;under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to &#xA;comply with any of the material terms or conditions of this Agreement and &#xA;does not cure such failure in a reasonable period of time after becoming &#xA;aware of such noncompliance. If all Recipient&apos;s rights under this Agreement &#xA;terminate, Recipient agrees to cease use and distribution of the Program as &#xA;soon as reasonably practicable. However, Recipient&apos;s obligations under this &#xA;Agreement and any licenses granted by Recipient relating to the Program shall &#xA;continue and survive.&#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in &#xA;order to avoid inconsistency the Agreement is copyrighted and may only be &#xA;modified in the following manner. The Agreement Steward reserves the right to &#xA;publish new versions (including revisions) of this Agreement from time to &#xA;time. No one other than the Agreement Steward has the right to modify this &#xA;Agreement. The Eclipse Foundation is the initial Agreement Steward. The &#xA;Eclipse Foundation may assign the responsibility to serve as the Agreement &#xA;Steward to a suitable separate entity. Each new version of the Agreement will &#xA;be given a distinguishing version number. The Program (including &#xA;Contributions) may always be distributed subject to the version of the &#xA;Agreement under which it was received. In addition, after a new version of &#xA;the Agreement is published, Contributor may elect to distribute the Program &#xA;(including its Contributions) under the new version. Except as expressly &#xA;stated in Sections 2(a) and 2(b) above, Recipient receives no rights or &#xA;licenses to the intellectual property of any Contributor under this &#xA;Agreement, whether expressly, by implication, estoppel or otherwise. All &#xA;rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the &#xA;intellectual property laws of the United States of America. No party to this &#xA;Agreement will bring a legal action under this Agreement more than one year &#xA;after the cause of action arose. Each party waives its rights to a jury trial &#xA;in any resulting litigation.&#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='oracle.eclipse.tools.helios.glassfish.feature.jar' version='1.7.3.201106201340'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='oracle.eclipse.tools.helios.glassfish' version='1.7.3.201106201340'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='oracle.eclipse.tools.helios.glassfish' version='1.7.3.201106201340'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='%25licenseUrl' url='%25licenseUrl'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        %copyright
+      </copyright>
+    </unit>
+  </units>
+</repository>

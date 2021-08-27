@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.contexts"?>
+<contexts>
+	<context id="introduction">
+		<description>TestCase Generator help</description>
+		<topic label="Help" href="doc/help/tcgenerator.html"></topic>
+	</context>
+</contexts>
+

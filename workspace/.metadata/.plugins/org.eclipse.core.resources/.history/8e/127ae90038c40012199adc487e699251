@@ -1,0 +1,39 @@
+package kr.co.sinsul.payment.service;
+
+import java.util.List;
+
+import kr.co.sinsul.common.vo.MoneyVO;
+
+/**
+ * @Class Name : PaymentService.java
+ * @Description : 납부내역을 처리하는 Service Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 27.  Administrator     최초생성
+ * 
+ * @author Administrator
+ * @since 2012. 12. 27.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+public interface PaymentHistoryService {
+	/**
+	 * 납부내역 목록 정보를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역목록
+	 * @exception Exception
+	 */
+	public List<MoneyVO> retrievePaymentHistoryList(MoneyVO vo) throws Exception;
+	
+	/**
+	 * 납부내역 목록 갯수를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역목록
+	 * @exception Exception
+	 */
+	public int retrievePaymentHistoryListCount(MoneyVO vo) throws Exception;
+}

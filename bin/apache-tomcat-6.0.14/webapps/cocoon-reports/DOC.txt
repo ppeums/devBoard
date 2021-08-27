@@ -1,0 +1,113 @@
+                   MS EXCEL REPORTS
+
+Copyright (c) 2003.  All Rights Reserved.
+Candlelight Software
+Steven P. Punte
+steve@candlelightsoftware.com
+http://www.candlelightsoftware.com
+
+
+	An elegant "solution" to the rendering of MS Excel reports from
+	a database is provided.  It is conjectured (see
+	"Software Component Conjecture" of related article) that
+	no easy drop-in web report solution exists due to the wide
+	and enormous variation in web architectures.  Therefor, it is
+	is indented that this solution be modified "leveraged" into a
+	web solution.  Some possible necessary variation could be:
+
+	o	Alternate database and datasource technologies.
+	o	Rearrangement of pipeline URI's.
+	o	Usage of XML database such as Xindices.
+	o	Use of Web Messages Services (i.e. SOAP) instead of
+			a local database.
+	o	Addition of Query components in the parameter pipeline
+			in order to obtain enumerated list from a database.
+
+
+	The report author will need to be concerned with two
+	components:
+
+	o	An MS Excel template document in which all the report
+		static content is placed.
+
+	o	A "Report Scheme" XML document in which all data directive
+		content is place.
+
+
+	The key element contained in a report scheme file are:
+
+	o		Report Title
+	o		Report Description
+	o		Request Parameters
+	o		Data Query Statement, typically SQL
+	o		Data Insertion directions
+
+	The XML namespace is: "cocoon.clsw.com/report" with
+	typical abbreviation of "rpt."
+
+
+	The element tags and their semantic interpretation are:
+
+	<rpt:report>					The root tag for all report format files.
+
+		<rpt:title>					A simple string, potentially with special
+												characters, for displaying the report title.
+
+		<rpt:description> 	A text description of the report.
+
+		<rpt:parameters>		Necessary parameters to execute the report
+												are specified in this section.  Such parameters
+												can be the date, customer name, etc...
+
+  		<rpt:input-date>	A calendar date input parameter is requested
+
+  			<rpt:title>			The text appearing next to the input parameter
+
+  			<rpt:label>			The label associated with the HTTP submission
+
+  			<rpt:init>			The initial default value
+
+		<rpt:data-blocks>		A collection of individual data blocks
+
+			<rpt:data-block>	A single data block.  Contains ONE query
+												and one or more formatting statements.
+
+				<rpt:column>		Format data as a column in MS-Excel
+
+					<rpt:qry-name>	This is the column name of the data found in
+													SQL Transformer results
+
+					<rpt:adrs-column>	Column in MS-Excel: i.e. A,B,C...
+
+					<rpt:adrs-row>		Beginning row in MS-Excel
+
+					<rpt:type>				Data type to be use.  java.lang.String is
+														default.  java.util.Double and java.util.Data
+														are available choices.
+
+				<rpt:row-copy-shift>	Shift all rows below that specified below DOWN
+															by the number of rowsets retrieved by the SQL
+															query statement.  This is use so that an unknown
+															amount of data can be inserted into the report
+															without overwriting anything: i.e. existing
+															data can be shifted down and out of the way.
+
+					<rpt:adrs-row>			Row to begin shift down activities.
+
+					<rpt:adrs-column>		This specified edge of actives.
+
+				<rpt:col-copy-shift>
+					<rpt:adrs-column>
+					<rpt:adrs-row>
+
+				<rpt:row>
+					<rpt:qry-name>
+					<rpt:adrs-column>
+					<rpt:adrs-row>
+					<rpt:type>
+
+				<rpt:matrix>
+					<rpt:qry-name>
+					<rpt:adrs-column>
+					<rpt:adrs-row>
+					<rpt:type>

@@ -1,0 +1,2218 @@
+Manifest-Version: 1.0
+Export-Package: org.maven.ide.eclipse,org.maven.ide.eclipse.actions,or
+ g.maven.ide.eclipse.archetype,org.maven.ide.eclipse.builder;x-interna
+ l:=true,org.maven.ide.eclipse.core,org.maven.ide.eclipse.embedder,org
+ .maven.ide.eclipse.index,org.maven.ide.eclipse.internal;x-friends:="o
+ rg.maven.ide.eclipse.tests",org.maven.ide.eclipse.internal.embedder;x
+ -friends:="org.maven.ide.eclipse.tests",org.maven.ide.eclipse.interna
+ l.index;x-friends:="org.maven.ide.eclipse.tests",org.maven.ide.eclips
+ e.internal.preferences;x-friends:="org.maven.ide.eclipse.tests",org.m
+ aven.ide.eclipse.internal.project;x-friends:="org.maven.ide.eclipse.t
+ ests",org.maven.ide.eclipse.internal.project.registry;x-friends:="org
+ .maven.ide.eclipse.tests",org.maven.ide.eclipse.internal.repository;x
+ -friends:="org.maven.ide.eclipse.tests",org.maven.ide.eclipse.jobs,or
+ g.maven.ide.eclipse.project,org.maven.ide.eclipse.project.configurato
+ r,org.maven.ide.eclipse.repository,org.maven.ide.eclipse.scm,org.mave
+ n.ide.eclipse.ui.dialogs,org.maven.ide.eclipse.util,org.maven.ide.ecl
+ ipse.wizards
+Bundle-ClassPath: .
+Built-By: m2e
+Bundle-Name: Maven Integration for Eclipse
+Bundle-Localization: plugin
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: J2SE-1.5,JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,or
+ g.eclipse.core.variables,org.eclipse.core.expressions,org.eclipse.cor
+ e.filesystem,org.eclipse.jface.text,org.eclipse.search,org.eclipse.ui
+ ,org.eclipse.ui.ide,org.eclipse.ui.console,org.eclipse.ui.forms,org.e
+ clipse.ui.editors,org.eclipse.ui.externaltools,org.eclipse.ui.workben
+ ch.texteditor,org.eclipse.emf.common,org.eclipse.wst.common.emf,org.m
+ aven.ide.eclipse.maven_embedder;bundle-version="[0.12.0,0.13.0)",org.
+ maven.ide.eclipse.archetype_common;bundle-version="[0.12.0,0.13.0)",o
+ rg.maven.ide.eclipse.nexus_indexer;bundle-version="[0.12.0,0.13.0)",o
+ rg.maven.ide.eclipse.maven_model_edit;bundle-version="[0.12.0,0.13.0)
+ ",org.maven.ide.eclipse.dependency_tree;bundle-version="[0.12.0,0.13.
+ 0)"
+Bundle-Vendor: Sonatype, Inc.
+Eclipse-LazyStart: true
+Bundle-Version: 0.12.1.20110112-1712
+Build-Jdk: 1.6.0_12
+MavenArtifact-GroupId: org.maven.ide.eclipse
+MavenArtifact-ArtifactId: org.maven.ide.eclipse
+Bundle-Activator: org.maven.ide.eclipse.MavenPlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.maven.ide.eclipse;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$8.class
+SHA1-Digest: zFVGNBC87DNJ70WivO+aHYJzx3E=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$3.clas
+ s
+SHA1-Digest: E0OjxQaJFJTn9ThoWYtbkc01ir4=
+
+Name: org/maven/ide/eclipse/project/IMavenProjectImportResult.class
+SHA1-Digest: lv9xOIt7O8tR9TSrRJUk7NFqB9k=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage$Depend
+ encySorter.class
+SHA1-Digest: i6jBI+TudhAhx6EFr6pJPTpUa2c=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$12
+ .class
+SHA1-Digest: P3XMjuffM8Qfd8JWZcoX/FXaupc=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$2.class
+SHA1-Digest: 8jcNuXt334nyFdWmFaJvEHaO0fY=
+
+Name: META-INF/maven/org.maven.ide.eclipse/org.maven.ide.eclipse/pom.x
+ ml
+SHA1-Digest: QXXUWpCJu1a2sseyHYTAVt7XsEI=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenAdapterFactory$1$1.class
+SHA1-Digest: O88deQ2X7f0nZRVAWyNESV2BpKM=
+
+Name: org/maven/ide/eclipse/project/MavenProjectChangedEvent.class
+SHA1-Digest: fgJi+8uN0P2HkjM6OHGDS0KMJsk=
+
+Name: org/maven/ide/eclipse/internal/project/registry/MutableProjectRe
+ gistry.class
+SHA1-Digest: qC9bEsctdtDXAZ5F7qbcTdFRUQU=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenVersionDecorator.class
+SHA1-Digest: Hz6LaBai+CyRUImx5TnKUspMK2k=
+
+Name: org/maven/ide/eclipse/internal/preferences/MavenPreferenceConsta
+ nts.class
+SHA1-Digest: lmIkWKltcm9YLUCnp9KzIJTYngw=
+
+Name: icons/maven_indexes.gif
+SHA1-Digest: f1Bv7zH600MGY248XkEfahlYMK8=
+
+Name: org/maven/ide/eclipse/internal/embedder/EclipseClassRealmManager
+ Delegate.class
+SHA1-Digest: fYYkpfETBou6tTCDtMQiHxyRmQQ=
+
+Name: org/maven/ide/eclipse/wizards/ResolverConfigurationComponent$3.c
+ lass
+SHA1-Digest: YhV9jMAmYCO3ayU9mW7+Jkz5Y8w=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $6.class
+SHA1-Digest: uBo/J7vw7XXk7RZK5FGZft4h6vs=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$15
+ .class
+SHA1-Digest: zVhmVq0fSeW3DVIh4lP4j0b6/MM=
+
+Name: org/maven/ide/eclipse/embedder/MavenModelManager$DependencyAdder
+ .class
+SHA1-Digest: Pk9raWY3CUQIkFJ6OHEk1EFLHHE=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/AbstractLifecycleProper
+ tyPage.class
+SHA1-Digest: ATzUhAdzImMsis+nIl8DRZeVpnY=
+
+Name: org/maven/ide/eclipse/builder/AbstractEclipseBuildContext$Messag
+ e.class
+SHA1-Digest: ze2f/exBL5TnYUscH/zvNzemEUk=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizard$1.class
+SHA1-Digest: coALNyDXvYFqmvnQRaq3vAnXLjk=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$2.clas
+ s
+SHA1-Digest: oZ4wltRlcJiOESoBDASusDOtuh4=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$10.class
+SHA1-Digest: Pqj1SZG4FR6eMS3tHyjql5Om5G4=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutWizard.class
+SHA1-Digest: ztrUMG9LNXTwClMsReV0VlKo+AE=
+
+Name: schema/mavenContainerConfigurators.exsd
+SHA1-Digest: EeTrTZY/njr+3u7iBcVFs+GKDCQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$6.
+ class
+SHA1-Digest: tw0LjAoZ/UeIqDfhQrYU01ZZNmw=
+
+Name: org/maven/ide/eclipse/actions/OpenUrlAction$2.class
+SHA1-Digest: /QJuSebXJUdvFOxZBkZdWyXdm7I=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizard.class
+SHA1-Digest: ugW5gRrQV5UgViKuyBykn2uKrkk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$1.
+ class
+SHA1-Digest: O7HpAqcV0X4WQR54jR9gzEUCQAo=
+
+Name: org/maven/ide/eclipse/project/IMavenProjectChangedListener.class
+SHA1-Digest: 1akuXVd+fsf3vhpG/jiofHvPpoc=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/CustomRepositories
+ Node.class
+SHA1-Digest: HotSA1Mm5f8d85D1XOUubfCJqKA=
+
+Name: org/maven/ide/eclipse/internal/index/EquinoxLocker.class
+SHA1-Digest: 5I6mKhkl2ptJMxBiT7d8Pv+MTZ8=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$2.class
+SHA1-Digest: dRv8Qjua0Nlz5WQLJP72vZ2MJos=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/RepositoryNode.cla
+ ss
+SHA1-Digest: ZDK2ozaMPwG6yj7OgALP7hgMKgo=
+
+Name: org/maven/ide/eclipse/util/M2EUtils.class
+SHA1-Digest: qe4vH+RlhdovVuREoKznquOgCeI=
+
+Name: org/maven/ide/eclipse/actions/MavenMenuAction$1.class
+SHA1-Digest: L7JDhRJCwbckimS6a1fxy83GMxo=
+
+Name: org/maven/ide/eclipse/internal/repository/RepositoryRegistryUpda
+ teJob.class
+SHA1-Digest: e+pLVlaFlKyLzAZVk3Bio3ld9Us=
+
+Name: org/maven/ide/eclipse/embedder/NearestVersionConflictResolver$Co
+ nflictNode.class
+SHA1-Digest: LZuyb3Y4F6aR8HbM3lV0SPibthM=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$8.
+ class
+SHA1-Digest: HfmqbWiTOnK6bGyKxvia0wx5heA=
+
+Name: icons/jar_version.gif
+SHA1-Digest: lSsqRa0qSsrpKAcNLXHGFxJeujQ=
+
+Name: org/maven/ide/eclipse/wizards/ResolverConfigurationComponent$4.c
+ lass
+SHA1-Digest: IoDu2A6YPt2PpHErpP9qzdtUlGU=
+
+Name: org/maven/ide/eclipse/internal/project/registry/IProjectRegistry
+ .class
+SHA1-Digest: IhCoxdz6S+w12AZLE6wXJVrMqzM=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$6.class
+SHA1-Digest: bMhfzy8A9g4Q28MU0LImOpSN3eg=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$4.class
+SHA1-Digest: lz7HunenZzA/5FzGz3sdu9Zw6c8=
+
+Name: org/maven/ide/eclipse/core/MavenConsole.class
+SHA1-Digest: 4aba0frXRlLWcKyUWDcLxwZwKLE=
+
+Name: org/maven/ide/eclipse/project/MavenProjectInfo.class
+SHA1-Digest: T9Xzb4CaPhwBjneOQGXqaT+/TGE=
+
+Name: icons/update_source_folders.gif
+SHA1-Digest: v7p1+5XKumVIMumDpCbUYsKEiA0=
+
+Name: org/maven/ide/eclipse/ui/dialogs/AbstractMavenDialog.class
+SHA1-Digest: xnwMbVyJfqP4ZI6g0pUmuZwsGqk=
+
+Name: org/maven/ide/eclipse/ui/internal/components/TextComboBoxCellEdi
+ tor$2.class
+SHA1-Digest: 7WIJIwgBrlIb+IbnlVr5dSgIB0w=
+
+Name: org/maven/ide/eclipse/repository/IRepositoryRegistry.class
+SHA1-Digest: hAEd2UQfqhoWd6dUtcACp0iyO2U=
+
+Name: org/maven/ide/eclipse/embedder/MavenRuntime.class
+SHA1-Digest: dVmBRDUf6QFURhk3mN9T2tI7Rpo=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$3.class
+SHA1-Digest: Cv7uPJ8cRjxp+MoHO84AmhnGyjI=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$3.
+ class
+SHA1-Digest: fovU15mLNy+IL7sefKqYvnieoVY=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$MavenStorageEditorIn
+ put.class
+SHA1-Digest: pZvex+e2vGWLUDRdTXTqNxJUZAw=
+
+Name: org/maven/ide/eclipse/project/configurator/ProjectConfigurationR
+ equest.class
+SHA1-Digest: 2p4s37wSdv+87WvjO+razNNSRcQ=
+
+Name: org/maven/ide/eclipse/actions/ModuleProjectWizardAction.class
+SHA1-Digest: CdcEGCHXzhZs7nxphYtwmYZPo74=
+
+Name: org/maven/ide/eclipse/MavenPlugin.class
+SHA1-Digest: S+Gc7Zgrgh1QO6ZxmRKXD3FBxIk=
+
+Name: NOTICE.txt
+SHA1-Digest: 0s7YejtwFEat4cx+ThTqEpCxBjI=
+
+Name: org/maven/ide/eclipse/actions/OpenUrlAction$1.class
+SHA1-Digest: 82Otu/ZuuDjduxyrBkwbpn1giZs=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$16
+ $1.class
+SHA1-Digest: NrObwngAnaMtFAFizCcYNszL+q4=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizardParentPage.class
+SHA1-Digest: 8GiLcEJjSUmDCek65+GbjTAMY/o=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$GoalsL
+ abelProvider.class
+SHA1-Digest: y0S/B8VphtT+oBuklwxVNlbeq8s=
+
+Name: org/maven/ide/eclipse/actions/ChangeNatureAction.class
+SHA1-Digest: /wdrEkul8mtQNVfoqOKnBYGCsW4=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage.class
+SHA1-Digest: 7+7juQvRQbwhY3B/W/YZGipD3WA=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$17
+ .class
+SHA1-Digest: aSf/8HMKRgb2djMI8zzUghdgVwM=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistry.
+ class
+SHA1-Digest: QEBUXtnKC7RnpbkCP2clcPi9as8=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$1.class
+SHA1-Digest: xI90CmsSUgUWVlqUnv/WTnEuB9g=
+
+Name: org/maven/ide/eclipse/project/configurator/AbstractLifecycleMapp
+ ing.class
+SHA1-Digest: Mf/WMCrCGtjGEIrqJBDVdZHlq4o=
+
+Name: org/maven/ide/eclipse/builder/EclipseBuildContext.class
+SHA1-Digest: bQ4YmT5puiv86m/XBh6PLe/qauk=
+
+Name: org/maven/ide/eclipse/actions/MaterializeAction.class
+SHA1-Digest: 5JCnASEyKaYIBP7JREUZg1/OOVw=
+
+Name: schema/lifecycleMappings.exsd
+SHA1-Digest: B3Saj/S/Q54MdduXXj15aeCTZWg=
+
+Name: org/maven/ide/eclipse/util/Util$1.class
+SHA1-Digest: jbVkSvIeo9PYXl2UcUs90wahrms=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$2.class
+SHA1-Digest: MHg+35rQVbwlDgKF1rwSAu+duDM=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$5.class
+SHA1-Digest: p1BmDEG/kg/lkIbg4owLDHAmTL0=
+
+Name: org/maven/ide/eclipse/actions/MavenPropertyTester.class
+SHA1-Digest: ALHl3AnQ5qsegEOA4KQWEQODBr4=
+
+Name: org/maven/ide/eclipse/project/configurator/AbstractProjectConfig
+ urator.class
+SHA1-Digest: VhNHW+ZW7grSEH+deCL1ze8dMvA=
+
+Name: org/maven/ide/eclipse/project/MavenProjectManager.class
+SHA1-Digest: p7pNuL7cPIT+7/3FKfr4dK0xSI8=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/RemoteArchetypeCat
+ alogDialog$1.class
+SHA1-Digest: gkeWobc9Hijlbv7v+2+ER7XDX/M=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportWizard.class
+SHA1-Digest: nHQpzF6aM4+bBezJ25h35ZND+GE=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$3.class
+SHA1-Digest: A70ZNMnXj3IsSppx11/Mvgq1Y3U=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenGoalSelection
+ Adapter.class
+SHA1-Digest: 5EdDbs7Hqz9SzLi3hrw2shQKDC4=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$6.cl
+ ass
+SHA1-Digest: yrZtmBjAK4EMrvrAZDc4cY+R3nQ=
+
+Name: icons/m2eclipse48.gif
+SHA1-Digest: h47vEjpmw15gbXjpdJRJ9jLWjh0=
+
+Name: org/maven/ide/eclipse/internal/repository/IRepositoryDiscoverer.
+ class
+SHA1-Digest: N7bL+3ku5gql6x5RV///C8XmLgM=
+
+Name: org/maven/ide/eclipse/project/ProjectImportConfiguration.class
+SHA1-Digest: 7pn8bHxFBcyQk+QLkRV5cc6dTIw=
+
+Name: schema/defaultLifecycleMappings.exsd
+SHA1-Digest: JwOgA2e4gvQyD2dQOCakupgHWwU=
+
+Name: org/maven/ide/eclipse/builder/ChangedFileOutputStream.class
+SHA1-Digest: iBhDBYgDZkELEhZdYs8sqt7K2cQ=
+
+Name: org/maven/ide/eclipse/internal/index/AsyncFetcher$RequestHandler
+ .class
+SHA1-Digest: m/cI7qe9YCkXILSUanPqu+RaYmM=
+
+Name: .options
+SHA1-Digest: LRQG+DnpQf/djQqIvp02gowPwqM=
+
+Name: org/maven/ide/eclipse/actions/ChangeNatureAction$UpdateJob.class
+SHA1-Digest: 2/FeQy23/s23ERpe54Dh7zKmm2I=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$8.class
+SHA1-Digest: bOR5bE3ARiu0s/kIU2Bi7T8fhJo=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ILifecyclePropertyPage.
+ class
+SHA1-Digest: Fy2wQuUfmyKpozQVJPQYVanPpVI=
+
+Name: org/maven/ide/eclipse/jobs/IBackgroundProcessingQueue.class
+SHA1-Digest: 5HbQFuIhEvL+gLS5fqZcUUu/jLw=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup$2.class
+SHA1-Digest: /qgN8fA+OCGmflZ6+ptPgCZWZRk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArtifactPage.cla
+ ss
+SHA1-Digest: 0ecgiOk4qLxoehX4JScdw9xbM+w=
+
+Name: icons/rebuild_index.gif
+SHA1-Digest: jgkhRwChO0e1cU6BcfmCoMl6Ucg=
+
+Name: schema/mavenComponentContributors.exsd
+SHA1-Digest: n4jzCXxnFKQhiryUIkwIlk/bhLA=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$4.class
+SHA1-Digest: teS9GPiV58qbmyTipespQtLStjk=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenConsolePageParticipant$Sh
+ owOnOutputAction.class
+SHA1-Digest: 05h745I2NNw+VsdQm2KTqRzqeeE=
+
+Name: plugin.properties
+SHA1-Digest: WEEy9dG4SkXAi9Tvpny7mJHlgCU=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob$CheckoutJo
+ bChangeListener.class
+SHA1-Digest: bOUGNL02I6O/OQx4v+rsY2Mva70=
+
+Name: org/maven/ide/eclipse/NoSuchComponentException.class
+SHA1-Digest: O6EBJRJUpmwSoWT8hO7qjJHD5Wc=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardLocationPage.cla
+ ss
+SHA1-Digest: HAIS10h2r1Ea63NPFY65KsKDWGk=
+
+Name: icons/close.gif
+SHA1-Digest: h0kZkzhUBBwSKCLEH4ItnWNDcLk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/GenericLifecycleMa
+ ppingPropertyPage$1.class
+SHA1-Digest: XnYigvfJT4w4KvC/LvLMRFMy6IE=
+
+Name: org/maven/ide/eclipse/internal/builder/MavenNature.class
+SHA1-Digest: UThyZiceE1q+QBxsYY1xP7/Etvs=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ProjectConfiguratorsTab
+ leContentProvider.class
+SHA1-Digest: I4LjR0jrvH96oIjoZUHrzedh0Ys=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ILifecyclePropertyPageE
+ xtensionPoint.class
+SHA1-Digest: jvJU6lT2Ab1gdqLQ3e0UUj4sCjo=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$SearchR
+ esultLabelProvider.class
+SHA1-Digest: 0rDw5/kmRzzR+clmRhHvxQDMZPk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$2.class
+SHA1-Digest: w8dX1HObhk/hscfFpGyUFN4M2/c=
+
+Name: org/maven/ide/eclipse/internal/project/ProjectConfigurationManag
+ er.class
+SHA1-Digest: 0lOF72ok03pD5G8RYQGxI+G5KOc=
+
+Name: org/maven/ide/eclipse/messages.properties
+SHA1-Digest: wrYo9DNHu/1nWktGPwV8iVcD/s8=
+
+Name: org/maven/ide/eclipse/internal/console/MavenConsoleImpl$MavenCon
+ soleLifecycle.class
+SHA1-Digest: cW2a3aVYDjBJTRT7uowwsMZJcM8=
+
+Name: org/maven/ide/eclipse/actions/AddDependencyAction.class
+SHA1-Digest: mCK3v6InkWcVav0GxOQCB5ROYdY=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$11.class
+SHA1-Digest: wJ6/cLU2cVBNtCeWip5ZUyIDOww=
+
+Name: org/maven/ide/eclipse/internal/console/ConsoleDocument.class
+SHA1-Digest: VOjLN2LWKq7OyXbVpEs9oQEQtFU=
+
+Name: org/maven/ide/eclipse/actions/UpdateSourcesAction.class
+SHA1-Digest: +hFKCkSpgsl3fsfVVIqlg3kn7dk=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$9.class
+SHA1-Digest: Cf7GwpTI4IXBoDPYm37FIcLQ+sY=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$6.class
+SHA1-Digest: UGDD4fzfZWQZSJKFXEOwVsSAqI4=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$14
+ $3.class
+SHA1-Digest: nJGLKXk9Vzi3Hun29WzT4Mza9AI=
+
+Name: org/maven/ide/eclipse/wizards/MavenParentComponent.class
+SHA1-Digest: ZqLjcAWMA4BGGHq6kMEjIPswqys=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenPropertyDialog$1.class
+SHA1-Digest: OBEj1Bbf7ADz8zAkSvfV6ij+hkg=
+
+Name: org/maven/ide/eclipse/project/IProjectConfigurationManager.class
+SHA1-Digest: JzrLoOJmikEEKU2h9UXy/FwqSuc=
+
+Name: org/maven/ide/eclipse/embedder/NearestVersionConflictResolver$Po
+ sition.class
+SHA1-Digest: tXdaMnuUToO/s3yHV1wDfZoWnhs=
+
+Name: org/maven/ide/eclipse/index/IndexedArtifactFile.class
+SHA1-Digest: McaYis9rdRsyWfsw+6aeGzNMJ9I=
+
+Name: org/maven/ide/eclipse/embedder/MavenModelManager$PluginAdder.cla
+ ss
+SHA1-Digest: HkSr28yNjtIK0rNmP1oV8cJMWG8=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$1.class
+SHA1-Digest: xYXVVTotW9GCoopzGB+bv6Kk1n4=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$4.class
+SHA1-Digest: 16EpZhH3hLdH7ntnmA15N5AdJbk=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizardPage$2.class
+SHA1-Digest: W6Zx0qMh4wnkzDJPfHfyXBwPo+0=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard.class
+SHA1-Digest: IvQlYcxpr9O97uvQMtXo9J9rkNY=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$8.class
+SHA1-Digest: zysUBdZTf15+EOVGT/e6CfNhb78=
+
+Name: org/maven/ide/eclipse/internal/project/registry/DefaultMavenDepe
+ ndencyResolver.class
+SHA1-Digest: hg8z5Q92wabaPzACwzVkARCEqdA=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup.class
+SHA1-Digest: 5NWYT2AU6uWAIHnV1IgdTrhddG4=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileRepositoryWizardPa
+ ge$RepositoriesContentProvider.class
+SHA1-Digest: SQaculPJwU/wgI41eJx0CkRoFUI=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage.class
+SHA1-Digest: uqe9ufPVjTkv53KWTTrT3xrXIjs=
+
+Name: org/maven/ide/eclipse/internal/embedder/ContextRepositorySystemS
+ essionImpl.class
+SHA1-Digest: iY6XimvaRjsmZq0BpcvrGHUipuo=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizardPage$1.class
+SHA1-Digest: tA5eojL/bibCC92T/A70FhH/EMY=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$7.class
+SHA1-Digest: brj1idHHZmJbi7TesX0ML3EdJJ4=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizardPage.class
+SHA1-Digest: 6dT3H+nEt+GYscOhnNN4HuskHP0=
+
+Name: schema/mavenProjectChangedListeners.exsd
+SHA1-Digest: LoN5qQJt1SgEernjBJUjRxfztgw=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$4.class
+SHA1-Digest: RuXAajFBCApLJGWCsP5QA+yNm5w=
+
+Name: org/maven/ide/eclipse/ui/internal/views/RepositoryViewLabelProvi
+ der.class
+SHA1-Digest: 0/7JrrZw2+ogBvWId66wPiweZTg=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $1.class
+SHA1-Digest: 8kIVgp3V9dZgEMlAXIe1kl/7hv0=
+
+Name: org/maven/ide/eclipse/internal/console/ConsoleDocument$ConsoleLi
+ ne.class
+SHA1-Digest: vkpeXbtURhF0stIwDUNGIJADuNs=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ProjectConfiguratorsTab
+ le$1.class
+SHA1-Digest: dNQDrSPnxKhGwX+2Eq9MB94xR3k=
+
+Name: org/maven/ide/eclipse/internal/embedder/EclipseLogger.class
+SHA1-Digest: Cp+JTDnJsecW1ZZU+7RngWE86q8=
+
+Name: org/maven/ide/eclipse/scm/ScmHandlerUi.class
+SHA1-Digest: O1QW1SY/DSgCSuUJh3b9xj/PRjI=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$MavenStorage.class
+SHA1-Digest: Ss8pWjmQMXnBZvBiod89NswVAaw=
+
+Name: org/maven/ide/eclipse/embedder/NearestVersionConflictResolver$Co
+ nflictGroup.class
+SHA1-Digest: q05nOhl666Ue9sGU/nGeHlgL3PE=
+
+Name: org/maven/ide/eclipse/embedder/MavenRuntimeManager.class
+SHA1-Digest: eCdtnkyowDaAXEk7vCeM/h3TyNU=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction.class
+SHA1-Digest: tlUHLw1gfrYX5pgjiocBD2Lv7F0=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent.class
+SHA1-Digest: QxYQiTCsi8U0+lSsH8oUU5Z/8yg=
+
+Name: org/maven/ide/eclipse/internal/index/NexusIndexManager$1.class
+SHA1-Digest: vReUCG3V1siLKEH/hKEk2uEEUmk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$1.class
+SHA1-Digest: HmKRrF1z5BOSEheaehLOYIioafQ=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenExternalRuntime$1Ve
+ rsionHandler.class
+SHA1-Digest: QivEFWgK/p+0rgAFdyRLdNpE6nc=
+
+Name: org/maven/ide/eclipse/ui/internal/search/MavenSearchPage.class
+SHA1-Digest: xVrpiUtpY3+AsF7SqIuou5A65rE=
+
+Name: org/maven/ide/eclipse/internal/project/MojoExecutionUtils.class
+SHA1-Digest: ZRT4agfINE1P14QoXAgPIocvMk4=
+
+Name: org/maven/ide/eclipse/internal/actions/DefaultMavenMenuCreator.c
+ lass
+SHA1-Digest: 9AxT7GSs+WBCWrxsOPfvbluB3Ys=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$7.class
+SHA1-Digest: LQMLAuJ15dm8Q1NFgE9j/M73bWI=
+
+Name: org/maven/ide/eclipse/project/MavenProjectScmInfo.class
+SHA1-Digest: e/ruJac+lW8cC/2WTGTaSAQlHBY=
+
+Name: org/maven/ide/eclipse/actions/OpenUrlAction$3.class
+SHA1-Digest: 9XKTDCsW4b/PmoHa67auz5HHwFY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArtifactPage$1.c
+ lass
+SHA1-Digest: tPoDrcRVSMFpDUHZEPZg5v4INGs=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/AbstractIndexedRep
+ ositoryNode.class
+SHA1-Digest: AKUTn8fZX3eaNCJoY3Idw8cCwRE=
+
+Name: org/maven/ide/eclipse/index/IndexedArtifact$1.class
+SHA1-Digest: x/xGKRT1NgAp09p3IfNEWH9MxJM=
+
+Name: org/maven/ide/eclipse/internal/project/MavenProjectImportResult.
+ class
+SHA1-Digest: 4bHPbyJXvjBoN71SgGnLg2ByGAg=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog.class
+SHA1-Digest: BQifeUvNhLZt6NSQKdnLlWf7C2s=
+
+Name: org/maven/ide/eclipse/util/M2EErrorDialog$ErrorTableLabelProvide
+ r.class
+SHA1-Digest: asRDGrQSEA8DO2jAVUsPYZMJPzo=
+
+Name: org/maven/ide/eclipse/scm/ScmTag.class
+SHA1-Digest: hZd+5+Fl19Ehfk0dIeroAkm0jpQ=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup$3.class
+SHA1-Digest: m7pJnz0D4b/HwVKYnFcY2/hIqIc=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/GoalsFieldEditor$1
+ .class
+SHA1-Digest: j+qRac9ErwoE754KpmUqu+Afs2k=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogsWriter.class
+SHA1-Digest: n0HhSEXUAVL1gRW0ZuZKACclhM0=
+
+Name: icons/stderr.gif
+SHA1-Digest: dUQO1a5SL3FEeRME2PStmD6MhyE=
+
+Name: org/maven/ide/eclipse/embedder/ILocalRepositoryListener.class
+SHA1-Digest: s3Ctv5DdUlM5L7IpGDiAK+4b6HQ=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader$2.class
+SHA1-Digest: Ktm95hOgrNnX6s1MsczvNo7wcGM=
+
+Name: org/maven/ide/eclipse/actions/OpenMavenConsoleAction.class
+SHA1-Digest: wVMb7qx2xN+6WbR/gxOJXK78cew=
+
+Name: org/maven/ide/eclipse/internal/project/MissingLifecycleMapping.c
+ lass
+SHA1-Digest: 7Mk7HMfsq6Wi60mEkEE9CguQOEQ=
+
+Name: org/maven/ide/eclipse/embedder/MavenModelManager.class
+SHA1-Digest: ffIYQZi3+/dUc6xXt1L+CFY+hOE=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenConsolePageParticipant.cl
+ ass
+SHA1-Digest: CsNJjI9TcDvyYPX3RwPmTeDy98M=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$3.cl
+ ass
+SHA1-Digest: ++/ShjASO9b/AGxJqgjBO88TpI4=
+
+Name: org/maven/ide/eclipse/ui/internal/views/RepositoryViewContentPro
+ vider.class
+SHA1-Digest: SYmMEPCKxTE4ITOvOkjcfH5eYTQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$4.class
+SHA1-Digest: zv3dGbiR3bVZ5ePvc5BDP9whx98=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$5.class
+SHA1-Digest: UdxQXWAzqSSaSDh6qtUInTw2piU=
+
+Name: org/maven/ide/eclipse/util/M2EErrorDialog.class
+SHA1-Digest: sCGrlQZBvkYqbhssC4YGeNSj/50=
+
+Name: org/maven/ide/eclipse/ui/internal/components/TextComboBoxCellEdi
+ tor$1.class
+SHA1-Digest: OWcwXCuw6T0qgVO2G/+RvWQZ7EQ=
+
+Name: org/maven/ide/eclipse/internal/builder/MavenBuilder.class
+SHA1-Digest: bqR/yEgOoNLexZcL7M+yhiQiTUs=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectSelectionDialog$MavenC
+ ontainerContentProvider.class
+SHA1-Digest: jbX79WoZ5gok/+4B7rDh56ywcnc=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenConsolePageParticipant$Sh
+ owOnErrorAction.class
+SHA1-Digest: /UCPRc+NnKt2Huf/itMoVB5UlgA=
+
+Name: org/maven/ide/eclipse/embedder/ProjectUpdater.class
+SHA1-Digest: thifOCJgbP11iW5IpDy2JRdYnT0=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenConfigurationImpl.c
+ lass
+SHA1-Digest: sGFZypsBHGxvMun3bJHjNwer5Gk=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ProjectConfiguratorsTab
+ le.class
+SHA1-Digest: eotUaVhWc9RHx/rZE7ni1xro8AQ=
+
+Name: org/maven/ide/eclipse/embedder/IMavenLauncherConfiguration.class
+SHA1-Digest: ygloQdvJJ1fiTD/rWYifEMDKwUM=
+
+Name: org/maven/ide/eclipse/wizards/MavenLocationComponent.class
+SHA1-Digest: 87jpi3YJ63seyRJXfNpafxSZbsg=
+
+Name: org/maven/ide/eclipse/internal/preferences/MavenPreferenceInitia
+ lizer.class
+SHA1-Digest: tx8uCQ2JrJZjOUmB/sa3NAWuZSA=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenExternalRuntime$Exc
+ eptionWrapper.class
+SHA1-Digest: vXQU4GgULgNRA6R3tOIFHyuvMr4=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$5.cl
+ ass
+SHA1-Digest: sa+Z9tXLcdYDifdkr1dH+S/oKyo=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader$IPathReplace.class
+SHA1-Digest: 3+Hd04sB4xFw8vfHI7DPUL14Bgc=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$3.class
+SHA1-Digest: AZ5Pnl+gf2qzKh29TilNu+ZPXEk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob$CheckoutJo
+ bChangeListener$3.class
+SHA1-Digest: /CX53hOifKgIO16v8EppEOcHSfk=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$8.class
+SHA1-Digest: rdpJDZk2SoyX0uwfbQYgJcYR1T0=
+
+Name: org/maven/ide/eclipse/actions/CheckoutAsMavenAction.class
+SHA1-Digest: URyUCNOa8g/7vOpVPBEy8ZWD4TI=
+
+Name: icons/new_m2_project_wizard.gif
+SHA1-Digest: YQs8OmKudthMKvFVoyNT847umc4=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$1.clas
+ s
+SHA1-Digest: 3x73SivMVuo0mZRH6uXZD25c0j4=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$12.class
+SHA1-Digest: 0tN7F/PSVMgAK01EQjkTb6+PL8c=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/RemoteArchetypeCat
+ alogDialog$2$1.class
+SHA1-Digest: kB85e+/HXXo2RY6JeTqDlYzxDH8=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard.class
+SHA1-Digest: 407oPUVsx17OyhdI+r0w0N60YwE=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/RemoteArchetypeCat
+ alogDialog.class
+SHA1-Digest: eoLqVxaC9vKPq5I1AHuhRam1MiY=
+
+Name: org/maven/ide/eclipse/wizards/MavenMaterializePomWizard$2.class
+SHA1-Digest: OpWhYCgQUYt0XI5Spp8uqxfapS0=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$13
+ .class
+SHA1-Digest: Y1gopsSUkr0OBTarU+A1wQicn8A=
+
+Name: org/maven/ide/eclipse/actions/MavenActionSupport.class
+SHA1-Digest: 98/hGGB2awQpNra14HaO44XKc/Y=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizardParentPage$3.clas
+ s
+SHA1-Digest: pKOt1EIvHpQGJPPTbmLHLk2RzcQ=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/IArtifactNode.clas
+ s
+SHA1-Digest: EKUZRJpd1w9YNLxfJ4QRkEAucas=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardLocationPage$1.c
+ lass
+SHA1-Digest: 4yw6CcSJfBRQhtO/AFHXLvI2dyM=
+
+Name: org/maven/ide/eclipse/internal/index/AsyncFetcher.class
+SHA1-Digest: IvQsyposLqoEN7BZC02XrAQwQHU=
+
+Name: org/maven/ide/eclipse/internal/project/registry/MavenProjectFaca
+ de.class
+SHA1-Digest: YvBTZzaL8spdHHDzJO/0FCi7xHw=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory$DefaultL
+ ocalCatalogFactory.class
+SHA1-Digest: dqpgsBnT2sapJclIdG5aUIVfT3w=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$10.class
+SHA1-Digest: odHM+Uqelshm7xZoo3Gc08+I90U=
+
+Name: about.properties
+SHA1-Digest: VCaw7ZtazDVUkJVKrY62T8qd3lU=
+
+Name: org/maven/ide/eclipse/internal/index/NexusIndex.class
+SHA1-Digest: UPwEjZAWFyEYSBiSjQWyXvJSTMU=
+
+Name: intro/css/overview.css
+SHA1-Digest: 96Mhooa2/dOG7CegVPJXSdnZLwo=
+
+Name: org/maven/ide/eclipse/scm/MavenCheckoutOperation.class
+SHA1-Digest: t2MRIh2eHcyjYHO/sgY0XUfgY/4=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$1.class
+SHA1-Digest: gwLbbR2s6rWxMUk2dBuqQDiRAe0=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$2.class
+SHA1-Digest: JexkG9f0a+G7PtprWkn6ypxwtp4=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$1.class
+SHA1-Digest: 858Xfw8E4Mxgs60ylmZwxPtXikI=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$6.class
+SHA1-Digest: LCSIiJXKCM8RkLiUgHs0Fsf+JzM=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileRepositoryWizardPa
+ ge.class
+SHA1-Digest: ndwWuR8T3/uarcyH/iiLLEuswGE=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$Entry.
+ class
+SHA1-Digest: CURv9ei6/XYYq+nnmr/zU5fSCnI=
+
+Name: icons/m2.gif
+SHA1-Digest: w3SrtgpdqybRGZLy0rPdpjmRLys=
+
+Name: org/maven/ide/eclipse/wizards/AbstractMavenWizardPage.class
+SHA1-Digest: LLx5o0JCYPitU8E7sGzjPxHZ1po=
+
+Name: org/maven/ide/eclipse/internal/project/registry/AbstractMavenDep
+ endencyResolver.class
+SHA1-Digest: cpvxep6PajuD66MYd/CdNUemxqQ=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader$1.class
+SHA1-Digest: LKEeZv5H1yKlSZzvfr0LNhkjfS4=
+
+Name: org/maven/ide/eclipse/internal/content/PomHandler$StopParsingExc
+ eption.class
+SHA1-Digest: W0MXb5RttRJm4WNx70Y1lNUT1CM=
+
+Name: org/maven/ide/eclipse/internal/index/IndexesExtensionReader.clas
+ s
+SHA1-Digest: XZannV5zuUEZCRbirpr1izoJSy8=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$3.class
+SHA1-Digest: uxEKsyELyMw2nfujKK845E6xGMY=
+
+Name: org/maven/ide/eclipse/internal/console/MavenConsoleImpl$3.class
+SHA1-Digest: q+CJwfKhjU0Y8TccrY4AYBkVZwc=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob$CheckoutJo
+ bChangeListener$1.class
+SHA1-Digest: pt0lYMCk0VvboTUn3nisDfuwHTs=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenShowConsoleAction.class
+SHA1-Digest: Kkty5Y61JrJajBK7mO4HHdMhCS8=
+
+Name: org/maven/ide/eclipse/actions/AbstractMavenMenuCreator.class
+SHA1-Digest: VjmsANKq8IbTLVQ1+WhMZ4X25JQ=
+
+Name: org/maven/ide/eclipse/internal/index/EquinoxLock.class
+SHA1-Digest: vZknHrQH/GDf4l2n6nTTrziXRCA=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$5.class
+SHA1-Digest: i0RjMHMO6RI5qmXC8UqK4oeji8c=
+
+Name: org/maven/ide/eclipse/actions/MavenDebugOutputAction$1.class
+SHA1-Digest: +qgOs6WTjOLKlzf66uphGLAoz6w=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$5.
+ class
+SHA1-Digest: m4AzMp1TFALB+0ta1Uj6bre/A3U=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$1.cl
+ ass
+SHA1-Digest: w520jvZARiRChlNFXkkaiqfk2JA=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/WorkspaceRepositor
+ yNode.class
+SHA1-Digest: MfIkg4uyAVBwPK2jjnkECafH1os=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage$3.clas
+ s
+SHA1-Digest: bvtt9N6MEGxPY0i2kleBrTIlLv8=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ efreshJob$1.class
+SHA1-Digest: 2h/5G3TSC7wSz8dI3VaD8pQQm5o=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$2.class
+SHA1-Digest: 8yP0vIkz6whisM7yvozz7/CER64=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardLocationPage$2.c
+ lass
+SHA1-Digest: HODPLsGUbdNAjHmyxTVjjktl4Rc=
+
+Name: org/maven/ide/eclipse/builder/ResourceDeltaScanner$1.class
+SHA1-Digest: kaS36KkfZWxdRe1WRSf+NuEbGD0=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$6$1.
+ class
+SHA1-Digest: yiHT75+CIfa5aue7vS6mCv0DJx0=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader$IFileReplace.class
+SHA1-Digest: 0ryd4lvDPaAfd8Wg6KiE6VknrtU=
+
+Name: org/maven/ide/eclipse/internal/project/registry/VersionlessKey.c
+ lass
+SHA1-Digest: kqcRqIf6EP0YOzWo8OodNPQiy9w=
+
+Name: about.ini
+SHA1-Digest: +J6KqmmFuVnCVeZwU2gBBe4ZzPQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenMaterializePomWizard$1.class
+SHA1-Digest: ycOMVtrkAp2OcQaz6/2h0gb4Lq8=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$4.class
+SHA1-Digest: hzbPFLyWbsw/q7EltR4B/5g8KB4=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$1.class
+SHA1-Digest: FX9G96hdo9Zt0c71hEQkdZngCCs=
+
+Name: org/maven/ide/eclipse/ui/internal/search/MavenSearchResult.class
+SHA1-Digest: Lq9vw6bYooqvLqnZx9NaE5hkmQY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArtifactPage$2.c
+ lass
+SHA1-Digest: JKg1mK4u2pIocrel7XhEHL/m2PQ=
+
+Name: org/maven/ide/eclipse/embedder/IMavenConfigurationChangeListener
+ .class
+SHA1-Digest: HTm/rxssJYsGYWhQMXALpLG4qf8=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage.class
+SHA1-Digest: AFkvRwx0XYxViJO/Hp+LfFdS8CE=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$4.class
+SHA1-Digest: zra4of3riFM9bt8FIQ+73AVT5+o=
+
+Name: org/maven/ide/eclipse/wizards/CustomArchetypeDialog$1.class
+SHA1-Digest: ohTOrvJLlNojc8tYOhsOfDN9pNo=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$Abst
+ ractIndexAction.class
+SHA1-Digest: dRCPVaJpOq+/sqHr3HoRXX+bpGw=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/AbstractPropertyPageExt
+ ensionPoint.class
+SHA1-Digest: XAj1ETnM983xoKF4jLJz54bKdlE=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $4.class
+SHA1-Digest: sNOPcyvB7s27Ks7WFgeJC4QvyOI=
+
+Name: icons/jar_src_version.gif
+SHA1-Digest: ++bj/CfcWjp4UP3bP71d7r/yaho=
+
+Name: org/maven/ide/eclipse/embedder/NearestVersionConflictResolver.cl
+ ass
+SHA1-Digest: AKq2YCof0JSGPFWTp599tdMbM9I=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/ProblemReportingPr
+ eferencePage.class
+SHA1-Digest: b/cpPinE0/lNBi8ghvWXY+MI7EQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$6$1.class
+SHA1-Digest: 2cSmjQdbTb7WjvoVBw2yUrN/FjY=
+
+Name: org/maven/ide/eclipse/internal/embedder/EclipseLocalRepositoryMa
+ intainer.class
+SHA1-Digest: bZWQWSzV8T1iD8VLFP2enYFIBBM=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$4.
+ class
+SHA1-Digest: QVZV0ffJ5wmwWVk3gOOxERkV1VI=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage.class
+SHA1-Digest: nJwCVd9KVnYNjMYrLyVGo8ANobk=
+
+Name: org/maven/ide/eclipse/ui/internal/components/TextComboBoxCellEdi
+ tor.class
+SHA1-Digest: +2sjToOO8B+AJE//Xtcl6Melsmc=
+
+Name: org/maven/ide/eclipse/project/configurator/ILifecycleMapping.cla
+ ss
+SHA1-Digest: sXoZFMQQ3cDes8532fG5ePjTRNk=
+
+Name: org/maven/ide/eclipse/project/configurator/MavenProjectConfigura
+ tor.class
+SHA1-Digest: PX3p/6fSXvvxM1yz/Y6apEr+H6g=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenRepositorySearchDialog.cla
+ ss
+SHA1-Digest: rHGP9jOKyc+4I/bVadyta+K2TTQ=
+
+Name: org/maven/ide/eclipse/builder/AbstractEclipseBuildContext.class
+SHA1-Digest: wRx3AHpkr4DSvVyXgvQIiIM7iSM=
+
+Name: org/maven/ide/eclipse/internal/embedder/AbstractTransferListener
+ Adapter.class
+SHA1-Digest: B3pLERV6hdIPiOCUJEmk00rhHlw=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenEmbeddedRuntime.cla
+ ss
+SHA1-Digest: xbzvmCrbvqrhePzEco6h4e1WbjM=
+
+Name: org/maven/ide/eclipse/internal/builder/ResourceScanner$1.class
+SHA1-Digest: 7d6P22Be7wd6kk4WqgbhVI/xBC4=
+
+Name: org/maven/ide/eclipse/project/IMavenMarkerManager.class
+SHA1-Digest: PgD/y9X+IvHVifAxMWCPTia34Mg=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$3.class
+SHA1-Digest: QEJLjLqhNB73rPagFT/YFlpKPLI=
+
+Name: org/maven/ide/eclipse/internal/embedder/ContextRepositorySystemS
+ ession.class
+SHA1-Digest: UQTcS2lVyVl3CthD61+5cZWW6ZE=
+
+Name: icons/jar_obj.gif
+SHA1-Digest: gaxhmXCc42P8IH7O+DrlGM4E29Q=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MissingLifecycleMa
+ ppingPropertyPage.class
+SHA1-Digest: eST1UtPlp/k3zWuKBhkrOJD/DCU=
+
+Name: org/maven/ide/eclipse/internal/index/IndexedArtifactGroup.class
+SHA1-Digest: oIPgjhIAwg5q0X3TrHFlt6KmuU4=
+
+Name: org/maven/ide/eclipse/wizards/ResolverConfigurationComponent$1.c
+ lass
+SHA1-Digest: FNvPC9tpeyR50lFTGihO8bVbfvQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$La
+ stVersionFilter.class
+SHA1-Digest: GJbnEo23o66U1VKl9/T42cXUDEY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$7.class
+SHA1-Digest: z+bkZgbu3UWggcQFWCOXGya4+Sg=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenExternalRuntime$1.c
+ lass
+SHA1-Digest: n1ySy9+45XBMDGHgk9vwaxXa9Pc=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ .class
+SHA1-Digest: pikxyAEgUpA4/BjtIjfWxe9XmQk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectSelectionDialog.class
+SHA1-Digest: iFdEUqm7IcZG+2uxFCk0KmElqPI=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/GlobalRepositories
+ Node.class
+SHA1-Digest: 2ueqb5sYUMu06EGrF3jFV7T0RNs=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$SearchJ
+ ob$1.class
+SHA1-Digest: Qlhv1X2yrED+b+eVNIf0C1eBiOY=
+
+Name: org/maven/ide/eclipse/internal/project/registry/EclipsePluginDep
+ endenciesResolver.class
+SHA1-Digest: JzpISKfRAvaaK7qiClynQ6tdBLo=
+
+Name: org/maven/ide/eclipse/wizards/WidthGroup.class
+SHA1-Digest: QA+2Itgqcnw/ArNr1p7OdzJcHsw=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$5.class
+SHA1-Digest: vjyU1H26HjzW8sNJjFvahmlE7t0=
+
+Name: org/maven/ide/eclipse/internal/project/registry/MavenRequiredCap
+ ability.class
+SHA1-Digest: t7iLDOAS7/dk//mNBy5ox/G+dOw=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardLocationPage$3.c
+ lass
+SHA1-Digest: iC85HTXQukUL6/x77BZ8/sUap6g=
+
+Name: org/maven/ide/eclipse/actions/UpdateSourcesAction$1.class
+SHA1-Digest: KKKwE49YkMWZoRxILhACTKugt1Y=
+
+Name: org/maven/ide/eclipse/internal/content/TextContentDescriber.clas
+ s
+SHA1-Digest: YMSyWG1e8orWXTbwf1o12udTqo4=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory$Internal
+ CatalogFactory.class
+SHA1-Digest: F0Su3hxEnoy6m8Cko6bHibpXLww=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$11
+ .class
+SHA1-Digest: inNXxYkOJg4hT2h+kJwjbWWQklQ=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$9.cl
+ ass
+SHA1-Digest: qL31pF3/EZzNYiS583QWmKg6wsM=
+
+Name: org/maven/ide/eclipse/builder/ResourceDeltaScanner.class
+SHA1-Digest: 56rCe1+4JDAfwBe/Q67EfctsunM=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArtifactPage$Pro
+ jectFolder.class
+SHA1-Digest: 4/XtyYKu6jd1g/4+A6bKDuYaW8E=
+
+Name: org/maven/ide/eclipse/wizards/MavenParentComponent$1.class
+SHA1-Digest: cW90nNRZW7UqYbAJruqC3FWYXcA=
+
+Name: org/maven/ide/eclipse/internal/project/CustomizableLifecycleMapp
+ ing.class
+SHA1-Digest: pclkSiQcgGNBQo4Qa4nt/kS8HFo=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$ProjectRecord.c
+ lass
+SHA1-Digest: UGmTllYYqCoy4LaKrFv6bJbMcf8=
+
+Name: org/maven/ide/eclipse/project/IMavenProjectVisitor2.class
+SHA1-Digest: 8gtKf3NRbokdeJtr11og8B6mXPc=
+
+Name: org/maven/ide/eclipse/internal/project/registry/MavenCapability.
+ class
+SHA1-Digest: PgivWDIx5ULaaLr5zdSoXTfdM/Y=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$1.class
+SHA1-Digest: nt2EpYIn0KmpTL9eeQtjCrV9bNI=
+
+Name: org/maven/ide/eclipse/internal/project/MavenMarkerManager.class
+SHA1-Digest: 1/bYvdBTDHjVJT2KX0fCgX8DVOg=
+
+Name: org/maven/ide/eclipse/internal/project/registry/StaleMutableProj
+ ectRegistryException.class
+SHA1-Digest: qzoxGNs7kzQ2cvdlDHREgPcpL0M=
+
+Name: org/maven/ide/eclipse/wizards/MavenLocationComponent$1.class
+SHA1-Digest: u0IAEHDo92SwHSXNx9S5p1exaEA=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/IndexedArtifactNod
+ e.class
+SHA1-Digest: yTW1BjTw0yyIOMlU7ygGioB/plw=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$7.cl
+ ass
+SHA1-Digest: hn/eu8CkbvCx0VwcXQIh/BsD3qE=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenProjectPrefer
+ encePage.class
+SHA1-Digest: oxOzs6pZMAlfd2/ya3Q7zTcVT3A=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenConsoleFactory.class
+SHA1-Digest: jlHvDRZp3MWzpe6FGtLAYLK6jYg=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectSelectionDialog$1.clas
+ s
+SHA1-Digest: ToX/YRj1k6Z3RMQPVNLrNgoeePo=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory.class
+SHA1-Digest: W0dhk75V8dJoxdL/9ko6jIEeqGM=
+
+Name: org/maven/ide/eclipse/util/M2EErrorDialog$ErrorTableContentProvi
+ der.class
+SHA1-Digest: sl1U1X7q20MzJWs2bW0OTG92FII=
+
+Name: icons/java_obj.gif
+SHA1-Digest: dAX6CZk/ppAAxz5I6d+e9QcquCo=
+
+Name: org/maven/ide/eclipse/internal/ExtensionReader.class
+SHA1-Digest: H0iCKYI/DqGNT4MsL5y9WVApN54=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenWorkspaceRuntime.cl
+ ass
+SHA1-Digest: y7JMxzJ2ijGuzoyEU3e6MdQqa6k=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$3.class
+SHA1-Digest: 6BkFlU/0FR++98Vqx49X1mp147w=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$2.class
+SHA1-Digest: 9O9zy6/26RwFZ+zfnf1dYKBdKY0=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$2.cl
+ ass
+SHA1-Digest: vGZvxVolxgp3sbwTgRk7Gfvl/h4=
+
+Name: intro/css/whatsnew.css
+SHA1-Digest: tD07LnTwt6nB+0/oivV+1any9fc=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$6.class
+SHA1-Digest: C0KzsdRHSK0lWqWgUdYJ6dGYEQI=
+
+Name: org/maven/ide/eclipse/internal/embedder/EclipseBuildContext.clas
+ s
+SHA1-Digest: oyrly6qqIxieFrBJ2qYaFXyxXdk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$4.class
+SHA1-Digest: TlcOflo6xnN/ndRdCIhQn2r9Efo=
+
+Name: org/maven/ide/eclipse/index/IndexedArtifact.class
+SHA1-Digest: FCgnCc0g9xyY+SIDBooJPB0XQFM=
+
+Name: org/maven/ide/eclipse/project/MavenProjectUtils.class
+SHA1-Digest: oAvmhuUvDpi1RybkfzkqoPgDAeU=
+
+Name: org/maven/ide/eclipse/internal/project/WorkspaceStateWriter.clas
+ s
+SHA1-Digest: ek3MfBk2acgwe2jpQLVTs3FWo4U=
+
+Name: icons/debug.gif
+SHA1-Digest: vNCCvHnBKcT379SJ8GGsUvnAbHY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$4.class
+SHA1-Digest: FZFdzcqjbp3fi5fZ/pCsmAMGvFc=
+
+Name: icons/new_m2_project.gif
+SHA1-Digest: DU++hjk0FgsmIquwfxEgCOwKObQ=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$9.class
+SHA1-Digest: F1qu5xlQIkzcCsLVWhL9gF8oEHY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$14
+ $1.class
+SHA1-Digest: RUmoYL/QUKmYw9BP0aD+rFgBjQo=
+
+Name: org/maven/ide/eclipse/internal/builder/ResourceScanner.class
+SHA1-Digest: 7Is6wuKoQzqBcoQzm3TRc/ZiFKI=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$Qu
+ ickViewerFilter.class
+SHA1-Digest: 7GdomkZh5mWuOy5bKA6H/U15Svc=
+
+Name: org/maven/ide/eclipse/actions/OpenUrlAction.class
+SHA1-Digest: 5vRtJJ/h040dcucfRwfemBhiR6A=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob$CheckoutJo
+ bChangeListener$4.class
+SHA1-Digest: G54LRKflfipoajbjTSp3dP94k4Q=
+
+Name: org/maven/ide/eclipse/internal/index/NexusIndexManager.class
+SHA1-Digest: TUCcjsgqHAgZhVrYOdSmu3ewu80=
+
+Name: org/maven/ide/eclipse/internal/embedder/WagonTransferListenerAda
+ pter.class
+SHA1-Digest: 9YmJAjMsb5sLMb4OC64sjc/4fac=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenExternalRuntime.cla
+ ss
+SHA1-Digest: 7cziqNY8iMy8eo+CIzJHzwENADY=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$8.class
+SHA1-Digest: 8ncCbDWoyrUEd3RfXkdsI2aE6LA=
+
+Name: org/maven/ide/eclipse/scm/ScmHandlerFactory.class
+SHA1-Digest: SOC+wKHwajXHmfpTaw+/UHqfnhI=
+
+Name: icons/update_dependencies.gif
+SHA1-Digest: jEM4f0Dfl/68QVHcAJS3bEVqt4o=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory$RemoteCa
+ talogFactory.class
+SHA1-Digest: 0BXAG5B6AMKcWHFehu2EGXkaV0c=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/IMavenRepositoryNo
+ de.class
+SHA1-Digest: 25j7CnkfnB5Xy0pZcUUKjnB5w9w=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizardParentPage$1.clas
+ s
+SHA1-Digest: GOF9t0CarS0rkJzIiIMnYEm2ub8=
+
+Name: org/maven/ide/eclipse/actions/MavenConsoleRemoveAction.class
+SHA1-Digest: O827qcF77Tc17pfPSRJY7kT4LIA=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$3.class
+SHA1-Digest: ymBlxvHlKACL92KXkzVTjVeYT0A=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader$MavenProjectManagerImplReplace.class
+SHA1-Digest: zl1YClU1B04sNDoQaoOT9ONwY1Y=
+
+Name: org/maven/ide/eclipse/repository/IRepository.class
+SHA1-Digest: YN7ChEY07qb5pymvaGgeLSlVZvQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileWizard$1.class
+SHA1-Digest: 2iE/5IjQMelWWX3z/fPOOJNGhdY=
+
+Name: org/maven/ide/eclipse/core/IMavenConsoleListener.class
+SHA1-Digest: 1p6GQJBPmc/cYmRLfFWdRBM+VB4=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeManager.class
+SHA1-Digest: WDU9gR7o+4Jh+aXwUj3ZwRJGzxY=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$3.class
+SHA1-Digest: ZnNCmH+mOtjNrU+iesx7InO1kVc=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$2$1.class
+SHA1-Digest: bSdwKapFRbZwSD34AIZyoR/vWnk=
+
+Name: icons/new_m2_pom.gif
+SHA1-Digest: 7uNnVd4ajLM905Tb/YrV6I+ETGo=
+
+Name: icons/update_index.gif
+SHA1-Digest: Lj5rmWUQeTY7+MHPcCArReLvUpc=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$In
+ cludeSnapshotsFilter.class
+SHA1-Digest: 5JsiMJ1IymZ1pE1841kq8eUIU1M=
+
+Name: icons/import_jar.gif
+SHA1-Digest: Z4VP9UfMCK7uJcmlNHNvqswdU74=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$9.class
+SHA1-Digest: cVihcWJMzSrWy9lSSOPYO2p/il4=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArtifactPage$3.c
+ lass
+SHA1-Digest: USgBgWt7f+ez7DmuoFtaKsb8rXs=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$16
+ .class
+SHA1-Digest: fgOVsgpaub6k+tkSVy5oYrbJXxE=
+
+Name: org/maven/ide/eclipse/internal/index/IndexUpdaterJob.class
+SHA1-Digest: ZFkkCiaKILMVv/v3V8gya6bP4yg=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$6.class
+SHA1-Digest: us+1L88MlKrC8O6YYWcvs/yzi8A=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenRepositorySearchDialog$1.c
+ lass
+SHA1-Digest: dNItyBlIHNXuKkTgDbwh+uGqm8k=
+
+Name: schema/m2menu.exsd
+SHA1-Digest: WlAptUe/C8sktjH23wWQoB0r+YY=
+
+Name: org/maven/ide/eclipse/index/IndexListener.class
+SHA1-Digest: +x6kGoF0unU9NJakIujx096ZzFk=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$4.class
+SHA1-Digest: BGIgSbieAaYOG6daaXYg+pumlas=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/RemoteArchetypeCat
+ alogDialog$2.class
+SHA1-Digest: zhm9zbUGKuf1ZqMJRJ21S2bkcBY=
+
+Name: org/maven/ide/eclipse/internal/console/MavenConsoleImpl$1.class
+SHA1-Digest: c7ZuYMaQ6lAav219Wcg8zyV8lJQ=
+
+Name: org/maven/ide/eclipse/MavenPlugin$1$1$1.class
+SHA1-Digest: qD91q1RvtilHwlnYrSh63SqU1Hw=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/EmptyLifecycleMapp
+ ingPropertyPage.class
+SHA1-Digest: yv+PKUhd8fB6yCjUZxjp5yuxOt4=
+
+Name: org/maven/ide/eclipse/internal/console/MavenConsoleImpl.class
+SHA1-Digest: 69ZIZaOMWocfyjQkKKhnqVvUOeE=
+
+Name: intro/overview.xml
+SHA1-Digest: hGpk/dxHfMMszxrcP/e2jUwmY1w=
+
+Name: org/maven/ide/eclipse/embedder/ISettingsChangeListener.class
+SHA1-Digest: aL8bbxKasBg9ktI2SsGbFV+o2EM=
+
+Name: org/maven/ide/eclipse/internal/embedder/EclipseLoggerManager.cla
+ ss
+SHA1-Digest: A2Qwp7aI70veGMDVpfpvn74ZpGs=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizard.class
+SHA1-Digest: h4kRzx9YP4iFWg/z7t5B75RJ70A=
+
+Name: org/maven/ide/eclipse/internal/content/XMLContentDescriber.class
+SHA1-Digest: PflzsKrsEZ2YIAuzxH1efXpyUFY=
+
+Name: org/maven/ide/eclipse/internal/index/IndexingTransferListener.cl
+ ass
+SHA1-Digest: CLkGLPrMuanw9wU0B7g9S8wt778=
+
+Name: org/maven/ide/eclipse/actions/AbstractMavenMenuCreator$ActionPro
+ xy.class
+SHA1-Digest: cYA7UnsoEC/lAjBjZy+lmiDGoak=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$10
+ .class
+SHA1-Digest: SZ1cC/do3ug1JL8jedwj3evcXAY=
+
+Name: org/maven/ide/eclipse/actions/EnableNatureAction$1.class
+SHA1-Digest: kzcNp6hlIqREXuoenExz1dqgh8Y=
+
+Name: org/maven/ide/eclipse/internal/project/registry/EclipseWorkspace
+ ArtifactRepository.class
+SHA1-Digest: 1baJqZtHE64seUjG+rNYjUj0ZE8=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$2.
+ class
+SHA1-Digest: +/K7Mx8Pb1zd1eNQAldjjptNpAY=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/SimpleLifecycleMap
+ pingPropertyPage.class
+SHA1-Digest: Ijzif15NgcUNbWef7QTJJyPAD7Y=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$2.class
+SHA1-Digest: 6s641x0UoWRkiex7b90RUvYzrT0=
+
+Name: schema/projectConfigurators.exsd
+SHA1-Digest: 54Wcj58g6FlYxANJGB4wrizimV8=
+
+Name: org/maven/ide/eclipse/internal/project/DependencyResolutionConte
+ xt.class
+SHA1-Digest: vtNJPgURPXSZ0mTybrIzwKZK4rg=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizard$1.class
+SHA1-Digest: 9oHcc/8khgxqjvwwHdXUUO3KglY=
+
+Name: org/maven/ide/eclipse/scm/ScmHandler.class
+SHA1-Digest: bAOeTYhT2HxcofCuvJxdyOx3HmM=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenAdapterFactory.class
+SHA1-Digest: 2Au6AmKBqbCjkjCGVcWDonT8IhA=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$3$1.
+ class
+SHA1-Digest: PcIkN0YOCPSGpSth38/+SXhEkWo=
+
+Name: icons/stdout.gif
+SHA1-Digest: tzSBYantal7djUSnsjYCcXiOFUQ=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$1.class
+SHA1-Digest: 8px7erLystrH5+EufA2caVUUev0=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$7.class
+SHA1-Digest: b+Qi5saiSs1OTQ6+qXfj9q3uZJI=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$GoalsC
+ ontentProvider.class
+SHA1-Digest: El4zG8bXSf4PWrBu2WZtWLNlqpA=
+
+Name: icons/refresh.gif
+SHA1-Digest: 3NWUc5UjsZeI5q6NCFvfEyeUB1I=
+
+Name: org/maven/ide/eclipse/util/Util$FileStoreEditorInputStub.class
+SHA1-Digest: J2kV8om9Aey3GXaEnOEmmc+g8i0=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$Disa
+ bleIndexAction.class
+SHA1-Digest: aU+H2YNosj4W9x5BePeBC9bP9qA=
+
+Name: org/maven/ide/eclipse/internal/embedder/ArtifactTransferListener
+ Adapter.class
+SHA1-Digest: QR4CpMC68TLOEVT4pZxDv20aMHs=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView.clas
+ s
+SHA1-Digest: LezyuSb1u2DXI5kgeWSomccH3I4=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$1$1.class
+SHA1-Digest: Hx0BtaBg/Go6CL3+oOnbnuh/yoc=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$7$1.clas
+ s
+SHA1-Digest: NZWEJcLfZ6FL9t6NpYjB9yfWyZg=
+
+Name: org/maven/ide/eclipse/project/MavenProjectPomScanner.class
+SHA1-Digest: DXjNPbLyTVBItooIDaQmwb8DAME=
+
+Name: org/maven/ide/eclipse/index/IIndex.class
+SHA1-Digest: diYz8GsUKr5z7NdgtlP2yeoCYug=
+
+Name: org/maven/ide/eclipse/internal/embedder/ConfigurationException.c
+ lass
+SHA1-Digest: gRXCjW1rpLT0u5zMKcDE/qJiWAU=
+
+Name: org/maven/ide/eclipse/wizards/ResolverConfigurationComponent$2.c
+ lass
+SHA1-Digest: O6LXEl4qJSjbPAPlgknkqLpnK6A=
+
+Name: icons/java_src_obj.gif
+SHA1-Digest: RN+MCopSrEw6SWCDMklUpikP3Ys=
+
+Name: org/maven/ide/eclipse/embedder/ArtifactRepositoryRef.class
+SHA1-Digest: rzmfwHeuFPBb3tbjhlVU9ecGPCA=
+
+Name: org/maven/ide/eclipse/scm/ScmUrl.class
+SHA1-Digest: +US83hSL+7CTy7y00HzulLvwzGk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$6.class
+SHA1-Digest: 804ITubYoD+GItOyUJ7ICyojueI=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$4.cl
+ ass
+SHA1-Digest: 2JYfWLhvEWdC+KPSiD78NUlySmE=
+
+Name: org/maven/ide/eclipse/wizards/ProjectsImportPage$7.class
+SHA1-Digest: sr3c5dDu6RHU0FFDh7ilqfcabhQ=
+
+Name: org/maven/ide/eclipse/core/Messages.class
+SHA1-Digest: Jv82O/j0bh43I1lLLE/g3oKAkbM=
+
+Name: org/maven/ide/eclipse/internal/project/ArtifactKeyAdapterFactory
+ .class
+SHA1-Digest: GU7H0zKIynPOiHg3pVZgGJNvNVo=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$3.class
+SHA1-Digest: wSs1R2Chct9bsFBQBalUdtx3ThM=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage.class
+SHA1-Digest: Yh65R1WMqOUJ6Sti2CjsVYChe+o=
+
+Name: org/maven/ide/eclipse/actions/MavenMenuAction.class
+SHA1-Digest: k6UahKd2SsMwmR4hc4ynKcdRN9Y=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$1.class
+SHA1-Digest: 8vk4TyXaqr9XAmMuaTEqF650kOk=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob$CheckoutJo
+ bChangeListener$2.class
+SHA1-Digest: ZlQ5SBtowmwb8e/NK3tytqX742o=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenProjectLifecy
+ cleMappingPage.class
+SHA1-Digest: N4MMOebjdeQGRftNyissC0g3vVs=
+
+Name: intro/whatsnew.xml
+SHA1-Digest: zCAZNyO6fRSBl79XS95sIiG6HlA=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $3.class
+SHA1-Digest: XjeNC3aajG0g9x/k37YKTUhnfok=
+
+Name: org/maven/ide/eclipse/internal/project/registry/Capability.class
+SHA1-Digest: cnCJ17A/ppqaSHl+OrjE7DMrGDo=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$5.class
+SHA1-Digest: KqWNeGqll7Kc7iUdk70z83hdUfo=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$7.class
+SHA1-Digest: xTM5/liWIVEoGflObbdESiTs/IQ=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogsWriter$Archetyp
+ eCatalogsContentHandler.class
+SHA1-Digest: doibTn8kq5sp7MhY/sY31qU6QHg=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup$1.class
+SHA1-Digest: uqL8dmbuiUyuOJ62/+gYyMbe0Hw=
+
+Name: icons/clear.gif
+SHA1-Digest: h0kZkzhUBBwSKCLEH4ItnWNDcLk=
+
+Name: icons/import_m2_project.gif
+SHA1-Digest: ZLUX3wXfSqvV1I8R5LieRKIiQUQ=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryM
+ anager.class
+SHA1-Digest: ZbhxAmCj+BeU4+u5GJ8y8sxamw4=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$12.c
+ lass
+SHA1-Digest: 1MRLLOl2IpUHsBPYYDxwSSGyXQk=
+
+Name: META-INF/maven/org.maven.ide.eclipse/org.maven.ide.eclipse/pom.p
+ roperties
+SHA1-Digest: 11PpZnaCFqvJpvDTapdZmNWJj2M=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/ProjectConfiguratorsTab
+ leLabelProvider.class
+SHA1-Digest: NSmmZ9PJihxkWIFEXEhSdH26bDg=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$1.class
+SHA1-Digest: tz2cii43c8wpSCxYaG3B+QMKH+0=
+
+Name: org/maven/ide/eclipse/internal/content/PomHandler.class
+SHA1-Digest: 3QiMq/ZU+gN2/NsyubFgoT4yHd0=
+
+Name: org/maven/ide/eclipse/internal/builder/InternalBuildParticipant.
+ class
+SHA1-Digest: Poc9JoPwJM0TRF5GmZhNQnaWfIc=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryM
+ anager$Context.class
+SHA1-Digest: tL8l8TJB807v3EoHQEMBstYvjiw=
+
+Name: org/maven/ide/eclipse/embedder/IMavenConfiguration.class
+SHA1-Digest: KJodQO2iZEir+b9rpIbLdPREWd8=
+
+Name: org/maven/ide/eclipse/embedder/ArtifactKey.class
+SHA1-Digest: Uj2tcRclygKeaJCsx7h6fXmjOJY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectCheckoutJob.class
+SHA1-Digest: OYIxzbyMHuSziVT3S4igIaGpvuQ=
+
+Name: icons/import_project.png
+SHA1-Digest: 0DpD2XsdffxkiSgAul+HIgqC9D4=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$5.class
+SHA1-Digest: KtuMx6x6z1aLPJ6smak9JhCYUAI=
+
+Name: org/maven/ide/eclipse/index/IndexManager.class
+SHA1-Digest: sS7fAaIJXjmv9C5wd4nHfQHxRRw=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenAdapterFactory$LabelProvi
+ derStub.class
+SHA1-Digest: yOnVcp9Mo8dQrTO5ZTx2La+hw70=
+
+Name: org/maven/ide/eclipse/internal/repository/RepositoryRegistry.cla
+ ss
+SHA1-Digest: HuxrmhpsHZ2qzLL0Z3j09IUkV38=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/LocalArchetypeCata
+ logDialog$2.class
+SHA1-Digest: JyF4u2rcKNTIMSQfIWnxL+KCkXw=
+
+Name: org/maven/ide/eclipse/embedder/IMaven.class
+SHA1-Digest: 1KKuDgQPHx7S70/wc3t63e7KdDg=
+
+Name: org/maven/ide/eclipse/internal/repository/IRepositoryIndexer.cla
+ ss
+SHA1-Digest: HM60EH64PniuZDgfexBmVcGTqLE=
+
+Name: icons/add_index.gif
+SHA1-Digest: hUjW6A3sUyo6BPM60URDUCFQ4Jc=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$SearchJ
+ ob.class
+SHA1-Digest: 6EMKLeV98d3JdQzZJmS4hYwaFUM=
+
+Name: m2eclipse.gif
+SHA1-Digest: Q15c9RnWTcrPn2/EKnlBlmLFy3Q=
+
+Name: org/maven/ide/eclipse/MavenPlugin$1.class
+SHA1-Digest: 0i2cHzP3GVFkbQ3GPTuflPOMuLA=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$3.class
+SHA1-Digest: ynvQBwiSRtVrZ+WdP80ME1SwwCo=
+
+Name: org/maven/ide/eclipse/internal/project/GenericLifecycleMapping.c
+ lass
+SHA1-Digest: vSGIVkDdv4ezkbE1q2dnrd/c/L4=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage.cl
+ ass
+SHA1-Digest: JHGJY3iDBRlSWG4v2VIyLCaF2CE=
+
+Name: icons/clear_disabled.gif
+SHA1-Digest: 0Ti38UGxkUjNe5BpxPG2DqSeFiA=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ eader.class
+SHA1-Digest: cT9cgWGtHq7CazCrky+jlJJJE5Y=
+
+Name: org/maven/ide/eclipse/wizards/ResolverConfigurationComponent.cla
+ ss
+SHA1-Digest: YEaJkQZ3UeR6Q8OoDEnlL7gxGw8=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/ProjectRepositorie
+ sNode.class
+SHA1-Digest: 20lLmisADG8fCxOH9ACjADVmpME=
+
+Name: org/maven/ide/eclipse/project/configurator/IExtensionLifecycleMa
+ pping.class
+SHA1-Digest: nu0/gk1/kM0UDFNRX8SazfHf19k=
+
+Name: org/maven/ide/eclipse/internal/embedder/IMavenComponentContribut
+ or.class
+SHA1-Digest: KAaCsL1PqwvXhV6AVd72uYChLyo=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ILifecycleMappin
+ g2.class
+SHA1-Digest: f90ztunCAe4TmKHARoYqFVmLgzU=
+
+Name: org/maven/ide/eclipse/internal/embedder/DefaultMavenComponentCon
+ tributor.class
+SHA1-Digest: Zw53fxQanSxrRE9untyzIIZrRsc=
+
+Name: org/maven/ide/eclipse/util/M2EUtils$1.class
+SHA1-Digest: GxWwGxuLjlLQiyT29HmpdFTShIc=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage.class
+SHA1-Digest: +UBdbA/2MJNzqRaQKH38HqrHjaE=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/LocalRepositoryRoo
+ tNode.class
+SHA1-Digest: e8FySS5LufE0ub2ZzwMRXsrb/b4=
+
+Name: org/maven/ide/eclipse/internal/embedder/ExtensionModule.class
+SHA1-Digest: 53elCP/vJuagD+FKAmwaT0lqyVY=
+
+Name: icons/maven_index.gif
+SHA1-Digest: tkW9l8KW/Np1EOlrjw2niospm7s=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$9.
+ class
+SHA1-Digest: OiFHVSg6Wj0eEZQf1jTDfAJJ3Lc=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenPreferencePag
+ e.class
+SHA1-Digest: krQjTTa9XkMhx6r4b3Bg59eguFE=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileWizard.class
+SHA1-Digest: zoazLKGkhBK/SwaXQ+H9ZZw7z4U=
+
+Name: org/maven/ide/eclipse/project/MavenUpdateRequest.class
+SHA1-Digest: ZFlBkHQd4cptwZDCAu4HOg69hP0=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$2.class
+SHA1-Digest: R662AZgR6rZHOMblaD47k1lQDw0=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$1.class
+SHA1-Digest: krScZEL0piqPjnBjYvTNVlJzgjE=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$Group.
+ class
+SHA1-Digest: a+MVKxdPSZpiZ7EYqRQaPsVOusE=
+
+Name: org/maven/ide/eclipse/embedder/MavenModelManager$ModuleAdder.cla
+ ss
+SHA1-Digest: Eaq6sFuozDsypY+noOBEVsW3Q30=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenSettingsPrefe
+ rencePage$7.class
+SHA1-Digest: RI6jdqt1xUyxjr9wTltOuHD9tXc=
+
+Name: org/maven/ide/eclipse/project/configurator/NoopLifecycleMapping.
+ class
+SHA1-Digest: OFGDPBTYYLzwJqJOE9rR6jMZmnE=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$2.class
+SHA1-Digest: f8e0UeajVXlH2cBtDzv4kUU+7Y0=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/LocalRepositoryNod
+ e.class
+SHA1-Digest: ernZ/t16zL/gkxd2ft2uAtQ/gc4=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$GoalsS
+ electionValidator.class
+SHA1-Digest: jM+B9lKoedqomPrRmvjpRzajPGc=
+
+Name: org/maven/ide/eclipse/internal/project/ProjectConfigurationManag
+ er$A.class
+SHA1-Digest: muXIRvrlFaf7zfJxBakqN8xIADI=
+
+Name: org/maven/ide/eclipse/internal/index/IndexUpdaterJob$IndexUpdate
+ rRule.class
+SHA1-Digest: hiJUorQPc6UyVBqSbNUJCz3BlE0=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$5.class
+SHA1-Digest: O+qlS+UOMehbpopzIjb0NvHEr20=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenGoalSelectionDialog$GoalsF
+ ilter.class
+SHA1-Digest: Nb7WOiYq+jY/6+gLkwdzGZHF8ZQ=
+
+Name: schema/lifecycleMappingPropertyPage.exsd
+SHA1-Digest: WTIgUxd94ju4HrZKbjQHDfGfa7U=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenInstallations
+ PreferencePage$RuntimesLabelProvider.class
+SHA1-Digest: COz7+baJdtIRXKrsurE+yVwohUA=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$7.
+ class
+SHA1-Digest: A4sQCGX/cRLupQTXnNoDQjTtvu8=
+
+Name: org/maven/ide/eclipse/internal/project/GenericBuildParticipant.c
+ lass
+SHA1-Digest: zcGcVHP1/eM18ItKvJ9/4zV9AQg=
+
+Name: org/maven/ide/eclipse/core/IMavenConstants.class
+SHA1-Digest: deGQF9Hk5vbQeBExvVwW5qRECpc=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$3.class
+SHA1-Digest: Q5Oea0KSeY45SiNcl2tE0kQewQI=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$8.cl
+ ass
+SHA1-Digest: 7Z5TEM5TAiv1rvsDT6t/d93APas=
+
+Name: icons/mjar.gif
+SHA1-Digest: BPpfVFTrXbbXp/I/PlzJABsdywI=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileRepositoryWizardPa
+ ge$RepositoryLabelProvider.class
+SHA1-Digest: L8bPBWW8icoDdqimN6IcRChmqlE=
+
+Name: org/maven/ide/eclipse/MavenImages.class
+SHA1-Digest: 3hLV5//XDdlQfqEIG4kr32RfgvE=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenProjectPrefer
+ encePage$1.class
+SHA1-Digest: mwJL6jKiNo95UydlkYqiBT5jTII=
+
+Name: icons/mlabel.gif
+SHA1-Digest: VN1a8hTMeX0bIzaiRPyh+DuRQ7E=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage$2.clas
+ s
+SHA1-Digest: GR/UTJpxOQSx11XVb9HiC6IdudQ=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$4.class
+SHA1-Digest: y7kkOQAtT3CBGq0S4G2s5avCykc=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizard$5.class
+SHA1-Digest: AJRBUB+67q+X0o6Fye/KkfsXw40=
+
+Name: org/maven/ide/eclipse/actions/AddPluginAction.class
+SHA1-Digest: lNosVru7eCGUfNTx8A5ZDYgWboY=
+
+Name: schema/scmHandlersUi.exsd
+SHA1-Digest: 37h9G1VoZMAfumKYBIvwLQZkJrg=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogsWriter$XMLArche
+ typeCatalogsWriter.class
+SHA1-Digest: 4tblDnHp5PGtF2/56Zbnc0wA72k=
+
+Name: org/maven/ide/eclipse/actions/EnableNatureAction.class
+SHA1-Digest: 7wwkScbBD1csUfQekDtmHZa712c=
+
+Name: org/maven/ide/eclipse/core/MavenLogger.class
+SHA1-Digest: KqiXmrLAM5o9jZoOxPAsazPf8g8=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$2.class
+SHA1-Digest: N7Jvfvob19i6f6eY9ar0vyAksUs=
+
+Name: org/maven/ide/eclipse/internal/project/ProjectConfigurationManag
+ er$1.class
+SHA1-Digest: iFptLvB/K9Q0LDKlvq1xUErFkGQ=
+
+Name: icons/copy.gif
+SHA1-Digest: R7Gjk5TLf2VhB7kGAw8SFO6PuRE=
+
+Name: org/maven/ide/eclipse/project/configurator/AbstractLifecycleMapp
+ ing$ProjectConfiguratorComparator.class
+SHA1-Digest: LsliViijRHfkp53M7cAWBcT/vOk=
+
+Name: schema/indexes.exsd
+SHA1-Digest: Ao+E6wt3SpkUG+mJIomeptwboB4=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenPropertyDialog$2.class
+SHA1-Digest: k7DqUjptphygdEpEXEF7Y5DKVqY=
+
+Name: org/maven/ide/eclipse/internal/builder/MavenBuilder$GetDeltaCall
+ back.class
+SHA1-Digest: iSV0Vn4W3CEAf6wPHRCvcWk9rQk=
+
+Name: org/maven/ide/eclipse/util/Util.class
+SHA1-Digest: wm3hitsXY57ZHvBL3oe2+XhyFB0=
+
+Name: org/maven/ide/eclipse/internal/project/EclipseMavenMetadataCache
+ .class
+SHA1-Digest: KJuPmFKekv9uO24MKyxwiExvNDg=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenRepositorySearchDialog$2.c
+ lass
+SHA1-Digest: L+QBbwX8rq+rRM82fQJREw0NNOk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/RemoteArchetypeCat
+ alogDialog$2$1$1.class
+SHA1-Digest: 9ZDjPNLhKwg8jJUJNU4cF24f7kc=
+
+Name: org/maven/ide/eclipse/project/ResolverConfiguration.class
+SHA1-Digest: eQylUHw4wXGrnQNwZnq+bWGBxUM=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$5.class
+SHA1-Digest: bcK8Nan3yXZS115lNwdnge0ge0Y=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/AbstractRepositori
+ esNode.class
+SHA1-Digest: CJ3REPrvTH87jg52fqvrQ2pAOwU=
+
+Name: plugin.xml
+SHA1-Digest: Za4dl1twuDXy5g12KbOBVk9DprM=
+
+Name: org/maven/ide/eclipse/internal/index/CompositeIndex.class
+SHA1-Digest: R3VGjInxbgz9pTCpCXlDVacuTAs=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage.class
+SHA1-Digest: +aD4U6fWjPQxnx9dAcGjrfBi5l4=
+
+Name: icons/open_pom.gif
+SHA1-Digest: M2Hf0f0PxFY8f1Llykm0qq6IN7Y=
+
+Name: org/maven/ide/eclipse/actions/SelectionUtil.class
+SHA1-Digest: bn0tu9/iFFUIOigNgHUMO1xObn8=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/LocalArchetypeCata
+ logDialog.class
+SHA1-Digest: Gxe2KJZWp+tEOZHO88L+AePU6G8=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenMessageDialog.class
+SHA1-Digest: ZkgkUmD18OZF5JUkgUirphx15kc=
+
+Name: org/maven/ide/eclipse/ui/internal/search/MavenSearchResultPage.c
+ lass
+SHA1-Digest: eVQDyHNRrfKdTx6e6OBtZL5/tyE=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomSelectionComponent$SearchR
+ esultContentProvider.class
+SHA1-Digest: M1MyLfMc5sy+XDzSAkkbHNSp5tg=
+
+Name: schema/archetypes.exsd
+SHA1-Digest: toFCS4FPBTY043elJ1FSHqd3ge0=
+
+Name: org/maven/ide/eclipse/embedder/MavenConfigurationChangeEvent.cla
+ ss
+SHA1-Digest: X/GI2pBufrFdtZqXV/MY9jne4sg=
+
+Name: org/maven/ide/eclipse/internal/project/registry/ProjectRegistryR
+ efreshJob.class
+SHA1-Digest: FUOPFHh4+IXJ+M93P8g6HvY/KKA=
+
+Name: org/maven/ide/eclipse/internal/embedder/DefaultMavenContainerCon
+ figurator.class
+SHA1-Digest: v/ftkBoXkfZwAwyLEDOKpdYieWc=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage$1.clas
+ s
+SHA1-Digest: nKASXMvyU5Yf8cIZqbPcrXdVrkQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenPomWizard$2.class
+SHA1-Digest: ancA0ZY/VgcYXO/hZRod0TvZ1d8=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$9.class
+SHA1-Digest: 8trwekisPs2YfWgouKrmpCFO9No=
+
+Name: org/maven/ide/eclipse/internal/index/AsyncFetcher$PipedErrorInpu
+ tStream.class
+SHA1-Digest: tFePRuVbjw3p5SHL9wdJ2B9GOa4=
+
+Name: org/maven/ide/eclipse/wizards/MavenArtifactComponent.class
+SHA1-Digest: VGkFL0qRmU+ZSq4ajhbjAhWi4eY=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$16
+ $2.class
+SHA1-Digest: 7V+qKmKK0fZAhzAXd66F2K/67fo=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory$NexusInd
+ exerCatalogFactory.class
+SHA1-Digest: bVuHXqMJx1NDDT3RJvszoqdJBAo=
+
+Name: org/maven/ide/eclipse/internal/project/registry/RequiredCapabili
+ ty.class
+SHA1-Digest: cT0OwjJrq1cxhksZjjbo10GAXt8=
+
+Name: org/maven/ide/eclipse/project/LocalProjectScanner.class
+SHA1-Digest: YnKhbmzkxCGB9NqQqbcCuVkXHMc=
+
+Name: org/maven/ide/eclipse/internal/embedder/IMavenContainerConfigura
+ tor.class
+SHA1-Digest: i8QoqajDajuOBScJcAYDK/oa8Bc=
+
+Name: org/maven/ide/eclipse/ui/dialogs/MavenPropertyDialog.class
+SHA1-Digest: wIXBXWEHe3n6vuXkepLoL3FwcjU=
+
+Name: org/maven/ide/eclipse/project/configurator/MojoExecutionBuildPar
+ ticipant.class
+SHA1-Digest: aPqUZCKMuO4PwQwDwMFAvNU+Ka4=
+
+Name: org/maven/ide/eclipse/internal/project/IManagedCache.class
+SHA1-Digest: b3J5tj/PgrY676itv7yzueNqWIc=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage.class
+SHA1-Digest: enpgi63Dq8CRJiWe70NGy56T7+I=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/IndexedArtifactGro
+ upNode.class
+SHA1-Digest: WsFPdUmSZXOyQxM4MxdJuTJBbN8=
+
+Name: org/maven/ide/eclipse/internal/project/registry/BasicProjectRegi
+ stry.class
+SHA1-Digest: 9N9KRjal+Z7vN3REvl1XBtyvs60=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup$4.class
+SHA1-Digest: D5PAxGsPU0k3FBGaxbnMywTIoeY=
+
+Name: icons/web.gif
+SHA1-Digest: YoWFD+Ak8FMdjCtb0T4zvRAN56g=
+
+Name: org/maven/ide/eclipse/internal/content/PomFileContentDescriber.c
+ lass
+SHA1-Digest: Lm53uc4RalR7HnNE1vPWP8V4Jlc=
+
+Name: org/maven/ide/eclipse/embedder/ArtifactRef.class
+SHA1-Digest: t947d9b1m5z7dG1KvVVBO5Fn9zo=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$MavenPathStorageEdit
+ orInput.class
+SHA1-Digest: U4FpBuDaSKPrHSNp+JDnge61xwk=
+
+Name: org/maven/ide/eclipse/wizards/MavenImportWizardPage$ProjectLabel
+ Provider.class
+SHA1-Digest: DBcXjetT9kwCl2++U9U2ZCwo3fo=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/GoalsFieldEditor.c
+ lass
+SHA1-Digest: ji7JTqy/BUThCugG6a+5yb6wtp8=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$6.class
+SHA1-Digest: 7YwxelUogbpOboPoTbNZuh90cDw=
+
+Name: org/maven/ide/eclipse/internal/embedder/IMavenComponentContribut
+ or$IMavenComponentBinder.class
+SHA1-Digest: 1NbnwDBTq80JO4R+purCDCzTyrY=
+
+Name: org/maven/ide/eclipse/internal/builder/MavenBuilder$1.class
+SHA1-Digest: V26PtUPdG+nj6gXp50CCBFo4qWk=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/CustomizableLifecy
+ cleMappingPropertyPage.class
+SHA1-Digest: 2nTEXa4BkZ7aMUBalE4C5JGnjoA=
+
+Name: org/maven/ide/eclipse/actions/MavenDebugOutputAction.class
+SHA1-Digest: iif5X8KEXmQPAMwuDAUher2vSTY=
+
+Name: org/maven/ide/eclipse/wizards/WorkingSetGroup$5.class
+SHA1-Digest: ojXM4DTNO0KKAJeg5iqz3VGMrK8=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutLocationPage$6.class
+SHA1-Digest: N+RGVQf0ysxS0prnreOS2H7m9F0=
+
+Name: org/maven/ide/eclipse/internal/embedder/MavenImpl.class
+SHA1-Digest: kzgz0YQCJHxWmiBqyTN66oLuzgQ=
+
+Name: org/maven/ide/eclipse/actions/DisableNatureAction.class
+SHA1-Digest: KBi5YuyQS71Ylah2wcPUsy/a3iI=
+
+Name: org/maven/ide/eclipse/internal/project/MojoExecutionProjectConfi
+ gurator.class
+SHA1-Digest: 71PeAiCKRe93VkveMlgWkZiEWhc=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenVersionDecorator$1.class
+SHA1-Digest: 6ozEuFji/ZhAZhxxChtJeGFAHNg=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $2.class
+SHA1-Digest: 4qCVdkEkfJt9B6sP1xwSHlNcEeI=
+
+Name: schema/scmHandlers.exsd
+SHA1-Digest: DA7jC+GF96NhXMIEX0J5XZ5bfec=
+
+Name: org/maven/ide/eclipse/internal/repository/RepositoryInfo.class
+SHA1-Digest: VbyGZ4p4BD+Db3wk3vvrdzuve60=
+
+Name: org/maven/ide/eclipse/project/configurator/AbstractBuildParticip
+ ant.class
+SHA1-Digest: pqZq77OD6KNzM3dSfTbHiouILDg=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$5.class
+SHA1-Digest: ug4wXimfSAwMydvqLNyCxIKuMLk=
+
+Name: org/maven/ide/eclipse/actions/OpenPomAction$5.class
+SHA1-Digest: ZT1JgCcd1ca1OLrkDUg67TT/IAk=
+
+Name: org/maven/ide/eclipse/wizards/MavenMaterializePomWizard.class
+SHA1-Digest: ajdtQgirHZvPGaeGxpz2PcH7Brc=
+
+Name: org/maven/ide/eclipse/ui/internal/views/nodes/IndexedArtifactFil
+ eNode.class
+SHA1-Digest: w00X83Gkt4QW9hCxkMv8N6XqSWI=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$14
+ $2.class
+SHA1-Digest: 0Ps39XQ+yZOejMHG+r9ql7QeHzw=
+
+Name: org/maven/ide/eclipse/index/IMutableIndex.class
+SHA1-Digest: C3zof+1AX31GRGWFPKrZl5e0e08=
+
+Name: icons/pom_obj.gif
+SHA1-Digest: xgGEhX/TjNAuQuxq8FeyDTDsCIQ=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizard$6$1.class
+SHA1-Digest: Gv01u5yL7BxG6jAAumTrQlRM2Rw=
+
+Name: org/maven/ide/eclipse/wizards/MavenInstallFileArtifactWizardPage
+ $5.class
+SHA1-Digest: K13jtC1pu12IPjwhtiIXfpHeHwc=
+
+Name: org/maven/ide/eclipse/internal/index/ArtifactScanningMonitor.cla
+ ss
+SHA1-Digest: dd8o6kdVR0kkCy3gjN1d0KHU2Vw=
+
+Name: org/maven/ide/eclipse/project/IMavenProjectFacade.class
+SHA1-Digest: DT80bBvwLiA2hZP6yMw99bCSpXY=
+
+Name: org/maven/ide/eclipse/wizards/MavenCheckoutWizard$1.class
+SHA1-Digest: SKQeywYew2JLgEPimje3NNjYGA8=
+
+Name: org/maven/ide/eclipse/actions/RefreshMavenModelsAction.class
+SHA1-Digest: I1SHdIbeVPQt4ibZmkd2HtaB1D0=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$14
+ .class
+SHA1-Digest: 7kf5ezalCArFcMB2jsnrMNXHTmg=
+
+Name: org/maven/ide/eclipse/project/AbstractProjectScanner.class
+SHA1-Digest: 7f6kb+QOPnX13MDZSBQj8jfo1tE=
+
+Name: org/maven/ide/eclipse/builder/EclipseIncrementalBuildContext.cla
+ ss
+SHA1-Digest: eTkU/W26bM+lBK6qr0DzvulAz1s=
+
+Name: org/maven/ide/eclipse/scm/ScmTag$Type.class
+SHA1-Digest: 00GdYAx4JozlqVeF3IoO1R3drCA=
+
+Name: org/maven/ide/eclipse/ui/internal/MavenAdapterFactory$1.class
+SHA1-Digest: ndPgo+q7FJhNcDswXUg6k50CTI8=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/MavenArchetypesPre
+ ferencePage$CatalogsLabelProvider.class
+SHA1-Digest: sSkAcM1b07WJYvjiN+TeFyxXoBc=
+
+Name: org/maven/ide/eclipse/internal/index/IndexUpdaterJob$IndexComman
+ d.class
+SHA1-Digest: jXTlePfWTAn5JsFBC2yD07IMzws=
+
+Name: org/maven/ide/eclipse/archetype/ArchetypeCatalogFactory$LocalCat
+ alogFactory.class
+SHA1-Digest: uOdVupE6+PYKPIXT9FvvK8jw3fs=
+
+Name: icons/collapseall.gif
+SHA1-Digest: X2SYkCGSP2jr+iOlYBLU19jEd4Y=
+
+Name: org/maven/ide/eclipse/internal/console/MavenConsoleImpl$2.class
+SHA1-Digest: UgsnM9Dy9njznWUqGfmaAYuE8m8=
+
+Name: icons/main_tab.gif
+SHA1-Digest: oZ25dQ3LlNWvP+i3VjkwAiB07mg=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/LocalArchetypeCata
+ logDialog$1.class
+SHA1-Digest: sprsuV7jQlXWbI8foXIsU7A875M=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypeParamet
+ ersPage$6.class
+SHA1-Digest: caQdOejOwr+p2u36ardtD4giQs8=
+
+Name: org/maven/ide/eclipse/MavenPlugin$1$1.class
+SHA1-Digest: R/e7mi3abs2wq+qd3fN0PmaJFTQ=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$10.c
+ lass
+SHA1-Digest: nzED5mO+xNIWzLwZiS04Y1rqIpw=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$Enab
+ leMinIndexAction.class
+SHA1-Digest: QtGhsRc1WSoa6ZZmC5s4GbqmbM4=
+
+Name: org/maven/ide/eclipse/internal/lifecycle/LifecycleMappingPropert
+ yPageFactory.class
+SHA1-Digest: pVXAwL/Me0o+QTFW0b3D+COi6uI=
+
+Name: org/maven/ide/eclipse/actions/OpenUrlAction$4.class
+SHA1-Digest: e0ZSSTYonhEwMNudP2l3QTSRH3M=
+
+Name: org/maven/ide/eclipse/wizards/MavenDependenciesWizardPage$Artifa
+ ctLabelProvider.class
+SHA1-Digest: vLo5wBTZtr8nGWWHTfOeZovLzC4=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$11.c
+ lass
+SHA1-Digest: 0m0Y2f1JKqvSS1qssBjTmoQ03ts=
+
+Name: org/maven/ide/eclipse/embedder/AbstractMavenConfigurationChangeL
+ istener.class
+SHA1-Digest: XnZgA94ylmaJ3o/UPuaWi1FLqbY=
+
+Name: org/maven/ide/eclipse/ui/internal/preferences/GenericLifecycleMa
+ ppingPropertyPage.class
+SHA1-Digest: DkHVLpUescy9zF4yxlpsxhharAA=
+
+Name: org/maven/ide/eclipse/wizards/CustomArchetypeDialog.class
+SHA1-Digest: 1t7K6Gx3JK7ep71LyAy/1/vTbQg=
+
+Name: org/maven/ide/eclipse/wizards/MavenProjectWizardArchetypePage$Ar
+ chetypeLabelProvider.class
+SHA1-Digest: QWciBbqcYudiSxrrQx3vtoEwjkY=
+
+Name: org/maven/ide/eclipse/project/IMavenProjectVisitor.class
+SHA1-Digest: U0LOl+cTrzpLe9g0ub2YGvVPyb0=
+
+Name: org/maven/ide/eclipse/ui/internal/views/MavenRepositoryView$Enab
+ leFullIndexAction.class
+SHA1-Digest: K/gJg4hZSFIHvw9E3omQ+2WcbzA=
+
+Name: org/maven/ide/eclipse/wizards/MavenLocationComponent$2.class
+SHA1-Digest: SEWCa4WqrJP2uWnPzDcmb6Nz90E=
+
+Name: org/maven/ide/eclipse/wizards/MavenModuleWizardParentPage$2.clas
+ s
+SHA1-Digest: yHCkWIw5WAfaCFdThcu4V5po0ME=
+

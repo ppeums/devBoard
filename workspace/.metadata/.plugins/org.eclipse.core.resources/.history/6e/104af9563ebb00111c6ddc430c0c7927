@@ -1,0 +1,82 @@
+package dipis.common.vo;
+
+/**
+ * @ProjectName dipis_ext
+ * @FileName FileVO.java
+ * @Substance TODO
+ * @author zeroyotta
+ * @since 2011. 5. 7.
+ * @version 1.0
+ * @Copyright (c) 2010 국방전산정보원, LG CNS All Rights Reserved.
+ *
+ * <pre>
+ * << 개정이력(Modification Information) >>
+ *   
+ *   수정일      수정자           수정내용
+ *  -------    --------    ---------------------------
+ * 2011. 5. 7.     zeroyotta     TODO
+ *
+ * </pre>
+ */
+public class FileVO extends CommonVO {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7958935495094688815L;
+	
+	String originalFilename = "";
+	String directory = "";
+	String filename = "";
+	long size = 0;
+	
+	/**
+	 * @return the originalFilename
+	 */
+	public String getOriginalFilename() {
+		return originalFilename;
+	}
+	/**
+	 * @param originalFilename the originalFilename to set
+	 */
+	public void setOriginalFilename(String originalFilename) {
+		this.originalFilename = originalFilename;
+	}
+	/**
+	 * @return the directory
+	 */
+	public String getDirectory() {
+		return directory;
+	}
+	/**
+	 * @param directory the directory to set
+	 */
+	public void setDirectory(String directory) {
+		this.directory = directory;
+	}
+	/**
+	 * @return the filename
+	 */
+	public String getFilename() {
+		return filename;
+	}
+	/**
+	 * @param filename the filename to set
+	 */
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+	/**
+	 * @return the size
+	 */
+	public long getSize() {
+		return size;
+	}
+	/**
+	 * @param size the size to set
+	 */
+	public void setSize(long size) {
+		this.size = size;
+	}
+
+}

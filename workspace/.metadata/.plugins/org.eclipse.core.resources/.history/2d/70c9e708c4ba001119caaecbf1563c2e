@@ -1,0 +1,96 @@
+/*
+ * Copyright 2008-2009 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package kr.or.nhic.sample.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import kr.or.nhic.framework.util.DateUtil;
+import kr.or.nhic.sample.vo.EtcSampleVO;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springmodules.validation.commons.DefaultBeanValidator;
+
+
+/**  
+ * @Class Name : EtcSampleController
+ * @Description : EtcSampleController Class
+ * @Modification Information  
+ * @
+ * @  수정일      수정자              수정내용
+ * @ ---------   ---------   -------------------------------
+ * @ 2009.03.16           최초생성
+ * 
+ * @author 개발프레임웍크 실행환경 개발팀
+ * @since 2009. 03.16
+ * @version 1.0
+ * @see
+ * 
+ *  Copyright (C) by MOPAS All right reserved.
+ */
+
+@Controller
+@SessionAttributes("trxSampleVO")
+public class EtcSampleController {
+	
+	/** Validator */
+    @Resource(name = "beanValidator")
+	protected DefaultBeanValidator beanValidator;
+	
+    /**
+	 * 기타 샘플 페이지를 오픈한다.
+	 * @param sampleVO - 조회 조건이 담긴 VO
+	 * @param model
+	 * @return View
+	 * @exception Exception
+	 */
+    @RequestMapping(value="/sample/retrieveEtcSample.do")
+    public String selectSampleList(@ModelAttribute("etcSampleVO") EtcSampleVO etcSampleVO, ModelMap model) throws Exception {
+    	List<String> list = new ArrayList<String>();
+    	
+    	for(int i=0; i<10; i++) {
+    		list.add(Integer.toString(i));
+    	}
+    	
+    	EtcSampleVO sampleVO1 = new EtcSampleVO();
+    	model.addAttribute("sampleVO1", sampleVO1);
+    	
+    	EtcSampleVO sampleVO2 = new EtcSampleVO();
+    	sampleVO2.setDateParam(DateUtil.getToday("yyyyMMdd"));
+    	sampleVO2.setYearMonthParam("201106");
+    	sampleVO2.setNumberParam(123456789);
+    	sampleVO2.setTimeParam("1730");
+    	sampleVO2.setSsnParam("1234561234567");
+    	sampleVO2.setBrnParam("1234567890");
+    	sampleVO2.setMaskParam("AAABB");
+    	sampleVO2.setZipParam("123456");
+    	
+    	model.addAttribute("sampleVO2", sampleVO2);
+    	model.addAttribute("list", list);
+    	
+    	EtcSampleVO sampleVO3 = new EtcSampleVO();
+    	model.addAttribute("sampleVO3", sampleVO3);
+    	
+        return "/sample/etcSample";
+    }
+
+}

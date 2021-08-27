@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!--
+   - Copyright (c) 2003.  All Rights Reserved.
+   - Candlelight Software
+   - Steven P. Punte
+   - steve@candlelightsoftware.com
+   - http://www.candlelightsoftware.com
+   -
+   - Use for development and experimentation freely without warranty.
+   - For use in production environment contact author.
+   -
+   -
+   - This software is provided 'As Is' and any expressed or implied warranties,
+   - including, but not limited to, the implied warranties of merchantability and
+   - fitness for a particular  purpose are  disclaimed.  In no event shall
+   - CandlelightSoftware be liable for any direct, indirect, incidental, special,
+   - exemplary, or consequential damages (including, but not limited to, procurement
+   - of substitute goods or services; loss of use, data, or profits; or business
+   - interruption) however caused and on any  theory of liability, whether in contract,
+   - strict liability, or tort (including  negligence or  otherwise) arising in
+   - any way out of the  use of this software, even if advised of the possibility of such
+   - damage.
+   -->
+
+<!-- CONTENT
+   -
+   - This file describes four key elements of the report:
+   -
+   - 1.  The title of the report
+   -
+   - 2.  The required parameters, if any.  Sometimes parameters are in the
+   -     form of enumerated choices which become pull-downs in HTML.  It is
+   -     possible, and dependent upon the pipeline, that THE enumerated
+   -     choice possibilities are obtained through a SQL Query by way of
+   -     the SQLTransformer, and XMLDB, etc...
+   -
+   - 3.  The main report query statement typically SQL.  The query statement
+   -     has access to the parameter values specified above.
+   -
+   - 4.  Data insertion control.
+   -->
+
+
+<!-- DESCRIPTION
+   -
+   -
+   -->
+<rpt:report xmlns:rpt="http://cocoon.clsw.com/report">
+
+	<!-- Title can have white spaces and most special characters -->
+	<rpt:title>Rich Summary Example Report</rpt:title>
+
+	<rpt:description>
+		Generate two dimensional table of daily sales amount against
+		calendar date on vertical axis and staff member on horizontal
+		axis.
+	</rpt:description>
+
+	<!-- Describes incomming parameters -->
+	<rpt:parameters>
+
+  	<rpt:input-date>
+  		<rpt:title>Start Date</rpt:title>
+  		<rpt:label>start-date</rpt:label>
+  		<rpt:init>2003-01-01</rpt:init>
+  	</rpt:input-date>
+
+  	<rpt:input-date>
+  		<rpt:title>End Date</rpt:title>
+  		<rpt:label>end-date</rpt:label>
+  		<rpt:init>2003-01-10</rpt:init>
+  	</rpt:input-date>
+
+	</rpt:parameters>
+
+
+	<rpt:data-blocks xmlns:sql="http://apache.org/cocoon/SQL/2.0">
+
+		<!-- Calculate Grand Total -->
+		<rpt:data-block>
+
+			<sql:execute-query>
+				<sql:query>
+					SELECT SUM(amount) AS grandtotal
+						FROM transactions
+				</sql:query>
+			</sql:execute-query>
+
+			<rpt:column>
+				<rpt:qry-name>grandtotal</rpt:qry-name>
+				<rpt:adrs-column>E</rpt:adrs-column>
+				<rpt:adrs-row>7</rpt:adrs-row>
+				<rpt:type>java.lang.Double</rpt:type>
+			</rpt:column>
+
+		</rpt:data-block>
+
+		<!-- List staff member across top of report -->
+		<rpt:data-block>
+
+			<sql:execute-query>
+				<sql:query>
+					SELECT staff, SUM(amount) as total
+						FROM transactions
+						WHERE transactions.date BETWEEN
+								'<rpt:get-date>start-date</rpt:get-date>'
+									AND
+								'<rpt:get-date>end-date</rpt:get-date>'
+						GROUP BY staff ORDER BY staff
+				</sql:query>
+			</sql:execute-query>
+
+			<!-- Shift right all content beginning at column D of rows 5 or
+						greater by the number of returned data items in the above
+						query statement.
+			-->
+			<rpt:col-copy-shift>
+				<rpt:adrs-column>D</rpt:adrs-column>
+				<rpt:adrs-row>5</rpt:adrs-row> <!-- Ignore rows 5 and less -->
+			</rpt:col-copy-shift>
+
+			<rpt:row>
+				<rpt:qry-name>staff</rpt:qry-name>
+				<rpt:adrs-column>D</rpt:adrs-column>
+				<rpt:adrs-row>5</rpt:adrs-row>
+			</rpt:row>
+
+			<rpt:row>
+				<rpt:qry-name>total</rpt:qry-name>
+				<rpt:adrs-column>D</rpt:adrs-column>
+				<rpt:adrs-row>7</rpt:adrs-row>
+				<rpt:type>java.lang.Double</rpt:type>
+			</rpt:row>
+
+		</rpt:data-block>
+
+
+
+		<!-- List daily transactions summary of specified staff member  -->
+		<rpt:data-block>
+
+			<!-- Main Database Query -->
+			<sql:execute-query>
+				<sql:query>
+					SELECT date, SUM(amount) AS total
+						FROM transactions
+						WHERE transactions.date BETWEEN
+								'<rpt:get-date>start-date</rpt:get-date>'
+									AND
+								'<rpt:get-date>end-date</rpt:get-date>'
+							GROUP BY date
+				</sql:query>
+				<sql:execute-query>
+  				<sql:query>
+  					SELECT
+  						SUM(amount) as sum
+  					FROM transactions
+  					WHERE
+  						date = '<sql:ancestor-value sql:name="date" sql:level="1"/>'
+  						GROUP BY staff
+  				</sql:query>
+  			</sql:execute-query>
+  		</sql:execute-query>
+
+			<!-- Shift down all content in columns B and C by the number of
+						row obtained in the query above.  Also copy cell characteristics
+						like formatting, etc ...
+			-->
+			<rpt:row-copy-shift>
+				<rpt:adrs-row>6</rpt:adrs-row>
+				<rpt:adrs-column>B</rpt:adrs-column> <!-- Ignore columns B and less -->
+			</rpt:row-copy-shift>
+
+			<!-- Insert sum results from query into Excel sheet beginning at
+						cell D6 going downwards.  Double is specified here so that
+						numeric formatting in Excel is possible.
+			-->
+			<rpt:matrix>
+				<rpt:qry-name>sum</rpt:qry-name>
+				<rpt:adrs-column>D</rpt:adrs-column>
+				<rpt:adrs-row>6</rpt:adrs-row>
+				<rpt:type>java.lang.Double</rpt:type>
+			</rpt:matrix>
+
+			<!-- Insert date from query into Excel sheet beginning at
+						cell C6 going downwards.  Type date is specified here so that
+						calendar formatting and manipulation in Excel is possible.
+			-->
+			<rpt:column>
+				<rpt:qry-name>date</rpt:qry-name>
+				<rpt:adrs-column>C</rpt:adrs-column>
+				<rpt:adrs-row>6</rpt:adrs-row>
+				<rpt:type>java.util.Date</rpt:type>
+			</rpt:column>
+
+
+			<!-- =+= Problem.  Really need to know offset computed in part A,
+			     or number of secondary rows in query above.  More proper to
+			     specify column as E -->
+			<rpt:column>
+				<rpt:qry-name>total</rpt:qry-name>
+				<rpt:adrs-column>I</rpt:adrs-column>
+				<rpt:adrs-row>6</rpt:adrs-row>
+				<rpt:type>java.lang.Double</rpt:type>
+			</rpt:column>
+		</rpt:data-block>
+
+	</rpt:data-blocks>
+
+</rpt:report>

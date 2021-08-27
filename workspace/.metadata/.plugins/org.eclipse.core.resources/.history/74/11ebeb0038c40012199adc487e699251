@@ -1,0 +1,47 @@
+package kr.co.sinsul.payment.dao;
+
+import java.util.List;
+
+import kr.co.sinsul.common.vo.MoneyVO;
+
+import org.springframework.stereotype.Repository;
+
+import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+
+/**
+ * @Class Name : PaymentDAO.java
+ * @Description : 납부내역을 처리하는 VO Class
+ * @Modification Information
+ * @
+ * @ 수정일      수정자     수정내용
+ * @ ----------  ---------  -------------------------------
+ * @ 2012. 12. 27.  송제승     최초생성
+ * 
+ * @author 송제승
+ * @since 2012. 12. 27.
+ * @version 1.0
+ * @see
+ * 
+ * Copyright (C) by Sinsuldong All right reserved.
+ */
+@Repository("paymentHistoryDAO")
+public class PaymentHistoryDAO extends EgovAbstractDAO {
+	/**
+	 * 납부내역 목록 정보를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역 목록
+	 */
+	@SuppressWarnings("unchecked")
+	public List<MoneyVO> selectPaymentHistoryList(MoneyVO vo) {
+		return list("paymentHistoryDAO.selectPaymentHistoryList", vo);
+	}
+	
+	/**
+	 * 납부내역 갯수를 조회한다.
+	 * @param vo - 납부내역 정보가 담긴 VO
+	 * @return 납부내역 총 갯수
+	 */
+	public int selectPaymentHistoryListCount(MoneyVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("paymentHistoryDAO.selectPaymentHistoryListCount", vo);
+	}
+}

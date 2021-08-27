@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Menu">
+
+	<typeAlias alias="menuVO" type="com.devBoard.common.vo.MenuVO"/>
+
+	<resultMap id="menuMap" class="menuVO">
+		<result property="menuId" column="MENU_ID"/>
+		<result property="parentId" column="PARENT_ID"/>
+		<result property="menuNameKor" column="MENU_NAME_KOR"/>
+		<result property="menuNameEng" column="MENU_NAME_ENG"/>
+		<result property="menuOrder" column="MENU_ORDER"/>
+		<result property="menuUrl" column="MENU_URL"/>
+		<result property="regDate" column="REG_DATE"/>
+		<result property="regId" column="REG_ID"/>
+		<result property="updDate" column="UPD_DATE"/>
+		<result property="updId" column="UPD_ID"/>
+		<result property="delDate" column="DEL_DATE"/>
+		<result property="delId" column="DEL_ID"/>
+		<result property="delYn" column="DEL_YN"/>
+	</resultMap>
+
+	<select id="menuDAO.selectMenuList" parameterClass="menuVO" resultMap="menuMap">
+		/** 메뉴목록을 가져온다. (menuDAO.selectMenuList) **/
+		SELECT  MAIN.MENU_ID
+		,       MAIN.PARENT_ID
+		,       MAIN.MENU_NAME_KOR
+		,       MAIN.MENU_NAME_ENG
+		,       MAIN.MENU_ORDER
+		,       MAIN.MENU_URL
+		,       MAIN.REG_DATE
+		,       MAIN.REG_ID
+		,       MAIN.UPD_DATE
+		,       MAIN.UPD_ID
+		,       MAIN.DEL_DATE
+		,       MAIN.DEL_ID
+		,       MAIN.DEL_YN
+		FROM    TB_MENU MAIN
+		,       LW_AUTHOR SUB
+		WHERE   1 = 1
+		AND     MAIN.MENU_ID = SUB.MENU_ID
+		AND     SUB.USER_ID = #userId#
+		AND		MAIN.DEL_YN = 'N'
+		START WITH MAIN.PARENT_ID = '0'
+		CONNECT BY PRIOR MAIN.MENU_ID = MAIN.PARENT_ID
+	</select>
+	
+	<select id="menuDAO.selectMenuSubList" parameterClass="menuVO" resultMap="menuMap">
+		/** 메뉴목록을 가져온다. (menuDAO.selectMenuSubList) **/
+		SELECT	MAIN.MENU_ID
+		,       MAIN.PARENT_ID
+		,       MAIN.MENU_NAME_KOR
+		,       MAIN.MENU_NAME_ENG
+		,       MAIN.MENU_ORDER
+		,       MAIN.MENU_URL
+		,       MAIN.REG_DATE
+		,       MAIN.REG_ID
+		,       MAIN.UPD_DATE
+		,       MAIN.UPD_ID
+		,       MAIN.DEL_DATE
+		,       MAIN.DEL_ID
+		,       MAIN.DEL_YN
+		FROM    TB_MENU MAIN
+		WHERE   1 = 1
+		AND		MAIN.DEL_YN = 'N'
+		START WITH MAIN.PARENT_ID = #menuId#
+		CONNECT BY PRIOR MAIN.MENU_ID = MAIN.PARENT_ID
+	</select>
+
+</sqlMap>

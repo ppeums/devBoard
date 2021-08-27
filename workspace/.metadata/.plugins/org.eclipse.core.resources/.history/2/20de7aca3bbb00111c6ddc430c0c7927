@@ -1,0 +1,15 @@
+package kr.or.nhic.common.tag;
+
+import egovframework.rte.ptl.mvc.tags.ui.pagination.AbstractPaginationRenderer;
+
+public class ImagePaginationRenderer extends AbstractPaginationRenderer {
+	
+    public ImagePaginationRenderer() {
+    	firstPageLabel = "<li class=\"Lbegin\"><span><a href=\"#\" onclick=\"{0}({1}); return false;\">1page</a></span></li>"; // "<a href=\"#\" onclick=\"{0}({1}); \"><img src=\"/images/list_page_previous.gif\" border=0/></a>&#160;";
+    	previousPageLabel = "<li class=\"Lprevious\"><span><a href=\"#\" onclick=\"{0}({1}); return false;\"><img src=\"/images/list_page_previous.gif\" alt=\"이전페이지\" /></a></span></li>"; // "<a href=\"#\" onclick=\"{0}({1}); \"><img src=\"/images/list_page_previous.gif\" border=0/></a>&#160;";
+    	currentPageLabel = "<li class=\"Lfirst\"><span>{0}</span></li>"; // "<strong>{0}</strong>&#160;";
+    	otherPageLabel = "<li><span><a href=\"#\" onclick=\"{0}({1}); return false;\">{1}</a></span></li>"; // "<a href=\"#\" onclick=\"{0}({1}); \">{2}</a>&#160;";
+    	nextPageLabel = "<li class=\"Lnext\"><span><a href=\"#\" onclick=\"{0}({1}); return false;\"><img src=\"/images/list_page_next.gif\" alt=\"다음페이지\" /></a></span></li>"; // "<a href=\"#\" onclick=\"{0}({1}); \"><img src=\"/images/list_page_next.gif\" border=0/></a>&#160;";
+    	lastPageLabel = "<li class=\"Lend\"><span><a href=\"#\" onclick=\"{0}({1}); return false;\">{1}page</a></span></li>"; // "<a href=\"#\" onclick=\"{0}({1}); \"><img src=\"/images/list_page_next.gif\" border=0/></a>&#160;";
+    }
+}

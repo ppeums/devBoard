@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <batch>
+        <server>
+            <port>10001</port>
+        </server>
+    </batch>
+    <cipher>
+        <enabled>false</enabled>
+        <bank-password>C:/DEV_DIPIS/workspace/dipis_pis/system/certificate/bank.password</bank-password>
+        <certificate>C:/DEV_DIPIS/workspace/dipis_pis/system/certificate</certificate>
+    </cipher>
+    <egiro>
+        <send>
+            <dir>C:/DEV_DIPIS/workspace/dipis_pis/system/egiro/send</dir>
+        </send>
+    </egiro>
+    <email>
+        <activex>
+            <code-base>
+                <intranet>http://16.118.3.89:48081/activex/xei/xei_install2.cab</intranet>
+                <internet>http://www.fmc.mil.kr/activex/xei/xei_install2.cab</internet>
+            </code-base>
+            <version>2.7.1.10</version>
+        </activex>
+        <config-dir>/home/dipis/xei/conf</config-dir>
+        <files-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/email/files</files-dir>
+        <output-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/email/output</output-dir>
+        <max-active-thread-count>10</max-active-thread-count>
+        <sender>
+            <addr>dipis@mnd.mil</addr>
+            <name>국군재정관리단</name>
+        </sender>
+        <server-ip>16.118.3.90</server-ip>
+        <internet-server-url>http://www.fmc.mil.kr</internet-server-url>
+    </email>
+    <error>
+        <log-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/log/error</log-dir>
+    </error>
+    <esb>
+        <ip>16.118.3.51</ip>
+        <port>25220</port>
+        <recv>
+            <dir>C:/DEV_DIPIS/workspace/dipis_pis/system/esb/recv</dir>
+            <delete-after>false</delete-after>
+        </recv>
+        <send>
+            <dir>C:/DEV_DIPIS/workspace/dipis_pis/system/esb/send</dir>
+        </send>
+    </esb>
+    <file>
+	    <!-- 파일 다운로드 -->
+	    <download>
+	        <rootpath>C:/DEV_DIPIS/workspace/dipis_pis/system/upload</rootpath>
+	    </download>
+	    <!-- 파일 업로드 -->
+        <upload>
+            <!-- 업로드를 제한하는 확장자 -->
+            <deny-ext>class,java,jsp,js,asp,cgi,inc,php,php3,pl,exe</deny-ext>
+            <mybuilder>
+                <buffer-size>4096</buffer-size>
+            </mybuilder>
+            <rootpath>C:/DEV_DIPIS/workspace/dipis_pis/system/upload</rootpath>
+        </upload>
+        <!-- PDF -->
+        <pdf>
+            <font-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/font</font-dir>
+            <!-- font 파일을 더블 클릭하여 보면 font별 index를 알수 있음 -->
+            <font-mapping>굴림:gulim.ttc 0</font-mapping>
+            <font-mapping>굴림체:gulim.ttc 1</font-mapping>
+            <font-mapping>돋움:gulim.ttc 2</font-mapping>
+            <font-mapping>돋움체:gulim.ttc 3</font-mapping>
+        </pdf>
+    </file>
+    <filter>
+        <access-load-check>
+            <enabled>false</enabled>
+            <max-active-request>3</max-active-request>
+        </access-load-check>
+        <authority-check>
+            <!-- AuthorityCheckFilter : Authority 체크 제외 URL -->
+            <exclude-url>common/InitData.mvf</exclude-url>
+        </authority-check>
+        <ip-check>
+            <enabled>false</enabled>
+            <!-- AuthorityCheckFilter : IP 체크 제외 IP -->
+            <!-- Range인 경우 String.compareTo() 적용, Range가 아닌 경우 Regular Expression 적용 -->
+            <exclude-ip>16.118.1.130~16.118.1.145</exclude-ip>
+            <exclude-ip>16\.118\.3\..*</exclude-ip>
+        </ip-check>
+        <session-check>
+            <!-- AuthorityCheckFilter : Session 체크 제외 URL -->
+            <exclude-url>/validator.do</exclude-url>
+            <exclude-url>/common/retrieveServerDate.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/userLogin.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/userLogout.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/updateUserPw.do</exclude-url>
+            <exclude-url>/common/downloadFile.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/requestRegisterUser.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/userIdRqstScreen.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/retrieveUserCtlg.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/retrieveUserDtlByPK.do</exclude-url>
+            <exclude-url>/zapp/bim/cmncdmgt/retrieveCmnCdCtlgByMultiGrpno.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/retrieveMailDomainCtlg.do</exclude-url>
+            <exclude-url>/zapp/mgtapplynfcn/athrtmgt/retrieveBiznesClsfct.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/retrieveApprvUserDtl.do</exclude-url>
+            <exclude-url>/zapp/mgtapplyfcn/usermgt/delCerts.do</exclude-url>
+            <exclude-url>/cexc/common/processCexcOdsnLntmTrtmlsrcMediaCrt.do</exclude-url>
+        </session-check>
+    </filter>
+    <!-- MyBuilder -->
+    <mybuilder>
+        <root-dir>C:/DEV_DIPIS/workspace/dipis_pis/WebContent/mybuilder</root-dir>
+        <install-dir>C:/ActiveSoft/dipis_pis</install-dir>
+        <test-user-id>test</test-user-id>
+    </mybuilder>
+    <!-- 공지사항 -->
+    <notice>
+        <dir>C:/DEV_DIPIS/workspace/dipis_pis/WebContent/html/notice</dir>
+    </notice>
+    <!-- 페이징 -->
+    <paging>
+        <unit>10</unit>
+        <size>10</size>
+    </paging>
+    <security>
+        <session-duplication-check>
+            <enabled>true</enabled>
+            <!-- 세션 중복 체크 제외 IP -->
+            <!-- Range인 경우 String.compareTo() 적용, Range가 아닌 경우 Regular Expression 적용 -->
+            <exclude-ip>16\.118\.3\..*</exclude-ip>
+        </session-duplication-check>
+    </security>
+    <!-- 서버 구분 : local(로컬), dev(개발), test(시험), product(운영) -->
+    <server>
+        <name>local</name>
+        <desc>로컬</desc>
+        <count>2</count>
+        <sync-dir>C:/DEV_DIPIS/workspace/dipis_pis/system/sync</sync-dir>
+        <url>http://my.dipis.mnd.mil:48081</url>
+    </server>
+    <!-- 업무 관련 -->                                                            
+    <biz>                                                                         
+        <zapp>                                                                    
+            <mail>                                                                
+                <domain>af.mil</domain>                                           
+                <domain>army.mil</domain>                                         
+                <domain>mnd.mil</domain>                                          
+                <domain>navy.mil</domain>                                         
+            </mail>                                                               
+            <inter_mail>                                                                
+                <domain>naver.com</domain>                                           
+                <domain>hanmail.net</domain>                                         
+                <domain>nate.com</domain>                                          
+                <domain>gmail.com</domain>                                         
+                <domain>yahoo.com</domain>                                         
+                <domain>dreamwiz.com</domain>                                         
+            </inter_mail>
+            <biznes_clsfct>
+                <!-- 주임부대(급지관) 업무분류순번(tcap_biznes_clsfct.biznes_clsfct_seq) -->
+                <chief>
+                    <seq>73</seq>
+                </chief>
+                <!-- 수령대리인(예하)부대 업무분류순번(tcap_biznes_clsfct.biznes_clsfct_seq) -->
+                <subor>
+                    <seq>60</seq>
+                </subor>
+            </biznes_clsfct>
+            <!-- 로그인 실패시 차단 동작여부  -->
+            <shouldBlockUser>true</shouldBlockUser>
+            <!-- 개발팀 로그인 사용가능한 ip(regular expression) -->
+            <dvlpIpRegex>
+                <ip>16\.118\.3.+</ip>
+            </dvlpIpRegex>
+            <!-- 임의변경 제외 소속부대군구분코드(급여업무용:국직, 육,해,공군, 해병대 외 모두 국직으로 사용함) -->
+            <asgmt_unit_mdcd_for_bpay>
+                <mdcd>2</mdcd>
+                <mdcd>5</mdcd>
+                <mdcd>6</mdcd>
+                <mdcd>7</mdcd>
+                <mdcd>D</mdcd>
+            </asgmt_unit_mdcd_for_bpay>
+        </zapp>  
+        <drta>                                                                    
+            <mail>                                                                
+                <domain>naver.com</domain>                                           
+                <domain>hanmail.net</domain>                                         
+                <domain>nate.com</domain>                                          
+                <domain>gmail.com</domain>                                         
+                <domain>yahoo.com</domain>                                         
+                <domain>dreamwiz.com</domain>                                         
+            </mail>
+            <batch>
+                <output>
+                    <payannty-addup-itcntn>C:/DEV_DIPIS/workspace/dipis_pis/system/upload/drta/payannty_addup_itcntn</payannty-addup-itcntn>
+                </output>
+            </batch>                                                                 
+        </drta> 
+    </biz>                                                                        
+</configuration>

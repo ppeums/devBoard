@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://pmd.sourceforge.net/eclipse' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1317905916562'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='2421418192'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='42'>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='1.0.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_1.0.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.1.6'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.1.6.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='1.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_1.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='1.0.3'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_1.0.3.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.1.0.v200712021445'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_4.1.0.v200712021445.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.9.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_3.9.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.8.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_3.8.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.3.v200712021445.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_3.2.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='1.0.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_1.0.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.1.6'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.1.6.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.4.v200804111600'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_3.2.4.v200804111600.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_3.2.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.2.4.v200804111600.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.3.v200712041040'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_3.2.3.v200712041040.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='2.3.1.v2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_2.3.1.v2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.6.v200903300643'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.6.v200903300643.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.6.2.v2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_3.6.2.v2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.2.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='3.7.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_3.7.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.4.v200804111600'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_3.2.4.v200804111600.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.2.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.2.1.v200804111600'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_4.2.1.v200804111600.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_4.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_3.2.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.1.7'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.1.7.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.3.v200712021445'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_3.2.3.v200712021445.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.2.3.v200712041040.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.3.v200712041040'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_3.2.3.v200712041040.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse.plugin' version='3.2.6.v200903300643'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse.plugin_3.2.6.v200903300643.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712021445'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.2.3.v200712021445.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.core' version='4.1.0.v200712041040'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.core_4.1.0.v200712041040.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.5.v200810131150'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.5.v200810131150.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='2.3.1.v2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_2.3.1.v2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse.plugin' version='3.2.5.v200810131150'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse.plugin_3.2.5.v200810131150.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.4.v200804111600'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.4.v200804111600.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sourceforge.pmd.eclipse' version='3.2.3.v200712041040'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/features/net.sourceforge.pmd.eclipse_3.2.3.v200712041040.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.eclipse' version='3.1.7'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.eclipse_3.1.7.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.ui' version='3.2.3.v200712021445'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.ui_3.2.3.v200712021445.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sourceforge.pmd.runtime' version='3.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://pmd.sourceforge.net/eclipse/plugins/net.sourceforge.pmd.runtime_3.2.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>
