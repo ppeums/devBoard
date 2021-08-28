@@ -2,9 +2,10 @@ package com.devBoard.sample.dao;
 
 import java.util.List;
 
-import com.devBoard.sample.vo.SampleVO;
-
 import org.springframework.stereotype.Repository;
+
+import com.devBoard.sample.vo.ComCommentVO;
+import com.devBoard.sample.vo.SampleVO;
 
 import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
 
@@ -82,6 +83,37 @@ public class SampleDAO extends EgovAbstractDAO {
 	 */
 	public int selectSampleListCount(SampleVO vo) {
 		return (Integer)getSqlMapClientTemplate().queryForObject("sampleDAO.selectSampleListCount", vo);
+	}
+	
+	/**
+	 * 댓글 조회.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	@SuppressWarnings("unchecked")
+	public List<ComCommentVO> retrieveComCommentList(ComCommentVO vo) {
+		return list("sampleDAO.selectComCommentList", vo);
+	}
+	public int retrieveComCommentListCount(ComCommentVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("sampleDAO.selectComCommentListCount", vo);
+	}
+	
+	/**
+	 * 댓글을 등록한다.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	public int insertCommentList(ComCommentVO vo) {
+		return (Integer)insert("sampleDAO.insertCommentList", vo);
+	}
+	
+	/**
+	 * 댓글을 삭재한다.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	public void delteLibFreeNoticeComment(ComCommentVO vo) {
+		delete("sampleDAO.deleteComment", vo);
 	}
 
 }

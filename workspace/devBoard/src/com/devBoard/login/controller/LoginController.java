@@ -96,7 +96,7 @@ public class LoginController {
 			MenuVO menuVO = new MenuVO(); 
 			menuVO.setUserId(loginVO2.getUserId());
 			List<MenuVO> menuList = menuService.retrieveMenuList(menuVO);
-			ArrayList menuResultList = new ArrayList();
+			ArrayList<MenuVO> menuResultList = new ArrayList<MenuVO>();
 			for( int i = 0; i < menuList.size(); i++) {
 				menuResultList.add(((MenuVO)menuList.get(i)));
 				MenuVO menuVO1 = new MenuVO(); 

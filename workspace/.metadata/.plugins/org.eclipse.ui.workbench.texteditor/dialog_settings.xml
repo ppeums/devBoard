@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="267" key="DIALOG_WIDTH"/>
-		<item value="41" key="DIALOG_Y_ORIGIN"/>
-		<item value="1161" key="DIALOG_X_ORIGIN"/>
-		<item value="355" key="DIALOG_HEIGHT"/>
-		<item value="1|굴림|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|굴림" key="DIALOG_FONT_NAME"/>
+		<item value="540" key="DIALOG_WIDTH"/>
+		<item value="198" key="DIALOG_Y_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="9" key="DIALOG_X_ORIGIN"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="com" key="selection"/>
 		<list key="findhistory">
-			<item value="filter.authority.session.exclude-url"/>
-			<item value="login"/>
-			<item value="retrieveLogin.xx"/>
-			<item value="/login/retrieveLogin.xx"/>
-			<item value="프로젝트"/>
-			<item value="통합급여"/>
-			<item value="YearMonth"/>
-			<item value="validateIhIdNum"/>
+			<item value="com"/>
+			<item value="Id"/>
+			<item value="Seq"/>
+			<item value="seq"/>
+			<item value="Dt"/>
+			<item value="rg"/>
+			<item value="sql"/>
+			<item value="rgst"/>
 		</list>
 		<list key="replacehistory">
+			<item value="sampleVO.setId(Integer.parseInt(sampleVO.getSelectedId()));"/>
 			<item value="kr.or.nhic.framework.validation.Nhic"/>
 			<item value="kr.or.nhic.fram"/>
 			<item value="fn_"/>
@@ -32,7 +33,6 @@
 			<item value="nhic"/>
 			<item value="etcSampleVO"/>
 			<item value="$"/>
-			<item value="EtcSampleVO"/>
 		</list>
 	</section>
 </section>

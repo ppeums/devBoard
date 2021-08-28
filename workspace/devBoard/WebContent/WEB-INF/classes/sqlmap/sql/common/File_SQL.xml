@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="File">
+
+	<typeAlias alias="fileVO" type="com.devBoard.framework.vo.FileVO"/>
+	
+	<resultMap id="fileMap" class="fileVO">
+		<result property="comFileSeq" column="COM_FILE_SEQ"/>
+		<result property="comFileDtlSeq" column="COM_FILE_DTL_SEQ"/>
+		<result property="fileStrePath" column="FILE_STRE_PATH"/>
+		<result property="fileStreNm" column="FILE_STRE_NM"/>
+		<result property="fileStreOriNm" column="FILE_STRE_ORI_NM"/>
+		<result property="fileExt" column="FILE_EXT"/>
+		<result property="fileSize" column="FILE_SIZE"/>
+		<result property="rgstId" column="RGST_ID"/>
+		<result property="rgstDt" column="RGST_DT"/>
+		<result property="updId" column="UPD_ID"/>
+		<result property="updDt" column="UPD_DT"/>
+		<result property="fileCd" column="FILE_CD"/>
+		<result property="fileOrder" column="FILE_ORDER"/>
+	</resultMap>
+
+	<insert id="fileDAO.insertComFile" parameterClass="fileVO">
+		<selectKey resultClass="int" keyProperty="comFileSeq">
+		SELECT	COM_FILE_SEQ.NEXTVAL FROM DUAL
+		</selectKey>
+		<![CDATA[
+		/** 첨부파일을 저장한다. - (fileDAO.insertComFile) **/
+		INSERT INTO COM_FILE 
+		( COM_FILE_SEQ, CREATE_DT, USE_YN, RGST_ID, RGST_DT )
+		VALUES
+		( #comFileSeq#, SYSDATE, 'Y', #rgstId#, SYSDATE )
+		]]>
+	</insert>
+	
+	<insert id="fileDAO.insertComFileDtl" parameterClass="fileVO">
+		<selectKey resultClass="int" keyProperty="comFileDtlSeq">
+		SELECT	COM_FILE_DTL_SEQ.NEXTVAL FROM DUAL
+		</selectKey>
+		<![CDATA[
+		/** 첨부파일상세를 저장한다. - (fileDAO.insertComFileDtl) **/
+		INSERT INTO COM_FILE_DTL 
+		( COM_FILE_SEQ, COM_FILE_DTL_SEQ, FILE_STRE_PATH, FILE_STRE_NM, FILE_STRE_ORI_NM, FILE_EXT, FILE_SIZE, RGST_ID, RGST_DT, FILE_CD, FILE_ORDER )
+		VALUES
+		( #comFileSeq#, #comFileDtlSeq#, #fileStrePath#, #fileStreNm#, #fileStreOriNm#, #fileExt#, #fileSize#, #rgstId#, SYSDATE, #fileCd#, #fileOrder# )
+		]]>
+	</insert>
+	
+	<select id="fileDAO.selectComFileDtlList" parameterClass="fileVO" resultMap="fileMap">
+		/** 첨부파일상세 목록을 조회한다. (fileDAO.selectComFileDtlList) **/
+		SELECT  COM_FILE_SEQ
+		,       COM_FILE_DTL_SEQ
+		,       FILE_STRE_PATH
+		,       FILE_STRE_NM
+		,       FILE_STRE_ORI_NM
+		,       FILE_EXT
+		,       FILE_SIZE
+		,       RGST_ID
+		,       RGST_DT
+		,       UPD_ID
+		,       UPD_DT
+		,		NVL(FILE_CD, '') AS FILE_CD
+		,		NVL(FILE_ORDER, '0') AS FILE_ORDER
+		FROM    COM_FILE_DTL
+		WHERE   COM_FILE_SEQ = #comFileSeq#
+	</select>
+	
+	<select id="fileDAO.selectComFileDtl" parameterClass="fileVO" resultMap="fileMap">
+		/** 첨부파일상세를 조회한다. (fileDAO.selectComFileDtl) **/
+		SELECT  COM_FILE_SEQ
+		,       COM_FILE_DTL_SEQ
+		,       FILE_STRE_PATH
+		,       FILE_STRE_NM
+		,       FILE_STRE_ORI_NM
+		,       FILE_EXT
+		,       FILE_SIZE
+		,       RGST_ID
+		,       RGST_DT
+		,       UPD_ID
+		,       UPD_DT
+		,		NVL(FILE_CD, '') AS FILE_CD
+		,		NVL(FILE_ORDER, '0') AS FILE_ORDER
+		FROM    COM_FILE_DTL
+		WHERE   COM_FILE_DTL_SEQ = #comFileDtlSeq#
+	</select>
+	
+	<delete id="fileDAO.deleteComFileDtl" parameterClass="fileVO">
+		/** 첨부파일상세를 삭제한다. (fileDAO.deleteComFileDtl) **/
+		DELETE
+		FROM    COM_FILE_DTL
+		WHERE   COM_FILE_DTL_SEQ = #comFileDtlSeq#
+	</delete>
+	
+	<delete id="fileDAO.deleteComFile" parameterClass="fileVO">
+		/** 첨부파일을 삭제한다. (fileDAO.deleteComFile) **/
+		DELETE
+		FROM    COM_FILE
+		WHERE   COM_FILE_SEQ = #comFileSeq#
+	</delete>
+</sqlMap>

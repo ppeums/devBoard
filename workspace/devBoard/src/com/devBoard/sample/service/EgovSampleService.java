@@ -2,6 +2,8 @@ package com.devBoard.sample.service;
 
 import java.util.List;
 
+import com.devBoard.framework.vo.FileVO;
+import com.devBoard.sample.vo.ComCommentVO;
 import com.devBoard.sample.vo.SampleVO;
 
 
@@ -29,7 +31,7 @@ public interface EgovSampleService {
 	 * @return 등록 결과
 	 * @exception Exception
 	 */
-	public int insertSample(SampleVO vo) throws Exception;
+	public int insertSample(SampleVO vo, List<FileVO> fileList, String userId) throws Exception;
 	
 	/**
 	 * 글을 수정한다.
@@ -66,5 +68,34 @@ public interface EgovSampleService {
 	 * @return 글 총 갯수
 	 */
 	public int retrieveSampleListCount(SampleVO vo);
+	
+	/**
+	 * 댓글. 목록을 조회
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public List<ComCommentVO> retrieveComCommentList(ComCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글. 목록건수를 조회
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public int retrieveComCommentListCount(ComCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글.등록
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public int insertCommentList(ComCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글.삭제.
+	 * @param vo - 삭제할 정보가 담긴 VO
+	 * @return void형
+	 */
+	public void delteLibFreeNoticeComment(ComCommentVO vo) throws Exception;
+
 	
 }

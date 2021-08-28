@@ -15,10 +15,8 @@
 		
 		return result;
 	};
-	
 	// 상태 관리를 위한 global 변수
 	var G_COMMON = {};
-	
 	/**
 	 * Companion.JS와 연동하여 디버깅 로그를 출력, Companion.JS 적용을 위해 파일 인코딩을 반드시 UTF-8로 설정
 	 * 
@@ -30,7 +28,6 @@
 			console.debug(obj);
 		}
 	}
-	
 	/**
 	 * event를 발생시킨 Event Source를 리턴
 	 * 
@@ -40,7 +37,6 @@
 		if(evt.target) return evt.target;
 		else return evt.srcElement;
 	};
-	
 	/**
 	 * 클릭 이벤트 발생 위치를 리턴
 	 * @param evt event
@@ -75,10 +71,8 @@
 		
 		return {left:x, top:y};
 	}
-	
 	// AJAX Callback 함수를 위한 변수
 	var ajaxCallback;
-	
 	/**
 	 * AJAX Submit
 	 * 
@@ -118,7 +112,6 @@
 			success:gfn_ajaxSubmitCallback
 		});
 	}
-
 	/**
 	 * AJAX Callback function
 	 * 
@@ -150,7 +143,6 @@
 			ajaxCallback(xml);
 		}
 	}
-
 	/**
 	 * AJAX Error Handler
 	 * 
@@ -171,7 +163,6 @@
 			alert("[" + textStatus + "]");
 		}
 	}
-	
 	/**
 	 * AJAX 호출 결과 XML을 Select Box Option에 추가
 	 * 
@@ -210,7 +201,6 @@
 			obj.append(option);
 		});
 	}
-
 	/**
 	 * 달력 팝업 오픈
 	 * 
@@ -251,20 +241,29 @@
 
 		win.focus();
 	}
-	
 	/**
 	 * 파일 다운로드
 	 * 
-	 * @param fileName 저장되는 파일명
-	 * @param filePath 서버에 저장된 파일 경로
+	 * @param fileId 파일 아이디
 	 * @return void
 	 */
-	function gfn_downloadFile(fileName, filePath) {
+	function gfn_downloadFile(fileId) {
 		$("#fileDownload").remove();
 		$("body").append("<iframe id='fileDownload' width='0' height='0' />");
-		$("#fileDownload")[0].src = encodeURI("/common/downloadFile.do?fileName=" + fileName + "&filePath=" + filePath);
+		$("#fileDownload")[0].src = encodeURI("/common/downloadFile.do?fileId="+fileId);
 	}
-
+	/**
+	 * 파일이력 다운로드
+	 * 
+	 * @param fileId 파일 아이디
+	 * @param menuKey 메뉴키
+	 * @return void
+	 */
+	function gfn_downloadFileHist(fileId, menuKey) {
+		$("#fileDownload").remove();
+		$("body").append("<iframe id='fileDownload' width='0' height='0' />");
+		$("#fileDownload")[0].src = encodeURI("/common/downloadFileHist.do?fileId="+fileId+"&menuKey="+menuKey);
+	}
 	/**
 	 * 테이블 hover시 Lhover 클래스 부여
 	 */
@@ -280,7 +279,6 @@
 			});
 		});
 	}
-	
 	/**
 	 * 날짜를 비교하여 차이값을 정수값으로 리턴,
 	 * 0이면 동일한 날짜,
@@ -300,7 +298,6 @@
 
 		return gap;
 	}
-	 
 	/**
 	 * Cookie 설정
 	 */
@@ -320,7 +317,6 @@
 		                + ( domain ? ";domain="+domain : "" )
 		                + ( secure ? ";secure" : "" );
 	}
-	
 	/**
 	 * Cookie 가져오기
 	 */
@@ -339,7 +335,6 @@
 		
 		return unescape(result);
 	}
-	 
 	/**
 	 * URL로부터 File Name을 리턴
 	 */
@@ -347,8 +342,6 @@
 		var fileName = url.substring(url.lastIndexOf("/") + 1);
 		return fileName;
 	}
-	
-	
 	/**
 	 * 월 선택에 따른 일자 SelectBox 값 변경.
 	 */
@@ -385,7 +378,6 @@
 			}
 		} 
 	}
-	
 	/**
 	 * 페이지 로드 시 초기화 함수
 	 */
@@ -401,3 +393,329 @@
 		
 		// gfn_applyStyleListTable();
 	});
+	function fn_tinyEditor(){
+		//tiny 에디터
+		 $('textarea.tinymce').tinymce({
+			 
+			//스킨설정
+			//skin : "o2k7"
+			//,skin_variant : "silver"
+			// Location of TinyMCE script
+			script_url : '/static/js/editor/tiny_mce.js'
+				
+			//에디터 너비 높이 설정
+			,height : "300"
+			,wigth  : "750"
+			 
+			,language : "ko"
+			
+			,theme_advanced_path : false
+			 
+			//IE에서 한글입력 문제 해결을 위해서
+			,forced_root_block : false 
+			,force_br_newlines : true
+			,force_p_newlines : false
+			
+			,mode : "textareas"
+			,readonly : false	
+			// General options
+			,theme : "advanced"
+			,plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist"
+
+			// Theme options
+			/*
+			,theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect"
+			,theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor"
+			,theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen"
+			,theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak"
+			*/
+			,theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,fontselect,fontsizeselect"
+			,theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,|,undo,redo,|,link,unlink,image,code,|,insertdate,inserttime,preview,|,forecolor,backcolor"
+			,theme_advanced_buttons3 : ""
+			,theme_advanced_buttons4 : ""
+			
+			,theme_advanced_toolbar_location : "top"
+			,theme_advanced_toolbar_align : "left"
+			,theme_advanced_statusbar_location : "bottom"
+			,theme_advanced_resizing : false
+			
+			// Example content CSS (should be your site CSS)
+			,content_css : "/static/js/editor/css/content.css"
+
+			//에디터에 사용할 폰트 지정 
+			,theme_advanced_fonts : "굴림=굴림;굴림체=굴림체;궁서=궁서;궁서 체=궁서체;돋움=돋움;돋움체=돋움체;바탕=바탕;바탕체=바탕체;Arial=Arial; Comic Sans MS='Comic Sans MS';Courier New='Courier New';Tahoma=Tahoma;Times New Roman='Times New Roman';Verdana=Verdana" 
+			   
+			// Drop lists for link/image/media/template dialogs
+			,template_external_list_url : "lists/template_list.js"
+			,external_link_list_url : "lists/link_list.js"
+			,external_image_list_url : "lists/image_list.js"
+			,media_external_list_url : "lists/media_list.js"
+
+			// Replace values for the template plugin
+			,template_replace_values : {
+				 username	: "Some User"
+				,staffid	: "991234"
+			}
+		 });
+	}
+	/**
+	 * 영문과 숫자만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyAlphaNumber(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') ) { 
+					continue; 
+				} else { 
+					alert("영문과 숫자만 입력이 가능합니다.");
+					obj.value="";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	/**
+	 * 영문과 숫자 .만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyAlphaNumberDot(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch == '.') ) { 
+					continue; 
+				} else { 
+					alert("영문과 숫자 .만 입력이 가능합니다.");
+					obj.value="";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	/**
+	 * .과 숫자만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyNumberDot(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9') || (ch == '.')) { 
+					continue; 
+				} else { 
+					alert(".과 숫자만 입력이 가능합니다.");
+					obj.value="";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	/**
+	 * -과 숫자만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyNumberMinus(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9') || (ch == '-')) { 
+					continue; 
+				} else { 
+					alert("-과 숫자만 입력이 가능합니다.");
+					obj.value="";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	/**
+	 * 숫자만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyNumber(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9')) { 
+					continue; 
+				} else { 
+					alert("숫자만 입력이 가능합니다.");
+					obj.value="";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	/**
+	 * 숫자만 입력
+	 * @param obj
+	 * @returns {Boolean}
+	 */
+	function onOnlyNumberZero(obj) {
+		str = obj.value; 
+		len = str.length; 
+		ch = str.charAt(0);
+			for(i = 0; i < len; i++) { 
+				ch = str.charAt(i); 
+				if( (ch >= '0' && ch <= '9') || (ch == ',')) { 
+					continue; 
+				} else { 
+					alert("숫자만 입력이 가능합니다.");
+					obj.value="0";
+					obj.focus();
+					return false; 
+				} 
+			}
+		return true; 
+	} 
+	//한줄의견 등록
+	function fn_insertComment(url, comBbsSeq){
+		$.ajax({
+			type: "post"
+			,url: url
+			,dataType: "JSON"
+			,data: {
+				  "comBbsSeq": comBbsSeq
+				, "comCommentSeq" : $("#comCommentSeq").val()
+				, "commentContent": $("#commentContent").val()
+			}
+			,success: function(data) {
+				$("#commentList").html("");
+				$("#comCommentSeq").val(0);
+				alert(data.resultList);
+				fn_searchCommentList('1','/sample/ajaxLibFreeNoticeCommentList.do', comBbsSeq, '/sample/ajaxDeleteLibFreeNoticeComment.do');
+			}
+			,error: function(data, status, err) {
+				alert("서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+			}
+		});
+	}
+	
+	//한줄의견 조회
+	function fn_searchCommentList(page, url, comBbsSeq, url2){
+		$.ajax({
+			type: "post"
+				,url: url
+				,dataType: "JSON"
+				,data: {
+					  "comBbsSeq": comBbsSeq
+				//	, "comCommentSeq" : id
+					, "pageIndex" : page
+			}
+			,success: function(data) {
+				var comment = "";
+				var pageTag = "";
+			
+				$.each(data.resultList, function(idx, item) {
+					
+					comment += "<tr>";
+					comment += "</tr>";
+					
+					comment += "<tr>";
+					comment += "<td>"+ item.writeId +"</td>";
+					comment += "<td class=\"subject\" id=\"subject_"+ item.comCommentSeq +"\"><div class=\"commentTitle\">" + item.commentContent + "</div></td>";
+					comment += "<td>"+ item.rgstDt + "</td>";
+					comment += "<td>";
+					comment += "	<a href=\"#;\"><img src=\"/static/images/common/ico_delete.png\" alt=\"삭제\" onclick=\"fn_deleteComment('"+ item.comCommentSeq + "', '"+url2+"', '"+comBbsSeq+"');\"/></a>";
+					comment += "</td>";
+					comment += "</tr>";
+					
+				});
+				$("#commentList").html(comment);
+				$("#commentContent").val("");
+				fn_commentByteChk();
+				
+			}
+			,error: function(data, status, err) {
+				alert("서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+			}
+		});
+		
+	}
+	//한줄의견 삭제
+	function fn_deleteComment(id, url, comBbsSeq){
+		if( confirm("삭제하시겠습니까?")){
+			$.ajax({
+				type: "post"
+				,url: url
+				,dataType: "JSON"
+				,data: {
+					  "comBbsSeq": comBbsSeq
+					, "comCommentSeq" : id
+				}
+				,success: function(data) {
+					$("#commentList").html("");
+					fn_searchCommentList('1','/sample/ajaxLibFreeNoticeCommentList.do', comBbsSeq, '/sample/ajaxDeleteLibFreeNoticeComment.do');
+				}
+				,error: function(data, status, err) {
+					alert("서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+				}
+			});
+		}
+	}
+	
+	/**
+	* 한글을 2바이트 씩 계산하여 입력받은 문자열이 DB에 저장될 때 총 몇바이트를 차지하는지 계산한다.
+	* 엔터(\r\n)는 2바이트를 차지한다.
+	* @param val : 입력받은 문자열
+	*/
+	function fn_byteElength(val)
+	{
+		// 입력받은 문자열을 escape() 를 이용하여 변환한다.
+		// 변환한 문자열 중 유니코드(한글 등)는 공통적으로 %uxxxx로 변환된다.
+		var temp_estr = escape(val);
+		var s_index = 0;
+		var e_index = 0;
+		var temp_str = "";
+		var cnt = 0;
+		// 문자열 중에서 유니코드를 찾아 제거하면서 갯수를 센다.
+		while ((e_index = temp_estr.indexOf("%u", s_index)) >= 0) // 제거할 문자열이 존재한다면
+		{
+		temp_str += temp_estr.substring(s_index, e_index);
+		s_index = e_index + 6;
+		cnt ++;
+		}
+		temp_str += temp_estr.substring(s_index);
+		temp_str = unescape(temp_str); // 원래 문자열로 바꾼다.
+		// 유니코드는 2바이트 씩 계산하고 나머지는 1바이트씩 계산한다.
+		return ((cnt * 2) + temp_str.length) + "";
+	}
+	//댓글 Byte검사
+	function fn_commentByteChk() {
+		var cmntCntn = $("#commentContent").val();
+		var byte = fn_byteElength(cmntCntn);
+		var tmpTag = byte + " / 1,000 Bytes";
+		$("#currentBytes").html(tmpTag);
+		
+		if (byte > 1000) {
+			alert("글자를 초과 입력할수 없습니다.");
+			$("#commentContent").val(checkComment);
+			tmpTag = beforeByte;
+			$("#currentBytes").html(tmpTag);
+		}else{
+			checkComment = $("#commentContent").val();
+			beforeByte = tmpTag;
+		}
+	}
