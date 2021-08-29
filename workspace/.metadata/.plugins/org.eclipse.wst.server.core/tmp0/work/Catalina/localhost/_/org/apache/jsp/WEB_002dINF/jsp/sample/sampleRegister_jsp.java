@@ -23,7 +23,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005fheader_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_005frunat_005fenctype_005fcommandName;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fif_005ftest;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_005fvarStatus_005fvar_005fitems;
@@ -44,7 +44,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     _005fjspx_005ftagPool_005flw_005fheader_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_005frunat_005fenctype_005fcommandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fif_005ftest = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_005fvarStatus_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -61,7 +61,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     _005fjspx_005ftagPool_005flw_005fheader_005fnobody.release();
     _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody.release();
     _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody.release();
-    _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.release();
+    _005fjspx_005ftagPool_005fform_005fform_005frunat_005fenctype_005fcommandName.release();
     _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody.release();
     _005fjspx_005ftagPool_005fc_005fif_005ftest.release();
     _005fjspx_005ftagPool_005fc_005fforEach_005fvarStatus_005fvar_005fitems.release();
@@ -160,6 +160,126 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\");\r\n");
       out.write("\tfrm.submit();\r\n");
       out.write("}\r\n");
+      out.write("\r\n");
+      out.write("/* 이미지 업로드 시 미리보기 */\r\n");
+      out.write("/* var InputImage = \r\n");
+      out.write("\t (function loadImageFile() {\r\n");
+      out.write("\t    if (window.FileReader) {\r\n");
+      out.write("\t        var ImagePre;\r\n");
+      out.write("\t        var ImgReader = new window.FileReader();\r\n");
+      out.write("\t        var fileType = /^(?:image\\/bmp|image\\/gif|image\\/jpeg|image\\/png|image\\/x\\-xwindowdump|image\\/x\\-portable\\-bitmap)$/i; \r\n");
+      out.write("\t \r\n");
+      out.write("\t        ImgReader.onload = function (Event) {\r\n");
+      out.write("\t            if (!ImagePre) {\r\n");
+      out.write("\t                var newPreview = document.getElementById(\"imagePreview\");\r\n");
+      out.write("\t                ImagePre = new Image();\r\n");
+      out.write("\t                ImagePre.style.width = \"200px\";\r\n");
+      out.write("\t                ImagePre.style.height = \"140px\";\r\n");
+      out.write("\t                newPreview.appendChild(ImagePre);\r\n");
+      out.write("\t            }\r\n");
+      out.write("\t            ImagePre.src = Event.target.result;\r\n");
+      out.write("\t        };\r\n");
+      out.write("\t \r\n");
+      out.write("\t        return function () {\r\n");
+      out.write("\t         \r\n");
+      out.write("\t            var img = document.getElementById(\"upfile\").files;\r\n");
+      out.write("\t           \r\n");
+      out.write("\t            if (!fileType.test(img[0].type)) { \r\n");
+      out.write("\t             alert(\"이미지 파일만 미리보기를 제공합니다.\"); \r\n");
+      out.write("\t             return; \r\n");
+      out.write("\t            }\r\n");
+      out.write("\t            ImgReader.readAsDataURL(img[0]);\r\n");
+      out.write("\t        }\r\n");
+      out.write("\t    }\r\n");
+      out.write("\t            document.getElementById(\"imagePreview\").src = document.getElementById(\"upfile\").value;\r\n");
+      out.write("\t})(); */\r\n");
+      out.write("\t\r\n");
+      out.write("\t/* //임의의 file object영역\r\n");
+      out.write("    var files = {};\r\n");
+      out.write("    var previewIndex = 0;\r\n");
+      out.write("\r\n");
+      out.write("    // image preview 기능 구현\r\n");
+      out.write("    // input = file object[]\r\n");
+      out.write("    function addPreview(input) {\r\n");
+      out.write("        if (input[0].files) {\r\n");
+      out.write("            //파일 선택이 여러개였을 시의 대응\r\n");
+      out.write("            for (var fileIndex = 0; fileIndex < input[0].files.length; fileIndex++) {\r\n");
+      out.write("                var file = input[0].files[fileIndex];\r\n");
+      out.write("\r\n");
+      out.write("                if (validation(file.name))\r\n");
+      out.write("                    continue;\r\n");
+      out.write("\r\n");
+      out.write("                var reader = new FileReader();\r\n");
+      out.write("                reader.onload = function(img) {\r\n");
+      out.write("                    //div id=\"preview\" 내에 동적코드추가.\r\n");
+      out.write("                    //이 부분을 수정해서 이미지 링크 외 파일명, 사이즈 등의 부가설명을 할 수 있을 것이다.\r\n");
+      out.write("                    var imgNum = previewIndex++;\r\n");
+      out.write("                    $(\"#preview\")\r\n");
+      out.write("                            .append(\r\n");
+      out.write("                                    \"<div class=\\\"preview-box\\\" value=\\\"\" + imgNum +\"\\\">\"\r\n");
+      out.write("                                            + \"<img class=\\\"thumbnail\\\" src=\\\"\" + img.target.result + \"\\\"\\/>\"\r\n");
+      out.write("                                            + \"<p>\"\r\n");
+      out.write("                                            + file.name\r\n");
+      out.write("                                            + \"</p>\"\r\n");
+      out.write("                                            + \"<a href=\\\"#\\\" value=\\\"\"\r\n");
+      out.write("                                            + imgNum\r\n");
+      out.write("                                            + \"\\\" onclick=\\\"deletePreview(this)\\\">\"\r\n");
+      out.write("                                            + \"삭제\" + \"</a>\" + \"</div>\");\r\n");
+      out.write("                    files[imgNum] = file;\r\n");
+      out.write("                };\r\n");
+      out.write("                reader.readAsDataURL(file);\r\n");
+      out.write("            }\r\n");
+      out.write("        } else\r\n");
+      out.write("            alert('invalid file input'); // 첨부클릭 후 취소시의 대응책은 세우지 않았다.\r\n");
+      out.write("    }\r\n");
+      out.write("    \r\n");
+      out.write("    $(document).ready(function() {\r\n");
+      out.write("        //submit 등록. 실제로 submit type은 아니다.\r\n");
+      out.write("        $('.submit a').on('click',function() {                        \r\n");
+      out.write("            var form = $('#uploadForm')[0];\r\n");
+      out.write("            var formData = new FormData(form);\r\n");
+      out.write("\t\t\t\r\n");
+      out.write("            for (var index = 0; index < Object.keys(files).length; index++) {\r\n");
+      out.write("                //formData 공간에 files라는 이름으로 파일을 추가한다.\r\n");
+      out.write("                //동일명으로 계속 추가할 수 있다.\r\n");
+      out.write("                formData.append('files',files[index]);\r\n");
+      out.write("            }\r\n");
+      out.write("\r\n");
+      out.write("            //ajax 통신으로 multipart form을 전송한다.\r\n");
+      out.write("            $.ajax({\r\n");
+      out.write("                type : 'POST',\r\n");
+      out.write("                enctype : 'multipart/form-data',\r\n");
+      out.write("                processData : false,\r\n");
+      out.write("                contentType : false,\r\n");
+      out.write("                cache : false,\r\n");
+      out.write("                timeout : 600000,\r\n");
+      out.write("                url : '/imageupload',\r\n");
+      out.write("                dataType : 'JSON',\r\n");
+      out.write("                data : formData,\r\n");
+      out.write("                success : function(result) {\r\n");
+      out.write("                    //이 부분을 수정해서 다양한 행동을 할 수 있으며,\r\n");
+      out.write("                    //여기서는 데이터를 전송받았다면 순수하게 OK 만을 보내기로 하였다.\r\n");
+      out.write("                    //-1 = 잘못된 확장자 업로드, -2 = 용량초과, 그외 = 성공(1)\r\n");
+      out.write("                    if (result === -1) {\r\n");
+      out.write("                        alert('jpg, gif, png, bmp 확장자만 업로드 가능합니다.');\r\n");
+      out.write("                        // 이후 동작 ...\r\n");
+      out.write("                    } else if (result === -2) {\r\n");
+      out.write("                        alert('파일이 10MB를 초과하였습니다.');\r\n");
+      out.write("                        // 이후 동작 ...\r\n");
+      out.write("                    } else {\r\n");
+      out.write("                        alert('이미지 업로드 성공');\r\n");
+      out.write("                        // 이후 동작 ...\r\n");
+      out.write("                    }\r\n");
+      out.write("                }\r\n");
+      out.write("                //전송실패에대한 핸들링은 고려하지 않음\r\n");
+      out.write("            });\r\n");
+      out.write("        });\r\n");
+      out.write("        // <input type=file> 태그 기능 구현\r\n");
+      out.write("        $('#attach input[type=file]').change(function() {\r\n");
+      out.write("            addPreview($(this)); //preview form 추가하기\r\n");
+      out.write("        });\r\n");
+      out.write("    }); */\r\n");
+      out.write("\r\n");
       out.write("-->\r\n");
       out.write("</script>\r\n");
       out.write("<title>공지사항 - 글조회</title>\r\n");
@@ -375,11 +495,11 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     com.devBoard.common.tag.TitleTag2 _jspx_th_lw_005ftitle2_005f0 = (com.devBoard.common.tag.TitleTag2) _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody.get(com.devBoard.common.tag.TitleTag2.class);
     _jspx_th_lw_005ftitle2_005f0.setPageContext(_jspx_page_context);
     _jspx_th_lw_005ftitle2_005f0.setParent(null);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(76,4) name = type type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(196,4) name = type type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setType("type1");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(76,4) name = params type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(196,4) name = params type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setParams("샘플게시판|샘플게시판");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(76,4) name = delim type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(196,4) name = delim type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setDelim("|");
     int _jspx_eval_lw_005ftitle2_005f0 = _jspx_th_lw_005ftitle2_005f0.doStartTag();
     if (_jspx_th_lw_005ftitle2_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -395,20 +515,22 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_005frunat_005fenctype_005fcommandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(86,4) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(206,4) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setCommandName("trxSampleVO");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(86,4) name = enctype type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(206,4) name = enctype type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setEnctype("multipart/form-data");
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(206,4) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "runat", new String("server"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
       if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\r\n");
-          out.write("\t\t\t\t\t<div class=\"modify_user\">\r\n");
+          out.write("\t\t\t\t\t<div class=\"modify_user\" id=\"imagePreview\">\r\n");
           out.write("\t\t\t\t\t\t<table>\r\n");
           out.write("\t\t\t\t\t\t\t<tr>\r\n");
           out.write("\t\t\t\t\t\t\t\t<th width=\"15%\" height=\"23\" nowrap>제목</th>\r\n");
@@ -517,7 +639,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_005frunat_005fenctype_005fcommandName.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -530,7 +652,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(91,52) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(212,52) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("name");
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -557,7 +679,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(97,40) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(218,40) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f1.setPath("regUser");
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {
@@ -584,13 +706,15 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(102,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(223,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${registerFlag == '등록' }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
-        out.write("\t\t\t\t\t\t\t\t<td><input type=\"file\" name=\"upfile\" id=\"upfile\" class=\"\" title=\"첨부파일 첨부\" /></td>\r\n");
+        out.write("\t\t\t\t\t\t\t\t\t<td><input multiple=\"multiple\" type=\"file\" name=\"upfile\"\r\n");
+        out.write("\t\t\t\t\t\t\t\t\t\tid=\"upfile\" class=\"\" title=\"첨부파일 첨부\" onchange=\"InputImage();\" />\r\n");
+        out.write("\t\t\t\t\t\t\t\t\t</td>\r\n");
         out.write("\t\t\t\t\t\t\t\t");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -613,19 +737,18 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f1 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(105,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(228,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${registerFlag != '등록' }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
-        out.write("\t\t\t\t\t\t\t\t<td>\r\n");
-        out.write("\t\t\t\t\t\t\t\t\t<input type=\"file\" name=\"upfile\" id=\"upfile\" class=\"\" title=\"첨부파일 첨부\" /><br /> \r\n");
-        out.write("\t\t\t\t\t\t\t\t\t");
+        out.write("\t\t\t\t\t\t\t\t\t<td><input multiple=\"multiple\" type=\"file\" name=\"upfile\"\r\n");
+        out.write("\t\t\t\t\t\t\t\t\t\tid=\"upfile\" class=\"\" title=\"첨부파일 첨부\" /><br /> ");
         if (_jspx_meth_c_005fforEach_005f0(_jspx_th_c_005fif_005f1, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
           return true;
         out.write("\r\n");
-        out.write("\t\t\t\t\t\t\t\t</td>\r\n");
+        out.write("\t\t\t\t\t\t\t\t\t</td>\r\n");
         out.write("\t\t\t\t\t\t\t\t");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -648,27 +771,28 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_005fvarStatus_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f1);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(108,9) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(230,56) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("result");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(108,9) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleRegister.jsp(108,9) '${fileList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${fileList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(108,9) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(230,56) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleRegister.jsp(230,56) '${fileList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${fileList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(230,56) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVarStatus("status");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write(" \r\n");
-          out.write("\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:gfn_downloadFile('");
+          out.write("\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t\t<a\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t\t\thref=\"javascript:gfn_downloadFile('");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.comFileDtlSeq}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("');\">\r\n");
-          out.write("\t\t\t\t\t\t\t\t\t\t");
+          out.write("\t\t\t\t\t\t\t\t\t\t\t\t");
           if (_jspx_meth_c_005fout_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\r\n");
-          out.write("\t\t\t\t\t\t\t\t\t\t</a><br />\r\n");
-          out.write("\t\t\t\t\t\t\t\t\t");
+          out.write(" </a>\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t\t<br />\r\n");
+          out.write("\t\t\t\t\t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -696,7 +820,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f1 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(110,10) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(234,12) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f1.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.fileStreOriNm}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f1 = _jspx_th_c_005fout_005f1.doStartTag();
     if (_jspx_th_c_005fout_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -715,13 +839,13 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.springframework.web.servlet.tags.form.TextareaTag _jspx_th_form_005ftextarea_005f0 = (org.springframework.web.servlet.tags.form.TextareaTag) _005fjspx_005ftagPool_005fform_005ftextarea_005frows_005freadyonly_005fpath_005fcols_005fnobody.get(org.springframework.web.servlet.tags.form.TextareaTag.class);
     _jspx_th_form_005ftextarea_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005ftextarea_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(121,10) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(245,10) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setPath("description");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(121,10) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(245,10) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setRows("20");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(121,10) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(245,10) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setCols("75");
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(121,10) null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(245,10) null
     _jspx_th_form_005ftextarea_005f0.setDynamicAttribute(null, "readyonly", new String("true"));
     int[] _jspx_push_body_count_form_005ftextarea_005f0 = new int[] { 0 };
     try {
@@ -748,7 +872,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f2 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(145,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(269,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f2.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.id}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f2 = _jspx_th_c_005fout_005f2.doStartTag();
     if (_jspx_th_c_005fout_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -767,7 +891,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f3 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(147,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(271,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f3.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.searchCondition}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f3 = _jspx_th_c_005fout_005f3.doStartTag();
     if (_jspx_th_c_005fout_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -786,7 +910,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f4 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(149,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(273,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f4.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.searchKeyword}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f4 = _jspx_th_c_005fout_005f4.doStartTag();
     if (_jspx_th_c_005fout_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -805,7 +929,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f5 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(151,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(275,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f5.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.pageIndex}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f5 = _jspx_th_c_005fout_005f5.doStartTag();
     if (_jspx_th_c_005fout_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -824,7 +948,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f6 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f6.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(153,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(277,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f6.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.recordCountPerPage}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f6 = _jspx_th_c_005fout_005f6.doStartTag();
     if (_jspx_th_c_005fout_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -843,7 +967,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f7 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f7.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(155,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(279,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f7.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.startDate}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f7 = _jspx_th_c_005fout_005f7.doStartTag();
     if (_jspx_th_c_005fout_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -862,7 +986,7 @@ public final class sampleRegister_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f8 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f8.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleRegister.jsp(157,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleRegister.jsp(281,13) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f8.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sampleVO.endDate}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f8 = _jspx_th_c_005fout_005f8.doStartTag();
     if (_jspx_th_c_005fout_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

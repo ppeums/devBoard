@@ -96,7 +96,7 @@ $(function() {
 						<ul>
 							<li>
 								<label for="id"><img alt="login" src="/static/images/login/img_idtext.gif" /></label>
-								<form:input path="userId" cssClass="input_style" cssStyle="width:100px;" maxlength="18" alt="아이디" />
+								<form:input path="userId" cssClass="input_style" cssStyle="width:100px;" maxlength="18" alt="아이디" style="ime-mode:inactive"/>
 							</li>
 							<li>
 								<label for="password"><img alt="password" src="/static/images/login/img_pwtext.gif" /></label>

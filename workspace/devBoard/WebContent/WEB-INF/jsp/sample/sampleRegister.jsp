@@ -51,6 +51,126 @@ function fn_saveSample() {
 	frm.attr("action", "<c:url value="${registerFlag == '등록' ? '/sample/insertSample.do' : '/sample/updateSample.do'}"/>");
 	frm.submit();
 }
+
+/* 이미지 업로드 시 미리보기 */
+/* var InputImage = 
+	 (function loadImageFile() {
+	    if (window.FileReader) {
+	        var ImagePre;
+	        var ImgReader = new window.FileReader();
+	        var fileType = /^(?:image\/bmp|image\/gif|image\/jpeg|image\/png|image\/x\-xwindowdump|image\/x\-portable\-bitmap)$/i; 
+	 
+	        ImgReader.onload = function (Event) {
+	            if (!ImagePre) {
+	                var newPreview = document.getElementById("imagePreview");
+	                ImagePre = new Image();
+	                ImagePre.style.width = "200px";
+	                ImagePre.style.height = "140px";
+	                newPreview.appendChild(ImagePre);
+	            }
+	            ImagePre.src = Event.target.result;
+	        };
+	 
+	        return function () {
+	         
+	            var img = document.getElementById("upfile").files;
+	           
+	            if (!fileType.test(img[0].type)) { 
+	             alert("이미지 파일만 미리보기를 제공합니다."); 
+	             return; 
+	            }
+	            ImgReader.readAsDataURL(img[0]);
+	        }
+	    }
+	            document.getElementById("imagePreview").src = document.getElementById("upfile").value;
+	})(); */
+	
+	/* //임의의 file object영역
+    var files = {};
+    var previewIndex = 0;
+
+    // image preview 기능 구현
+    // input = file object[]
+    function addPreview(input) {
+        if (input[0].files) {
+            //파일 선택이 여러개였을 시의 대응
+            for (var fileIndex = 0; fileIndex < input[0].files.length; fileIndex++) {
+                var file = input[0].files[fileIndex];
+
+                if (validation(file.name))
+                    continue;
+
+                var reader = new FileReader();
+                reader.onload = function(img) {
+                    //div id="preview" 내에 동적코드추가.
+                    //이 부분을 수정해서 이미지 링크 외 파일명, 사이즈 등의 부가설명을 할 수 있을 것이다.
+                    var imgNum = previewIndex++;
+                    $("#preview")
+                            .append(
+                                    "<div class=\"preview-box\" value=\"" + imgNum +"\">"
+                                            + "<img class=\"thumbnail\" src=\"" + img.target.result + "\"\/>"
+                                            + "<p>"
+                                            + file.name
+                                            + "</p>"
+                                            + "<a href=\"#\" value=\""
+                                            + imgNum
+                                            + "\" onclick=\"deletePreview(this)\">"
+                                            + "삭제" + "</a>" + "</div>");
+                    files[imgNum] = file;
+                };
+                reader.readAsDataURL(file);
+            }
+        } else
+            alert('invalid file input'); // 첨부클릭 후 취소시의 대응책은 세우지 않았다.
+    }
+    
+    $(document).ready(function() {
+        //submit 등록. 실제로 submit type은 아니다.
+        $('.submit a').on('click',function() {                        
+            var form = $('#uploadForm')[0];
+            var formData = new FormData(form);
+			
+            for (var index = 0; index < Object.keys(files).length; index++) {
+                //formData 공간에 files라는 이름으로 파일을 추가한다.
+                //동일명으로 계속 추가할 수 있다.
+                formData.append('files',files[index]);
+            }
+
+            //ajax 통신으로 multipart form을 전송한다.
+            $.ajax({
+                type : 'POST',
+                enctype : 'multipart/form-data',
+                processData : false,
+                contentType : false,
+                cache : false,
+                timeout : 600000,
+                url : '/imageupload',
+                dataType : 'JSON',
+                data : formData,
+                success : function(result) {
+                    //이 부분을 수정해서 다양한 행동을 할 수 있으며,
+                    //여기서는 데이터를 전송받았다면 순수하게 OK 만을 보내기로 하였다.
+                    //-1 = 잘못된 확장자 업로드, -2 = 용량초과, 그외 = 성공(1)
+                    if (result === -1) {
+                        alert('jpg, gif, png, bmp 확장자만 업로드 가능합니다.');
+                        // 이후 동작 ...
+                    } else if (result === -2) {
+                        alert('파일이 10MB를 초과하였습니다.');
+                        // 이후 동작 ...
+                    } else {
+                        alert('이미지 업로드 성공');
+                        // 이후 동작 ...
+                    }
+                }
+                //전송실패에대한 핸들링은 고려하지 않음
+            });
+        });
+        // <input type=file> 태그 기능 구현
+        $('#attach input[type=file]').change(function() {
+            addPreview($(this)); //preview form 추가하기
+        });
+    }); */
+
 -->
 </script>
 <title>공지사항 - 글조회</title>
@@ -83,8 +203,9 @@ function fn_saveSample() {
 						</h2>
 					</div>
 				</div>
-				<form:form commandName="trxSampleVO" enctype="multipart/form-data">
-					<div class="modify_user">
+				<form:form commandName="trxSampleVO" enctype="multipart/form-data"
+					runat="server">
+					<div class="modify_user" id="imagePreview">
 						<table>
 							<tr>
 								<th width="15%" height="23" nowrap>제목</th>
@@ -100,17 +221,20 @@ function fn_saveSample() {
 							<tr>
 								<th scope="row">첨부파일</th>
 								<c:if test="${registerFlag == '등록' }">
-								<td><input type="file" name="upfile" id="upfile" class="" title="첨부파일 첨부" /></td>
+									<td><input multiple="multiple" type="file" name="upfile"
+										id="upfile" class="" title="첨부파일 첨부" onchange="InputImage();" />
+									</td>
 								</c:if>
 								<c:if test="${registerFlag != '등록' }">
-								<td>
-									<input type="file" name="upfile" id="upfile" class="" title="첨부파일 첨부" /><br /> 
-									<c:forEach var="result" items="${fileList}" varStatus="status"> 
-										<a href="javascript:gfn_downloadFile('${result.comFileDtlSeq}');">
-										<c:out value="${result.fileStreOriNm}" />
-										</a><br />
-									</c:forEach>
-								</td>
+									<td><input multiple="multiple" type="file" name="upfile"
+										id="upfile" class="" title="첨부파일 첨부" /><br /> <c:forEach
+											var="result" items="${fileList}" varStatus="status">
+											<a
+												href="javascript:gfn_downloadFile('${result.comFileDtlSeq}');">
+												<c:out value="${result.fileStreOriNm}" /> </a>
+											<br />
+										</c:forEach>
+									</td>
 								</c:if>
 							</tr>
 

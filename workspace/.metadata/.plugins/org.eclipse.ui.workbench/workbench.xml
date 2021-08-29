@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="25" version="2.0">
 <workbenchAdvisor/>
 <window height="1048" width="978" x="951" y="-9">
-<fastViewData fastViewLocation="1024"/>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
+</fastViewData>
 <perspectiveBar>
 <itemSize x="293"/>
 </perspectiveBar>
@@ -16,7 +18,7 @@
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="88" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="126" y="22"/>
 <coolItem id="org.eclipse.team.cvs.ui.CVSActionSet" itemType="typeToolBarContribution" x="37" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -24,6 +26,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -32,12 +35,12 @@
 <coolItem id="egovframework.dev.imp.dbio.editor.sqlMapConfigEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="egovframework.dev.imp.dbio.editor.sqlMapEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.maven.ide.eclipse.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.server.ui.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -47,30 +50,184 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="3"/>
+<part id="2"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MultipartFileUtil.java" partName="MultipartFileUtil.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/util/MultipartFileUtil.java" title="MultipartFileUtil.java" tooltip="devBoard/src/com/devBoard/framework/util/MultipartFileUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/util/MultipartFileUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11201" selectionTopPixel="3409"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EgovSampleController.java" partName="EgovSampleController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/sample/controller/EgovSampleController.java" title="EgovSampleController.java" tooltip="devBoard/src/com/devBoard/sample/controller/EgovSampleController.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/sample/controller/EgovSampleController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8587" selectionTopPixel="4327"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="sampleRegister.jsp" partName="sampleRegister.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/sample/sampleRegister.jsp" title="sampleRegister.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sampleRegister.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/sample/sampleRegister.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5252" selectionTopPixel="2539"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileUtil.java" partName="FileUtil.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/util/FileUtil.java" title="FileUtil.java" tooltip="devBoard/src/com/devBoard/framework/util/FileUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/util/FileUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3056" selectionTopPixel="1796"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EgovSampleService.java" partName="EgovSampleService.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/sample/service/EgovSampleService.java" title="EgovSampleService.java" tooltip="devBoard/src/com/devBoard/sample/service/EgovSampleService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/sample/service/EgovSampleService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1048" selectionTopPixel="589"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="sampleList.jsp" partName="sampleList.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/sample/sampleList.jsp" title="sampleList.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sampleList.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/sample/sampleList.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2640"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SampleFileVO.java" partName="SampleFileVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/sample/vo/SampleFileVO.java" title="SampleFileVO.java" tooltip="devBoard/src/com/devBoard/sample/vo/SampleFileVO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/sample/vo/SampleFileVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="360"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SampleVO.java" partName="SampleVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/sample/vo/SampleVO.java" title="SampleVO.java" tooltip="devBoard/src/com/devBoard/sample/vo/SampleVO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/sample/vo/SampleVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="360"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileVO.java" partName="FileVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/vo/FileVO.java" title="FileVO.java" tooltip="devBoard/src/com/devBoard/framework/vo/FileVO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/vo/FileVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="480"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonVO.java" partName="CommonVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/vo/CommonVO.java" title="CommonVO.java" tooltip="devBoard/src/com/devBoard/framework/vo/CommonVO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/vo/CommonVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1924" selectionTopPixel="1140"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" partName="login.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/login/login.jsp" title="login.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/login/login.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/login/login.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1259" selectionTopPixel="409"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginController.java" partName="LoginController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/login/controller/LoginController.java" title="LoginController.java" tooltip="devBoard/src/com/devBoard/login/controller/LoginController.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/login/controller/LoginController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1902" selectionTopPixel="1260"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="sampleFile.jsp" partName="sampleFile.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/sample/sampleFile.jsp" title="sampleFile.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sampleFile.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/sample/sampleFile.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="header.jsp" partName="header.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/common/header.jsp" title="header.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/header.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/common/header.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="common.css" partName="common.css" path="C:/devBoard/workspace/devBoard/WebContent/static/css/common.css" title="common.css" tooltip="devBoard/WebContent/static/css/common.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/css/common.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="login.css" partName="login.css" path="C:/devBoard/workspace/devBoard/WebContent/static/css/login.css" title="login.css" tooltip="devBoard/WebContent/static/css/login.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/css/login.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" partName="sinsul_common.js" path="C:/devBoard/workspace/devBoard/WebContent/static/js/common/sinsul_common.js" title="sinsul_common.js" tooltip="devBoard/WebContent/static/js/common/sinsul_common.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_form.js" partName="sinsul_form.js" path="C:/devBoard/workspace/devBoard/WebContent/static/js/common/sinsul_form.js" title="sinsul_form.js" tooltip="devBoard/WebContent/static/js/common/sinsul_form.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/js/common/sinsul_form.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="sample.jsp" partName="sample.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp" title="sample.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
+<editorState selectionHorizontalPixel="250" selectionLength="0" selectionOffset="0" selectionTopPixel="3139"/>
+</editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
+<view id="org.eclipse.team.svn.ui.repository.RepositoriesView" partName="SVN Repositories">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.team.ccvs.ui.RepositoriesView" partName="CVS Repositories">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets">
+<viewState>
+<entry expansion="true" extent="193" maximum="193" minimum="0" pinned="false" value="0">&#x0A;<entry selection="0"/>
+<entry selection="0"/>
+<entry selection="0"/>
+<entry selection="0"/>
+<entry selection="0"/>
+<entry selection="0"/>
+<entry selection="0"/>
+</entry>
+</viewState>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>&#x0A;<filter element="*.class" isEnabled="false"/>
+<filter element="RemoteSystemsConnections" isEnabled="true"/>
+<filter element="RemoteSystemsTempFiles" isEnabled="true"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings (100 of 361 items)"/>
-<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Warnings (100 of 370 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="83" org.eclipse.ui.ide.markerType="156" org.eclipse.ui.ide.pathField="528" org.eclipse.ui.ide.resourceField="220" org.eclipse.ui.ide.severityAndDescriptionField="604"/>
+<columnWidths org.eclipse.ui.ide.locationField="74" org.eclipse.ui.ide.markerType="109" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="109" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -80,9 +237,6 @@
 </view>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" showCategories="true"/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="1" linkWithEditor="1" rootMode="1" workingSetName="">
@@ -117,86 +271,21 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 <view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
 <viewState column0="300" column1="80" column2="120" column3="120" column4="120" countermode="0" entrymode="1" hideunusedtypes="0" linked="0" reversesort="1" sortcolumn="3"/>
-</view>
-<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.BookmarkView" partName="Bookmarks">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.descriptionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.bookmarksGenerator" partName="Bookmarks">
-<columnWidths org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="74" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="109"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-</viewState>
-</view>
-<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
-<viewState isPinned="false">
-<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="9" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
-<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="8" org.eclipse.search.resultpage.layout="2"/>
-</viewState>
-</view>
-<view id="org.eclipse.team.svn.ui.repository.RepositoriesView" partName="SVN Repositories">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.team.ccvs.ui.RepositoriesView" partName="CVS Repositories">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
-</view>
-<view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
-<columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets">
-<viewState>
-<entry expansion="false" extent="20" maximum="100" minimum="0" pinned="false" value="0">
-<entry selection="0"/>
-<entry selection="0"/>
-<entry selection="0"/>
-<entry selection="0"/>
-<entry selection="0"/>
-<entry selection="0"/>
-<entry selection="0"/>
-</entry>
-</viewState>
-</view>
-<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
-<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
-<filters>&#x0A;<filter element="*.class" isEnabled="false"/>
-<filter element="RemoteSystemsConnections" isEnabled="true"/>
-<filter element="RemoteSystemsTempFiles" isEnabled="true"/>
-<filter element=".*" isEnabled="false"/>
-</filters>
-</viewState>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers">
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="egovframework.dev.imp.core.perspectives.egovperspective">
+<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="egovframework.dev.imp.core.perspectives.egovperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -316,7 +405,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="egovframework.dev.imp.core.perspectives.EgovPerspectiveFactory" id="egovframework.dev.imp.core.perspectives.egovperspective" label="eGovFrame"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
@@ -393,61 +482,56 @@
 <perspective_action id="org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.wst.server.ui.ServersView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView"/>
-<view id="org.eclipse.jdt.ui.JavadocView"/>
-<view id="org.eclipse.ui.views.ProgressView"/>
-<view id="org.eclipse.search.ui.views.SearchView"/>
-<view id="org.eclipse.team.svn.ui.repository.RepositoriesView"/>
-<view id="org.eclipse.ui.views.BookmarkView"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.views.ResourceNavigator"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1be1cdf" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.2996633"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29741862"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ProgressView" ratio="0.3"/>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+<view id="org.eclipse.team.svn.ui.repository.RepositoriesView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ResourceNavigator" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@ba6039" orientation="256" selectedTabId="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1be1cdf" ratio="0.7406181" ratioLeft="671" ratioRight="235" relationship="4" relative="left">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.mountainminds.eclemma.ui.CoverageView" label="Coverage"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
-<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
-<page content="org.eclipse.team.svn.ui.repository.RepositoriesView" label="SVN Repositories"/>
-<page content="org.eclipse.ui.views.BookmarkView" label="Bookmarks"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="10"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<page content="com.mountainminds.eclemma.ui.CoverageView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.team.svn.ui.repository.RepositoriesView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.74950945" ratioLeft="1146" ratioRight="383" relationship="2" relative="left">
@@ -457,7 +541,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.30095038" ratioLeft="285" ratioRight="662" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.32391304" ratioLeft="298" ratioRight="622" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.68604654" ratioLeft="649" ratioRight="297" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
@@ -468,14 +552,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@163ea46" ratio="0.75" ratioLeft="492" ratioRight="164" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@ba6039" ratio="0.7829949" ratioLeft="617" ratioRight="171" relationship="4" relative="left">
-<folder activePageID="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -657,12 +744,189 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/sample/sampleList.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/login/login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/login/controller/LoginController.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/login/service/LoginService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/login/vo/LoginVO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/login/dao/LoginDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/login/service/impl/LoginServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" path="/devBoard/src/sqlmap/sql/login/Login_SQL.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/devBoard/WebContent/static/images/calendar/delete.gif"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/common/calendarPop.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/common/header.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/common/validator.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/common/fileUploadComplete.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/index.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/devBoard/WebContent/static/css/common.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/devBoard/WebContent/static/css/login.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/devBoard/WebContent/static/js/common/sinsul_form.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/sample/sampleRegister.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/sample/controller/EgovSampleController.java"/>
+</editors>
+<item historyLabel="sampleList.jsp" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="1771" y="0"/>
+</item>
+<item historyLabel="LoginController.java" index="3">
+<position info="not_deleted" x="1902" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="1771" y="0"/>
+</item>
+<item historyLabel="LoginService.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LoginVO.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LoginDAO.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LoginServiceImpl.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Login_SQL.xml" index="8"/>
+<item historyLabel="LoginServiceImpl.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3041" y="0"/>
+</item>
+<item historyLabel="delete.gif" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3742" y="1"/>
+</item>
+<item historyLabel="calendarPop.jsp" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="header.jsp" index="11">
+<position info="not_deleted" x="1223" y="0"/>
+</item>
+<item historyLabel="validator.jsp" index="12">
+<position/>
+</item>
+<item historyLabel="header.jsp" index="11">
+<position info="not_deleted" x="1223" y="0"/>
+</item>
+<item historyLabel="calendarPop.jsp" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3742" y="1"/>
+</item>
+<item historyLabel="validator.jsp" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3742" y="1"/>
+</item>
+<item historyLabel="fileUploadComplete.jsp" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3742" y="1"/>
+</item>
+<item historyLabel="index.jsp" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="3742" y="1"/>
+</item>
+<item historyLabel="sample.jsp" index="0">
+<position info="not_deleted" x="1562" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="2954" y="0"/>
+</item>
+<item historyLabel="LoginService.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="2954" y="0"/>
+</item>
+<item historyLabel="LoginService.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="2954" y="0"/>
+</item>
+<item historyLabel="LoginVO.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="2954" y="0"/>
+</item>
+<item historyLabel="LoginServiceImpl.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="2954" y="0"/>
+</item>
+<item historyLabel="sampleList.jsp" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LoginController.java" index="3">
+<position info="not_deleted" x="1902" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="1259" y="0"/>
+</item>
+<item historyLabel="header.jsp" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="common.css" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login.css" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="header.jsp" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="sinsul_common.js" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="sinsul_form.js" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="sample.jsp" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="sampleRegister.jsp" index="20">
+<position info="not_deleted" x="1434" y="0"/>
+</item>
+<item historyLabel="EgovSampleController.java" index="21">
+<position info="not_deleted" x="8499" y="0"/>
+</item>
+<item historyLabel="sampleRegister.jsp" index="20">
+<position info="not_deleted" x="2610" y="0"/>
+</item>
+<item historyLabel="EgovSampleController.java" index="21">
+<position info="not_deleted" x="8587" y="0"/>
+</item>
+<item active="true" historyLabel="sampleRegister.jsp" index="20">
+<position info="not_deleted" x="2610" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@ba6039"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -671,54 +935,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1be1cdf"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BindingInitializer.java" tooltip="devBoard/src/com/devBoard/framework/web/BindingInitializer.java">
-<persistable path="/devBoard/src/com/devBoard/framework/web/BindingInitializer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="sample.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp">
+<persistable path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonController.java" tooltip="devBoard/src/com/devBoard/common/controller/CommonController.java">
-<persistable path="/devBoard/src/com/devBoard/common/controller/CommonController.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_form.js" tooltip="devBoard/WebContent/static/js/common/sinsul_form.js">
+<persistable path="/devBoard/WebContent/static/js/common/sinsul_form.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginVO.java" tooltip="devBoard/src/com/devBoard/login/vo/LoginVO.java">
-<persistable path="/devBoard/src/com/devBoard/login/vo/LoginVO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" tooltip="devBoard/WebContent/static/js/common/sinsul_common.js">
+<persistable path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="login.css" tooltip="devBoard/WebContent/static/css/login.css">
+<persistable path="/devBoard/WebContent/static/css/login.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="common.css" tooltip="devBoard/WebContent/static/css/common.css">
+<persistable path="/devBoard/WebContent/static/css/common.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="header.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/header.jsp">
+<persistable path="/devBoard/WebContent/WEB-INF/jsp/common/header.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="devBoard/WebContent/index.jsp">
+<persistable path="/devBoard/WebContent/index.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="fileUploadComplete.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/fileUploadComplete.jsp">
+<persistable path="/devBoard/WebContent/WEB-INF/jsp/common/fileUploadComplete.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="validator.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/validator.jsp">
+<persistable path="/devBoard/WebContent/WEB-INF/jsp/common/validator.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="calendarPop.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/calendarPop.jsp">
+<persistable path="/devBoard/WebContent/WEB-INF/jsp/common/calendarPop.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="delete.gif" tooltip="devBoard/WebContent/static/images/calendar/delete.gif">
+<persistable path="/devBoard/WebContent/static/images/calendar/delete.gif"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="Login_SQL.xml" tooltip="devBoard/src/sqlmap/sql/login/Login_SQL.xml">
+<persistable path="/devBoard/src/sqlmap/sql/login/Login_SQL.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginServiceImpl.java" tooltip="devBoard/src/com/devBoard/login/service/impl/LoginServiceImpl.java">
 <persistable path="/devBoard/src/com/devBoard/login/service/impl/LoginServiceImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginService.java" tooltip="devBoard/src/com/devBoard/login/service/LoginService.java">
-<persistable path="/devBoard/src/com/devBoard/login/service/LoginService.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginDAO.java" tooltip="devBoard/src/com/devBoard/login/dao/LoginDAO.java">
 <persistable path="/devBoard/src/com/devBoard/login/dao/LoginDAO.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginController.java" tooltip="devBoard/src/com/devBoard/login/controller/LoginController.java">
-<persistable path="/devBoard/src/com/devBoard/login/controller/LoginController.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsController.java" tooltip="devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java">
-<persistable path="/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="ComBbs_SQL.xml" tooltip="devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml">
-<persistable path="/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsVO.java" tooltip="devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java">
-<persistable path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsService.java" tooltip="devBoard/src/com/devBoard/comBbs/service/ComBbsService.java">
-<persistable path="/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsDAO.java" tooltip="devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java">
-<persistable path="/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="sql.sql" tooltip="C:\Users\user\Desktop\INU\현장교육실습\실습자료\현장실습\6회차_20140210\Re형 게시판\sql.sql">
-<persistable uri="file:/C:/Users/user/Desktop/INU/현장교육실습/실습자료/현장실습/6회차_20140210/Re형%20게시판/sql.sql"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="sql.sql" tooltip="devBoard/sql.sql">
-<persistable path="/devBoard/sql.sql"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="sample.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp">
-<persistable path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginVO.java" tooltip="devBoard/src/com/devBoard/login/vo/LoginVO.java">
+<persistable path="/devBoard/src/com/devBoard/login/vo/LoginVO.java"/>
 </file>
 </mruList>
 </workbench>

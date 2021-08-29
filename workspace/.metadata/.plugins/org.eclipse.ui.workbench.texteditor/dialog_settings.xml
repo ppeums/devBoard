@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="540" key="DIALOG_WIDTH"/>
-		<item value="198" key="DIALOG_Y_ORIGIN"/>
+		<item value="252" key="DIALOG_Y_ORIGIN"/>
+		<item value="-493" key="DIALOG_X_ORIGIN"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="9" key="DIALOG_X_ORIGIN"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="com" key="selection"/>
+		<item value="input_imgs" key="selection"/>
 		<list key="findhistory">
-			<item value="com"/>
-			<item value="Id"/>
-			<item value="Seq"/>
-			<item value="seq"/>
-			<item value="Dt"/>
-			<item value="rg"/>
-			<item value="sql"/>
-			<item value="rgst"/>
+			<item value="input_imgs"/>
+			<item value="imput_imgs"/>
+			<item value="wrap"/>
+			<item value="image"/>
+			<item value="request"/>
+			<item value="files"/>
+			<item value="form"/>
+			<item value="conf"/>
 		</list>
 		<list key="replacehistory">
+			<item value="YN2"/>
+			<item value=""/>
+			<item value="trxSampleVO"/>
 			<item value="sampleVO.setId(Integer.parseInt(sampleVO.getSelectedId()));"/>
 			<item value="kr.or.nhic.framework.validation.Nhic"/>
 			<item value="kr.or.nhic.fram"/>
 			<item value="fn_"/>
 			<item value="cfn_"/>
-			<item value="nhic"/>
-			<item value="etcSampleVO"/>
-			<item value="$"/>
 		</list>
 	</section>
 </section>

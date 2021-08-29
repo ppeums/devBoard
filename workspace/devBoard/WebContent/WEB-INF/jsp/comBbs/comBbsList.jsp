@@ -3,6 +3,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui" %>
 <%@ taglib prefix="lw" uri="/WEB-INF/tld/lw.tld" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 /**
  * @Class Name : comBbsList.jsp
@@ -134,7 +135,7 @@ $(function() {
 						<form:option value="50" label="50개씩 보기" />
 					</form:select>
 				</div>
-			</div>					
+			</div>
 			<!-- table add start -->
 			<div class="default_tablestyle">
 				<!-- List -->
@@ -174,7 +175,7 @@ $(function() {
 				<a href='#' onclick="fn_insertComBbsReg();">등록</a>
 			</div>
 		</div>
-		</form:form>		
+		</form:form>
 	</div>
 	<!-- //container 끝 -->
 	<!-- footer 시작 -->

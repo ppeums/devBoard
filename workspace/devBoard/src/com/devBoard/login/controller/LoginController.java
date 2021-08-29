@@ -56,7 +56,7 @@ public class LoginController {
 	@RequestMapping(value="/login/retrieveLogin.xx")
 	public String retrieveLogin(@ModelAttribute("loginVO") LoginVO loginVO, ModelMap model, HttpServletRequest request) throws Exception {
 //		request.getSession().setAttribute("org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE", Locale.US);
-		//request.getSession().setAttribute("org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE", Locale.KOREA);
+		request.getSession().setAttribute("org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE", Locale.KOREA);
 		return "/login/login";
 	}
 	
@@ -115,7 +115,6 @@ public class LoginController {
 			model.addAttribute("msgCd", "login.alert.003");
 			return "/login/login";
 		}
-		
 		return "redirect:" + lwurl;
 	} 
 	

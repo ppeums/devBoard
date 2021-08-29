@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.devBoard.common.security.UserSession;
-import com.devBoard.framework.config.ExXMLConfiguration;
-
 import org.apache.log4j.Logger;
+import org.springframework.ui.ModelMap;
+
+import com.devBoard.framework.config.ExXMLConfiguration;
 
 /**  
  * @Class Name : AuthorityFilter.java
