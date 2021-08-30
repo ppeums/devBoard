@@ -2,9 +2,10 @@ package com.devBoard.comBbs.dao;
 
 import java.util.List;
 
-import com.devBoard.comBbs.vo.ComBbsVO;
-
 import org.springframework.stereotype.Repository;
+
+import com.devBoard.comBbs.vo.ComBbsCommentVO;
+import com.devBoard.comBbs.vo.ComBbsVO;
 
 import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
 
@@ -82,6 +83,48 @@ public class ComBbsDAO extends EgovAbstractDAO {
 	 */
 	public void deleteComBbs(ComBbsVO vo) {
 		delete("comBbsDAO.deleteComBbs", vo);
+	}
+	
+	/**
+	 * 댓글 조회.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	@SuppressWarnings("unchecked")
+	public List<ComBbsCommentVO> retrieveComBbsCommentList(ComBbsCommentVO vo) {
+		return list("comBbsDAO.selectComBbsCommentList", vo);
+	}
+	public int retrieveComBbsCommentListCount(ComBbsCommentVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectComBbsCommentListCount", vo);
+	}
+	
+	/**
+	 * 댓글을 등록한다.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	public int insertCommentList(ComBbsCommentVO vo) {
+		return (Integer)insert("comBbsDAO.insertCommentList", vo);
+	}
+	
+	/**
+	 * 댓글을 삭제한다.
+	 * @param vo - 등록할 정보가 담긴 VO
+	 * @return void
+	 */
+	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) {
+		delete("comBbsDAO.deleteComment", vo);
+	}
+	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	public int commentCount(ComBbsVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectCommentCount", vo);
+	}
+	
+	public int commentCount(ComBbsCommentVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectCommentCount", vo);
 	}
 	
 }

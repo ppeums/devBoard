@@ -24,7 +24,7 @@
 			 , WRITE_ID           AS WRITE_ID           /** 작성자ID **/
 			 , COMMENT_CONTENT    AS COMMENT_CONTENT    /** 댓글내용 **/
 			 , USE_YN             AS USE_YN             /** 사용여부 **/
-			 , RGST_ID            AS RGST_ID            /**등록자 ID **/
+			 , RGST_ID            AS RGST_ID            /** 등록자 ID **/
 			 , TO_CHAR(RGST_DT, 'YYYY.MM.DD') AS RGST_DT/** 등록일시 **/
 		  FROM COM_COMMENT
 	 WHERE 1 = 1
@@ -85,10 +85,8 @@
 	
 	<delete id="sampleDAO.deleteComment" parameterClass="ComCommentVO">
 		<![CDATA[
-		UPDATE	COM_COMMENT
-		SET		USE_YN = 'N' 
-		WHERE 1 = 1
-		  AND COM_BBS_SEQ = #comBbsSeq#
+		DELETE FROM COM_COMMENT
+		WHERE COM_BBS_SEQ = #comBbsSeq#
 		]]>
 		<isNotEqual property="comCommentSeq" compareValue="0">
 			AND COM_COMMENT_SEQ = #comCommentSeq#
@@ -98,4 +96,6 @@
 		  AND USE_YN = 'Y'
 		]]>
 	</delete>
+	
+	
 </sqlMap>

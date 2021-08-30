@@ -220,7 +220,7 @@ public final class comBbsList_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<!-- 타이틀 이미지 -->\t\t\t\r\n");
       out.write("\t\t\t<div id=\"content_img_div\"><img src=\"/static/images/subtitle/img_subtitle03-02.gif\" width=\"776\" height=\"230\" /></div>\r\n");
       out.write("\t\t\t<!-- main content 시작 -->\r\n");
-      out.write("\t\t\t<div class=\"content_field\"><h2>방명록</h2></div>\r\n");
+      out.write("\t\t\t<div class=\"content_field\"><h2>글 목록</h2></div>\r\n");
       out.write("\t\t\t<!-- //main content 끝 -->\t\t\t\r\n");
       out.write("\t\t\t");
       //  form:form
@@ -724,7 +724,7 @@ public final class comBbsList_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/comBbs/comBbsList.jsp(89,3) name = type type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setType("type1");
     // /WEB-INF/jsp/comBbs/comBbsList.jsp(89,3) name = params type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_lw_005ftitle2_005f0.setParams("방명록|방명록");
+    _jspx_th_lw_005ftitle2_005f0.setParams("답글게시판|답글게시판");
     // /WEB-INF/jsp/comBbs/comBbsList.jsp(89,3) name = delim type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setDelim("|");
     int _jspx_eval_lw_005ftitle2_005f0 = _jspx_th_lw_005ftitle2_005f0.doStartTag();

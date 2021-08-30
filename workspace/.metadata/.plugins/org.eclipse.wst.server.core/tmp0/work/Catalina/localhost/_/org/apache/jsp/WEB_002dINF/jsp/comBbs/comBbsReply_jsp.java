@@ -21,7 +21,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005fheader_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_005fcommandName;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005ftextarea_005frows_005freadyonly_005fpath_005fcols_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody;
@@ -40,7 +40,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005flw_005fheader_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fform_005fform_005fcommandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005ftextarea_005frows_005freadyonly_005fpath_005fcols_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -55,7 +55,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005flw_005fheader_005fnobody.release();
     _005fjspx_005ftagPool_005flw_005fmenuList_005fnobody.release();
     _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody.release();
-    _005fjspx_005ftagPool_005fform_005fform_005fcommandName.release();
+    _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.release();
     _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody.release();
     _005fjspx_005ftagPool_005fform_005ftextarea_005frows_005freadyonly_005fpath_005fcols_005fnobody.release();
     _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.release();
@@ -339,11 +339,13 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_005fcommandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
     // /WEB-INF/jsp/comBbs/comBbsReply.jsp(79,4) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setCommandName("trxComBbsVO");
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(79,4) name = enctype type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setEnctype("multipart/form-data");
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
@@ -365,7 +367,12 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("</td>\r\n");
-          out.write("\t\t\t\t\t    </tr>    \r\n");
+          out.write("\t\t\t\t\t    </tr>  \r\n");
+          out.write("\t\t\t\t\t    <tr>\r\n");
+          out.write("\t\t\t\t\t\t\t\t<th scope=\"row\">첨부파일</th>\r\n");
+          out.write("\t\t\t\t\t\t\t\t<td><input multiple=\"multiple\" type=\"file\" name=\"upfile\" id=\"upfile\" class=\"\"\r\n");
+          out.write("\t\t\t\t\t\t\t\t\ttitle=\"첨부파일 첨부\" /></td>\r\n");
+          out.write("\t\t\t\t\t\t</tr>  \r\n");
           out.write("\t\t\t\t\t    <tr> \r\n");
           out.write("\t\t\t\t\t\t    <th height=\"23\" >내용</th>\r\n");
           out.write("\t\t\t\t\t\t    <td colspan=\"5\">\r\n");
@@ -448,7 +455,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_005fcommandName.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_005fenctype_005fcommandName.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -515,13 +522,13 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.TextareaTag _jspx_th_form_005ftextarea_005f0 = (org.springframework.web.servlet.tags.form.TextareaTag) _005fjspx_005ftagPool_005fform_005ftextarea_005frows_005freadyonly_005fpath_005fcols_005fnobody.get(org.springframework.web.servlet.tags.form.TextareaTag.class);
     _jspx_th_form_005ftextarea_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005ftextarea_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(93,28) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(98,28) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setPath("nttContent");
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(93,28) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(98,28) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setRows("20");
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(93,28) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(98,28) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setCols("75");
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(93,28) null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(98,28) null
     _jspx_th_form_005ftextarea_005f0.setDynamicAttribute(null, "readyonly", new String("true"));
     int[] _jspx_push_body_count_form_005ftextarea_005f0 = new int[] { 0 };
     try {
@@ -548,7 +555,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f0 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(114,49) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(119,49) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.comBbsSeq}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f0 = _jspx_th_c_005fout_005f0.doStartTag();
     if (_jspx_th_c_005fout_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -567,7 +574,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f1 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(115,54) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(120,54) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f1.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.searchCondition}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f1 = _jspx_th_c_005fout_005f1.doStartTag();
     if (_jspx_th_c_005fout_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -586,7 +593,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f2 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(116,52) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(121,52) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f2.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.searchKeyword}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f2 = _jspx_th_c_005fout_005f2.doStartTag();
     if (_jspx_th_c_005fout_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -605,7 +612,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f3 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(117,48) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(122,48) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f3.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.pageIndex}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f3 = _jspx_th_c_005fout_005f3.doStartTag();
     if (_jspx_th_c_005fout_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -624,7 +631,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f4 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(118,57) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(123,57) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f4.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.recordCountPerPage}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f4 = _jspx_th_c_005fout_005f4.doStartTag();
     if (_jspx_th_c_005fout_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -643,7 +650,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f5 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(119,48) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(124,48) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f5.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.startDate}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f5 = _jspx_th_c_005fout_005f5.doStartTag();
     if (_jspx_th_c_005fout_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -662,7 +669,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f6 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f6.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(120,46) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(125,46) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f6.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsVO.endDate}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f6 = _jspx_th_c_005fout_005f6.doStartTag();
     if (_jspx_th_c_005fout_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -681,7 +688,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f0 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(121,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(126,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fhidden_005f0.setPath("prntsNo");
     int[] _jspx_push_body_count_form_005fhidden_005f0 = new int[] { 0 };
     try {
@@ -708,7 +715,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f1 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(122,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(127,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fhidden_005f1.setPath("replyLoc");
     int[] _jspx_push_body_count_form_005fhidden_005f1 = new int[] { 0 };
     try {
@@ -735,7 +742,7 @@ public final class comBbsReply_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f2 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(123,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/comBbs/comBbsReply.jsp(128,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fhidden_005f2.setPath("comBbsSeq");
     int[] _jspx_push_body_count_form_005fhidden_005f2 = new int[] { 0 };
     try {

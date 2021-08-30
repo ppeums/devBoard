@@ -36,6 +36,7 @@ public class ComBbsVO extends CommonVO {
 	private Date rgstDt          ; // 등록일
 	private String updId           ; // 수정자ID
 	private String updDt           ; // 수정일
+	
 	public int getComBbsSeq() {
 		return comBbsSeq;
 	}

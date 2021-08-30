@@ -22,6 +22,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
@@ -135,6 +136,12 @@ public class EgovSampleController {
 		// XSS 방어
 		resultVO.setDescription(StringUtil.disableScript(resultVO
 				.getDescription()));
+		
+		System.out.println("[글 조회] sampleVO = " + sampleVO);
+		System.out.println("[글 조회] resultVO = " + resultVO);
+		int cnt = sampleService.commentCount(resultVO);
+		System.out.println("[글 조회] 댓글리스트 cnt = " + cnt);
+		model.addAttribute("cnt", cnt);
 
 		model.addAttribute("trxSampleVO", resultVO);
 
@@ -276,11 +283,13 @@ public class EgovSampleController {
 	public String deleteSample(
 			@ModelAttribute("trxSampleVO") SampleVO sampleVO, Model model,
 			SessionStatus status) throws Exception {
+		//int cnt = list.size();
+		//System.out.println("[글 삭제] 댓글리스트 cnt = " + cnt);
 
 		int comFileSeq = sampleVO.getComFileSeq();
 		
 		MultipartFileUtil.deleteComFileDtl(fileService, comFileSeq, true);
-				
+	
 		sampleService.deleteSample(sampleVO);
 		
 		status.setComplete(); // 세션 객체 삭제
@@ -442,7 +451,13 @@ public class EgovSampleController {
 			comCommentVO.setRecordCountPerPage(9999999);
 			List<ComCommentVO> commentList = sampleService
 					.retrieveComCommentList(comCommentVO);
-
+			
+			//int cnt = sampleService.commentCount(comCommentVO);
+			//int cnt = list.size();
+			//int cnt = sampleService.retrieveComCommentListCount(comCommentVO);
+			//System.out.println("[댓글 조회] 댓글리스트 cnt = " + cnt);
+			//request.setAttribute("cnt", cnt);
+			
 			List<ComCommentVO> commentListTemp = new ArrayList<ComCommentVO>();
 			for (ComCommentVO comCommentVO2 : commentList) {
 				comCommentVO2.setCommentContent(StringUtil
@@ -494,5 +509,5 @@ public class EgovSampleController {
 			throw e;
 		}
 	}
-
+	
 }

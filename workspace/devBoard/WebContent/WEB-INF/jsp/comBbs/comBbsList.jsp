@@ -86,12 +86,12 @@ $(function() {
 		<div id="content">
 			<!-- 현재위치 네비게이션 시작 -->
 			<!-- 타이틀 -->
-			<lw:title2 type="type1" params="방명록|방명록" delim="|"/>
+			<lw:title2 type="type1" params="답글게시판|답글게시판" delim="|"/>
 			<!-- //현재위치 네비게이션 끝 -->
 			<!-- 타이틀 이미지 -->			
 			<div id="content_img_div"><img src="/static/images/subtitle/img_subtitle03-02.gif" width="776" height="230" /></div>
 			<!-- main content 시작 -->
-			<div class="content_field"><h2>방명록</h2></div>
+			<div class="content_field"><h2>글 목록</h2></div>
 			<!-- //main content 끝 -->			
 			<form:form commandName="comBbsVO" method="post">
 			<form:hidden path="selectedId" />	 

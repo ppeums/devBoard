@@ -32,7 +32,9 @@
 </title>
 <jsp:include page="/WEB-INF/jsp/common/header.jsp" flush="true" />
 
-<script type="text/javaScript" language="javascript" defer="defer">/* 글 목록 화면 function */
+<script type="text/javaScript" language="javascript" defer="defer">
+
+/* 글 목록 화면 function */
 function fn_retrieveSampleList() {
 	var frm = $("#trxSampleVO");
 
@@ -239,7 +241,7 @@ function fn_saveSample() {
 							</tr>
 
 							<tr>
-								<th height="23">Description</th>
+								<th height="23">내용</th>
 								<td colspan="5">
 									<div id="bbs_cn">
 										<form:textarea path="description" rows="20" cols="75"

@@ -109,6 +109,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
 
 /**
  * @Class Name : sampleList.jsp
@@ -257,16 +258,16 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<!-- 타이틀 이미지 -->\t\t\t\r\n");
       out.write("\t\t\t<div id=\"content_img_div\"><img src=\"/static/images/subtitle/img_subtitle03-02.gif\" width=\"776\" height=\"230\" /></div>\r\n");
       out.write("\t\t\t<!-- main content 시작 -->\r\n");
-      out.write("\t\t\t<div class=\"content_field\"><h2>방명록</h2></div>\r\n");
+      out.write("\t\t\t<div class=\"content_field\"><h2>글 목록</h2></div>\r\n");
       out.write("\t\t\t<!-- //main content 끝 -->\t\t\t\r\n");
       out.write("\t\t\t");
       //  form:form
       org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_005fmethod_005fcommandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
       _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
       _jspx_th_form_005fform_005f0.setParent(null);
-      // /WEB-INF/jsp/sample/sampleList.jsp(127,3) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /WEB-INF/jsp/sample/sampleList.jsp(128,3) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_form_005fform_005f0.setCommandName("sampleVO");
-      // /WEB-INF/jsp/sample/sampleList.jsp(127,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /WEB-INF/jsp/sample/sampleList.jsp(128,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_form_005fform_005f0.setMethod("post");
       int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
       try {
@@ -290,9 +291,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
             org.springframework.web.servlet.tags.form.SelectTag _jspx_th_form_005fselect_005f0 = (org.springframework.web.servlet.tags.form.SelectTag) _005fjspx_005ftagPool_005fform_005fselect_005fpath_005fcssClass.get(org.springframework.web.servlet.tags.form.SelectTag.class);
             _jspx_th_form_005fselect_005f0.setPageContext(_jspx_page_context);
             _jspx_th_form_005fselect_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-            // /WEB-INF/jsp/sample/sampleList.jsp(136,7) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+            // /WEB-INF/jsp/sample/sampleList.jsp(137,7) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
             _jspx_th_form_005fselect_005f0.setPath("searchCondition");
-            // /WEB-INF/jsp/sample/sampleList.jsp(136,7) name = cssClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+            // /WEB-INF/jsp/sample/sampleList.jsp(137,7) name = cssClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
             _jspx_th_form_005fselect_005f0.setCssClass("use");
             int[] _jspx_push_body_count_form_005fselect_005f0 = new int[] { 0 };
             try {
@@ -305,9 +306,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f0 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f0.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f0);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(137,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(138,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f0.setValue(new String("1"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(137,8) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(138,8) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f0.setLabel("제목");
                   int[] _jspx_push_body_count_form_005foption_005f0 = new int[] { 0 };
                   try {
@@ -329,9 +330,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f1 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f1.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f0);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(138,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(139,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f1.setValue(new String("0"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(138,8) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(139,8) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f1.setLabel("등록자");
                   int[] _jspx_push_body_count_form_005foption_005f1 = new int[] { 0 };
                   try {
@@ -410,11 +411,11 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
             org.springframework.web.servlet.tags.form.SelectTag _jspx_th_form_005fselect_005f1 = (org.springframework.web.servlet.tags.form.SelectTag) _005fjspx_005ftagPool_005fform_005fselect_005fpath_005fonchange_005fcssClass.get(org.springframework.web.servlet.tags.form.SelectTag.class);
             _jspx_th_form_005fselect_005f1.setPageContext(_jspx_page_context);
             _jspx_th_form_005fselect_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-            // /WEB-INF/jsp/sample/sampleList.jsp(162,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+            // /WEB-INF/jsp/sample/sampleList.jsp(163,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
             _jspx_th_form_005fselect_005f1.setPath("recordCountPerPage");
-            // /WEB-INF/jsp/sample/sampleList.jsp(162,5) name = cssClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+            // /WEB-INF/jsp/sample/sampleList.jsp(163,5) name = cssClass type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
             _jspx_th_form_005fselect_005f1.setCssClass("use");
-            // /WEB-INF/jsp/sample/sampleList.jsp(162,5) name = onchange type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+            // /WEB-INF/jsp/sample/sampleList.jsp(163,5) name = onchange type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
             _jspx_th_form_005fselect_005f1.setOnchange("fn_recordCountPerPage()");
             int[] _jspx_push_body_count_form_005fselect_005f1 = new int[] { 0 };
             try {
@@ -427,9 +428,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f2 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f2.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f1);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(163,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(164,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f2.setValue(new String("10"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(163,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(164,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f2.setLabel("10개씩 보기");
                   int[] _jspx_push_body_count_form_005foption_005f2 = new int[] { 0 };
                   try {
@@ -451,9 +452,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f3 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f3.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f1);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(164,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(165,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f3.setValue(new String("20"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(164,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(165,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f3.setLabel("20개씩 보기");
                   int[] _jspx_push_body_count_form_005foption_005f3 = new int[] { 0 };
                   try {
@@ -475,9 +476,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f4 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f4.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f1);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(165,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(166,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f4.setValue(new String("30"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(165,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(166,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f4.setLabel("30개씩 보기");
                   int[] _jspx_push_body_count_form_005foption_005f4 = new int[] { 0 };
                   try {
@@ -499,9 +500,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f5 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f5.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f1);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(166,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(167,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f5.setValue(new String("40"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(166,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(167,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f5.setLabel("40개씩 보기");
                   int[] _jspx_push_body_count_form_005foption_005f5 = new int[] { 0 };
                   try {
@@ -523,9 +524,9 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
                   org.springframework.web.servlet.tags.form.OptionTag _jspx_th_form_005foption_005f6 = (org.springframework.web.servlet.tags.form.OptionTag) _005fjspx_005ftagPool_005fform_005foption_005fvalue_005flabel_005fnobody.get(org.springframework.web.servlet.tags.form.OptionTag.class);
                   _jspx_th_form_005foption_005f6.setPageContext(_jspx_page_context);
                   _jspx_th_form_005foption_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fselect_005f1);
-                  // /WEB-INF/jsp/sample/sampleList.jsp(167,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(168,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f6.setValue(new String("50"));
-                  // /WEB-INF/jsp/sample/sampleList.jsp(167,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /WEB-INF/jsp/sample/sampleList.jsp(168,6) name = label type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_form_005foption_005f6.setLabel("50개씩 보기");
                   int[] _jspx_push_body_count_form_005foption_005f6 = new int[] { 0 };
                   try {
@@ -577,8 +578,8 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
             out.write("\t\t\t\t\t<tr>\r\n");
             out.write("\t\t\t\t\t\t<th align=\"center\">No</th>\r\n");
             out.write("\t\t\t\t\t\t<th align=\"center\">제목</th>\r\n");
-            out.write("\t\t\t\t\t\t<th align=\"center\">Description</th>\r\n");
             out.write("\t\t\t\t\t\t<th align=\"center\">등록자</th>\r\n");
+            out.write("\t\t\t\t\t\t<th align=\"center\">등록일</th>\r\n");
             out.write("\t\t\t\t\t</tr>\r\n");
             out.write("\t\t\t\t\t");
             if (_jspx_meth_c_005fset_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
@@ -672,7 +673,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f0.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(39,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(40,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f0.setValue("/sample/retrieveSample.do");
     int _jspx_eval_c_005furl_005f0 = _jspx_th_c_005furl_005f0.doStartTag();
     if (_jspx_th_c_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -691,7 +692,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f1 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f1.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(47,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(48,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f1.setValue("/sample/insertSampleView.do");
     int _jspx_eval_c_005furl_005f1 = _jspx_th_c_005furl_005f1.doStartTag();
     if (_jspx_th_c_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -710,7 +711,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f2 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f2.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(57,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(58,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f2.setValue("/sample/retrieveSampleList.do");
     int _jspx_eval_c_005furl_005f2 = _jspx_th_c_005furl_005f2.doStartTag();
     if (_jspx_th_c_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -729,7 +730,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f3 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f3.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(65,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(66,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f3.setValue("/sample/sampleExcelDown.do");
     int _jspx_eval_c_005furl_005f3 = _jspx_th_c_005furl_005f3.doStartTag();
     if (_jspx_th_c_005furl_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -748,7 +749,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f4 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f4.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(73,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(74,21) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f4.setValue("/sample/retrieveSampleExcelUpload.do");
     int _jspx_eval_c_005furl_005f4 = _jspx_th_c_005furl_005f4.doStartTag();
     if (_jspx_th_c_005furl_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -801,11 +802,11 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     com.devBoard.common.tag.TitleTag2 _jspx_th_lw_005ftitle2_005f0 = (com.devBoard.common.tag.TitleTag2) _005fjspx_005ftagPool_005flw_005ftitle2_005ftype_005fparams_005fdelim_005fnobody.get(com.devBoard.common.tag.TitleTag2.class);
     _jspx_th_lw_005ftitle2_005f0.setPageContext(_jspx_page_context);
     _jspx_th_lw_005ftitle2_005f0.setParent(null);
-    // /WEB-INF/jsp/sample/sampleList.jsp(120,3) name = type type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(121,3) name = type type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setType("type1");
-    // /WEB-INF/jsp/sample/sampleList.jsp(120,3) name = params type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(121,3) name = params type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setParams("샘플게시판|샘플게시판");
-    // /WEB-INF/jsp/sample/sampleList.jsp(120,3) name = delim type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(121,3) name = delim type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_lw_005ftitle2_005f0.setDelim("|");
     int _jspx_eval_lw_005ftitle2_005f0 = _jspx_th_lw_005ftitle2_005f0.doStartTag();
     if (_jspx_th_lw_005ftitle2_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -824,7 +825,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f0 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(128,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(129,3) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fhidden_005f0.setPath("selectedId");
     int[] _jspx_push_body_count_form_005fhidden_005f0 = new int[] { 0 };
     try {
@@ -851,7 +852,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(142,42) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(143,42) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("searchKeyword");
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
@@ -895,7 +896,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f0 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(160,32) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(161,32) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${paginationInfo.totalRecordCount}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f0 = _jspx_th_c_005fout_005f0.doStartTag();
     if (_jspx_th_c_005fout_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -914,7 +915,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f1 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(160,94) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(161,94) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f1.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${paginationInfo.currentPageNo}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f1 = _jspx_th_c_005fout_005f1.doStartTag();
     if (_jspx_th_c_005fout_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -933,7 +934,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f2 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(160,145) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(161,145) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f2.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${paginationInfo.totalPageCount}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f2 = _jspx_th_c_005fout_005f2.doStartTag();
     if (_jspx_th_c_005fout_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -952,10 +953,10 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(189,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(190,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("seq");
-    // /WEB-INF/jsp/sample/sampleList.jsp(189,5) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(189,5) '${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo - 1) * paginationInfo.recordCountPerPage)}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo - 1) * paginationInfo.recordCountPerPage)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/sample/sampleList.jsp(190,5) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(190,5) '${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo - 1) * paginationInfo.recordCountPerPage)}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo - 1) * paginationInfo.recordCountPerPage)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);
@@ -973,11 +974,11 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_005fvarStatus_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(190,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(191,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("result");
-    // /WEB-INF/jsp/sample/sampleList.jsp(190,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(190,5) '${resultList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${resultList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/sample/sampleList.jsp(190,5) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(191,5) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(191,5) '${resultList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${resultList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/sample/sampleList.jsp(191,5) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVarStatus("status");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -1038,7 +1039,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f3 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(192,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(193,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f3.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${seq }", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f3 = _jspx_th_c_005fout_005f3.doStartTag();
     if (_jspx_th_c_005fout_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1057,7 +1058,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f4 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(193,77) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(194,77) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f4.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.id}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f4 = _jspx_th_c_005fout_005f4.doStartTag();
     if (_jspx_th_c_005fout_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1076,7 +1077,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f5 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(193,110) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(194,110) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f5.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.name}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f5 = _jspx_th_c_005fout_005f5.doStartTag();
     if (_jspx_th_c_005fout_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1095,8 +1096,8 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f6 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f6.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(194,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fout_005f6.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.description}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
+    // /WEB-INF/jsp/sample/sampleList.jsp(195,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fout_005f6.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.regUser}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f6 = _jspx_th_c_005fout_005f6.doStartTag();
     if (_jspx_th_c_005fout_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.reuse(_jspx_th_c_005fout_005f6);
@@ -1114,8 +1115,8 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f7 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f7.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(195,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fout_005f7.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.regUser}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
+    // /WEB-INF/jsp/sample/sampleList.jsp(196,40) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fout_005f7.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${result.regDate}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f7 = _jspx_th_c_005fout_005f7.doStartTag();
     if (_jspx_th_c_005fout_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fout_005fvalue_005fnobody.reuse(_jspx_th_c_005fout_005f7);
@@ -1133,10 +1134,10 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f1 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(197,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(198,5) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f1.setVar("seq");
-    // /WEB-INF/jsp/sample/sampleList.jsp(197,5) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(197,5) '${seq-1}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${seq-1}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/sample/sampleList.jsp(198,5) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/sample/sampleList.jsp(198,5) '${seq-1}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${seq-1}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
     if (_jspx_th_c_005fset_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f1);
@@ -1154,11 +1155,11 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     egovframework.tag.PaginationTag _jspx_th_ui_005fpagination_005f0 = (egovframework.tag.PaginationTag) _005fjspx_005ftagPool_005fui_005fpagination_005ftype_005fpaginationInfo_005fjsFunction_005fnobody.get(egovframework.tag.PaginationTag.class);
     _jspx_th_ui_005fpagination_005f0.setPageContext(_jspx_page_context);
     _jspx_th_ui_005fpagination_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(204,4) name = paginationInfo type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(205,4) name = paginationInfo type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_ui_005fpagination_005f0.setPaginationInfo((egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${paginationInfo}", egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo.class, (PageContext)_jspx_page_context, null, false));
-    // /WEB-INF/jsp/sample/sampleList.jsp(204,4) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(205,4) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_ui_005fpagination_005f0.setType("image");
-    // /WEB-INF/jsp/sample/sampleList.jsp(204,4) name = jsFunction type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(205,4) name = jsFunction type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_ui_005fpagination_005f0.setJsFunction("fn_retrieveSampleList");
     int _jspx_eval_ui_005fpagination_005f0 = _jspx_th_ui_005fpagination_005f0.doStartTag();
     if (_jspx_th_ui_005fpagination_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1177,7 +1178,7 @@ public final class sampleList_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f1 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/jsp/sample/sampleList.jsp(205,4) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/sample/sampleList.jsp(206,4) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fhidden_005f1.setPath("pageIndex");
     int[] _jspx_push_body_count_form_005fhidden_005f1 = new int[] { 0 };
     try {

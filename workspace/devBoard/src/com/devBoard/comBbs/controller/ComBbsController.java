@@ -1,24 +1,36 @@
 package com.devBoard.comBbs.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.devBoard.comBbs.service.ComBbsService;
-import com.devBoard.comBbs.vo.ComBbsVO;
-import com.devBoard.common.security.UserSession;
-import com.devBoard.framework.util.PaginationUtil;
-import com.devBoard.framework.util.StringUtil;
+import net.sf.json.JSONObject;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+
+import com.devBoard.comBbs.service.ComBbsService;
+import com.devBoard.comBbs.vo.ComBbsCommentVO;
+import com.devBoard.comBbs.vo.ComBbsVO;
+import com.devBoard.common.security.UserSession;
+import com.devBoard.common.service.FileService;
+import com.devBoard.framework.util.MultipartFileUtil;
+import com.devBoard.framework.util.PaginationUtil;
+import com.devBoard.framework.util.StringUtil;
+import com.devBoard.framework.vo.FileVO;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
@@ -45,6 +57,12 @@ public class ComBbsController {
 	/** 게시판 처리를 위한  service */
 	@Resource(name = "comBbsService")
 	private ComBbsService comBbsService;
+	
+	/** 첨부파일 처리를 위한  service */
+	@Resource(name = "fileService")
+	private FileService fileService;
+	
+	private Integer getId;
 	
 	/**
 	 * 글 목록을 조회한다. (paging)
@@ -99,13 +117,13 @@ public class ComBbsController {
 	 * @exception Exception
 	 */
 	@RequestMapping("/comBbs/insertComBbs.do")
-	public String insertComBbs(@ModelAttribute("trxComBbsVO") ComBbsVO comBbsVO, BindingResult bindingResult, Model model, SessionStatus status, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public String insertComBbs(@ModelAttribute("trxComBbsVO") ComBbsVO comBbsVO, BindingResult bindingResult, Model model, SessionStatus status, MultipartHttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		comBbsVO.setRgstId(UserSession.getUserId(request));// 작성자 ID
 		comBbsVO.setPrntsNo("0");
 		comBbsVO.setReplyLoc("1");
 		// 작성글 등록
-		comBbsService.insertComBbs(comBbsVO);
+		comBbsService.insertComBbs(comBbsVO, MultipartFileUtil.getFileList(request, "sample"), UserSession.getUserId(request));
 		status.setComplete(); // 세션 객체 삭제
 		
 		request.setAttribute("msgCd", "info.common.insert");
@@ -123,10 +141,33 @@ public class ComBbsController {
 	public String retrieveLibFreeNoticeView(@ModelAttribute("comBbsVO") ComBbsVO comBbsVO, Model model) throws Exception {
 		
 		comBbsVO.setComBbsSeq(Integer.parseInt(StringUtil.nvl(comBbsVO.getSelectedId(), "0")));
+		
 		ComBbsVO resultVO = null;
 		
 		resultVO = comBbsService.retrieveComBbsView(comBbsVO);
+		
+		// 첨부파일상세 목록을 조회한다.
+		FileVO fileVO = new FileVO();
+		//fileVO.setComFileSeq(Integer.parseInt(StringUtil.nvl(resultVO.getComFileSeq(), "0")));
+		if (Integer.toString(resultVO.getComFileSeq()) != null
+				|| Integer.toString(resultVO.getComFileSeq()) != "") {
+			fileVO.setComFileSeq(resultVO.getComFileSeq());
+		} else {
+			fileVO.setComFileSeq(0);
+		}
+		List<FileVO> fileList = fileService.retrieveComFileDtlList(fileVO);
+		model.addAttribute("fileList", fileList);
+		
 		resultVO.setNttContent(resultVO.getNttContent().replaceAll("\r\n", "<br/>"));
+
+		System.out.println("[글 조회] comBbsVO = " + comBbsVO);
+		System.out.println("[글 조회] resultVO = " + resultVO);
+		int cnt = comBbsService.commentCount(resultVO);
+		System.out.println("[글 조회] 댓글리스트 cnt = " + cnt);
+		model.addAttribute("cnt", cnt);
+		
+		getId = resultVO.getComBbsSeq();
+		
 		model.addAttribute("result", resultVO);
 		
 		return "/comBbs/comBbsView";
@@ -147,6 +188,18 @@ public class ComBbsController {
 		ComBbsVO resultVO = null;
 		resultVO = comBbsService.retrieveComBbsView(comBbsVO);
 		
+		// 첨부파일상세 목록을 조회한다.
+		FileVO fileVO = new FileVO();
+		//fileVO.setComFileSeq(Integer.parseInt(StringUtil.nvl(resultVO.getComFileSeq(), "0")));
+		if (Integer.toString(resultVO.getComFileSeq()) != null
+				|| Integer.toString(resultVO.getComFileSeq()) != "") {
+			fileVO.setComFileSeq(resultVO.getComFileSeq());
+		} else {
+			fileVO.setComFileSeq(0);
+		}
+		List<FileVO> fileList = fileService.retrieveComFileDtlList(fileVO);
+		model.addAttribute("fileList", fileList);
+		
 		model.addAttribute("trxComBbsVO", resultVO); // SessionAttributes명과 일치
 		
 		return "/comBbs/comBbsModi";
@@ -163,9 +216,21 @@ public class ComBbsController {
 	 */
 	@RequestMapping("/comBbs/updateComBbs.do")
 	public String updateComBbs(@ModelAttribute("trxComBbsVO") ComBbsVO comBbsVO,
-			BindingResult bindingResult, Model model, SessionStatus status, HttpServletRequest request, HttpServletResponse response) throws Exception {
+			BindingResult bindingResult, Model model, SessionStatus status, MultipartHttpServletRequest request, HttpServletResponse response) throws Exception {
 		comBbsVO.setUpdId(UserSession.getUserId(request));// 작성자 ID
 		comBbsVO.setComBbsSeq(Integer.parseInt(StringUtil.nvl(comBbsVO.getSelectedId(), "0")));
+		
+		ComBbsVO resultVO = comBbsService.retrieveComBbsView(comBbsVO);
+
+		// 첨부파일 수정
+		int comFileSeq = MultipartFileUtil.updateComFileDtl2(fileService, MultipartFileUtil.getFileList(request, "sample"), UserSession.getUserId(request), resultVO, true);
+
+		if( comFileSeq != 0) 
+			comBbsVO.setComFileSeq(comFileSeq);
+		else
+			comBbsVO.setComFileSeq(0);
+
+		
 		// 작성글 수정
 		comBbsService.updateComBbs(comBbsVO);
 		status.setComplete(); // 세션 객체 삭제
@@ -188,10 +253,17 @@ public class ComBbsController {
 			BindingResult bindingResult, Model model, SessionStatus status, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		comBbsVO.setUpdId(UserSession.getUserId(request));
 		comBbsVO.setComBbsSeq(Integer.parseInt(comBbsVO.getSelectedId()));
-		comBbsService.delteComBbs(comBbsVO);
+		
+		int comFileSeq = comBbsVO.getComFileSeq();
+		
+		MultipartFileUtil.deleteComFileDtl(fileService, comFileSeq, true);
+		
+		comBbsService.deleteComBbs(comBbsVO);
+		
 		status.setComplete(); // 세션 객체 삭제
 		
 		request.setAttribute("msgCd", "info.common.delete");
+		
 		return "forward:/comBbs/retrieveComBbsList.do";
 	}
 
@@ -216,6 +288,9 @@ public class ComBbsController {
 		comBbsVO1.setPrntsNo(resultVO.getPrntsNo());
 		comBbsVO1.setReplyLoc(resultVO.getReplyLoc());
 		comBbsVO1.setComBbsSeq(resultVO.getComBbsSeq());
+		
+		//comBbsService.insertComBbs(comBbsVO, MultipartFileUtil.getFileList(request, "sample"), UserSession.getUserId(request));
+		//insertComBbs로 해도 될지, 아니면 insertComBbsReply를 만들어야 할지...
 		model.addAttribute("trxComBbsVO", comBbsVO1); // SessionAttributes명과 일치
 		
 		return "/comBbs/comBbsReply";
@@ -231,7 +306,7 @@ public class ComBbsController {
 	 * @exception Exception
 	 */
 	@RequestMapping("/comBbs/insertComBbsReply1.do")
-	public String insertComBbsReply1(@ModelAttribute("trxComBbsVO") ComBbsVO comBbsVO, BindingResult bindingResult, Model model, SessionStatus status, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public String insertComBbsReply1(@ModelAttribute("trxComBbsVO") ComBbsVO comBbsVO, BindingResult bindingResult, Model model, SessionStatus status, MultipartHttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		comBbsVO.setRgstId(UserSession.getUserId(request));// 작성자 ID
 		
@@ -239,10 +314,150 @@ public class ComBbsController {
 		comBbsVO.setReplyLoc(String.valueOf(Integer.parseInt(comBbsVO.getReplyLoc())+1));
 		
 		// 작성글 등록
-		comBbsService.insertComBbs(comBbsVO);
+		comBbsService.insertComBbs(comBbsVO, MultipartFileUtil.getFileList(request, "sample"),
+				UserSession.getUserId(request));
 		status.setComplete(); // 세션 객체 삭제
 		
 		request.setAttribute("msgCd", "info.common.insert");
 		return "forward:/comBbs/retrieveComBbsList.do";
 	}
+
+	/**
+	 * 한줄의견을 등록한다.
+	 * 
+	 * @param comBbsCommentVO
+	 *            - 조회 조건, 등록 정보가 담긴 VO (ModelAttribute명은 SessionAttributes명과
+	 *            일치)
+	 * @param bindingResult
+	 * @param model
+	 * @param status
+	 * @return View
+	 * @exception Exception
+	 */
+	@RequestMapping("/comBbs/ajaxInsertLibFreeNoticeComment.do")
+	@ResponseBody
+	public ResponseEntity<String> ajaxInsertLibFreeNoticeComment(
+			@ModelAttribute("comBbsVO") ComBbsCommentVO comBbsCommentVO,
+			HttpServletRequest request) throws Exception {
+		JSONObject jsonObject = new JSONObject();
+		
+		System.out.println("[댓글 등록] jsp에서 가져온 getId = " + getId);
+		comBbsCommentVO.setComBbsSeq(getId);
+		
+		try {
+			// 코맨트 등록
+			comBbsCommentVO.setRgstId(UserSession.getUserId(request));// 작성자 ID
+			comBbsCommentVO.setWriteId(UserSession.getUserId(request));// 작성자 ID
+
+			if (comBbsCommentVO.getCommentContent().equals("")) {
+				jsonObject.put("resultList", "한줄의견을 입력 하세요.");
+			} else {
+				if (comBbsCommentVO.getComBbsCommentSeq() == 0) {
+					comBbsService.insertCommentList(comBbsCommentVO);
+					jsonObject.put("resultList", "등록되었습니다.");
+				}
+			}
+
+			HttpHeaders responseHeaders = new HttpHeaders();
+			responseHeaders.add("Content-Type", "text/html; charset=UTF-8");
+			return new ResponseEntity<String>(jsonObject.toString(),
+					responseHeaders, HttpStatus.CREATED);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
+
+	/**
+	 * 한줄의견을 조회한다.
+	 * 
+	 * @param comBbsCommentVO
+	 *            - 조회 조건, 등록 정보가 담긴 VO (ModelAttribute명은 SessionAttributes명과
+	 *            일치)
+	 * @param bindingResult
+	 * @param model
+	 * @param status
+	 * @return View
+	 * @exception Exception
+	 */
+	@RequestMapping("/comBbs/ajaxLibFreeNoticeCommentList.do")
+	@ResponseBody
+	public ResponseEntity<String> ajaxLibFreeNoticeCommentList(
+			@ModelAttribute("comBbsVO") ComBbsCommentVO comBbsCommentVO,
+			HttpServletRequest request) throws Exception {
+		JSONObject jsonObject = new JSONObject();
+		
+		System.out.println("[댓글 조회] jsp에서 가져온 getId = " + getId);
+		comBbsCommentVO.setComBbsSeq(getId);
+		
+		try {
+			// 코맨트 등록
+			// 페이지 정보 설정
+			PaginationInfo paginationInfo = PaginationUtil
+					.getPaginationInfo(comBbsCommentVO);
+			comBbsCommentVO.setRecordCountPerPage(9999999);
+			List<ComBbsCommentVO> commentList = comBbsService
+					.retrieveComBbsCommentList(comBbsCommentVO);
+			
+			//int cnt = sampleService.commentCount(comCommentVO);
+			//int cnt = list.size();
+			//int cnt = sampleService.retrieveComCommentListCount(comCommentVO);
+			//System.out.println("[댓글 조회] 댓글리스트 cnt = " + cnt);
+			//request.setAttribute("cnt", cnt);
+			
+			List<ComBbsCommentVO> commentListTemp = new ArrayList<ComBbsCommentVO>();
+			for (ComBbsCommentVO comBbsCommentVO2 : commentList) {
+				comBbsCommentVO2.setCommentContent(StringUtil
+						.disableScript(comBbsCommentVO2.getCommentContent()));
+				commentListTemp.add(comBbsCommentVO2);
+			}
+			jsonObject.put("resultList", commentListTemp);
+
+			HttpHeaders responseHeaders = new HttpHeaders();
+			responseHeaders.add("Content-Type", "text/html; charset=UTF-8");
+			return new ResponseEntity<String>(jsonObject.toString(),
+					responseHeaders, HttpStatus.CREATED);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
+
+	/**
+	 * 한줄의견을 삭제한다.
+	 * 
+	 * @param comBbsCommentVO
+	 *            - 조회 조건, 등록 정보가 담긴 VO (ModelAttribute명은 SessionAttributes명과
+	 *            일치)
+	 * @param bindingResult
+	 * @param model
+	 * @param status
+	 * @return View
+	 * @exception Exception
+	 */
+	@RequestMapping("/comBbs/ajaxDeleteLibFreeNoticeComment.do")
+	@ResponseBody
+	public ResponseEntity<String> ajaxDeleteLibFreeNoticeComment(
+			@ModelAttribute("comBbsVO") ComBbsCommentVO comBbsCommentVO,
+			HttpServletRequest request) throws Exception {
+		JSONObject jsonObject = new JSONObject();
+		
+		comBbsCommentVO.setComBbsSeq(getId);
+		
+		try {
+			// 삭제
+			comBbsService.delteLibFreeNoticeComment(comBbsCommentVO);
+			jsonObject.put("resultList", "삭제되었습니다.");
+
+			HttpHeaders responseHeaders = new HttpHeaders();
+			responseHeaders.add("Content-Type", "text/html; charset=UTF-8");
+			return new ResponseEntity<String>(jsonObject.toString(),
+					responseHeaders, HttpStatus.CREATED);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
+	
 }

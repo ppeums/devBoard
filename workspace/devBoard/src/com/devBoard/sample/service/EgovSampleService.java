@@ -96,6 +96,12 @@ public interface EgovSampleService {
 	 * @return void형
 	 */
 	public void delteLibFreeNoticeComment(ComCommentVO vo) throws Exception;
-
 	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	public int commentCount(SampleVO vo) throws Exception;
+	
+	public int commentCount(ComCommentVO vo) throws Exception;
+
 }

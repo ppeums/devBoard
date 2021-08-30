@@ -4,15 +4,15 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Service;
+
 import com.devBoard.comBbs.dao.ComBbsDAO;
 import com.devBoard.comBbs.service.ComBbsService;
+import com.devBoard.comBbs.vo.ComBbsCommentVO;
 import com.devBoard.comBbs.vo.ComBbsVO;
 import com.devBoard.common.service.FileService;
 import com.devBoard.framework.util.MultipartFileUtil;
 import com.devBoard.framework.vo.FileVO;
-import com.devBoard.sample.vo.ComCommentVO;
-
-import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.AbstractServiceImpl;
 
@@ -63,8 +63,19 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 		return comBbsDAO.selectComBbsListCount(vo);
 	}
 	
-	public int insertComBbs(ComBbsVO vo) throws Exception {
+	@Override
+	public int insertComBbs(ComBbsVO vo, List<FileVO> fileList, String userId) throws Exception {
+		
+		// 첨부파일을 등록한다.
+		int comFileSeq = MultipartFileUtil.insertComFileDtl(fileService, fileList, userId);
+		
+		if (comFileSeq != 0) 
+			vo.setComFileSeq(comFileSeq);
+		else
+			vo.setComFileSeq(0);
+		
 		int id = comBbsDAO.insertComBbs(vo);
+		
 		return id;
 	}
 
@@ -90,10 +101,56 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 		comBbsDAO.updateComBbsCnt(vo);
 	}
 	@Override
-	public void delteComBbs(ComBbsVO vo) throws Exception {
+	public void deleteComBbs(ComBbsVO vo) throws Exception {
 		
-		ComCommentVO comcommentVO = new ComCommentVO();
+		//ComCommentVO comcommentVO = new ComCommentVO();
 		comBbsDAO.deleteComBbs(vo);
 	}
+
+	/**
+	 * 댓글 목록을 조회한다.
+	 */
+	@Override
+	public List<ComBbsCommentVO> retrieveComBbsCommentList(ComBbsCommentVO vo) throws Exception {
+		return comBbsDAO.retrieveComBbsCommentList(vo);
+	}
+	
+	/**
+	 * 댓글 목록건수를 조회한다.
+	 */
+	@Override
+	public int retrieveComBbsCommentListCount(ComBbsCommentVO vo) throws Exception {
+		return comBbsDAO.retrieveComBbsCommentListCount(vo);
+	}
+	
+	/**
+	 * 댓글을 등록한다.
+	 */
+	public int insertCommentList(ComBbsCommentVO vo) throws Exception {
+		int id = comBbsDAO.insertCommentList(vo);
+		return id;
+	}
+
+	/**
+	 * 댓글을 삭제한다.
+	 */
+	@Override
+	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception {
+		comBbsDAO.delteLibFreeNoticeComment(vo);
+	}
+	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	@Override
+	public int commentCount(ComBbsVO vo) throws Exception {
+		return comBbsDAO.commentCount(vo);
+	}
+	
+	@Override
+	public int commentCount(ComBbsCommentVO vo) throws Exception {
+		return comBbsDAO.commentCount(vo);
+	}
+	
 
 }

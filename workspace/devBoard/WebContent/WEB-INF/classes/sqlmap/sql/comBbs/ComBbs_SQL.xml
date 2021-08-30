@@ -17,6 +17,7 @@
 		<result property="rgstDt" column="RGST_DT"/>
 		<result property="updId" column="UPD_ID"/>
 		<result property="updDt" column="UPD_DT"/>
+		<result property="comFileSeq" column="COM_FILE_SEQ"/>
 	</resultMap>
 	
 	<select id="comBbsDAO.selectComBbsList" parameterClass="comBbsVO" resultMap="comBbsListMap">
@@ -33,7 +34,8 @@
 			,       MAIN.RGST_ID     
 			,       MAIN.RGST_DT     
 			,       MAIN.UPD_ID      
-			,       MAIN.UPD_DT     
+			,       MAIN.UPD_DT
+			,       NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ
 			FROM    COM_BBS MAIN
 			WHERE   1 = 1
 			AND		MAIN.USE_YN = 'Y'
@@ -92,7 +94,8 @@
 		,		MAIN.RGST_ID     
 		,		MAIN.RGST_DT     
 		,		MAIN.UPD_ID      
-		,		MAIN.UPD_DT      
+		,		MAIN.UPD_DT 
+		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ     
 		FROM	COM_BBS MAIN
 		WHERE	1 = 1
 		AND		MAIN.COM_BBS_SEQ=#comBbsSeq#
@@ -114,7 +117,8 @@
 			  , SORT_ORDER       
 			  , USE_YN           
 			  , RGST_ID          
-			  , RGST_DT          
+			  , RGST_DT
+			  , COM_FILE_SEQ          
 			  )		
 			  VALUES(
 			   #comBbsSeq#       
@@ -125,7 +129,8 @@
 			  , #comBbsSeq#      
 			  , 'Y'              
 			  , #rgstId#         
-			  , SYSDATE          
+			  , SYSDATE
+			  , NVL(#comFileSeq#, 0)          
 			  )
 		]]>
 	</insert>
@@ -136,7 +141,8 @@
 			 , NTT_CONTENT = #nttContent#      
 			 , RGST_ID     = #rgstId#
 			 , UPD_ID      = #updId#           
-			 , UPD_DT      = SYSDATE           
+			 , UPD_DT      = SYSDATE
+			 , COM_FILE_SEQ = #comFileSeq#           
 		WHERE 1 = 1
 		  AND COM_BBS_SEQ = #comBbsSeq#
 		  AND USE_YN = 'Y'
@@ -157,4 +163,12 @@
 		AND USE_YN = 'Y'
 		]]>
 	</delete>
+	
+	<select id="comBbsDAO.selectCommentCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT (SELECT COUNT(*)
+				FROM COM_BBS_COMMENT
+				WHERE COM_BBS_COMMENT.COM_BBS_SEQ = COM_BBS.COM_BBS_SEQ) AS COMMENT_CNT
+		FROM COM_BBS
+		WHERE COM_BBS_SEQ=#comBbsSeq#
+	</select>
 </sqlMap>

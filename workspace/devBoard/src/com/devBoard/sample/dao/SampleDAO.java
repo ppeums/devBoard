@@ -108,12 +108,22 @@ public class SampleDAO extends EgovAbstractDAO {
 	}
 	
 	/**
-	 * 댓글을 삭재한다.
+	 * 댓글을 삭제한다.
 	 * @param vo - 등록할 정보가 담긴 VO
 	 * @return void
 	 */
 	public void delteLibFreeNoticeComment(ComCommentVO vo) {
 		delete("sampleDAO.deleteComment", vo);
 	}
-
+	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	public int commentCount(SampleVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("sampleDAO.selectCommentCount", vo);
+	}
+	
+	public int commentCount(ComCommentVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("sampleDAO.selectCommentCount", vo);
+	}
 }

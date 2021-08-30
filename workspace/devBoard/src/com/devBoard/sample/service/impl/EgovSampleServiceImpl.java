@@ -58,6 +58,7 @@ public class EgovSampleServiceImpl extends AbstractServiceImpl implements EgovSa
 			vo.setComFileSeq(comFileSeq);
 		else
 			vo.setComFileSeq(0);
+		
 		int id = sampleDAO.insertSample(vo);
 
 		return id;
@@ -125,24 +126,50 @@ public class EgovSampleServiceImpl extends AbstractServiceImpl implements EgovSa
 		return sampleDAO.selectSampleListCount(vo);
 	}
 	
+	/**
+	 * 댓글 목록을 조회한다.
+	 */
 	@Override
 	public List<ComCommentVO> retrieveComCommentList(ComCommentVO vo) throws Exception {
 		return sampleDAO.retrieveComCommentList(vo);
 	}
 	
+	/**
+	 * 댓글 목록건수를 조회한다.
+	 */
 	@Override
 	public int retrieveComCommentListCount(ComCommentVO vo) throws Exception {
 		return sampleDAO.retrieveComCommentListCount(vo);
 	}
-
+	
+	/**
+	 * 댓글을 등록한다.
+	 */
 	public int insertCommentList(ComCommentVO vo) throws Exception {
 		int id = sampleDAO.insertCommentList(vo);
 		return id;
 	}
 
+	/**
+	 * 댓글을 삭제한다.
+	 */
 	@Override
 	public void delteLibFreeNoticeComment(ComCommentVO vo) throws Exception {
 		sampleDAO.delteLibFreeNoticeComment(vo);
 	}
+	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	@Override
+	public int commentCount(SampleVO vo) throws Exception {
+		return sampleDAO.commentCount(vo);
+	}
+	
+	@Override
+	public int commentCount(ComCommentVO vo) throws Exception {
+		return sampleDAO.commentCount(vo);
+	}
+	
 	
 }

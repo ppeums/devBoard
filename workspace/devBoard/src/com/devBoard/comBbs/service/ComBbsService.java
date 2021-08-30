@@ -2,6 +2,7 @@ package com.devBoard.comBbs.service;
 
 import java.util.List;
 
+import com.devBoard.comBbs.vo.ComBbsCommentVO;
 import com.devBoard.comBbs.vo.ComBbsVO;
 import com.devBoard.framework.vo.FileVO;
 
@@ -53,7 +54,7 @@ public interface ComBbsService {
 	 * @return 등록 결과
 	 * @exception Exception
 	 */
-	public int insertComBbs(ComBbsVO vo) throws Exception;
+	public int insertComBbs(ComBbsVO vo, List<FileVO> fileList, String userId) throws Exception;
 	
 	/**
 	 * 글을 조회한다.
@@ -89,6 +90,41 @@ public interface ComBbsService {
 	 * @param vo - 삭제할 정보가 담긴 VO
 	 * @return void형
 	 */
-	public void delteComBbs(ComBbsVO vo) throws Exception;
+	public void deleteComBbs(ComBbsVO vo) throws Exception;
+	
+	/**
+	 * 댓글. 목록을 조회
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public List<ComBbsCommentVO> retrieveComBbsCommentList(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글. 목록건수를 조회
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public int retrieveComBbsCommentListCount(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글.등록
+	 * @param vo - 조회할 정보가 담긴 VO
+	 * @return 글 목록
+	 */
+	public int insertCommentList(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글.삭제.
+	 * @param vo - 삭제할 정보가 담긴 VO
+	 * @return void형
+	 */
+	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글의 개수를 구한다.
+	 */
+	public int commentCount(ComBbsVO vo) throws Exception;
+	
+	public int commentCount(ComBbsCommentVO vo) throws Exception;
 	
 }

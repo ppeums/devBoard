@@ -76,7 +76,7 @@ function fn_insertComBbsReply1() {
 				<div id="search_field">
 					<div id="search_field_loc"><h2><strong>글조회</strong></h2></div>
 				</div>
-				<form:form commandName="trxComBbsVO">
+				<form:form commandName="trxComBbsVO" enctype="multipart/form-data">
 				<div class="modify_user" >
 	                <table>
                    		<tr> 
@@ -86,7 +86,12 @@ function fn_insertComBbsReply1() {
 					    <tr> 
 					        <th width="15%" height="23" nowrap >등록자</th>
 					        <td width="85%" nowrap="nowrap"><form:input path="rgstId"/></td>
-					    </tr>    
+					    </tr>  
+					    <tr>
+								<th scope="row">첨부파일</th>
+								<td><input multiple="multiple" type="file" name="upfile" id="upfile" class=""
+									title="첨부파일 첨부" /></td>
+						</tr>  
 					    <tr> 
 						    <th height="23" >내용</th>
 						    <td colspan="5">

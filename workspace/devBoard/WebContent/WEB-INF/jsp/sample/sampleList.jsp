@@ -3,6 +3,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui" %>
 <%@ taglib prefix="lw" uri="/WEB-INF/tld/lw.tld" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 /**
  * @Class Name : sampleList.jsp
@@ -122,7 +123,7 @@ function fn_recordCountPerPage() {
 			<!-- 타이틀 이미지 -->			
 			<div id="content_img_div"><img src="/static/images/subtitle/img_subtitle03-02.gif" width="776" height="230" /></div>
 			<!-- main content 시작 -->
-			<div class="content_field"><h2>방명록</h2></div>
+			<div class="content_field"><h2>글 목록</h2></div>
 			<!-- //main content 끝 -->			
 			<form:form commandName="sampleVO" method="post">
 			<form:hidden path="selectedId" />	 
@@ -183,16 +184,16 @@ function fn_recordCountPerPage() {
 					<tr>
 						<th align="center">No</th>
 						<th align="center">제목</th>
-						<th align="center">Description</th>
 						<th align="center">등록자</th>
+						<th align="center">등록일</th>
 					</tr>
 					<c:set var="seq" value="${paginationInfo.totalRecordCount - ((paginationInfo.currentPageNo - 1) * paginationInfo.recordCountPerPage)}"/>
 					<c:forEach var="result" items="${resultList}" varStatus="status">
 					<tr>
 						<td align="center" class="listtd"><c:out value="${seq }" /></td>
 						<td align="left" class="listtd"><a href="javascript:fn_retrieveSample('<c:out value="${result.id}"/>')"><c:out value="${result.name}"/></a>&nbsp;</td>
-						<td align="center" class="listtd"><c:out value="${result.description}"/>&nbsp;</td>
 						<td align="center" class="listtd"><c:out value="${result.regUser}"/>&nbsp;</td>
+						<td align="center" class="listtd"><c:out value="${result.regDate}"/>&nbsp;</td>
 					</tr>
 					<c:set var="seq" value="${seq-1}"/>
 					</c:forEach>
