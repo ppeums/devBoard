@@ -122,6 +122,7 @@ public class ComBbsController {
 		comBbsVO.setRgstId(UserSession.getUserId(request));// 작성자 ID
 		comBbsVO.setPrntsNo("0");
 		comBbsVO.setReplyLoc("1");
+		comBbsVO.setComCheck(0);
 		// 작성글 등록
 		comBbsService.insertComBbs(comBbsVO, MultipartFileUtil.getFileList(request, "sample"), UserSession.getUserId(request));
 		status.setComplete(); // 세션 객체 삭제
@@ -164,7 +165,14 @@ public class ComBbsController {
 		System.out.println("[글 조회] resultVO = " + resultVO);
 		int cnt = comBbsService.commentCount(resultVO);
 		System.out.println("[글 조회] 댓글리스트 cnt = " + cnt);
+		resultVO.setComCheck(cnt);
+		System.out.println("[글 조회2] comBbsVO = " + comBbsVO);
+		System.out.println("[글 조회2] resultVO = " + resultVO);
 		model.addAttribute("cnt", cnt);
+		
+		int comBbsCount = comBbsService.comBbsCount(resultVO);
+		System.out.println("[글 조회] 답글리스트 comBbsCount = " + comBbsCount);
+		model.addAttribute("comBbsCount", comBbsCount);
 		
 		getId = resultVO.getComBbsSeq();
 		
@@ -297,7 +305,7 @@ public class ComBbsController {
 	}
 	
 	/**
-	 * 글을 등록한다.
+	 * 답글을 등록한다.
 	 * @param comBbsVO - 조회 조건, 등록 정보가 담긴 VO (ModelAttribute명은 SessionAttributes명과 일치)
 	 * @param bindingResult
 	 * @param model
@@ -312,6 +320,7 @@ public class ComBbsController {
 		
 		comBbsVO.setPrntsNo(String.valueOf(comBbsVO.getComBbsSeq()));
 		comBbsVO.setReplyLoc(String.valueOf(Integer.parseInt(comBbsVO.getReplyLoc())+1));
+		comBbsVO.setComCheck(0);
 		
 		// 작성글 등록
 		comBbsService.insertComBbs(comBbsVO, MultipartFileUtil.getFileList(request, "sample"),
@@ -355,6 +364,9 @@ public class ComBbsController {
 				if (comBbsCommentVO.getComBbsCommentSeq() == 0) {
 					comBbsService.insertCommentList(comBbsCommentVO);
 					jsonObject.put("resultList", "등록되었습니다.");
+					
+					comBbsService.increaseComCheck(comBbsCommentVO);
+					System.out.println("[댓글 등록] 댓글 개수 1 증가");
 				}
 			}
 
@@ -399,12 +411,6 @@ public class ComBbsController {
 			List<ComBbsCommentVO> commentList = comBbsService
 					.retrieveComBbsCommentList(comBbsCommentVO);
 			
-			//int cnt = sampleService.commentCount(comCommentVO);
-			//int cnt = list.size();
-			//int cnt = sampleService.retrieveComCommentListCount(comCommentVO);
-			//System.out.println("[댓글 조회] 댓글리스트 cnt = " + cnt);
-			//request.setAttribute("cnt", cnt);
-			
 			List<ComBbsCommentVO> commentListTemp = new ArrayList<ComBbsCommentVO>();
 			for (ComBbsCommentVO comBbsCommentVO2 : commentList) {
 				comBbsCommentVO2.setCommentContent(StringUtil
@@ -447,7 +453,14 @@ public class ComBbsController {
 		
 		try {
 			// 삭제
-			comBbsService.delteLibFreeNoticeComment(comBbsCommentVO);
+			System.out.println("[댓글 삭제] comBbsCommentVO: " + comBbsCommentVO);
+			System.out.println("[댓글 삭제] 댓글 번호: " + comBbsCommentVO.getComBbsCommentSeq());
+			
+			comBbsService.deleteLibFreeNoticeComment(comBbsCommentVO);
+			
+			comBbsService.decreaseComCheck(comBbsCommentVO);
+			System.out.println("[댓글 삭제] 댓글 개수 1 감소");
+			
 			jsonObject.put("resultList", "삭제되었습니다.");
 
 			HttpHeaders responseHeaders = new HttpHeaders();

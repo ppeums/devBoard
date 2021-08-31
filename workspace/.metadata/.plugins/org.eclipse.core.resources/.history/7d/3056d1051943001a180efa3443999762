@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="comBbsComment">
+
+	<typeAlias alias="comBbsCommentVO" type="com.devBoard.comBbs.vo.ComBbsCommentVO"/>
+
+	<resultMap id="comBbsCommentMap" class="comBbsCommentVO">
+		<result property="comBbsSeq" column="COM_BBS_SEQ"/>
+		<result property="comBbsCommentSeq" column="COM_BBS_COMMENT_SEQ"/>
+		<result property="writeId" column="WRITE_ID"/>
+		<result property="commentContent" column="COMMENT_CONTENT"/>
+		<result property="useYn" column="USE_YN"/>
+		<result property="rgstId" column="RGST_ID"/>
+		<result property="rgstDt" column="RGST_DT"/>
+
+	</resultMap>
+
+	<select id="comBbsDAO.selectComBbsCommentList" parameterClass="comBbsCommentVO" resultMap="comBbsCommentMap">
+	<![CDATA[
+	SELECT * FROM ( SELECT ROWNUM RN, TB.* FROM (
+		SELECT COM_BBS_SEQ        AS COM_BBS_SEQ        /** 게시판번호 **/
+			 , COM_BBS_COMMENT_SEQ    AS COM_BBS_COMMENT_SEQ    /** 댓글 번호 **/
+			 , WRITE_ID           AS WRITE_ID           /** 작성자ID **/
+			 , COMMENT_CONTENT    AS COMMENT_CONTENT    /** 댓글내용 **/
+			 , USE_YN             AS USE_YN             /** 사용여부 **/
+			 , RGST_ID            AS RGST_ID            /** 등록자 ID **/
+			 , TO_CHAR(RGST_DT, 'YYYY.MM.DD') AS RGST_DT/** 등록일시 **/
+		  FROM COM_BBS_COMMENT
+	 WHERE 1 = 1
+	   AND COM_BBS_SEQ = #comBbsSeq#
+	   AND USE_YN = 'Y'
+	]]>
+	<isNotEqual property="comBbsCommentSeq" compareValue="0">
+	   AND COM_BBS_COMMENT_SEQ = #comBbsCommentSeq#
+	</isNotEqual>
+	<isNotEmpty property="writeId">
+	   AND WRITE_ID = #writeId#
+	</isNotEmpty>
+	<![CDATA[
+	ORDER BY COM_BBS_COMMENT_SEQ DESC
+	) TB ) WHERE RN BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+	]]>
+	</select>
+	
+	<select id="comBbsDAO.selectComBbsCommentListCount" parameterClass="comBbsCommentVO"  resultClass="java.lang.Integer">
+	<![CDATA[
+	SELECT COUNT(*) AS CNT
+	  FROM COM_BBS_COMMENT
+	 WHERE 1 = 1
+	   AND COM_BBS_SEQ = #comBbsSeq#
+	   AND USE_YN = 'Y'
+	]]>
+	<isNotEmpty property="writeId">
+	   AND WRITE_ID = #writeId#
+	</isNotEmpty>
+	</select>
+	
+	<insert id="comBbsDAO.insertCommentList" parameterClass="comBbsCommentVO">
+		<selectKey resultClass="java.lang.Integer" keyProperty="comBbsCommentSeq">
+		SELECT COM_BBS_COMMENT_SEQ.NEXTVAL FROM DUAL
+		</selectKey>
+		
+		<![CDATA[
+		INSERT INTO COM_BBS_COMMENT (
+					COM_BBS_SEQ        /**게시판번호**/      
+				  , COM_BBS_COMMENT_SEQ    /**댓글번호**/        
+				  , WRITE_ID           /**작성자 ID**/       
+				  , COMMENT_CONTENT    /**댓글내용**/        
+				  , USE_YN             /**사용여부**/        
+				  , RGST_ID            /**등록자ID**/       
+				  , RGST_DT            /**등록일**/         
+				  )		
+				  VALUES(
+					#comBbsSeq#       /**게시판번호**/    
+				  , #comBbsCommentSeq#   /**댓글번호**/
+				  , #writeId#         /**작성자 ID**/    
+				  , #commentContent#  /**댓글내용**/     
+				  , 'Y'               /**사용여부**/     
+				  , #rgstId#          /**등록자ID**/    
+				  , SYSDATE           /**등록일**/      
+				  )
+		]]>
+	</insert>
+	
+	<delete id="comBbsDAO.deleteComment" parameterClass="ComBbsCommentVO">
+		<![CDATA[
+		DELETE FROM COM_BBS_COMMENT
+		WHERE COM_BBS_SEQ = #comBbsSeq#
+		]]>
+		<isNotEqual property="comBbsCommentSeq" compareValue="0">
+			AND COM_BBS_COMMENT_SEQ = #comBbsCommentSeq#
+		</isNotEqual>
+		  
+		<![CDATA[
+		  AND USE_YN = 'Y'
+		]]>
+	</delete>
+	
+	<update id="comBbsDAO.increaseComCnt" parameterClass="comBbsVO">
+		UPDATE COM_BBS
+		SET COM_CNT = COM_CNT + 1
+		WHERE COM_BBS.COM_BBS_SEQ = #comBbsSeq#
+	</update>
+	
+	
+</sqlMap>

@@ -135,8 +135,8 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 	 * 댓글을 삭제한다.
 	 */
 	@Override
-	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception {
-		comBbsDAO.delteLibFreeNoticeComment(vo);
+	public void deleteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception {
+		comBbsDAO.deleteLibFreeNoticeComment(vo);
 	}
 	
 	/**
@@ -151,6 +151,31 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 	public int commentCount(ComBbsCommentVO vo) throws Exception {
 		return comBbsDAO.commentCount(vo);
 	}
+
+	/**
+	 * 답글의 개수를 구한다.
+	 */
+	@Override
+	public int comBbsCount(ComBbsVO vo) throws Exception {
+		return comBbsDAO.comBbsCount(vo);
+	}
+	
+	/**
+	 * 댓글의 개수를 증가시킨다.
+	 */
+	@Override
+	public void increaseComCheck(ComBbsCommentVO vo) throws Exception {
+		comBbsDAO.increaseComCheck(vo);
+	}
+
+	/**
+	 * 댓글의 개수를 감소시킨다.
+	 */
+	@Override
+	public void decreaseComCheck(ComBbsCommentVO vo) throws Exception {
+		comBbsDAO.decreaseComCheck(vo);
+	}
+	
 	
 
 }

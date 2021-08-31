@@ -86,16 +86,21 @@
 	<delete id="comBbsDAO.deleteComment" parameterClass="ComBbsCommentVO">
 		<![CDATA[
 		DELETE FROM COM_BBS_COMMENT
-		WHERE COM_BBS_SEQ = #comBbsSeq#
-		]]>
-		<isNotEqual property="comBbsCommentSeq" compareValue="0">
-			AND COM_BBS_COMMENT_SEQ = #comBbsCommentSeq#
-		</isNotEqual>
-		  
-		<![CDATA[
-		  AND USE_YN = 'Y'
+		WHERE COM_BBS_SEQ = #comBbsSeq# 
+			  AND COM_BBS_COMMENT_SEQ = #comBbsCommentSeq#
 		]]>
 	</delete>
 	
+	<update id="comBbsDAO.increaseComCheck" parameterClass="comBbsCommentVO">
+		UPDATE COM_BBS
+		SET COM_CHECK = COM_CHECK + 1
+		WHERE COM_BBS.COM_BBS_SEQ = #comBbsSeq#
+	</update>
+	
+	<update id="comBbsDAO.decreaseComCheck" parameterClass="comBbsCommentVO">
+		UPDATE COM_BBS
+		SET COM_CHECK = COM_CHECK - 1
+		WHERE COM_BBS.COM_BBS_SEQ = #comBbsSeq#
+	</update>
 	
 </sqlMap>

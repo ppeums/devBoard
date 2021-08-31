@@ -112,7 +112,7 @@ public class ComBbsDAO extends EgovAbstractDAO {
 	 * @param vo - 등록할 정보가 담긴 VO
 	 * @return void
 	 */
-	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) {
+	public void deleteLibFreeNoticeComment(ComBbsCommentVO vo) {
 		delete("comBbsDAO.deleteComment", vo);
 	}
 	
@@ -127,4 +127,24 @@ public class ComBbsDAO extends EgovAbstractDAO {
 		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectCommentCount", vo);
 	}
 	
+	/**
+	 * 답글의 개수를 구한다.
+	 */
+	public int comBbsCount(ComBbsVO vo) {
+		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectComBbsCount", vo);
+	}
+	
+	/**
+	 * 댓글의 개수를 증가시킨다.
+	 */
+	public void increaseComCheck (ComBbsCommentVO vo) {
+		update("comBbsDAO.increaseComCheck", vo);
+	}
+	
+	/**
+	 * 댓글의 개수를 감소시킨다.
+	 */
+	public void decreaseComCheck (ComBbsCommentVO vo) {
+		update("comBbsDAO.decreaseComCheck", vo);
+	}
 }

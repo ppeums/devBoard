@@ -6,6 +6,7 @@
 	<typeAlias alias="comBbsVO" type="com.devBoard.comBbs.vo.ComBbsVO"/>
 
 	<resultMap id="comBbsListMap" class="comBbsVO">
+		<result property="comCheck" column="COM_CHECK"/>
 		<result property="comBbsSeq" column="COM_BBS_SEQ"/>
 		<result property="nttTitle" column="NTT_TITLE"/>
 		<result property="nttContent" column="NTT_CONTENT" jdbcType="CLOB"/>
@@ -36,6 +37,7 @@
 			,       MAIN.UPD_ID      
 			,       MAIN.UPD_DT
 			,       NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ
+			,		MAIN.COM_CHECK
 			FROM    COM_BBS MAIN
 			WHERE   1 = 1
 			AND		MAIN.USE_YN = 'Y'
@@ -95,7 +97,8 @@
 		,		MAIN.RGST_DT     
 		,		MAIN.UPD_ID      
 		,		MAIN.UPD_DT 
-		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ     
+		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ 
+		,		MAIN.COM_CHECK   
 		FROM	COM_BBS MAIN
 		WHERE	1 = 1
 		AND		MAIN.COM_BBS_SEQ=#comBbsSeq#
@@ -118,7 +121,8 @@
 			  , USE_YN           
 			  , RGST_ID          
 			  , RGST_DT
-			  , COM_FILE_SEQ          
+			  , COM_FILE_SEQ
+			  , COM_CHECK       
 			  )		
 			  VALUES(
 			   #comBbsSeq#       
@@ -130,7 +134,8 @@
 			  , 'Y'              
 			  , #rgstId#         
 			  , SYSDATE
-			  , NVL(#comFileSeq#, 0)          
+			  , NVL(#comFileSeq#, 0) 
+			  , #comCheck#       
 			  )
 		]]>
 	</insert>
@@ -142,7 +147,7 @@
 			 , RGST_ID     = #rgstId#
 			 , UPD_ID      = #updId#           
 			 , UPD_DT      = SYSDATE
-			 , COM_FILE_SEQ = #comFileSeq#           
+			 , COM_FILE_SEQ = #comFileSeq#       
 		WHERE 1 = 1
 		  AND COM_BBS_SEQ = #comBbsSeq#
 		  AND USE_YN = 'Y'
@@ -150,25 +155,24 @@
 
 	<delete id="comBbsDAO.deleteComBbs" parameterClass="comBbsVO">
 		<![CDATA[
-		UPDATE	COM_BBS
-		SET		USE_YN = 'N' 
-		,		UPD_ID = #updId#
-		,		UPD_DT = SYSDATE
-		WHERE 1 = 1
-		AND COM_BBS_SEQ in( SELECT COM_BBS_SEQ
-		                            FROM COM_BBS
-		                            WHERE 1 = 1
-		                          START WITH COM_BBS_SEQ = #comBbsSeq#
-		                          CONNECT BY PRIOR COM_BBS_SEQ = PRNTS_NO) 
-		AND USE_YN = 'Y'
+		DELETE FROM COM_BBS
+		WHERE COM_BBS_SEQ=#comBbsSeq#
 		]]>
 	</delete>
 	
 	<select id="comBbsDAO.selectCommentCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
 		SELECT (SELECT COUNT(*)
 				FROM COM_BBS_COMMENT
-				WHERE COM_BBS_COMMENT.COM_BBS_SEQ = COM_BBS.COM_BBS_SEQ) AS COMMENT_CNT
+				WHERE COM_BBS_COMMENT.COM_BBS_SEQ = COM_BBS.COM_BBS_SEQ) AS CNT
 		FROM COM_BBS
 		WHERE COM_BBS_SEQ=#comBbsSeq#
 	</select>
+	
+	<select id="comBbsDAO.selectComBbsCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM COM_BBS A, COM_BBS B
+		WHERE A.COM_BBS_SEQ = B.PRNTS_NO 
+			  AND A.COM_BBS_SEQ = #comBbsSeq#
+	</select>
+	
 </sqlMap>

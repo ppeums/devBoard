@@ -118,13 +118,34 @@ public interface ComBbsService {
 	 * @param vo - 삭제할 정보가 담긴 VO
 	 * @return void형
 	 */
-	public void delteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception;
+	public void deleteLibFreeNoticeComment(ComBbsCommentVO vo) throws Exception;
 	
 	/**
 	 * 댓글의 개수를 구한다.
+	 * @param vo
+	 * @return
+	 * @throws Exception
 	 */
 	public int commentCount(ComBbsVO vo) throws Exception;
 	
 	public int commentCount(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 답글의 개수를 구한다.
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public int comBbsCount(ComBbsVO vo) throws Exception;
+	
+	/**
+	 * 댓글의 개수를 증가시킨다.
+	 */
+	public void increaseComCheck(ComBbsCommentVO vo) throws Exception;
+	
+	/**
+	 * 댓글의 개수를 감소시킨다.
+	 */
+	public void decreaseComCheck(ComBbsCommentVO vo) throws Exception;
 	
 }

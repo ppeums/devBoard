@@ -13,16 +13,16 @@
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="getId" key="selection"/>
 		<list key="findhistory">
-			<item value="sample"/>
-			<item value="pared"/>
-			<item value="999"/>
-			<item value="state"/>
-			<item value="Pre"/>
-			<item value="PRe"/>
-			<item value="Sample"/>
-			<item value="SAMPLE"/>
+			<item value="getId"/>
+			<item value="getID"/>
+			<item value="cnt"/>
+			<item value="cunt"/>
+			<item value="com"/>
+			<item value="Cnt"/>
+			<item value="set"/>
+			<item value="get"/>
 		</list>
 		<list key="replacehistory">
 			<item value="YN2"/>

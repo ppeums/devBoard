@@ -33,9 +33,10 @@ public class ComBbsVO extends CommonVO {
 	private String sortOrder       ; // 정렬순서
 	private String useYn           ; // 사용여부
 	private String rgstId          ; // 등록자ID
-	private Date rgstDt          ; // 등록일
+	private Date rgstDt            ; // 등록일
 	private String updId           ; // 수정자ID
 	private String updDt           ; // 수정일
+	private int comCheck		   ; // 댓글 개수
 	
 	public int getComBbsSeq() {
 		return comBbsSeq;
@@ -103,6 +104,11 @@ public class ComBbsVO extends CommonVO {
 	public void setUpdDt(String updDt) {
 		this.updDt = updDt;
 	}
-	
+	public int getComCheck() {
+		return comCheck;
+	}
+	public void setComCheck(int comCheck) {
+		this.comCheck = comCheck;
+	}
 	
 }

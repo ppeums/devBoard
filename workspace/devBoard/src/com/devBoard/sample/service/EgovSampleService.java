@@ -99,6 +99,9 @@ public interface EgovSampleService {
 	
 	/**
 	 * 댓글의 개수를 구한다.
+	 * @param vo
+	 * @return
+	 * @throws Exception
 	 */
 	public int commentCount(SampleVO vo) throws Exception;
 	
