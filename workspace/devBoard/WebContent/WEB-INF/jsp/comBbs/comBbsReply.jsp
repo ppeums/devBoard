@@ -85,7 +85,7 @@ function fn_insertComBbsReply1() {
 					    </tr>
 					    <tr> 
 					        <th width="15%" height="23" nowrap >등록자</th>
-					        <td width="85%" nowrap="nowrap"><form:input path="rgstId"/></td>
+					        <td width="85%" nowrap="nowrap"><c:out value="${trxComBbsVO.rgstId}" /></td>
 					    </tr>  
 					    <tr>
 								<th scope="row">첨부파일</th>

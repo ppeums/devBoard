@@ -151,9 +151,9 @@ function fn_insertComBbsReply() {
 								<th height="23">내용</th>
 								<td colspan="5">
 									<div id="bbs_cn">
-										<%-- <form:textarea path="description" rows="20" cols="75"
-											readyonly="true" /> --%>
-										<c:out value="${trxSampleVO.description}" escapeXml="false"/>
+										<form:textarea path="description" rows="20" cols="75"
+											readyonly="true"/>
+										<%-- <c:out value="${trxSampleVO.description}" escapeXml="false"/> --%>
 									</div></td>
 							</tr>
 						</table>

@@ -92,7 +92,7 @@ function fn_updateComBbs() {
 							</tr>
 							<tr>
 								<th width="15%" height="23" nowrap>등록자</th>
-								<td width="85%" nowrap="nowrap"><form:input path="rgstId" />
+								<td width="85%" nowrap="nowrap"><c:out value="${trxComBbsVO.rgstId}" />
 								</td>
 							</tr>
 							<tr>
@@ -100,8 +100,7 @@ function fn_updateComBbs() {
 								<td><input multiple="multiple" type="file" name="upfile" id="upfile" class=""
 									title="첨부파일 첨부" /><br /> <c:forEach var="result"
 										items="${fileList}" varStatus="status">
-										<a
-											href="javascript:gfn_downloadFile('${result.comFileDtlSeq}');">
+										<a href="javascript:gfn_downloadFile('${result.comFileDtlSeq}');">
 											<c:out value="${result.fileStreOriNm}" /> </a>
 										<br />
 									</c:forEach>
@@ -112,7 +111,7 @@ function fn_updateComBbs() {
 								<td colspan="5">
 									<div id="bbs_cn">
 										<form:textarea path="nttContent" rows="20" cols="75"
-											readyonly="true" />
+											readyonly="true" wrap="physical"/>
 									</div>
 								</td>
 							</tr>
