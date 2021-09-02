@@ -175,7 +175,14 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 	public void decreaseComCheck(ComBbsCommentVO vo) throws Exception {
 		comBbsDAO.decreaseComCheck(vo);
 	}
-	
+
+	/**
+	 * 첨부파일의 개수를 구한다.
+	 */
+	@Override
+	public int comFileCount(ComBbsVO vo) throws Exception {
+		return comBbsDAO.comFileCount(vo);
+	}
 	
 
 }

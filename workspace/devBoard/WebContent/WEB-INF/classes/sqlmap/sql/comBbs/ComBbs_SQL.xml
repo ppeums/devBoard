@@ -7,6 +7,7 @@
 
 	<resultMap id="comBbsListMap" class="comBbsVO">
 		<result property="comCheck" column="COM_CHECK"/>
+		<result property="comFileCnt" column="COM_FILE_CNT"/>
 		<result property="comBbsSeq" column="COM_BBS_SEQ"/>
 		<result property="nttTitle" column="NTT_TITLE"/>
 		<result property="nttContent" column="NTT_CONTENT" jdbcType="CLOB"/>
@@ -38,6 +39,7 @@
 			,       MAIN.UPD_DT
 			,       NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ
 			,		MAIN.COM_CHECK
+			,		MAIN.COM_FILE_CNT
 			FROM    COM_BBS MAIN
 			WHERE   1 = 1
 			AND		MAIN.USE_YN = 'Y'
@@ -98,7 +100,8 @@
 		,		MAIN.UPD_ID      
 		,		MAIN.UPD_DT 
 		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ 
-		,		MAIN.COM_CHECK   
+		,		MAIN.COM_CHECK 
+		,		MAIN.COM_FILE_CNT  
 		FROM	COM_BBS MAIN
 		WHERE	1 = 1
 		AND		MAIN.COM_BBS_SEQ=#comBbsSeq#
@@ -122,7 +125,8 @@
 			  , RGST_ID          
 			  , RGST_DT
 			  , COM_FILE_SEQ
-			  , COM_CHECK       
+			  , COM_CHECK   
+			  , COM_FILE_CNT    
 			  )		
 			  VALUES(
 			   #comBbsSeq#       
@@ -135,7 +139,8 @@
 			  , #rgstId#         
 			  , SYSDATE
 			  , NVL(#comFileSeq#, 0) 
-			  , #comCheck#       
+			  , #comCheck# 
+			  , #comFileCnt#      
 			  )
 		]]>
 	</insert>
@@ -147,7 +152,8 @@
 			 , RGST_ID     = #rgstId#
 			 , UPD_ID      = #updId#           
 			 , UPD_DT      = SYSDATE
-			 , COM_FILE_SEQ = #comFileSeq#       
+			 , COM_FILE_SEQ = #comFileSeq#
+			 , COM_FILE_CNT = #comFileCnt#       
 		WHERE 1 = 1
 		  AND COM_BBS_SEQ = #comBbsSeq#
 		  AND USE_YN = 'Y'
@@ -173,6 +179,13 @@
 		FROM COM_BBS A, COM_BBS B
 		WHERE A.COM_BBS_SEQ = B.PRNTS_NO 
 			  AND A.COM_BBS_SEQ = #comBbsSeq#
+	</select>
+	
+	<select id="comBbsDAO.selectComFileCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM COM_BBS A, COM_FILE_DTL B
+		WHERE A.COM_BBS_SEQ = #comBbsSeq#
+			  AND A.COM_FILE_SEQ = B.COM_FILE_SEQ
 	</select>
 	
 </sqlMap>

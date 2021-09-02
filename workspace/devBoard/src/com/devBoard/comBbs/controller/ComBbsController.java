@@ -141,6 +141,7 @@ public class ComBbsController {
 	@RequestMapping("/comBbs/retrieveComBBsView.do")
 	public String retrieveLibFreeNoticeView(@ModelAttribute("comBbsVO") ComBbsVO comBbsVO, Model model) throws Exception {
 		
+		
 		comBbsVO.setComBbsSeq(Integer.parseInt(StringUtil.nvl(comBbsVO.getSelectedId(), "0")));
 		
 		ComBbsVO resultVO = null;
@@ -173,6 +174,10 @@ public class ComBbsController {
 		int comBbsCount = comBbsService.comBbsCount(resultVO);
 		System.out.println("[글 조회] 답글리스트 comBbsCount = " + comBbsCount);
 		model.addAttribute("comBbsCount", comBbsCount);
+		
+		int comFileCount = comBbsService.comFileCount(resultVO);
+		System.out.println("[글 조회] 첨부파일리스트 comFileCount = " + comFileCount);
+		resultVO.setComFileCnt(comFileCount);
 		
 		getId = resultVO.getComBbsSeq();
 		
@@ -292,7 +297,7 @@ public class ComBbsController {
 		ComBbsVO comBbsVO1 = new ComBbsVO();
 		comBbsVO1.setNttTitle("답변 : " + resultVO.getNttTitle());
 		comBbsVO1.setRgstId(resultVO.getRgstId());
-		comBbsVO1.setNttContent(" " + "\r\n\r\n================ 원본메시지 ===============\r\n\r\n"+StringUtil.nvl(resultVO.getNttContent(), ""));
+		comBbsVO1.setNttContent(" " + "\r\n\r\n================ 원본메시지 ===============\r\n\r\n"+StringUtil.nvl(resultVO.getNttContent(), "")+"\n\n==========================================\n\n");
 		comBbsVO1.setPrntsNo(resultVO.getPrntsNo());
 		comBbsVO1.setReplyLoc(resultVO.getReplyLoc());
 		comBbsVO1.setComBbsSeq(resultVO.getComBbsSeq());

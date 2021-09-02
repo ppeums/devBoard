@@ -148,4 +148,9 @@ public interface ComBbsService {
 	 */
 	public void decreaseComCheck(ComBbsCommentVO vo) throws Exception;
 	
+	/**
+	 * 첨부파일의 개수를 구한다.
+	 */
+	public int comFileCount(ComBbsVO vo) throws Exception;
+	
 }

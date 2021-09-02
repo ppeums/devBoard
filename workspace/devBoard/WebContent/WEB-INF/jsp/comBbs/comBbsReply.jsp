@@ -70,7 +70,7 @@ function fn_insertComBbsReply1() {
 		<div id="content">
 			<!-- 현재위치 네비게이션 시작 -->
 			<!-- 타이틀 -->
-			<lw:title2 type="type1" params="샘플게시판|샘플게시판" delim="|"/>
+			<lw:title2 type="type1" params="답글게시판|답글게시판" delim="|"/>
 			<!-- //현재위치 네비게이션 끝 -->
 				<!-- 검색 필드 박스 시작 -->
 				<div id="search_field">
