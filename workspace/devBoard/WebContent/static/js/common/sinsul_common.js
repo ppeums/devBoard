@@ -614,7 +614,7 @@
 	}
 	
 	//한줄의견 조회
-	function fn_searchCommentList(page, url, comBbsSeq, url2){
+	function fn_searchCommentList(page, url, comBbsSeq, url2, userId){
 		$.ajax({
 			type: "post"
 				,url: url
@@ -637,8 +637,15 @@
 					comment += "<td>"+ item.writeId +"</td>";
 					comment += "<td class=\"subject\" id=\"subject_"+ item.comBbsCommentSeq +"\"><div class=\"commentTitle\">" + item.commentContent + "</div></td>";
 					comment += "<td>"+ item.rgstDt + "</td>";
+					//System.out.println("[댓글 조회] 댓글 작성일: " + item.rgstDt);
+					//alert("[댓글 조회] 댓글 작성일: " + item.rgstDt);
 					comment += "<td>";
-					comment += "	<a href=\"#;\"><img src=\"/static/images/common/ico_delete.png\" alt=\"삭제\" onclick=\"fn_deleteComment('"+ item.comBbsCommentSeq + "', '"+url2+"', '"+comBbsSeq+"');\"/></a>";
+					if(userId == "admin" || item.rgstId == userId){
+						comment += "	<a href=\"#;\"><img src=\"/static/images/common/ico_delete.png\" alt=\"삭제\" onclick=\"fn_deleteComment('"+ item.comBbsCommentSeq + "', '"+url2+"', '"+comBbsSeq+"');\"/></a>";
+					}
+					/*else{
+						comment += "	<img src=\"/static/images/common/ico_delete_gray.png\"/></a>";
+					}*/
 					comment += "</td>";
 					comment += "</tr>";
 					

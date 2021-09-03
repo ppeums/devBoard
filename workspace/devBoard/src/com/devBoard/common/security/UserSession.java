@@ -62,4 +62,6 @@ public class UserSession {
 	public static void setUserMenuList(HttpServletRequest req, List<MenuVO> userMenuList) {
 		req.getSession().setAttribute("userMenuList", userMenuList);
 	}
+	
+	
 }

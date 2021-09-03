@@ -153,4 +153,9 @@ public interface ComBbsService {
 	 */
 	public int comFileCount(ComBbsVO vo) throws Exception;
 	
+	/**
+	 * 조회수를 증가시킨다.
+	 */
+	public void increaseViewCnt(ComBbsVO vo) throws Exception;
+	
 }

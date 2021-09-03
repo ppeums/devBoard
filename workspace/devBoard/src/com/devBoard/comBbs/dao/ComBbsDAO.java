@@ -154,4 +154,12 @@ public class ComBbsDAO extends EgovAbstractDAO {
 	public int comFileCount (ComBbsVO vo) {
 		return (Integer)getSqlMapClientTemplate().queryForObject("comBbsDAO.selectComFileCount", vo);
 	}
+	
+	/**
+	 * 조회수를 증가시킨다.
+	 */
+	public void increaseViewCnt (ComBbsVO vo) {
+		update("comBbsDAO.increaseViewCnt", vo);
+	}
+	
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="54" version="2.0">
+<workbench progressCount="82" version="2.0">
 <workbenchAdvisor/>
 <window height="1038" maximized="true" width="976" x="952" y="0">
 <fastViewData fastViewLocation="1024">
@@ -17,13 +17,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="88" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="126" y="22"/>
 <coolItem id="org.eclipse.team.cvs.ui.CVSActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -38,7 +38,7 @@
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.maven.ide.eclipse.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -48,10 +48,11 @@
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1339667605031" focus="true" label="Workspace - CVS Repository Exploring">
 <editors>
-<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@37118b">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@1e10df0">
 <info part="org.eclipse.ui.internal.EditorStack@9f80c1">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="24"/>
 <part id="12"/>
 <part id="13"/>
 <part id="14"/>
@@ -72,20 +73,31 @@
 <part id="17"/>
 <part id="18"/>
 <part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.internal.EditorStack@37118b" ratio="0.48884165" ratioLeft="920" ratioRight="962" relationship="2" relative="org.eclipse.ui.internal.EditorStack@9f80c1">
+<info part="org.eclipse.ui.internal.EditorStack@1e10df0" ratio="0.49973476" ratioLeft="942" ratioRight="943" relationship="2" relative="org.eclipse.ui.internal.EditorStack@9f80c1">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="19"/>
 <part id="0"/>
 <part id="1"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="18"/>
+<part id="17"/>
+<part id="16"/>
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
@@ -93,6 +105,9 @@
 <part id="9"/>
 <part id="10"/>
 <part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
 <part id="15"/>
 </presentation>
 </folder>
@@ -124,7 +139,7 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EgovSampleController.java" partName="EgovSampleController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/sample/controller/EgovSampleController.java" title="EgovSampleController.java" tooltip="devBoard/src/com/devBoard/sample/controller/EgovSampleController.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/sample/controller/EgovSampleController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4881" selectionTopPixel="1318"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4881" selectionTopPixel="419"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="sample.jsp" partName="sample.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp" title="sample.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
@@ -164,78 +179,134 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/service/impl/FileServiceImpl.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="720"/>
 </editor>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileDAO.java" partName="FileDAO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/dao/FileDAO.java" title="FileDAO.java" tooltip="devBoard/src/com/devBoard/common/dao/FileDAO.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileDAO.java" partName="FileDAO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/dao/FileDAO.java" title="FileDAO.java" tooltip="devBoard/src/com/devBoard/common/dao/FileDAO.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/dao/FileDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1441" selectionTopPixel="324"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="999" selectionTopPixel="324"/>
 </editor>
 <editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="File_SQL.xml" partName="File_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/common/File_SQL.xml" title="File_SQL.xml" tooltip="devBoard/src/sqlmap/sql/common/File_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/common/File_SQL.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonController.java" partName="CommonController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/controller/CommonController.java" title="CommonController.java" tooltip="devBoard/src/com/devBoard/common/controller/CommonController.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/controller/CommonController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1085" selectionTopPixel="60"/>
+<editor focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" partName="login.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/login/login.jsp" title="login.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/login/login.jsp" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/login/login.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4124" selectionTopPixel="1700"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsView.jsp" partName="comBbsView.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp" title="comBbsView.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5055" selectionTopPixel="3220"/>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="header.jsp" partName="header.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/common/header.jsp" title="header.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/common/header.jsp" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/common/header.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1526" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsReg.jsp" partName="comBbsReg.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp" title="comBbsReg.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp"/>
-<editorState selectionHorizontalPixel="179" selectionLength="0" selectionOffset="2719" selectionTopPixel="1500"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginController.java" partName="LoginController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/login/controller/LoginController.java" title="LoginController.java" tooltip="devBoard/src/com/devBoard/login/controller/LoginController.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/login/controller/LoginController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2123" selectionTopPixel="675"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsController.java" partName="ComBbsController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java" title="ComBbsController.java" tooltip="devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4792" selectionTopPixel="2160"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginService.java" partName="LoginService.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/login/service/LoginService.java" title="LoginService.java" tooltip="devBoard/src/com/devBoard/login/service/LoginService.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/login/service/LoginService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsVO.java" partName="ComBbsVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java" title="ComBbsVO.java" tooltip="devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1214" selectionTopPixel="420"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsModi.jsp" partName="comBbsModi.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp" title="comBbsModi.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2709" selectionTopPixel="1660"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsReply.jsp" partName="comBbsReply.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp" title="comBbsReply.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp"/>
-<editorState selectionHorizontalPixel="217" selectionLength="0" selectionOffset="2717" selectionTopPixel="1500"/>
-</editor>
-<editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="ComBbs_SQL.xml" partName="ComBbs_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml" title="ComBbs_SQL.xml" tooltip="devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml"/>
-</editor>
-<editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="ComBbsComment_SQL.xml" partName="ComBbsComment_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml" title="ComBbsComment_SQL.xml" tooltip="devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuService.java" partName="MenuService.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/service/MenuService.java" title="MenuService.java" tooltip="devBoard/src/com/devBoard/common/service/MenuService.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/service/MenuService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="44"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsCommentVO.java" partName="ComBbsCommentVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/vo/ComBbsCommentVO.java" title="ComBbsCommentVO.java" tooltip="devBoard/src/com/devBoard/comBbs/vo/ComBbsCommentVO.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsCommentVO.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" partName="sinsul_common.js" path="C:/devBoard/workspace/devBoard/WebContent/static/js/common/sinsul_common.js" title="sinsul_common.js" tooltip="devBoard/WebContent/static/js/common/sinsul_common.js" workbook="org.eclipse.ui.internal.EditorStack@37118b">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExXMLConfiguration.java" partName="ExXMLConfiguration.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/config/ExXMLConfiguration.java" title="ExXMLConfiguration.java" tooltip="devBoard/src/com/devBoard/framework/config/ExXMLConfiguration.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/config/ExXMLConfiguration.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExDispatcherServlet.java" partName="ExDispatcherServlet.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/framework/web/servlet/ExDispatcherServlet.java" title="ExDispatcherServlet.java" tooltip="devBoard/src/com/devBoard/framework/web/servlet/ExDispatcherServlet.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/framework/web/servlet/ExDispatcherServlet.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="575"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="lw.xml" partName="lw.xml" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/config/lw.xml" title="lw.xml" tooltip="devBoard/WebContent/WEB-INF/config/lw.xml" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/config/lw.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="dispatcher-servlet.xml" partName="dispatcher-servlet.xml" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/config/springmvc/dispatcher-servlet.xml" title="dispatcher-servlet.xml" tooltip="devBoard/WebContent/WEB-INF/config/springmvc/dispatcher-servlet.xml" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/config/springmvc/dispatcher-servlet.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeaderTag.java" partName="HeaderTag.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/tag/HeaderTag.java" title="HeaderTag.java" tooltip="devBoard/src/com/devBoard/common/tag/HeaderTag.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/tag/HeaderTag.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="969" selectionTopPixel="120"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuListTag.java" partName="MenuListTag.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/tag/MenuListTag.java" title="MenuListTag.java" tooltip="devBoard/src/com/devBoard/common/tag/MenuListTag.java" workbook="org.eclipse.ui.internal.EditorStack@9f80c1">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/tag/MenuListTag.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1091" selectionTopPixel="335"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsView.jsp" partName="comBbsView.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp" title="comBbsView.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4210" selectionTopPixel="2880"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsReg.jsp" partName="comBbsReg.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp" title="comBbsReg.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1729" selectionTopPixel="960"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsController.java" partName="ComBbsController.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java" title="ComBbsController.java" tooltip="devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7057" selectionTopPixel="2961"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsModi.jsp" partName="comBbsModi.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp" title="comBbsModi.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsModi.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3344" selectionTopPixel="1644"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsReply.jsp" partName="comBbsReply.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp" title="comBbsReply.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1959" selectionTopPixel="1084"/>
+</editor>
+<editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="ComBbs_SQL.xml" partName="ComBbs_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml" title="ComBbs_SQL.xml" tooltip="devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml"/>
+</editor>
+<editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="ComBbsComment_SQL.xml" partName="ComBbsComment_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml" title="ComBbsComment_SQL.xml" tooltip="devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/comBbs/ComBbsComment_SQL.xml"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" partName="sinsul_common.js" path="C:/devBoard/workspace/devBoard/WebContent/static/js/common/sinsul_common.js" title="sinsul_common.js" tooltip="devBoard/WebContent/static/js/common/sinsul_common.js" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19687" selectionTopPixel="13620"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17814" selectionTopPixel="12502"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsList.jsp" partName="comBbsList.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp" title="comBbsList.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp" workbook="org.eclipse.ui.internal.EditorStack@37118b">
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="comBbsList.jsp" partName="comBbsList.jsp" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp" title="comBbsList.jsp" tooltip="devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5693" selectionTopPixel="2700"/>
+<editorState selectionHorizontalPixel="211" selectionLength="0" selectionOffset="6190" selectionTopPixel="2980"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserSession.java" partName="UserSession.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/security/UserSession.java" title="UserSession.java" tooltip="devBoard/src/com/devBoard/common/security/UserSession.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserSession.java" partName="UserSession.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/security/UserSession.java" title="UserSession.java" tooltip="devBoard/src/com/devBoard/common/security/UserSession.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/security/UserSession.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="120"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1907" selectionTopPixel="564"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsDAO.java" partName="ComBbsDAO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java" title="ComBbsDAO.java" tooltip="devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3649" selectionTopPixel="2304"/>
+<editor id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="Login_SQL.xml" partName="Login_SQL.xml" path="C:/devBoard/workspace/devBoard/src/sqlmap/sql/login/Login_SQL.xml" title="Login_SQL.xml" tooltip="devBoard/src/sqlmap/sql/login/Login_SQL.xml" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/sqlmap/sql/login/Login_SQL.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsService.java" partName="ComBbsService.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java" title="ComBbsService.java" tooltip="devBoard/src/com/devBoard/comBbs/service/ComBbsService.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3429" selectionTopPixel="2324"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuVO.java" partName="MenuVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/vo/MenuVO.java" title="MenuVO.java" tooltip="devBoard/src/com/devBoard/common/vo/MenuVO.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/vo/MenuVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="480"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsServiceImpl.java" partName="ComBbsServiceImpl.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java" title="ComBbsServiceImpl.java" tooltip="devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4366" selectionTopPixel="2764"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthorVO.java" partName="AuthorVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/vo/AuthorVO.java" title="AuthorVO.java" tooltip="devBoard/src/com/devBoard/common/vo/AuthorVO.java" workbook="org.eclipse.ui.internal.EditorStack@37118b">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthorVO.java" partName="AuthorVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/common/vo/AuthorVO.java" title="AuthorVO.java" tooltip="devBoard/src/com/devBoard/common/vo/AuthorVO.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/common/vo/AuthorVO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="360"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="420"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_form.js" partName="sinsul_form.js" path="C:/devBoard/workspace/devBoard/WebContent/static/js/common/sinsul_form.js" title="sinsul_form.js" tooltip="devBoard/WebContent/static/js/common/sinsul_form.js" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/static/js/common/sinsul_form.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" partName="web.xml" path="C:/devBoard/workspace/devBoard/WebContent/WEB-INF/web.xml" title="web.xml" tooltip="devBoard/WebContent/WEB-INF/web.xml" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/WEB-INF/web.xml"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" partName="index.jsp" path="C:/devBoard/workspace/devBoard/WebContent/index.jsp" title="index.jsp" tooltip="devBoard/WebContent/index.jsp" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/WebContent/index.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsDAO.java" partName="ComBbsDAO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java" title="ComBbsDAO.java" tooltip="devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3924" selectionTopPixel="2465"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsService.java" partName="ComBbsService.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java" title="ComBbsService.java" tooltip="devBoard/src/com/devBoard/comBbs/service/ComBbsService.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3522" selectionTopPixel="2445"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsServiceImpl.java" partName="ComBbsServiceImpl.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java" title="ComBbsServiceImpl.java" tooltip="devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4513" selectionTopPixel="2925"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsVO.java" partName="ComBbsVO.java" path="C:/devBoard/workspace/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java" title="ComBbsVO.java" tooltip="devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java" workbook="org.eclipse.ui.internal.EditorStack@1e10df0">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1220" selectionTopPixel="317"/>
 </editor>
 </editors>
 <views>
@@ -322,7 +393,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="org.eclipse.team.cvs.ui.cvsPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.team.cvs.ui.cvsPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -633,9 +704,9 @@
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@96939" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
 <fastViews>
@@ -646,7 +717,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@96939">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -676,15 +747,21 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3996076" ratioLeft="611" ratioRight="918" relationship="2" relative="top"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a99984" ratio="0.8454746" ratioLeft="766" ratioRight="140" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a99984" ratio="0.8421634" ratioLeft="763" ratioRight="143" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1932376" ratio="0.84437084" ratioLeft="765" ratioRight="141" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="1"/>
 <part id="0"/>
+<part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
@@ -800,164 +877,145 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsList.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" path="/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/login/login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/comBbs/dao/ComBbsDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/comBbs/service/ComBbsService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/comBbs/service/impl/ComBbsServiceImpl.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/comBbs/controller/ComBbsController.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsView.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" path="/devBoard/src/sqlmap/sql/common/File_SQL.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/sample/sample.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/framework/util/MultipartFileUtil.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/framework/util/FileUtil.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/service/FileService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/service/impl/FileServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/dao/FileDAO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/controller/CommonController.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReg.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" path="/devBoard/src/sqlmap/sql/comBbs/ComBbs_SQL.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/devBoard/WebContent/WEB-INF/jsp/comBbs/comBbsReply.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/security/UserSession.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/vo/MenuVO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/vo/AuthorVO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/common/service/MenuService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsVO.java"/>
 </editors>
-<item historyLabel="comBbsView.jsp" index="1">
-<position info="not_deleted" x="5055" y="0"/>
+<item historyLabel="comBbsList.jsp" index="0">
+<position info="not_deleted" x="6236" y="0"/>
 </item>
-<item historyLabel="sample.jsp" index="4">
-<position info="not_deleted" x="3529" y="0"/>
+<item historyLabel="comBbsView.jsp" index="7">
+<position info="not_deleted" x="4210" y="0"/>
 </item>
-<item historyLabel="MultipartFileUtil.java" index="5">
-<position info="not_deleted" x="11827" y="0"/>
+<item historyLabel="login.jsp" index="2">
+<position info="not_deleted" x="4124" y="0"/>
 </item>
-<item historyLabel="FileUtil.java" index="6">
-<position info="not_deleted" x="3030" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1250" y="0"/>
 </item>
-<item historyLabel="MultipartFileUtil.java" index="5">
-<position info="not_deleted" x="11827" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1217" y="0"/>
 </item>
-<item historyLabel="FileService.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="FileServiceImpl.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1217" y="0"/>
 </item>
-<item historyLabel="FileDAO.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="File_SQL.xml" index="2"/>
-<item historyLabel="comBbsView.jsp" index="1">
-<position info="not_deleted" x="5055" y="0"/>
+<item historyLabel="comBbsView.jsp" index="7">
+<position info="not_deleted" x="4210" y="0"/>
 </item>
-<item historyLabel="sinsul_common.js" index="3">
-<position info="not_deleted" x="17001" y="0"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="File_SQL.xml" index="2"/>
-<item historyLabel="CommonController.java" index="10">
-<position info="not_deleted" x="1085" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="FileDAO.java" index="9">
-<position info="not_deleted" x="1441" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="sinsul_common.js" index="3">
-<position info="not_deleted" x="19687" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3913" y="0"/>
 </item>
-<item historyLabel="comBbsView.jsp" index="1">
-<position info="not_deleted" x="5055" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1217" y="0"/>
 </item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="6301" y="0"/>
+<item historyLabel="ComBbsService.java" index="4">
+<position info="not_deleted" x="3522" y="0"/>
 </item>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
-</item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="10566" y="0"/>
-</item>
-<item historyLabel="ComBbs_SQL.xml" index="12"/>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
-</item>
-<item historyLabel="comBbsReply.jsp" index="13">
+<item historyLabel="ComBbsServiceImpl.java" index="5">
 <position/>
 </item>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
+<item historyLabel="ComBbsServiceImpl.java" index="5">
+<position info="not_deleted" x="4509" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2075" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="539" y="0"/>
 </item>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
+<item historyLabel="ComBbsService.java" index="4">
+<position info="not_deleted" x="3522" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2075" y="0"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3845" y="0"/>
 </item>
-<item historyLabel="ComBbs_SQL.xml" index="12"/>
-<item historyLabel="UserSession.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="comBbsList.jsp" index="0">
+<position info="not_deleted" x="6190" y="0"/>
 </item>
-<item historyLabel="MenuVO.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1220" y="0"/>
 </item>
-<item historyLabel="AuthorVO.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3845" y="0"/>
 </item>
-<item historyLabel="MenuVO.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="comBbsList.jsp" index="0">
+<position info="not_deleted" x="6190" y="0"/>
 </item>
-<item historyLabel="AuthorVO.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="comBbsView.jsp" index="7">
+<position info="not_deleted" x="4210" y="0"/>
 </item>
-<item historyLabel="ComBbs_SQL.xml" index="12"/>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
+<item historyLabel="ComBbsVO.java" index="8">
+<position info="not_deleted" x="1220" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2722" y="0"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3845" y="0"/>
 </item>
-<item historyLabel="AuthorVO.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="comBbsList.jsp" index="0">
+<position info="not_deleted" x="6190" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2729" y="0"/>
+<item historyLabel="comBbsView.jsp" index="7">
+<position info="not_deleted" x="4210" y="0"/>
 </item>
-<item historyLabel="UserSession.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="12055" y="0"/>
 </item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="10052" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6949" y="0"/>
 </item>
-<item historyLabel="UserSession.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6949" y="0"/>
 </item>
-<item historyLabel="MenuService.java" index="17">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6947" y="0"/>
 </item>
-<item historyLabel="UserSession.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6942" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2729" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6949" y="0"/>
 </item>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
+<item historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6949" y="0"/>
 </item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="10052" y="0"/>
+<item historyLabel="ComBbs_SQL.xml" index="1"/>
+<item historyLabel="ComBbsDAO.java" index="3">
+<position info="not_deleted" x="3924" y="0"/>
 </item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="3543" y="0"/>
+<item historyLabel="ComBbsService.java" index="4">
+<position info="not_deleted" x="3522" y="0"/>
 </item>
-<item historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2722" y="0"/>
+<item historyLabel="ComBbsServiceImpl.java" index="5">
+<position info="not_deleted" x="4513" y="0"/>
 </item>
-<item historyLabel="ComBbsController.java" index="0">
-<position info="not_deleted" x="4792" y="0"/>
-</item>
-<item historyLabel="comBbsReg.jsp" index="11">
-<position info="not_deleted" x="2719" y="0"/>
-</item>
-<item active="true" historyLabel="comBbsReply.jsp" index="13">
-<position info="not_deleted" x="2722" y="0"/>
+<item active="true" historyLabel="ComBbsController.java" index="6">
+<position info="not_deleted" x="6949" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -967,9 +1025,6 @@
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@96939"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -983,50 +1038,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuService.java" tooltip="devBoard/src/com/devBoard/common/service/MenuService.java">
-<persistable path="/devBoard/src/com/devBoard/common/service/MenuService.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FormatTag.java" tooltip="devBoard/src/com/devBoard/common/tag/FormatTag.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/FormatTag.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthorVO.java" tooltip="devBoard/src/com/devBoard/common/vo/AuthorVO.java">
-<persistable path="/devBoard/src/com/devBoard/common/vo/AuthorVO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CacheableTag.java" tooltip="devBoard/src/com/devBoard/common/tag/CacheableTag.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/CacheableTag.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuVO.java" tooltip="devBoard/src/com/devBoard/common/vo/MenuVO.java">
-<persistable path="/devBoard/src/com/devBoard/common/vo/MenuVO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TitleTag2.java" tooltip="devBoard/src/com/devBoard/common/tag/TitleTag2.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/TitleTag2.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonController.java" tooltip="devBoard/src/com/devBoard/common/controller/CommonController.java">
-<persistable path="/devBoard/src/com/devBoard/common/controller/CommonController.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TitleTag.java" tooltip="devBoard/src/com/devBoard/common/tag/TitleTag.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/TitleTag.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="egovframework.dev.imp.dbio.editor.sqlMapEditor" name="File_SQL.xml" tooltip="devBoard/src/sqlmap/sql/common/File_SQL.xml">
-<persistable path="/devBoard/src/sqlmap/sql/common/File_SQL.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuListTag.java" tooltip="devBoard/src/com/devBoard/common/tag/MenuListTag.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/MenuListTag.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileDAO.java" tooltip="devBoard/src/com/devBoard/common/dao/FileDAO.java">
-<persistable path="/devBoard/src/com/devBoard/common/dao/FileDAO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeaderTag.java" tooltip="devBoard/src/com/devBoard/common/tag/HeaderTag.java">
+<persistable path="/devBoard/src/com/devBoard/common/tag/HeaderTag.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileServiceImpl.java" tooltip="devBoard/src/com/devBoard/common/service/impl/FileServiceImpl.java">
-<persistable path="/devBoard/src/com/devBoard/common/service/impl/FileServiceImpl.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="dispatcher-servlet.xml" tooltip="devBoard/WebContent/WEB-INF/config/springmvc/dispatcher-servlet.xml">
+<persistable path="/devBoard/WebContent/WEB-INF/config/springmvc/dispatcher-servlet.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileService.java" tooltip="devBoard/src/com/devBoard/common/service/FileService.java">
-<persistable path="/devBoard/src/com/devBoard/common/service/FileService.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="log4j.xml" tooltip="devBoard/WebContent/WEB-INF/config/log4j.xml">
+<persistable path="/devBoard/WebContent/WEB-INF/config/log4j.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="common.css" tooltip="devBoard/WebContent/static/css/common.css">
-<persistable path="/devBoard/WebContent/static/css/common.css"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="lw.xml" tooltip="devBoard/WebContent/WEB-INF/config/lw.xml">
+<persistable path="/devBoard/WebContent/WEB-INF/config/lw.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="sample.css" tooltip="devBoard/WebContent/static/css/egovframework/sample.css">
-<persistable path="/devBoard/WebContent/static/css/egovframework/sample.css"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExDispatcherServlet.java" tooltip="devBoard/src/com/devBoard/framework/web/servlet/ExDispatcherServlet.java">
+<persistable path="/devBoard/src/com/devBoard/framework/web/servlet/ExDispatcherServlet.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserSession.java" tooltip="devBoard/src/com/devBoard/common/security/UserSession.java">
-<persistable path="/devBoard/src/com/devBoard/common/security/UserSession.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExXMLConfiguration.java" tooltip="devBoard/src/com/devBoard/framework/config/ExXMLConfiguration.java">
+<persistable path="/devBoard/src/com/devBoard/framework/config/ExXMLConfiguration.java"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" tooltip="C:\Users\user\Desktop\INU\현장교육실습\실습자료\현장실습\5회차_20140205\WebContent\static\js\common\sinsul_common.js">
-<persistable uri="file:/C:/Users/user/Desktop/INU/현장교육실습/실습자료/현장실습/5회차_20140205/WebContent/static/js/common/sinsul_common.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PaginationUtil.java" tooltip="devBoard/src/com/devBoard/framework/util/PaginationUtil.java">
+<persistable path="/devBoard/src/com/devBoard/framework/util/PaginationUtil.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="sinsul_common.js" tooltip="devBoard/WebContent/static/js/common/sinsul_common.js">
-<persistable path="/devBoard/WebContent/static/js/common/sinsul_common.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FormatUtil.java" tooltip="devBoard/src/com/devBoard/framework/util/FormatUtil.java">
+<persistable path="/devBoard/src/com/devBoard/framework/util/FormatUtil.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComBbsCommentVO.java" tooltip="devBoard/src/com/devBoard/comBbs/vo/ComBbsCommentVO.java">
-<persistable path="/devBoard/src/com/devBoard/comBbs/vo/ComBbsCommentVO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExPropertyPlaceholderConfigurer.java" tooltip="devBoard/src/com/devBoard/framework/config/ExPropertyPlaceholderConfigurer.java">
+<persistable path="/devBoard/src/com/devBoard/framework/config/ExPropertyPlaceholderConfigurer.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="DatabaseError.class" tooltip="oracle.jdbc.driver.DatabaseError">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=devBoard/C:\/devBoard\/bin\/apache-tomcat-6.0.14\/lib\/ojdbc14.jar&lt;oracle.jdbc.driver(DatabaseError.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="lw.tld" tooltip="devBoard/WebContent/WEB-INF/tld/lw.tld">
+<persistable path="/devBoard/WebContent/WEB-INF/tld/lw.tld"/>
 </file>
 </mruList>
 </workbench>

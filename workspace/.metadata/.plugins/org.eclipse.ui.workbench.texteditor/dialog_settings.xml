@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="VO" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="logout"/>
+			<item value="login"/>
+			<item value="in"/>
+			<item value="로그아웃"/>
+			<item value="로그인"/>
+			<item value="fileList"/>
 			<item value="VO"/>
 			<item value="sample"/>
-			<item value="sinsul"/>
-			<item value="src"/>
-			<item value="result"/>
-			<item value="getId"/>
-			<item value="getID"/>
-			<item value="cnt"/>
 		</list>
 		<list key="replacehistory">
 			<item value="YN2"/>

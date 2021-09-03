@@ -7,6 +7,7 @@
 
 	<resultMap id="comBbsListMap" class="comBbsVO">
 		<result property="comCheck" column="COM_CHECK"/>
+		<result property="viewCnt" column="VIEW_CNT"/>
 		<result property="comFileCnt" column="COM_FILE_CNT"/>
 		<result property="comBbsSeq" column="COM_BBS_SEQ"/>
 		<result property="nttTitle" column="NTT_TITLE"/>
@@ -40,6 +41,7 @@
 			,       NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ
 			,		MAIN.COM_CHECK
 			,		MAIN.COM_FILE_CNT
+			,		MAIN.VIEW_CNT
 			FROM    COM_BBS MAIN
 			WHERE   1 = 1
 			AND		MAIN.USE_YN = 'Y'
@@ -101,7 +103,8 @@
 		,		MAIN.UPD_DT 
 		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ 
 		,		MAIN.COM_CHECK 
-		,		MAIN.COM_FILE_CNT  
+		,		MAIN.COM_FILE_CNT
+		,		MAIN.VIEW_CNT  
 		FROM	COM_BBS MAIN
 		WHERE	1 = 1
 		AND		MAIN.COM_BBS_SEQ=#comBbsSeq#
@@ -126,7 +129,8 @@
 			  , RGST_DT
 			  , COM_FILE_SEQ
 			  , COM_CHECK   
-			  , COM_FILE_CNT    
+			  , COM_FILE_CNT   
+			  , VIEW_CNT 
 			  )		
 			  VALUES(
 			   #comBbsSeq#       
@@ -140,7 +144,8 @@
 			  , SYSDATE
 			  , NVL(#comFileSeq#, 0) 
 			  , #comCheck# 
-			  , #comFileCnt#      
+			  , #comFileCnt#   
+			  , #viewCnt#   
 			  )
 		]]>
 	</insert>
@@ -187,5 +192,11 @@
 		WHERE A.COM_BBS_SEQ = #comBbsSeq#
 			  AND A.COM_FILE_SEQ = B.COM_FILE_SEQ
 	</select>
+	
+	<update id="comBbsDAO.increaseViewCnt" parameterClass="comBbsVO">
+		UPDATE COM_BBS
+		SET VIEW_CNT = VIEW_CNT + 1
+		WHERE COM_BBS_SEQ = #comBbsSeq#
+	</update>
 	
 </sqlMap>

@@ -25,7 +25,7 @@
 			 , COMMENT_CONTENT    AS COMMENT_CONTENT    /** 댓글내용 **/
 			 , USE_YN             AS USE_YN             /** 사용여부 **/
 			 , RGST_ID            AS RGST_ID            /** 등록자 ID **/
-			 , TO_CHAR(RGST_DT, 'YYYY.MM.DD') AS RGST_DT/** 등록일시 **/
+			 , TO_CHAR(RGST_DT, 'YYYY-MM-DD HH24:MI:SS') AS RGST_DT/** 등록일시 **/
 		  FROM COM_BBS_COMMENT
 	 WHERE 1 = 1
 	   AND COM_BBS_SEQ = #comBbsSeq#

@@ -31,6 +31,9 @@
 
 <script type="text/javaScript" language="javascript" defer="defer">
 <!--
+
+var userId = "${userId}";
+
 /* 글 목록 화면 function */
 function fn_retrieveComBbsList() {
 	var frm = $("#trxComBbsVO");
@@ -59,6 +62,9 @@ function fn_insertComBbsReply1() {
 <!-- 전체 레이어 시작 -->
 <div id="wrap">
     <lw:header/>
+    <div align="right" id="loginId" style="font-size:14px;">
+    <c:if test="${userId != null }">
+	<br><b>${userId}</b> 님이 로그인 중입니다.</c:if></div>
     <!-- container 시작 -->
     <div id="container">
         <!-- 좌측메뉴 시작 -->

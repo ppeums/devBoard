@@ -183,6 +183,13 @@ public class ComBbsServiceImpl extends AbstractServiceImpl implements ComBbsServ
 	public int comFileCount(ComBbsVO vo) throws Exception {
 		return comBbsDAO.comFileCount(vo);
 	}
-	
+
+	/**
+	 * 조회수를 증가시킨다.
+	 */
+	@Override
+	public void increaseViewCnt(ComBbsVO vo) throws Exception {
+		comBbsDAO.increaseViewCnt(vo);
+	}
 
 }

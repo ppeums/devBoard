@@ -38,6 +38,7 @@ public class ComBbsVO extends CommonVO {
 	private String updDt           ; // 수정일
 	private int comCheck		   ; // 댓글개수
 	private int comFileCnt		   ; // 첨부파일개수
+	private int viewCnt			   ; // 조회수
 	
 	public int getComBbsSeq() {
 		return comBbsSeq;
@@ -116,6 +117,12 @@ public class ComBbsVO extends CommonVO {
 	}
 	public void setComFileCnt(int comFileCnt) {
 		this.comFileCnt = comFileCnt;
+	}
+	public int getViewCnt() {
+		return viewCnt;
+	}
+	public void setViewCnt(int viewCnt) {
+		this.viewCnt = viewCnt;
 	}
 	
 }

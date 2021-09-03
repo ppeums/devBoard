@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ComBbs">
+
+	<typeAlias alias="comBbsVO" type="com.devBoard.comBbs.vo.ComBbsVO"/>
+
+	<resultMap id="comBbsListMap" class="comBbsVO">
+		<result property="comCheck" column="COM_CHECK"/>
+		<result property="viewCnt" column="VIEW_CNT"/>
+		<result property="comFileCnt" column="COM_FILE_CNT"/>
+		<result property="comBbsSeq" column="COM_BBS_SEQ"/>
+		<result property="nttTitle" column="NTT_TITLE"/>
+		<result property="nttContent" column="NTT_CONTENT" jdbcType="CLOB"/>
+		<result property="prntsNo" column="PRNTS_NO"/>
+		<result property="replyLoc" column="REPLY_LOC"/>
+		<result property="sortOrder" column="SORT_ORDER"/>
+		<result property="useYn" column="USE_YN"/>
+		<result property="rgstId" column="RGST_ID"/>
+		<result property="rgstDt" column="RGST_DT"/>
+		<result property="updId" column="UPD_ID"/>
+		<result property="updDt" column="UPD_DT"/>
+		<result property="comFileSeq" column="COM_FILE_SEQ"/>
+	</resultMap>
+	
+	<select id="comBbsDAO.selectComBbsList" parameterClass="comBbsVO" resultMap="comBbsListMap">
+		/** 게시판 목록을 조회한다. (comBbsDAO.selectComBbsList) **/
+		SELECT * FROM ( SELECT ROWNUM RN, TB.* FROM (
+		
+			SELECT  MAIN.COM_BBS_SEQ
+			,       LPAD(' ', LEVEL-1, ' ') || MAIN.NTT_TITLE AS NTT_TITLE
+			,       MAIN.NTT_CONTENT 
+			,       MAIN.PRNTS_NO    
+			,       MAIN.REPLY_LOC   
+			,       MAIN.SORT_ORDER  
+			,       MAIN.USE_YN      
+			,       MAIN.RGST_ID     
+			,       MAIN.RGST_DT     
+			,       MAIN.UPD_ID      
+			,       MAIN.UPD_DT
+			,       NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ
+			,		MAIN.COM_CHECK
+			,		MAIN.COM_FILE_CNT
+			FROM    COM_BBS MAIN
+			WHERE   1 = 1
+			AND		MAIN.USE_YN = 'Y'
+			<isEqual prepend="AND" property="searchCondition" compareValue="1">
+				<isNotEmpty property="searchKeyword">
+				MAIN.NTT_TITLE LIKE '%' || #searchKeyword# || '%'
+				</isNotEmpty>
+			</isEqual>
+			<isEqual prepend="AND" property="searchCondition" compareValue="0">
+				<isNotEmpty property="searchKeyword">
+				MAIN.RGST_ID LIKE '%' || #searchKeyword# || '%'
+				</isNotEmpty>
+			</isEqual>
+			<isNotEmpty property="startDate">
+				AND		MAIN.RGST_DT BETWEEN TO_DATE(#startDate# || '000000', 'YYYYMMDDHH24MISS') AND TO_DATE(#endDate# || '235959', 'YYYYMMDDHH24MISS') 
+			</isNotEmpty>
+			START WITH PRNTS_NO = 0                       
+			CONNECT BY PRIOR MAIN.COM_BBS_SEQ = MAIN.PRNTS_NO
+			ORDER SIBLINGS BY MAIN.RGST_DT DESC, MAIN.SORT_ORDER
+					
+		) TB ) WHERE RN BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+	</select>
+	
+	<select id="comBbsDAO.selectComBbsListCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+	<![CDATA[
+		/** 게시판 목록을 건수를 조회한다. (comBbsDAO.selectComBbsListCount) **/
+		SELECT  COUNT(MAIN.COM_BBS_SEQ) AS CNT
+		FROM    COM_BBS MAIN
+		WHERE	1 = 1
+		]]>
+		AND		MAIN.USE_YN = 'Y'
+		<isEqual prepend="AND" property="searchCondition" compareValue="1">
+			<isNotEmpty property="searchKeyword">
+			MAIN.NTT_TITLE LIKE '%' || #searchKeyword# || '%'
+			</isNotEmpty>
+		</isEqual>
+		<isEqual prepend="AND" property="searchCondition" compareValue="0">
+			<isNotEmpty property="searchKeyword">
+			MAIN.RGST_ID LIKE '%' || #searchKeyword# || '%'
+			</isNotEmpty>
+		</isEqual>
+		<isNotEmpty property="startDate">
+			AND		MAIN.RGST_DT BETWEEN TO_DATE(#startDate# || '000000', 'YYYYMMDDHH24MISS') AND TO_DATE(#endDate# || '235959', 'YYYYMMDDHH24MISS') 
+		</isNotEmpty>
+	</select>
+	
+	<select id="comBbsDAO.selectComBbsView" parameterClass="comBbsVO" resultMap="comBbsListMap">
+		/** 게시판 상세를 조회한다. (comBbsDAO.selectComBbsView) **/
+		SELECT  MAIN.COM_BBS_SEQ
+		,		MAIN.NTT_TITLE   
+		,		MAIN.NTT_CONTENT 
+		,		MAIN.PRNTS_NO    
+		,		MAIN.REPLY_LOC   
+		,		MAIN.SORT_ORDER  
+		,		MAIN.USE_YN      
+		,		MAIN.RGST_ID     
+		,		MAIN.RGST_DT     
+		,		MAIN.UPD_ID      
+		,		MAIN.UPD_DT 
+		,		NVL(COM_FILE_SEQ, 0) AS COM_FILE_SEQ 
+		,		MAIN.COM_CHECK 
+		,		MAIN.COM_FILE_CNT  
+		FROM	COM_BBS MAIN
+		WHERE	1 = 1
+		AND		MAIN.COM_BBS_SEQ=#comBbsSeq#
+		AND		MAIN.USE_YN = 'Y'
+	</select>
+	
+	<insert id="comBbsDAO.insertComBbs" parameterClass="comBbsVO">
+		<selectKey resultClass="java.lang.Integer" keyProperty="comBbsSeq">
+		SELECT COM_BBS_SEQ.NEXTVAL FROM DUAL
+		</selectKey>
+		
+		<![CDATA[
+		INSERT INTO COM_BBS (
+			   COM_BBS_SEQ       
+			  , NTT_TITLE        
+			  , NTT_CONTENT      
+			  , PRNTS_NO         
+			  , REPLY_LOC        
+			  , SORT_ORDER       
+			  , USE_YN           
+			  , RGST_ID          
+			  , RGST_DT
+			  , COM_FILE_SEQ
+			  , COM_CHECK   
+			  , COM_FILE_CNT    
+			  )		
+			  VALUES(
+			   #comBbsSeq#       
+			  , #nttTitle#       
+			  , #nttContent:CLOB#     
+			  , #prntsNo#        
+			  , #replyLoc#       
+			  , #comBbsSeq#      
+			  , 'Y'              
+			  , #rgstId#         
+			  , SYSDATE
+			  , NVL(#comFileSeq#, 0) 
+			  , #comCheck# 
+			  , #comFileCnt#      
+			  )
+		]]>
+	</insert>
+	
+	<update id="comBbsDAO.updateComBbs" parameterClass="comBbsVO">
+		UPDATE COM_BBS
+		   SET NTT_TITLE   = #nttTitle#        
+			 , NTT_CONTENT = #nttContent#      
+			 , RGST_ID     = #rgstId#
+			 , UPD_ID      = #updId#           
+			 , UPD_DT      = SYSDATE
+			 , COM_FILE_SEQ = #comFileSeq#
+			 , COM_FILE_CNT = #comFileCnt#       
+		WHERE 1 = 1
+		  AND COM_BBS_SEQ = #comBbsSeq#
+		  AND USE_YN = 'Y'
+	</update>
+
+	<delete id="comBbsDAO.deleteComBbs" parameterClass="comBbsVO">
+		<![CDATA[
+		DELETE FROM COM_BBS
+		WHERE COM_BBS_SEQ=#comBbsSeq#
+		]]>
+	</delete>
+	
+	<select id="comBbsDAO.selectCommentCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT (SELECT COUNT(*)
+				FROM COM_BBS_COMMENT
+				WHERE COM_BBS_COMMENT.COM_BBS_SEQ = COM_BBS.COM_BBS_SEQ) AS CNT
+		FROM COM_BBS
+		WHERE COM_BBS_SEQ=#comBbsSeq#
+	</select>
+	
+	<select id="comBbsDAO.selectComBbsCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM COM_BBS A, COM_BBS B
+		WHERE A.COM_BBS_SEQ = B.PRNTS_NO 
+			  AND A.COM_BBS_SEQ = #comBbsSeq#
+	</select>
+	
+	<select id="comBbsDAO.selectComFileCount" parameterClass="comBbsVO" resultClass="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM COM_BBS A, COM_FILE_DTL B
+		WHERE A.COM_BBS_SEQ = #comBbsSeq#
+			  AND A.COM_FILE_SEQ = B.COM_FILE_SEQ
+	</select>
+	
+	<update id="comBbsDAO.increaseViewCnt" parameterClass="comBbsVO">
+		UPDATE COM_BBS
+		SET VIEW_CNT = VIEW_CNT + 1
+		WHERE COM_BBS_SEQ = #comBbsSeq#
+	</update>
+	
+	<update id="comBbsDAO.decreaseViewCnt" parameterClass="comBbsVO">
+		UPDATE COM_BBS
+		SET VIEW_CNT = VIEW_CNT - 1
+		WHERE COM_BBS_SEQ = #comBbsSeq#
+	</update>
+	
+</sqlMap>

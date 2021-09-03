@@ -57,6 +57,11 @@ public class LoginController {
 	public String retrieveLogin(@ModelAttribute("loginVO") LoginVO loginVO, ModelMap model, HttpServletRequest request) throws Exception {
 //		request.getSession().setAttribute("org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE", Locale.US);
 		request.getSession().setAttribute("org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE", Locale.KOREA);
+		
+		String userId = UserSession.getUserId(request);
+		System.out.println("[로그인 페이지 조회] 세션 아이디: " + userId);
+		model.addAttribute("userId", userId);
+		
 		return "/login/login";
 	}
 	
