@@ -612,7 +612,6 @@
 			}
 		});
 	}
-	
 	//한줄의견 조회
 	function fn_searchCommentList(page, url, comBbsSeq, url2, userId){
 		$.ajax({
@@ -682,6 +681,75 @@
 			});
 		}
 	}
+	/*//첨부파일 조회
+	function fn_searchComFile(page, url, comBbsSeq, url2, userId){
+		$.ajax({
+			type: "post"
+				,url: url
+				,dataType: "JSON"
+				,data: {
+					  "comBbsSeq": comBbsSeq
+				//	, "comCommentSeq" : id
+					, "pageIndex" : page
+			}
+			,success: function(data) {
+				var comment = "";
+				var pageTag = "";
+			
+				$.each(data.resultList, function(idx, item) {
+					
+					comment += "<tr>";
+					comment += "</tr>";
+					
+					comment += "<tr>";
+					comment += "<td>"+ item.writeId +"</td>";
+					comment += "<td class=\"subject\" id=\"subject_"+ item.comBbsCommentSeq +"\"><div class=\"commentTitle\">" + item.commentContent + "</div></td>";
+					comment += "<td>"+ item.rgstDt + "</td>";
+					//System.out.println("[댓글 조회] 댓글 작성일: " + item.rgstDt);
+					//alert("[댓글 조회] 댓글 작성일: " + item.rgstDt);
+					comment += "<td>";
+					if(userId == "admin" || item.rgstId == userId){
+						comment += "	<a href=\"#;\"><img src=\"/static/images/common/ico_delete.png\" alt=\"삭제\" onclick=\"fn_deleteComment('"+ item.comBbsCommentSeq + "', '"+url2+"', '"+comBbsSeq+"');\"/></a>";
+					}
+					else{
+						comment += "	<img src=\"/static/images/common/ico_delete_gray.png\"/></a>";
+					}
+					comment += "</td>";
+					comment += "</tr>";
+					
+				});
+				$("#commentList").html(comment);
+				$("#commentContent").val("");
+				fn_commentByteChk();
+				
+			}
+			,error: function(data, status, err) {
+				alert("[첨부파일 조회] 서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+			}
+		});
+	//첨부파일 삭제
+	function fn_deleteComFile(id, url, comBbsSeq){
+		if( confirm("삭제하시겠습니까?")){
+			$.ajax({
+				type: "post"
+				,url: url
+				,dataType: "JSON"
+				,data: {
+					  "comBbsSeq": comBbsSeq
+					, "comFileSeq" : id
+				}
+				,success: function(data) {
+					$("#fileList").html("");
+					fn_searchComFile('1','/comBbs/ajaxLibFreeNoticeCommentList.do', comBbsSeq, '/comBbs/ajaxDeleteLibFreeNoticeComment.do');
+				}
+				,error: function(data, status, err) {
+					alert("[첨부파일 삭제] 서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+				}
+			});
+		}
+	}*/
+	
+	
 	
 	/**
 	* 한글을 2바이트 씩 계산하여 입력받은 문자열이 DB에 저장될 때 총 몇바이트를 차지하는지 계산한다.
@@ -717,7 +785,7 @@
 		$("#currentBytes").html(tmpTag);
 		
 		if (byte > 1000) {
-			alert("글자를 초과 입력할수 없습니다.");
+			alert("글자를 초과 입력할 수 없습니다.");
 			$("#commentContent").val(checkComment);
 			tmpTag = beforeByte;
 			$("#currentBytes").html(tmpTag);

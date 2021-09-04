@@ -48,6 +48,17 @@ function fn_insertComBbsReply1() {
 
 	var confirmMsg = "<spring:message code='confirm.common.insert'/>";
 	
+	if($("#nttTitle").val() == "") {
+		alert("제목을 입력해주세요.");
+		$("#nttTitle").focus();
+		return;
+	}
+	if($("#nttContent").val() == "") {
+		alert("내용을 입력해주세요.");
+		$("#nttContent").focus();
+		return;
+	}
+	
 	if(confirm(confirmMsg)!=true) return;
 	
 	frm.attr("action", "<c:url value='/comBbs/insertComBbsReply1.do'/>");

@@ -392,7 +392,7 @@ public class ComBbsController {
 			comBbsCommentVO.setWriteId(UserSession.getUserId(request));// 작성자 ID
 
 			if (comBbsCommentVO.getCommentContent().equals("")) {
-				jsonObject.put("resultList", "한줄의견을 입력 하세요.");
+				jsonObject.put("resultList", "한줄의견을 입력하세요.");
 			} else {
 				if (comBbsCommentVO.getComBbsCommentSeq() == 0) {
 					comBbsService.insertCommentList(comBbsCommentVO);

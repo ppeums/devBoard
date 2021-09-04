@@ -50,13 +50,13 @@ function fn_retrieveComBbsList() {
 function fn_deleteComBbsList() {
 	var cnt = "${cnt}";
 	if(cnt > 0) {
-		alert("댓글이 있는 게시글은 삭제할 수 없습니다.");
+		alert("'댓글'이 있는 게시글은 삭제할 수 없습니다.");
 		return;
 	}
 	
 	var comBbsCount = "${comBbsCount}";
 	if(comBbsCount > 0) {
-		alert("답글이 있는 게시글은 삭제할 수 없습니다.");
+		alert("'답글'이 있는 게시글은 삭제할 수 없습니다.");
 		return;
 	}
 	

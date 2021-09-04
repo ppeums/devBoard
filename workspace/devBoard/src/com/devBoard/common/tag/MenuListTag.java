@@ -38,7 +38,7 @@ public class MenuListTag extends TagSupport {
 		
 		if( UserSession.getUserMenuList((HttpServletRequest)pageContext.getRequest()) == null) {
 			try {
-				String blank="<br>&emsp;&emsp;&ensp;로그인이 필요합니다.";
+				String blank = "<br>&emsp;&emsp;&ensp;로그인이 필요합니다.";
 				out.print(blank);
 			} catch (Exception e) {
 				throw new JspException(e.getMessage());

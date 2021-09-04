@@ -4,6 +4,7 @@
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui" %>
 <%@ taglib prefix="lw" uri="/WEB-INF/tld/lw.tld" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%
 /**
  * @Class Name : comBbsList.jsp
@@ -29,6 +30,7 @@
 <meta http-equiv="Content-Language" content="utf-8" >
 <title>답글게시판 - 답글게시판</title>
 <jsp:include page="/WEB-INF/jsp/common/header.jsp" flush="true" />
+<jsp:useBean id="now" class="java.util.Date" />
 <script type="text/javaScript" language="javascript" defer="defer">
 <!--
 /* 글 조회 화면 function */
@@ -170,10 +172,31 @@ $(function() {
 							<c:if test="${result.comFileSeq != 0}">
 							<img src="/static/images/clip5_14.png"></c:if>
 							<c:if test="${result.comCheck > 0}">
-							<span style="color: red;">[${result.comCheck}]</span></c:if>					
+							<span style="color: red;">[${result.comCheck}]</span></c:if>
+							
+							<fmt:parseNumber value="${now.time / (1000*60*60*24)}" integerOnly="true" var="nowDays" scope="request"/>
+							<fmt:parseNumber value="${result.rgstDt.time / (1000*60*60*24)}" integerOnly="true" var="oldDays" scope="page"/>
+							<c:set value="${nowDays - oldDays}" var="dateDiff"/>
+							<%-- <c:out value="${dateDiff}"/> --%>
+							<%-- ${nowDays} - ${oldDays} = ${dateDiff} --%>
+							<c:if test="${dateDiff <= 5}">
+							<%-- <c:if test="${result.comCheck == 0}">&nbsp;</c:if> --%>
+							<img src="/static/images/new.jpg"></c:if>
+							
+							<%-- <c:out value="${now} - ${result.rgstDt}"/> --%>
+							<%-- &nbsp;<c:out value="${result.rgstDt}"/> --%>
+							<%-- <fmt:formatDate value="${now}" pattern="yyyy-MM-dd" var="today"/> --%>
+							<%-- <<c:if test="${now - result.rgstDt  }">
+							<img src="/static/images/clip5_14.png"></c:if> --%>
+							
 							</td>
 						<td align="center" class="listtd"><c:out value="${result.rgstId}"/>&nbsp;</td>
-						<td align="center" class="listtd"><fmt:formatDate value="${result.rgstDt}" pattern="yyyy.MM.dd"/>&nbsp;</td>
+						<td align="center" class="listtd">
+						<c:if test="${dateDiff < 1}">
+						<fmt:formatDate value="${result.rgstDt}" pattern="HH:mm:ss"/></c:if>
+						<c:if test="${dateDiff >= 1}">
+						<fmt:formatDate value="${result.rgstDt}" pattern="yyyy.MM.dd"/></c:if>
+						&nbsp;</td>
 						<td align="center" class="listtd"><c:out value="${result.viewCnt}"/>&nbsp;</td>
 					</tr>
 					</c:forEach>

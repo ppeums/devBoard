@@ -153,7 +153,7 @@ public final class comBbsView_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cnt}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\";\r\n");
       out.write("\tif(cnt > 0) {\r\n");
-      out.write("\t\talert(\"댓글이 있는 게시글은 삭제할 수 없습니다.\");\r\n");
+      out.write("\t\talert(\"'댓글'이 있는 게시글은 삭제할 수 없습니다.\");\r\n");
       out.write("\t\treturn;\r\n");
       out.write("\t}\r\n");
       out.write("\t\r\n");
@@ -161,7 +161,7 @@ public final class comBbsView_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${comBbsCount}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\";\r\n");
       out.write("\tif(comBbsCount > 0) {\r\n");
-      out.write("\t\talert(\"답글이 있는 게시글은 삭제할 수 없습니다.\");\r\n");
+      out.write("\t\talert(\"'답글'이 있는 게시글은 삭제할 수 없습니다.\");\r\n");
       out.write("\t\treturn;\r\n");
       out.write("\t}\r\n");
       out.write("\t\r\n");

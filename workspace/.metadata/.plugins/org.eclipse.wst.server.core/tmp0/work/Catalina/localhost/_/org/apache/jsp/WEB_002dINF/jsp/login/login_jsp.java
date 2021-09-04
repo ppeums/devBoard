@@ -133,7 +133,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\treturn;\r\n");
       out.write("\t}\r\n");
       out.write("\t\r\n");
-      out.write("\tif( $(\"#userPwd\").val().replaceAll(\" \",\"\") == '') {\r\n");
+      out.write("\telse if( $(\"#userPwd\").val().replaceAll(\" \",\"\") == '') {\r\n");
       out.write("\t\talert(\"");
       if (_jspx_meth_spring_005fmessage_005f1(_jspx_page_context))
         return;

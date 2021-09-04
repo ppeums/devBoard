@@ -30,7 +30,8 @@
 <title>답글게시판 수정</title>
 <jsp:include page="/WEB-INF/jsp/common/header.jsp" flush="true" />
 
-<script type="text/javaScript" language="javascript" defer="defer">/* 글 목록 화면 function */
+<script type="text/javaScript" language="javascript" defer="defer">
+/* 글 목록 화면 function */
 function fn_retrieveComBbsList() {
 	var frm = $("#trxComBbsVO");
 
@@ -44,11 +45,48 @@ function fn_updateComBbs() {
 
 	var confirmMsg = "<spring:message code='confirm.common.update'/>";
 	
+	if($("#nttTitle").val() == "") {
+		alert("제목을 입력해주세요.");
+		$("#nttTitle").focus();
+		return;
+	}
+	if($("#nttContent").val() == "") {
+		alert("내용을 입력해주세요.");
+		$("#nttContent").focus();
+		return;
+	}
+	
 	if(confirm(confirmMsg)!=true) return;
 	
 	frm.attr("action", "<c:url value='/comBbs/updateComBbs.do'/>");
 	frm.submit();
 }
+
+function fn_deleteEachComFile(comFileDtlSeq) {
+	if( confirm("삭제하시겠습니까?")){
+		$.ajax({
+			type: "post"
+			,url: '/framework/deleteEachComFileDtl.do'
+			,dataType: "JSON"
+			,data: {
+				  "comFileDtlSeq": comFileDtlSeq
+			}
+			,success: function(data) {
+				alert("첨부파일이 삭제되었습니다.");
+			}
+			,error: function(data, status, err) {
+				alert("[첨부파일 삭제] 서버와의 통신이 원활하지 않습니다.\n잠시후에 다시 시도해 주세요.");
+			}
+		});
+	}
+}
+
+/* $(document).ready(function() {
+	var userId = "${userId}";
+	
+	//첨부파일 조회 
+	fn_searchComFileList('1', '/comBbs/ajaxLibFreeNoticeCommentList.do', '<c:out value='${trxComBbsVO.comBbsSeq}'/>', '/comBbs/ajaxDeleteLibFreeNoticeComment.do', userId);
+}); */
 
 -->
 </script>
@@ -101,10 +139,15 @@ function fn_updateComBbs() {
 							<tr>
 								<th scope="row">첨부파일</th>
 								<td><input multiple="multiple" type="file" name="upfile" id="upfile" class=""
-									title="첨부파일 첨부" /><br /> <c:forEach var="result"
+									title="첨부파일 첨부" /><br /> 
+									<!-- <tbody id="comFileList"></tbody> -->
+									<c:forEach var="result"
 										items="${fileList}" varStatus="status">
+										<!-- <tbody id="comFileList"></tbody> -->
 										<a href="javascript:gfn_downloadFile('${result.comFileDtlSeq}');">
 											<c:out value="${result.fileStreOriNm}" /> </a>
+										<a href="#LINK"
+									onclick="javascript:fn_deleteEachComFile('${result.comFileDtlSeq}');">&nbsp;삭제</a>
 										<br />
 									</c:forEach>
 								</td>

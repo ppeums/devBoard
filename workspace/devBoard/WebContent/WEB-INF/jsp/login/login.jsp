@@ -43,7 +43,7 @@ function fn_loginSubmit()
 		return;
 	}
 	
-	if( $("#userPwd").val().replaceAll(" ","") == '') {
+	else if( $("#userPwd").val().replaceAll(" ","") == '') {
 		alert("<spring:message code='login.alert.002'/>");
 		return;
 	}
