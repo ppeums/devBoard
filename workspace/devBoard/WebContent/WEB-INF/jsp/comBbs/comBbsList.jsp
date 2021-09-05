@@ -168,18 +168,19 @@ $(function() {
 						<c:if test="${result.replyLoc >=2}">
 						<img src="/static/images/re4_11.png"></c:if>
 						<%-- <span style="color: blue;">[re]</span></c:if> --%>
+						<c:if test="${result.viewCnt > 20}">
+						<img src="/static/images/hit8_9.png"></c:if>
 						<c:out value="${result.nttTitle}"/></div></a>
 							<c:if test="${result.comFileSeq != 0}">
-							<img src="/static/images/clip5_14.png"></c:if>
+							<img src="/static/images/file.gif"></c:if>
 							<c:if test="${result.comCheck > 0}">
 							<span style="color: red;">[${result.comCheck}]</span></c:if>
-							
 							<fmt:parseNumber value="${now.time / (1000*60*60*24)}" integerOnly="true" var="nowDays" scope="request"/>
 							<fmt:parseNumber value="${result.rgstDt.time / (1000*60*60*24)}" integerOnly="true" var="oldDays" scope="page"/>
 							<c:set value="${nowDays - oldDays}" var="dateDiff"/>
 							<%-- <c:out value="${dateDiff}"/> --%>
 							<%-- ${nowDays} - ${oldDays} = ${dateDiff} --%>
-							<c:if test="${dateDiff <= 5}">
+							<c:if test="${dateDiff <= 1}">
 							<%-- <c:if test="${result.comCheck == 0}">&nbsp;</c:if> --%>
 							<img src="/static/images/new.jpg"></c:if>
 							
